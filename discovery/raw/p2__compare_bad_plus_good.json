@@ -1,0 +1,33 @@
+{
+  "id": "compare_bad_plus_good",
+  "group": "p2",
+  "purpose": "one broken (description-example) alias + one valid: whole-call error or partial?",
+  "timestamp": "2026-10-10T21:53:11.911195+00:00",
+  "request": {
+    "tool": "compare_cards",
+    "arguments": {
+      "card_aliases": [
+        "axis-magnus-credit-card",
+        "sbi-cashback-credit-card"
+      ]
+    }
+  },
+  "latency_ms": 196,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"error\": \"Could not fetch enough cards for comparison. Check the aliases provided.\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "error": "Could not fetch enough cards for comparison. Check the aliases provided."
+    }
+  ]
+}

@@ -1,0 +1,536 @@
+{
+  "id": "recommend_amz15_dining5_top50",
+  "group": "p2",
+  "purpose": "oracle nets for a spend-aware 4-card comparison (Magnus, Amazon Pay, SBI Cashback, Millenia)",
+  "timestamp": "2026-10-10T21:53:15.809128+00:00",
+  "request": {
+    "tool": "recommend_cards",
+    "arguments": {
+      "amazon_spends": 15000,
+      "dining_or_going_out": 5000,
+      "top_n": 50,
+      "response_format": "brief"
+    }
+  },
+  "latency_ms": 3896,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total_cards_analyzed\": 204,\n  \"recommendations\": [\n    {\n      \"rank\": 1,\n      \"card_name\": \"SBI CASHBACK \",\n      \"bank_name\": \"SBI\",\n      \"net_annual_savings\": \"₹12,000\",\n      \"joining_fee\": \"₹1,179\",\n      \"annual_fee\": \"Free (waived — ₹1,179 waived at ₹2,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"sbi-cashback-credit-card\"\n    },\n    {\n      \"rank\": 2,\n      \"card_name\": \"BOB Cashback Credit Card\",\n      \"bank_name\": \"Bank of Baroda\",\n      \"net_annual_savings\": \"₹11,411\",\n      \"joining_fee\": \"₹589\",\n      \"annual_fee\": \"₹589\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"bob-cashback-credit-card\"\n    },\n    {\n      \"rank\": 3,\n      \"card_name\": \"CRED IndusInd Bank Credit Card\",\n      \"bank_name\": \"IndusInd Bank\",\n      \"net_annual_savings\": \"₹11,411\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹589\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"cred-indusind-bank-credit-card\"\n    },\n    {\n      \"rank\": 4,\n      \"card_name\": \"PhonePe SBI Card SELECT BLACK \",\n      \"bank_name\": \"SBI\",\n      \"net_annual_savings\": \"₹10,231\",\n      \"joining_fee\": \"₹1,769\",\n      \"annual_fee\": \"₹1,769\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"phonepe-sbi-card-select-black\"\n    },\n    {\n      \"rank\": 5,\n      \"card_name\": \"AU Altura Plus Credit Card\",\n      \"bank_name\": \"AU Small Finance Bank\",\n      \"net_annual_savings\": \"₹10,200\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"au-altura-plus-credit-card\"\n    },\n    {\n      \"rank\": 6,\n      \"card_name\": \"Equitas Tiga Credit Card\",\n      \"bank_name\": \"Equitas Small Finance Bank\",\n      \"net_annual_savings\": \"₹9,660\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free (waived — ₹590 waived at ₹1,20,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"equitas-tiga-credit-card\"\n    },\n    {\n      \"rank\": 7,\n      \"card_name\": \"HDFC MILLENIA\",\n      \"bank_name\": \"HDFC\",\n      \"net_annual_savings\": \"₹9,600\",\n      \"joining_fee\": \"₹1,180\",\n      \"annual_fee\": \"Free (waived — ₹1,180 waived at ₹1,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"hdfc-millenia-credit-card\"\n    },\n    {\n      \"rank\": 8,\n      \"card_name\": \"HDFC SWIGGY BLCK Credit Card\",\n      \"bank_name\": \"HDFC\",\n      \"net_annual_savings\": \"₹9,600\",\n      \"joining_fee\": \"₹1,180\",\n      \"annual_fee\": \"Free (waived — ₹1,180 waived at ₹2,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"swiggy-blck-hdfc-credit-card\"\n    },\n    {\n      \"rank\": 9,\n      \"card_name\": \"ICICI Amazon Pay Credit Card\",\n      \"bank_name\": \"ICICI Bank\",\n      \"net_annual_savings\": \"₹9,600\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"icici-amazon-pay-credit-card\"\n    },\n    {\n      \"rank\": 10,\n      \"card_name\": \"Swiggy Ornge HDFC Bank Credit card \",\n      \"bank_name\": \"HDFC\",\n      \"net_annual_savings\": \"₹9,600\",\n      \"joining_fee\": \"₹590\",\n      \"annual_fee\": \"Free (waived — ₹590 waived at ₹1,50,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"swiggy-ornge-hdfc-credit-card\"\n    },\n    {\n      \"rank\": 11,\n      \"card_name\": \"American Express Membership Rewards \",\n      \"bank_name\": \"American Express\",\n      \"net_annual_savings\": \"₹9,504\",\n      \"joining_fee\": \"₹1,180\",\n      \"annual_fee\": \"Free (waived — ₹5,310 waived at ₹1,50,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"american-express-mr-credit-card\"\n    },\n    {\n      \"rank\": 12,\n      \"card_name\": \"HSBC Live+ Credit Card\",\n      \"bank_name\": \"HSBC Bank\",\n      \"net_annual_savings\": \"₹8,700\",\n      \"joining_fee\": \"₹1,179\",\n      \"annual_fee\": \"Free (waived — ₹1,179 waived at ₹2,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"hsbc-live-plus-credit-card\"\n    },\n    {\n      \"rank\": 13,\n      \"card_name\": \"Air India SBI Platinum Credit Card \",\n      \"bank_name\": \"SBI\",\n      \"net_annual_savings\": \"₹8,031\",\n      \"joining_fee\": \"₹1,769\",\n      \"annual_fee\": \"₹1,769\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"air-india-sbi-platinum-credit-card\"\n    },\n    {\n      \"rank\": 14,\n      \"card_name\": \"HDFC SHOPPERS STOP\",\n      \"bank_name\": \"HDFC\",\n      \"net_annual_savings\": \"₹7,247\",\n      \"joining_fee\": \"₹353\",\n      \"annual_fee\": \"₹353\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"hdfc-shoppers-stop-credit-card\"\n    },\n    {\n      \"rank\": 15,\n      \"card_name\": \"IDFC FIRST Hello Cashback Credit Card\",\n      \"bank_name\": \"IDFC\",\n      \"net_annual_savings\": \"₹7,200\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free (waived — ₹1,180 waived at ₹2,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"idfc-first-hello-cashback-credit-card\"\n    },\n    {\n      \"rank\": 16,\n      \"card_name\": \"Kotak Solitaire Credit Card \",\n      \"bank_name\": \"Kotak\",\n      \"net_annual_savings\": \"₹7,200\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"kotak-solitaire-credit-card\"\n    },\n    {\n      \"rank\": 17,\n      \"card_name\": \"HDFC Moneyback Credit Card\",\n      \"bank_name\": \"HDFC\",\n      \"net_annual_savings\": \"₹6,650\",\n      \"joining_fee\": \"₹590\",\n      \"annual_fee\": \"Free (waived — ₹590 waived at ₹50,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"hdfc-moneyback-credit-card\"\n    },\n    {\n      \"rank\": 18,\n      \"card_name\": \"LIC Axis Bank Signature Credit Card\",\n      \"bank_name\": \"Axis\",\n      \"net_annual_savings\": \"₹6,600\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"lic-axis-bank-signature-credit-card\"\n    },\n    {\n      \"rank\": 19,\n      \"card_name\": \"BOB Eterna Credit Card\",\n      \"bank_name\": \"Bank of Baroda\",\n      \"net_annual_savings\": \"₹6,051\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹2,949\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"bob-eterna-credit-card\"\n    },\n    {\n      \"rank\": 20,\n      \"card_name\": \"HDFC MoneyBack Plus Credit Card\",\n      \"bank_name\": \"HDFC\",\n      \"net_annual_savings\": \"₹6,000\",\n      \"joining_fee\": \"₹590\",\n      \"annual_fee\": \"Free (waived — ₹590 waived at ₹50,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"hdfc-moneyback-plus-credit-card\"\n    },\n    {\n      \"rank\": 21,\n      \"card_name\": \"Axis Supermoney Rupay Card\",\n      \"bank_name\": \"Axis\",\n      \"net_annual_savings\": \"₹6,000\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"supermoney-rupay-credit-card\"\n    },\n    {\n      \"rank\": 22,\n      \"card_name\": \"PhonePe HDFC Bank Ultimo Credit Card\",\n      \"bank_name\": \"HDFC\",\n      \"net_annual_savings\": \"₹6,000\",\n      \"joining_fee\": \"₹1,179\",\n      \"annual_fee\": \"Free (waived — ₹1,179 waived at ₹2,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"hdfc-phonepe-ultimo-credit-card\"\n    },\n    {\n      \"rank\": 23,\n      \"card_name\": \"ixigo AU credot Card\",\n      \"bank_name\": \"AU Small Finance Bank\",\n      \"net_annual_savings\": \"₹6,000\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"ixigo-au-credit-card\"\n    },\n    {\n      \"rank\": 24,\n      \"card_name\": \"SBI SIMPLY CLICK\",\n      \"bank_name\": \"SBI\",\n      \"net_annual_savings\": \"₹5,575\",\n      \"joining_fee\": \"₹589\",\n      \"annual_fee\": \"Free (waived — ₹589 waived at ₹1,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"sbi-simply-click-credit-card\"\n    },\n    {\n      \"rank\": 25,\n      \"card_name\": \"Yes Bank Paisabazaar PaisaSave Credit Card\",\n      \"bank_name\": \"Yes Bank\",\n      \"net_annual_savings\": \"₹5,400\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free (waived — ₹589 waived at ₹1,20,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"yes-bank-paisabazaar-paisasave-credit-card\"\n    },\n    {\n      \"rank\": 26,\n      \"card_name\": \"BOB Snapdeal Credit Card\",\n      \"bank_name\": \"Bank of Baroda\",\n      \"net_annual_savings\": \"₹4,806\",\n      \"joining_fee\": \"₹294\",\n      \"annual_fee\": \"₹294\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"bob-snapdeal-credit-card\"\n    },\n    {\n      \"rank\": 27,\n      \"card_name\": \"HSBC RuPay Cashback Credit Card\",\n      \"bank_name\": \"HSBC Bank\",\n      \"net_annual_savings\": \"₹4,800\",\n      \"joining_fee\": \"₹589\",\n      \"annual_fee\": \"Free (waived — ₹589 waived at ₹2,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"hsbc-rupay-cashback-credit-card\"\n    },\n    {\n      \"rank\": 28,\n      \"card_name\": \"AU Xcite ACE Credit Card\",\n      \"bank_name\": \"AU Small Finance Bank\",\n      \"net_annual_savings\": \"₹4,800\",\n      \"joining_fee\": \"₹884\",\n      \"annual_fee\": \"Free (waived — ₹884 waived at ₹2,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"au-xcite-ace-credit-card\"\n    },\n    {\n      \"rank\": 29,\n      \"card_name\": \"AMEX GOLD CREDIT CARD\",\n      \"bank_name\": \"American Express\",\n      \"net_annual_savings\": \"₹4,434\",\n      \"joining_fee\": \"₹1,180\",\n      \"annual_fee\": \"₹5,310\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"american-express-gold-card\"\n    },\n    {\n      \"rank\": 30,\n      \"card_name\": \"Paytm HDFC Bank Select Credit Card \",\n      \"bank_name\": \"HDFC\",\n      \"net_annual_savings\": \"₹4,400\",\n      \"joining_fee\": \"₹1,180\",\n      \"annual_fee\": \"Free (waived — ₹1,180 waived at ₹1,50,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"paytm-hdfc-bank-select-credit-card\"\n    },\n    {\n      \"rank\": 31,\n      \"card_name\": \"YES BANK RESERV Credit Card\",\n      \"bank_name\": \"Yes Bank\",\n      \"net_annual_savings\": \"₹4,251\",\n      \"joining_fee\": \"₹2,949\",\n      \"annual_fee\": \"₹2,949\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"yes-bank-reserv-credit-card\"\n    },\n    {\n      \"rank\": 32,\n      \"card_name\": \"RBL Super Binge Credit Card\",\n      \"bank_name\": \"RBL Bank\",\n      \"net_annual_savings\": \"₹4,200\",\n      \"joining_fee\": \"₹1,179\",\n      \"annual_fee\": \"Free (waived — ₹1,179 waived at ₹1,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"rbl-super-binge-credit-card\"\n    },\n    {\n      \"rank\": 33,\n      \"card_name\": \"StanC SMART\",\n      \"bank_name\": \"Standard Chartered Bank\",\n      \"net_annual_savings\": \"₹4,200\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free (waived — ₹589 waived at ₹1,20,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"stanc-smart-credit-card\"\n    },\n    {\n      \"rank\": 34,\n      \"card_name\": \"AU Xcite Ultra Credit Card\",\n      \"bank_name\": \"AU Small Finance Bank\",\n      \"net_annual_savings\": \"₹4,200\",\n      \"joining_fee\": \"₹884\",\n      \"annual_fee\": \"Free (waived — ₹884 waived at ₹2,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"xcite-ultra-credit-card\"\n    },\n    {\n      \"rank\": 35,\n      \"card_name\": \"RBL Bank Cookies Credit Card\",\n      \"bank_name\": \"RBL Bank\",\n      \"net_annual_savings\": \"₹3,920\",\n      \"joining_fee\": \"₹118\",\n      \"annual_fee\": \"Free (waived — ₹1,416 waived at ₹5,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"rbl-cookies-credit-card\"\n    },\n    {\n      \"rank\": 36,\n      \"card_name\": \"SBI Card PULSE \",\n      \"bank_name\": \"SBI\",\n      \"net_annual_savings\": \"₹3,899\",\n      \"joining_fee\": \"₹1,769\",\n      \"annual_fee\": \"Free (waived — ₹1,769 waived at ₹2,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"sbi-card-pulse-credit-card\"\n    },\n    {\n      \"rank\": 37,\n      \"card_name\": \"SBI Reliance Credit Card \",\n      \"bank_name\": \"SBI\",\n      \"net_annual_savings\": \"₹3,850\",\n      \"joining_fee\": \"₹589\",\n      \"annual_fee\": \"Free (waived — ₹589 waived at ₹1,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"sbi-reliance-credit-card\"\n    },\n    {\n      \"rank\": 38,\n      \"card_name\": \"AMEX SMART EARN\",\n      \"bank_name\": \"American Express\",\n      \"net_annual_savings\": \"₹3,750\",\n      \"joining_fee\": \"₹584\",\n      \"annual_fee\": \"Free (waived — ₹584 waived at ₹40,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"american-express-smart-earn-credit-card\"\n    },\n    {\n      \"rank\": 39,\n      \"card_name\": \"Axis Bank ACE Credit Card\",\n      \"bank_name\": \"Axis\",\n      \"net_annual_savings\": \"₹3,600\",\n      \"joining_fee\": \"₹589\",\n      \"annual_fee\": \"Free (waived — ₹589 waived at ₹2,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"axis-ace-credit-card\"\n    },\n    {\n      \"rank\": 40,\n      \"card_name\": \"Fibe Axis Credit Card\",\n      \"bank_name\": \"Axis\",\n      \"net_annual_savings\": \"₹3,600\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"fibe-axis-credit-card\"\n    },\n    {\n      \"rank\": 41,\n      \"card_name\": \"Yes Bank MARQUÉE Credit Card\",\n      \"bank_name\": \"Yes Bank\",\n      \"net_annual_savings\": \"₹3,551\",\n      \"joining_fee\": \"₹11,799\",\n      \"annual_fee\": \"₹5,899\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"yes-bank-marquee-credit-card\"\n    },\n    {\n      \"rank\": 42,\n      \"card_name\": \"Kotak Zen Signature \",\n      \"bank_name\": \"Kotak\",\n      \"net_annual_savings\": \"₹3,500\",\n      \"joining_fee\": \"₹1,770\",\n      \"annual_fee\": \"Free (waived — ₹1,770 waived at ₹1,50,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"kotak-zen-signature-credit-card\"\n    },\n    {\n      \"rank\": 43,\n      \"card_name\": \"Axis SpiceJet Bank Voyage Credit Card\",\n      \"bank_name\": \"Axis\",\n      \"net_annual_savings\": \"₹3,416\",\n      \"joining_fee\": \"₹885\",\n      \"annual_fee\": \"₹885\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"spicejet-axis-bank-voyage-credit-card\"\n    },\n    {\n      \"rank\": 44,\n      \"card_name\": \"Axis SpiceJet Bank Voyage Black Credit Card\",\n      \"bank_name\": \"Axis\",\n      \"net_annual_savings\": \"₹3,240\",\n      \"joining_fee\": \"₹2,360\",\n      \"annual_fee\": \"₹2,360\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"spicejet-axis-bank-voyage-black-credit-card\"\n    },\n    {\n      \"rank\": 45,\n      \"card_name\": \"IDFC FIRST WOW! Black Credit Card\",\n      \"bank_name\": \"IDFC\",\n      \"net_annual_savings\": \"₹3,200\",\n      \"joining_fee\": \"₹885\",\n      \"annual_fee\": \"Free (waived — ₹885 waived at ₹1,50,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"idfc-first-wow-black-credit-card\"\n    },\n    {\n      \"rank\": 46,\n      \"card_name\": \"YES BANK ELITE Plus Credit Card\",\n      \"bank_name\": \"Yes Bank\",\n      \"net_annual_savings\": \"₹3,150\",\n      \"joining_fee\": \"₹1,179\",\n      \"annual_fee\": \"Free (waived — ₹1,179 waived at ₹2,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"yes-bank-elite-plus-credit-card\"\n    },\n    {\n      \"rank\": 47,\n      \"card_name\": \"SBI IndiGo Credit Card\",\n      \"bank_name\": \"SBI\",\n      \"net_annual_savings\": \"₹3,131\",\n      \"joining_fee\": \"₹1,769\",\n      \"annual_fee\": \"₹1,769\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"sbi-indigo-credit-card\"\n    },\n    {\n      \"rank\": 48,\n      \"card_name\": \"SBI Prime Credit Card\",\n      \"bank_name\": \"SBI\",\n      \"net_annual_savings\": \"₹2,861\",\n      \"joining_fee\": \"₹3,539\",\n      \"annual_fee\": \"₹3,539\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"sbi-prime-credit-card\"\n    },\n    {\n      \"rank\": 49,\n      \"card_name\": \"IndusInd Jio-bp Mobility+ Credit Card \",\n      \"bank_name\": \"IndusInd Bank\",\n      \"net_annual_savings\": \"₹2,650\",\n      \"joining_fee\": \"₹589\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"indusind-jio-bp-mobility-credit-card\"\n    },\n    {\n      \"rank\": 50,\n      \"card_name\": \"SBI Landmark Reward Credit Card\",\n      \"bank_name\": \"SBI\",\n      \"net_annual_savings\": \"₹2,611\",\n      \"joining_fee\": \"₹589\",\n      \"annual_fee\": \"₹589\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"sbi-landmark-reward-credit-card\"\n    }\n  ],\n  \"_format_hint\": \"Present as a ranked list. net_annual_savings is the primary metric — it accounts for rewards earned MINUS fees paid (annual fee is ₹0 when annual_fee_waived is true).\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "total_cards_analyzed": 204,
+      "recommendations": [
+        {
+          "rank": 1,
+          "card_name": "SBI CASHBACK ",
+          "bank_name": "SBI",
+          "net_annual_savings": "₹12,000",
+          "joining_fee": "₹1,179",
+          "annual_fee": "Free (waived — ₹1,179 waived at ₹2,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "sbi-cashback-credit-card"
+        },
+        {
+          "rank": 2,
+          "card_name": "BOB Cashback Credit Card",
+          "bank_name": "Bank of Baroda",
+          "net_annual_savings": "₹11,411",
+          "joining_fee": "₹589",
+          "annual_fee": "₹589",
+          "annual_fee_waived": false,
+          "card_alias": "bob-cashback-credit-card"
+        },
+        {
+          "rank": 3,
+          "card_name": "CRED IndusInd Bank Credit Card",
+          "bank_name": "IndusInd Bank",
+          "net_annual_savings": "₹11,411",
+          "joining_fee": "Free",
+          "annual_fee": "₹589",
+          "annual_fee_waived": false,
+          "card_alias": "cred-indusind-bank-credit-card"
+        },
+        {
+          "rank": 4,
+          "card_name": "PhonePe SBI Card SELECT BLACK ",
+          "bank_name": "SBI",
+          "net_annual_savings": "₹10,231",
+          "joining_fee": "₹1,769",
+          "annual_fee": "₹1,769",
+          "annual_fee_waived": false,
+          "card_alias": "phonepe-sbi-card-select-black"
+        },
+        {
+          "rank": 5,
+          "card_name": "AU Altura Plus Credit Card",
+          "bank_name": "AU Small Finance Bank",
+          "net_annual_savings": "₹10,200",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "card_alias": "au-altura-plus-credit-card"
+        },
+        {
+          "rank": 6,
+          "card_name": "Equitas Tiga Credit Card",
+          "bank_name": "Equitas Small Finance Bank",
+          "net_annual_savings": "₹9,660",
+          "joining_fee": "Free",
+          "annual_fee": "Free (waived — ₹590 waived at ₹1,20,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "equitas-tiga-credit-card"
+        },
+        {
+          "rank": 7,
+          "card_name": "HDFC MILLENIA",
+          "bank_name": "HDFC",
+          "net_annual_savings": "₹9,600",
+          "joining_fee": "₹1,180",
+          "annual_fee": "Free (waived — ₹1,180 waived at ₹1,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "hdfc-millenia-credit-card"
+        },
+        {
+          "rank": 8,
+          "card_name": "HDFC SWIGGY BLCK Credit Card",
+          "bank_name": "HDFC",
+          "net_annual_savings": "₹9,600",
+          "joining_fee": "₹1,180",
+          "annual_fee": "Free (waived — ₹1,180 waived at ₹2,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "swiggy-blck-hdfc-credit-card"
+        },
+        {
+          "rank": 9,
+          "card_name": "ICICI Amazon Pay Credit Card",
+          "bank_name": "ICICI Bank",
+          "net_annual_savings": "₹9,600",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "card_alias": "icici-amazon-pay-credit-card"
+        },
+        {
+          "rank": 10,
+          "card_name": "Swiggy Ornge HDFC Bank Credit card ",
+          "bank_name": "HDFC",
+          "net_annual_savings": "₹9,600",
+          "joining_fee": "₹590",
+          "annual_fee": "Free (waived — ₹590 waived at ₹1,50,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "swiggy-ornge-hdfc-credit-card"
+        },
+        {
+          "rank": 11,
+          "card_name": "American Express Membership Rewards ",
+          "bank_name": "American Express",
+          "net_annual_savings": "₹9,504",
+          "joining_fee": "₹1,180",
+          "annual_fee": "Free (waived — ₹5,310 waived at ₹1,50,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "american-express-mr-credit-card"
+        },
+        {
+          "rank": 12,
+          "card_name": "HSBC Live+ Credit Card",
+          "bank_name": "HSBC Bank",
+          "net_annual_savings": "₹8,700",
+          "joining_fee": "₹1,179",
+          "annual_fee": "Free (waived — ₹1,179 waived at ₹2,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "hsbc-live-plus-credit-card"
+        },
+        {
+          "rank": 13,
+          "card_name": "Air India SBI Platinum Credit Card ",
+          "bank_name": "SBI",
+          "net_annual_savings": "₹8,031",
+          "joining_fee": "₹1,769",
+          "annual_fee": "₹1,769",
+          "annual_fee_waived": false,
+          "card_alias": "air-india-sbi-platinum-credit-card"
+        },
+        {
+          "rank": 14,
+          "card_name": "HDFC SHOPPERS STOP",
+          "bank_name": "HDFC",
+          "net_annual_savings": "₹7,247",
+          "joining_fee": "₹353",
+          "annual_fee": "₹353",
+          "annual_fee_waived": false,
+          "card_alias": "hdfc-shoppers-stop-credit-card"
+        },
+        {
+          "rank": 15,
+          "card_name": "IDFC FIRST Hello Cashback Credit Card",
+          "bank_name": "IDFC",
+          "net_annual_savings": "₹7,200",
+          "joining_fee": "Free",
+          "annual_fee": "Free (waived — ₹1,180 waived at ₹2,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "idfc-first-hello-cashback-credit-card"
+        },
+        {
+          "rank": 16,
+          "card_name": "Kotak Solitaire Credit Card ",
+          "bank_name": "Kotak",
+          "net_annual_savings": "₹7,200",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "card_alias": "kotak-solitaire-credit-card"
+        },
+        {
+          "rank": 17,
+          "card_name": "HDFC Moneyback Credit Card",
+          "bank_name": "HDFC",
+          "net_annual_savings": "₹6,650",
+          "joining_fee": "₹590",
+          "annual_fee": "Free (waived — ₹590 waived at ₹50,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "hdfc-moneyback-credit-card"
+        },
+        {
+          "rank": 18,
+          "card_name": "LIC Axis Bank Signature Credit Card",
+          "bank_name": "Axis",
+          "net_annual_savings": "₹6,600",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "card_alias": "lic-axis-bank-signature-credit-card"
+        },
+        {
+          "rank": 19,
+          "card_name": "BOB Eterna Credit Card",
+          "bank_name": "Bank of Baroda",
+          "net_annual_savings": "₹6,051",
+          "joining_fee": "Free",
+          "annual_fee": "₹2,949",
+          "annual_fee_waived": false,
+          "card_alias": "bob-eterna-credit-card"
+        },
+        {
+          "rank": 20,
+          "card_name": "HDFC MoneyBack Plus Credit Card",
+          "bank_name": "HDFC",
+          "net_annual_savings": "₹6,000",
+          "joining_fee": "₹590",
+          "annual_fee": "Free (waived — ₹590 waived at ₹50,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "hdfc-moneyback-plus-credit-card"
+        },
+        {
+          "rank": 21,
+          "card_name": "Axis Supermoney Rupay Card",
+          "bank_name": "Axis",
+          "net_annual_savings": "₹6,000",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "card_alias": "supermoney-rupay-credit-card"
+        },
+        {
+          "rank": 22,
+          "card_name": "PhonePe HDFC Bank Ultimo Credit Card",
+          "bank_name": "HDFC",
+          "net_annual_savings": "₹6,000",
+          "joining_fee": "₹1,179",
+          "annual_fee": "Free (waived — ₹1,179 waived at ₹2,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "hdfc-phonepe-ultimo-credit-card"
+        },
+        {
+          "rank": 23,
+          "card_name": "ixigo AU credot Card",
+          "bank_name": "AU Small Finance Bank",
+          "net_annual_savings": "₹6,000",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "card_alias": "ixigo-au-credit-card"
+        },
+        {
+          "rank": 24,
+          "card_name": "SBI SIMPLY CLICK",
+          "bank_name": "SBI",
+          "net_annual_savings": "₹5,575",
+          "joining_fee": "₹589",
+          "annual_fee": "Free (waived — ₹589 waived at ₹1,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "sbi-simply-click-credit-card"
+        },
+        {
+          "rank": 25,
+          "card_name": "Yes Bank Paisabazaar PaisaSave Credit Card",
+          "bank_name": "Yes Bank",
+          "net_annual_savings": "₹5,400",
+          "joining_fee": "Free",
+          "annual_fee": "Free (waived — ₹589 waived at ₹1,20,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "yes-bank-paisabazaar-paisasave-credit-card"
+        },
+        {
+          "rank": 26,
+          "card_name": "BOB Snapdeal Credit Card",
+          "bank_name": "Bank of Baroda",
+          "net_annual_savings": "₹4,806",
+          "joining_fee": "₹294",
+          "annual_fee": "₹294",
+          "annual_fee_waived": false,
+          "card_alias": "bob-snapdeal-credit-card"
+        },
+        {
+          "rank": 27,
+          "card_name": "HSBC RuPay Cashback Credit Card",
+          "bank_name": "HSBC Bank",
+          "net_annual_savings": "₹4,800",
+          "joining_fee": "₹589",
+          "annual_fee": "Free (waived — ₹589 waived at ₹2,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "hsbc-rupay-cashback-credit-card"
+        },
+        {
+          "rank": 28,
+          "card_name": "AU Xcite ACE Credit Card",
+          "bank_name": "AU Small Finance Bank",
+          "net_annual_savings": "₹4,800",
+          "joining_fee": "₹884",
+          "annual_fee": "Free (waived — ₹884 waived at ₹2,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "au-xcite-ace-credit-card"
+        },
+        {
+          "rank": 29,
+          "card_name": "AMEX GOLD CREDIT CARD",
+          "bank_name": "American Express",
+          "net_annual_savings": "₹4,434",
+          "joining_fee": "₹1,180",
+          "annual_fee": "₹5,310",
+          "annual_fee_waived": false,
+          "card_alias": "american-express-gold-card"
+        },
+        {
+          "rank": 30,
+          "card_name": "Paytm HDFC Bank Select Credit Card ",
+          "bank_name": "HDFC",
+          "net_annual_savings": "₹4,400",
+          "joining_fee": "₹1,180",
+          "annual_fee": "Free (waived — ₹1,180 waived at ₹1,50,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "paytm-hdfc-bank-select-credit-card"
+        },
+        {
+          "rank": 31,
+          "card_name": "YES BANK RESERV Credit Card",
+          "bank_name": "Yes Bank",
+          "net_annual_savings": "₹4,251",
+          "joining_fee": "₹2,949",
+          "annual_fee": "₹2,949",
+          "annual_fee_waived": false,
+          "card_alias": "yes-bank-reserv-credit-card"
+        },
+        {
+          "rank": 32,
+          "card_name": "RBL Super Binge Credit Card",
+          "bank_name": "RBL Bank",
+          "net_annual_savings": "₹4,200",
+          "joining_fee": "₹1,179",
+          "annual_fee": "Free (waived — ₹1,179 waived at ₹1,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "rbl-super-binge-credit-card"
+        },
+        {
+          "rank": 33,
+          "card_name": "StanC SMART",
+          "bank_name": "Standard Chartered Bank",
+          "net_annual_savings": "₹4,200",
+          "joining_fee": "Free",
+          "annual_fee": "Free (waived — ₹589 waived at ₹1,20,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "stanc-smart-credit-card"
+        },
+        {
+          "rank": 34,
+          "card_name": "AU Xcite Ultra Credit Card",
+          "bank_name": "AU Small Finance Bank",
+          "net_annual_savings": "₹4,200",
+          "joining_fee": "₹884",
+          "annual_fee": "Free (waived — ₹884 waived at ₹2,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "xcite-ultra-credit-card"
+        },
+        {
+          "rank": 35,
+          "card_name": "RBL Bank Cookies Credit Card",
+          "bank_name": "RBL Bank",
+          "net_annual_savings": "₹3,920",
+          "joining_fee": "₹118",
+          "annual_fee": "Free (waived — ₹1,416 waived at ₹5,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "rbl-cookies-credit-card"
+        },
+        {
+          "rank": 36,
+          "card_name": "SBI Card PULSE ",
+          "bank_name": "SBI",
+          "net_annual_savings": "₹3,899",
+          "joining_fee": "₹1,769",
+          "annual_fee": "Free (waived — ₹1,769 waived at ₹2,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "sbi-card-pulse-credit-card"
+        },
+        {
+          "rank": 37,
+          "card_name": "SBI Reliance Credit Card ",
+          "bank_name": "SBI",
+          "net_annual_savings": "₹3,850",
+          "joining_fee": "₹589",
+          "annual_fee": "Free (waived — ₹589 waived at ₹1,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "sbi-reliance-credit-card"
+        },
+        {
+          "rank": 38,
+          "card_name": "AMEX SMART EARN",
+          "bank_name": "American Express",
+          "net_annual_savings": "₹3,750",
+          "joining_fee": "₹584",
+          "annual_fee": "Free (waived — ₹584 waived at ₹40,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "american-express-smart-earn-credit-card"
+        },
+        {
+          "rank": 39,
+          "card_name": "Axis Bank ACE Credit Card",
+          "bank_name": "Axis",
+          "net_annual_savings": "₹3,600",
+          "joining_fee": "₹589",
+          "annual_fee": "Free (waived — ₹589 waived at ₹2,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "axis-ace-credit-card"
+        },
+        {
+          "rank": 40,
+          "card_name": "Fibe Axis Credit Card",
+          "bank_name": "Axis",
+          "net_annual_savings": "₹3,600",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "card_alias": "fibe-axis-credit-card"
+        },
+        {
+          "rank": 41,
+          "card_name": "Yes Bank MARQUÉE Credit Card",
+          "bank_name": "Yes Bank",
+          "net_annual_savings": "₹3,551",
+          "joining_fee": "₹11,799",
+          "annual_fee": "₹5,899",
+          "annual_fee_waived": false,
+          "card_alias": "yes-bank-marquee-credit-card"
+        },
+        {
+          "rank": 42,
+          "card_name": "Kotak Zen Signature ",
+          "bank_name": "Kotak",
+          "net_annual_savings": "₹3,500",
+          "joining_fee": "₹1,770",
+          "annual_fee": "Free (waived — ₹1,770 waived at ₹1,50,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "kotak-zen-signature-credit-card"
+        },
+        {
+          "rank": 43,
+          "card_name": "Axis SpiceJet Bank Voyage Credit Card",
+          "bank_name": "Axis",
+          "net_annual_savings": "₹3,416",
+          "joining_fee": "₹885",
+          "annual_fee": "₹885",
+          "annual_fee_waived": false,
+          "card_alias": "spicejet-axis-bank-voyage-credit-card"
+        },
+        {
+          "rank": 44,
+          "card_name": "Axis SpiceJet Bank Voyage Black Credit Card",
+          "bank_name": "Axis",
+          "net_annual_savings": "₹3,240",
+          "joining_fee": "₹2,360",
+          "annual_fee": "₹2,360",
+          "annual_fee_waived": false,
+          "card_alias": "spicejet-axis-bank-voyage-black-credit-card"
+        },
+        {
+          "rank": 45,
+          "card_name": "IDFC FIRST WOW! Black Credit Card",
+          "bank_name": "IDFC",
+          "net_annual_savings": "₹3,200",
+          "joining_fee": "₹885",
+          "annual_fee": "Free (waived — ₹885 waived at ₹1,50,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "idfc-first-wow-black-credit-card"
+        },
+        {
+          "rank": 46,
+          "card_name": "YES BANK ELITE Plus Credit Card",
+          "bank_name": "Yes Bank",
+          "net_annual_savings": "₹3,150",
+          "joining_fee": "₹1,179",
+          "annual_fee": "Free (waived — ₹1,179 waived at ₹2,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "yes-bank-elite-plus-credit-card"
+        },
+        {
+          "rank": 47,
+          "card_name": "SBI IndiGo Credit Card",
+          "bank_name": "SBI",
+          "net_annual_savings": "₹3,131",
+          "joining_fee": "₹1,769",
+          "annual_fee": "₹1,769",
+          "annual_fee_waived": false,
+          "card_alias": "sbi-indigo-credit-card"
+        },
+        {
+          "rank": 48,
+          "card_name": "SBI Prime Credit Card",
+          "bank_name": "SBI",
+          "net_annual_savings": "₹2,861",
+          "joining_fee": "₹3,539",
+          "annual_fee": "₹3,539",
+          "annual_fee_waived": false,
+          "card_alias": "sbi-prime-credit-card"
+        },
+        {
+          "rank": 49,
+          "card_name": "IndusInd Jio-bp Mobility+ Credit Card ",
+          "bank_name": "IndusInd Bank",
+          "net_annual_savings": "₹2,650",
+          "joining_fee": "₹589",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "card_alias": "indusind-jio-bp-mobility-credit-card"
+        },
+        {
+          "rank": 50,
+          "card_name": "SBI Landmark Reward Credit Card",
+          "bank_name": "SBI",
+          "net_annual_savings": "₹2,611",
+          "joining_fee": "₹589",
+          "annual_fee": "₹589",
+          "annual_fee_waived": false,
+          "card_alias": "sbi-landmark-reward-credit-card"
+        }
+      ],
+      "_format_hint": "Present as a ranked list. net_annual_savings is the primary metric — it accounts for rewards earned MINUS fees paid (annual fee is ₹0 when annual_fee_waived is true)."
+    }
+  ]
+}

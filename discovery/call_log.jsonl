@@ -73,3 +73,13 @@
 {"id": "details_ixigo_au", "group": "followup", "timestamp": "2026-10-10T18:37:11.639240+00:00", "latency_ms": 116, "is_error": false, "client_error": null}
 {"id": "details_bob_cashback", "group": "followup", "timestamp": "2026-10-10T18:37:11.757892+00:00", "latency_ms": 117, "is_error": false, "client_error": null}
 {"id": "details_amex_gold", "group": "followup", "timestamp": "2026-10-10T18:37:11.880083+00:00", "latency_ms": 120, "is_error": false, "client_error": null}
+{"id": "list_rupay", "group": "p2", "timestamp": "2026-10-10T21:53:10.525021+00:00", "latency_ms": 945, "is_error": false, "client_error": null}
+{"id": "list_bank_sbi", "group": "p2", "timestamp": "2026-10-10T21:53:10.956127+00:00", "latency_ms": 429, "is_error": false, "client_error": null}
+{"id": "list_credit_650", "group": "p2", "timestamp": "2026-10-10T21:53:11.378130+00:00", "latency_ms": 419, "is_error": false, "client_error": null}
+{"id": "list_fee_500_1000", "group": "p2", "timestamp": "2026-10-10T21:53:11.713063+00:00", "latency_ms": 333, "is_error": false, "client_error": null}
+{"id": "compare_bad_plus_good", "group": "p2", "timestamp": "2026-10-10T21:53:11.911195+00:00", "latency_ms": 196, "is_error": false, "client_error": null}
+{"id": "recommend_amz15_dining5_top50", "group": "p2", "timestamp": "2026-10-10T21:53:15.809128+00:00", "latency_ms": 3896, "is_error": false, "client_error": null}
+{"id": "elig_123456_self_6L", "group": "p2", "timestamp": "2026-10-10T21:53:16.176544+00:00", "latency_ms": 365, "is_error": false, "client_error": null}
+{"id": "elig_delhi_self_6L", "group": "p2", "timestamp": "2026-10-10T21:53:16.791129+00:00", "latency_ms": 613, "is_error": false, "client_error": null}
+{"id": "elig_delhi_income_0", "group": "p2", "timestamp": "2026-10-10T21:53:17.138860+00:00", "latency_ms": 345, "is_error": false, "client_error": null}
+{"id": "details_idfc_wow_black", "group": "p2", "timestamp": "2026-10-10T21:53:17.262096+00:00", "latency_ms": 121, "is_error": false, "client_error": null}

@@ -1,0 +1,256 @@
+{
+  "id": "s01_recommend_amz15_food2",
+  "group": "p2",
+  "purpose": "fee-waiver ground truth (annual_fee_waived) for ₹15k Amazon + ₹2k food delivery; captured by the chatbot during the smoke run",
+  "source": "git show 5f00e79:reports/20261010T211830Z_off/results.jsonl (question S01, 2026-10-10T21:18:29+00:00, server 1.6.1)",
+  "request": {
+    "tool": "recommend_cards",
+    "arguments": {
+      "amazon_spends": 15000,
+      "online_food_ordering": 2000,
+      "response_format": "full"
+    }
+  },
+  "latency_ms": 4319,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total_cards_analyzed\": 204,\n  \"recommendations\": [\n    {\n      \"rank\": 1,\n      \"card_name\": \"SBI CASHBACK \",\n      \"bank_name\": \"SBI\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹10,200\",\n      \"annual_rewards_value\": \"₹10,200\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹1,179 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹2,00,000/yr spend; ₹1,179 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹750\"\n        },\n        {\n          \"category\": \"online_food_ordering\",\n          \"annual_value\": \"₹100\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"sbi-cashback-credit-card\",\n      \"rating\": 4,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122010_AGB_Mockup-24.webp1736921642945\"\n    },\n    {\n      \"rank\": 2,\n      \"card_name\": \"BOB Cashback Credit Card\",\n      \"bank_name\": \"Bank of Baroda\",\n      \"card_type\": \"Mastercard\",\n      \"net_annual_savings\": \"₹9,611\",\n      \"annual_rewards_value\": \"₹10,200\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹589 (incl. GST)\",\n      \"annual_fee\": \"₹589 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹750\"\n        },\n        {\n          \"category\": \"online_food_ordering\",\n          \"annual_value\": \"₹100\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"bob-cashback-credit-card\",\n      \"rating\": 4.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130247_BankKaro_20260507_124725695_Mockup_1.png\"\n    },\n    {\n      \"rank\": 3,\n      \"card_name\": \"CRED IndusInd Bank Credit Card\",\n      \"bank_name\": \"IndusInd Bank\",\n      \"card_type\": \"RuPay\",\n      \"net_annual_savings\": \"₹9,611\",\n      \"annual_rewards_value\": \"₹10,200\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹589 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹750\"\n        },\n        {\n          \"category\": \"online_food_ordering\",\n          \"annual_value\": \"₹100\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"cred-indusind-bank-credit-card\",\n      \"rating\": 4.2,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260625_173501453_Mockup_45.png\"\n    },\n    {\n      \"rank\": 4,\n      \"card_name\": \"HDFC MILLENIA\",\n      \"bank_name\": \"HDFC\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹9,240\",\n      \"annual_rewards_value\": \"₹9,240\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹1,180 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹1,00,000/yr spend; ₹1,180 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [\n        {\n          \"id\": 34,\n          \"brands\": [],\n          \"card_id\": 18,\n          \"rp_bonus\": \"1000\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"100\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"1\",\n          \"welcome_benefit_tooltip\": null,\n          \"cash_value\": 1000\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹750\"\n        },\n        {\n          \"category\": \"online_food_ordering\",\n          \"annual_value\": \"₹20\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"hdfc-millenia-credit-card\",\n      \"rating\": 3,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122000_AGB_Mockup-14.webp1737033976680\"\n    },\n    {\n      \"rank\": 5,\n      \"card_name\": \"HDFC SWIGGY BLCK Credit Card\",\n      \"bank_name\": \"HDFC\",\n      \"card_type\": \"Mastercard\",\n      \"net_annual_savings\": \"₹9,240\",\n      \"annual_rewards_value\": \"₹9,240\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹1,180 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹2,00,000/yr spend; ₹1,180 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [\n        {\n          \"id\": 11,\n          \"brands\": [\n            {\n              \"id\": null,\n              \"name\": null\n            }\n          ],\n          \"card_id\": 19,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"37\",\n          \"minimum_spend\": \"0\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 0\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹750\"\n        },\n        {\n          \"category\": \"online_food_ordering\",\n          \"annual_value\": \"₹20\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"swiggy-blck-hdfc-credit-card\",\n      \"rating\": 4.7,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122002_BankKaro_20260316_12502238_RBL_1.png\"\n    }\n  ],\n  \"_format_hint\": \"net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from.\"\n}"
+      }
+    ],
+    "isError": false
+  },
+  "parsed_content": [
+    {
+      "total_cards_analyzed": 204,
+      "recommendations": [
+        {
+          "rank": 1,
+          "card_name": "SBI CASHBACK ",
+          "bank_name": "SBI",
+          "card_type": "VISA",
+          "net_annual_savings": "₹10,200",
+          "annual_rewards_value": "₹10,200",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹1,179 (incl. GST)",
+          "annual_fee": "Free (waived at ₹2,00,000/yr spend; ₹1,179 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹750"
+            },
+            {
+              "category": "online_food_ordering",
+              "annual_value": "₹100"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "sbi-cashback-credit-card",
+          "rating": 4,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122010_AGB_Mockup-24.webp1736921642945"
+        },
+        {
+          "rank": 2,
+          "card_name": "BOB Cashback Credit Card",
+          "bank_name": "Bank of Baroda",
+          "card_type": "Mastercard",
+          "net_annual_savings": "₹9,611",
+          "annual_rewards_value": "₹10,200",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹589 (incl. GST)",
+          "annual_fee": "₹589 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹750"
+            },
+            {
+              "category": "online_food_ordering",
+              "annual_value": "₹100"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "bob-cashback-credit-card",
+          "rating": 4.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130247_BankKaro_20260507_124725695_Mockup_1.png"
+        },
+        {
+          "rank": 3,
+          "card_name": "CRED IndusInd Bank Credit Card",
+          "bank_name": "IndusInd Bank",
+          "card_type": "RuPay",
+          "net_annual_savings": "₹9,611",
+          "annual_rewards_value": "₹10,200",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "₹589 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹750"
+            },
+            {
+              "category": "online_food_ordering",
+              "annual_value": "₹100"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "cred-indusind-bank-credit-card",
+          "rating": 4.2,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260625_173501453_Mockup_45.png"
+        },
+        {
+          "rank": 4,
+          "card_name": "HDFC MILLENIA",
+          "bank_name": "HDFC",
+          "card_type": "VISA",
+          "net_annual_savings": "₹9,240",
+          "annual_rewards_value": "₹9,240",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹1,180 (incl. GST)",
+          "annual_fee": "Free (waived at ₹1,00,000/yr spend; ₹1,180 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [
+            {
+              "id": 34,
+              "brands": [],
+              "card_id": 18,
+              "rp_bonus": "1000",
+              "maximum_days": "30",
+              "minimum_spend": "100",
+              "voucher_bonus": "",
+              "cash_conversion": "1",
+              "welcome_benefit_tooltip": null,
+              "cash_value": 1000
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹750"
+            },
+            {
+              "category": "online_food_ordering",
+              "annual_value": "₹20"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "hdfc-millenia-credit-card",
+          "rating": 3,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122000_AGB_Mockup-14.webp1737033976680"
+        },
+        {
+          "rank": 5,
+          "card_name": "HDFC SWIGGY BLCK Credit Card",
+          "bank_name": "HDFC",
+          "card_type": "Mastercard",
+          "net_annual_savings": "₹9,240",
+          "annual_rewards_value": "₹9,240",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹1,180 (incl. GST)",
+          "annual_fee": "Free (waived at ₹2,00,000/yr spend; ₹1,180 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [
+            {
+              "id": 11,
+              "brands": [
+                {
+                  "id": null,
+                  "name": null
+                }
+              ],
+              "card_id": 19,
+              "rp_bonus": "",
+              "maximum_days": "37",
+              "minimum_spend": "0",
+              "voucher_bonus": "",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 0
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹750"
+            },
+            {
+              "category": "online_food_ordering",
+              "annual_value": "₹20"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "swiggy-blck-hdfc-credit-card",
+          "rating": 4.7,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122002_BankKaro_20260316_12502238_RBL_1.png"
+        }
+      ],
+      "_format_hint": "net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from."
+    }
+  ],
+  "model_answer_observed": "**Best card for you: SBI Cashback Credit Card**\n\n- **Estimated net savings: ₹10,200/year**, based on your ₹15,000/month on Amazon and ₹2,000/month on Swiggy food delivery.\n- **Fees:** Joining ₹1,179 (incl. GST). Annual fee is waived if you spend ₹2,00,000 a year.\n\nI assumed your Swiggy spend is food delivery, not Instamart groceries. The category breakdown the tool returned doesn't fully add up to the ₹10,200 total, so check the reward rates on the card page before you apply.\n\n**Runners-up:**\n- **BOB Cashback:** about ₹9,611 net savings, ₹589 annual fee.\n- **Swiggy BLCK HDFC:** about ₹9,240 net savings, ₹1,180 joining fee, waived at ₹2,00,000 spend. It's rated highest (4.7) and suits your Swiggy spend.\n\nWould you like me to compare the SBI Cashback with the Swiggy BLCK?"
+}

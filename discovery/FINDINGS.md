@@ -64,6 +64,9 @@ Raw evidence lives in `raw/<group>__<id>.json`. Each file holds the exact reques
 | Ranking ignores eligibility; recommendations don't know the user's income | VERIFIED (no income input exists) | tool_catalog.md |
 | **Caps are applied** at ₹50k/month Amazon: SBI Cashback ₹2,000/month, Swiggy Ornge ₹1,500, BOB ₹1,500, Millenia ₹1,000. These match each card's own data | VERIFIED | followup__amazon_50k_top25 vs cards__details_* |
 | Assumes Amazon **Prime** (5%) for ICICI Amazon Pay; the card data says non-Prime earns 3%. No input for Prime status | VERIFIED | recommend__amazon_15k vs cards__details_icici_amazon_pay |
+| **Per-transaction fees are ignored:** for ₹30k/month rent, #1 IDFC FIRST WOW! Black shows net ₹4,800 = rewards, but its `fee_schedule.rent_payment_fee` is 1%. Rent isn't in its exclusions | VERIFIED | recommend__rent_30k vs p2__details_idfc_wow_black |
+| Fee waiver flag is correct at the threshold: ₹15k Amazon + ₹2k food (₹2.04L/yr) → SBI Cashback `annual_fee_waived: true` (waiver ₹2L) | VERIFIED | p2__s01_recommend_amz15_food2 |
+| **3-way tie at the top for ₹15k Amazon** (Millenia, ICICI Amazon Pay, Swiggy Ornge, all ₹9,000). Millenia ranks #1 despite a ₹1,180 joining fee vs ICICI's ₹0, a direct effect of the joining fee being excluded (C5) | VERIFIED | recommend__amazon_15k |
 
 ## 6. Lounge valuation
 
@@ -101,13 +104,17 @@ Raw evidence lives in `raw/<group>__<id>.json`. Each file holds the exact reques
 | `existing_customer_only: true` on ICICI Amazon Pay, Millenia, Swiggy Ornge, SBI Cashback and Axis Flipkart, often alongside `new_to_credit: true` (contradictory) | VERIFIED (internal contradiction); real-world truth UNKNOWN | cards__details_* |
 | The whatsapp details facade has garbled `top_benefits` (description fragments without titles, repeated 3×) | VERIFIED | cards__details_whatsapp_icici_amazon |
 | Core `compare_cards` returns two full detail blobs with no numbers and no winner; `whatsapp_compare_cards` with spend gives a winner and values matching `recommend_cards` | VERIFIED | consistency__compare_*, consistency__wa_compare_* |
+| **One bad alias fails the whole comparison:** `["axis-magnus-credit-card" (the description's own example), "sbi-cashback-credit-card"]` returns `{"error": "Could not fetch enough cards for comparison. Check the aliases provided."}` with no `isError` and without naming the bad alias | VERIFIED | p2__compare_bad_plus_good |
+| Spend-aware comparison of an arbitrary card isn't possible with the 6 core tools: core compare has no spend input, and Axis Magnus isn't in `recommend_cards` top 50 for ₹15k Amazon + ₹5k dining | VERIFIED | p2__recommend_amz15_dining5_top50 |
 
 ## 10. `list_cards` filters
 
 | Observation | Tag | Evidence |
 |---|---|---|
 | **`free_cards: "true"` and `annual_fees: "free"` are ignored:** 17 of 20 results have a paid annual fee, in the same order as the unfiltered list | VERIFIED | cards__list_free, cards__list_fee_free, cards__list_default |
-| `category` does filter (the travel list differs from the default) | VERIFIED | cards__list_travel |
+| **Every other filter is ignored too.** `card_networks: ["RuPay"]` returns VISA/Mastercard rows. `bank_ids: [3]` (SBI's id from get_card_details) returns HDFC/Axis/HSBC rows. `credit_score: "650"` and `annual_fees: "500-1000"` (which includes a ₹2,950 card) return the **identical default list and order**, with `total_available` 258 each time | VERIFIED | p2__list_rupay, p2__list_bank_sbi, p2__list_credit_650, p2__list_fee_500_1000 vs cards__list_default |
+| `category` does filter (the travel list differs from the default). It's the only filter seen working | VERIFIED | cards__list_travel |
+| The network is only in `card_type` (e.g. "VISA,RuPay"); `card_network` is null and `bank` is empty, so the bot can't filter rows itself by network or bank reliably | VERIFIED | p2__list_rupay |
 
 ## 11. Eligibility (`check_eligibility`)
 
@@ -118,6 +125,9 @@ Raw evidence lives in `raw/<group>__<id>.json`. Each file holds the exact reques
 | **HDFC Regalia Gold shows as eligible at ₹3L and ₹6L**, though its own data says `income_salaried_lpa: 18` | VERIFIED (conflict) | eligibility__mumbai_6L_salaried vs cards__details_regalia_gold_a |
 | Employment filter works (the self-employed list drops salaried-only cards, e.g. HSBC Cashback) | VERIFIED | eligibility__mumbai_6L_self |
 | Invalid pincode `000000` → count 0, no error. Income `"50k"` → profile shows `"₹NaN"`, count 0, no error | VERIFIED | followup__elig_invalid_pincode, followup__elig_income_50k_string |
+| A placeholder-style pincode users really type, `123456`, also gives **0 cards with no error**. A 5-digit pincode is rejected by the schema (`minLength: 6`), so the silent zero only affects 6-digit codes | VERIFIED | p2__elig_123456_self_6L; tools.json |
+| Self-employed ₹6L in Delhi → 231 eligible, 15 rows, and **Regalia Gold listed again** (its data says self-employed 18 LPA) | VERIFIED | p2__elig_delhi_self_6L |
+| Income `"0"` → 3 cards (SBM Kredit.Pe, SBM ZET, IDFC FIRST WOW). Whether they're secured cards isn't verified. There's no age or student input | VERIFIED (count); ASSUMPTION (secured) | p2__elig_delhi_income_0 |
 | "In-hand" vs gross income meaning, and whether CIBIL/age are checked | UNKNOWN (no input for either) | tool_catalog.md |
 
 ## 12. Server guidance that clashes with the assignment's guardrails
@@ -140,11 +150,14 @@ Raw evidence lives in `raw/<group>__<id>.json`. Each file holds the exact reques
 | C5 | Joining fee excluded, contradicting the description | MCP (description) | Medium |
 | C6 | `annual_value` field is monthly | MCP (labelling) | Medium (LLM will misquote) |
 | C7 | Description example aliases fail; `error` returned without `isError` | MCP (description) | Medium |
-| C8 | `free_cards` / `annual_fees` filters ignored | MCP | Medium |
+| C8 | `list_cards` ignores every filter except `category` (free, fee range, network, bank, credit score) | MCP | **High** (browse answers are wrong whenever a filter is the point) |
 | C9 | Silent acceptance of negative, unknown and garbage input (NaN) | MCP (validation) | Medium |
 | C10 | Prime assumption undisclosed (ICICI Amazon Pay 5% vs 3%) | MCP / Model must disclose | Medium |
 | C11 | Null structured milestones, empty `bank`, `existing_customer_only` contradictions | Data | Low–Med |
 | C12 | Playbook instructs the model to produce un-returned ₹ figures | MCP (guidance) → Model guardrail | Medium |
+| C13 | Rent rewards credited, but the card's own rent payment fee is ignored. IDFC FIRST WOW! Black is #1 for ₹30k/month rent at ₹4,800 net = rewards, while its `fee_schedule.rent_payment_fee` is 1% | MCP (calc ignores fee_schedule) | Medium–High |
+| C14 | One bad alias fails the whole `compare_cards` call with a generic error and no `isError`; core compare can't do spend-aware comparison | MCP | Medium |
+| C15 | Playbook "MINIMUM REQUIRED: at least 2 spending categories before calling recommend_cards" blocks single-category questions; playbook has no approval or tax guidance | MCP (guidance) → Model | Medium |
 
 ---
 

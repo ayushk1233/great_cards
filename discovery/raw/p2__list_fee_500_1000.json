@@ -1,0 +1,105 @@
+{
+  "id": "list_fee_500_1000",
+  "group": "p2",
+  "purpose": "fee range filter: are all annual fees within 500-1000?",
+  "timestamp": "2026-10-10T21:53:11.713063+00:00",
+  "request": {
+    "tool": "list_cards",
+    "arguments": {
+      "annual_fees": "500-1000",
+      "limit": 10,
+      "response_format": "brief"
+    }
+  },
+  "latency_ms": 333,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total_available\": 258,\n  \"showing\": 10,\n  \"cards\": [\n    {\n      \"name\": \"SBI Cashback Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,179 (₹999 + GST)\",\n      \"annual_fee\": \"₹1,179 (₹999 + GST)\",\n      \"card_alias\": \"sbi-cashback-credit-card\"\n    },\n    {\n      \"name\": \"Axis Flipkart Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"axis-flipkart-credit-card\"\n    },\n    {\n      \"name\": \"HSBC Cashback Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹1,179 (₹999 + GST)\",\n      \"card_alias\": \"hsbc-cashback-credit-card\"\n    },\n    {\n      \"name\": \"Kiwi Klick Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"kiwi-klick-credit-card\"\n    },\n    {\n      \"name\": \"SBI Simply Click Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"sbi-simply-click-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Regalia Gold Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹2,950 (₹2,500 + GST)\",\n      \"annual_fee\": \"₹2,950 (₹2,500 + GST)\",\n      \"card_alias\": \"hdfc-regalia-gold\"\n    },\n    {\n      \"name\": \"Flipkart SBI Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"flipkart-sbi-credit-card\"\n    },\n    {\n      \"name\": \"Swiggy BLCK HDFC Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"swiggy-blck-hdfc-credit-card\"\n    },\n    {\n      \"name\": \"IDFC FIRST Millennia Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"idfc-first-millennia-credit-card\"\n    },\n    {\n      \"name\": \"Tata Neu Infinity HDFC Bank Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"annual_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"card_alias\": \"tata-neu-hdfc-bank-credit-card\"\n    }\n  ]\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "total_available": 258,
+      "showing": 10,
+      "cards": [
+        {
+          "name": "SBI Cashback Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,179 (₹999 + GST)",
+          "annual_fee": "₹1,179 (₹999 + GST)",
+          "card_alias": "sbi-cashback-credit-card"
+        },
+        {
+          "name": "Axis Flipkart Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "axis-flipkart-credit-card"
+        },
+        {
+          "name": "HSBC Cashback Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹1,179 (₹999 + GST)",
+          "card_alias": "hsbc-cashback-credit-card"
+        },
+        {
+          "name": "Kiwi Klick Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "kiwi-klick-credit-card"
+        },
+        {
+          "name": "SBI Simply Click Credit Card",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "sbi-simply-click-credit-card"
+        },
+        {
+          "name": "HDFC Regalia Gold Credit Card",
+          "bank": "",
+          "joining_fee": "₹2,950 (₹2,500 + GST)",
+          "annual_fee": "₹2,950 (₹2,500 + GST)",
+          "card_alias": "hdfc-regalia-gold"
+        },
+        {
+          "name": "Flipkart SBI Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "flipkart-sbi-credit-card"
+        },
+        {
+          "name": "Swiggy BLCK HDFC Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "swiggy-blck-hdfc-credit-card"
+        },
+        {
+          "name": "IDFC FIRST Millennia Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "idfc-first-millennia-credit-card"
+        },
+        {
+          "name": "Tata Neu Infinity HDFC Bank Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,769 (₹1,499 + GST)",
+          "annual_fee": "₹1,769 (₹1,499 + GST)",
+          "card_alias": "tata-neu-hdfc-bank-credit-card"
+        }
+      ]
+    }
+  ]
+}

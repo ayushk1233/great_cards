@@ -1,0 +1,38 @@
+{
+  "id": "elig_123456_self_6L",
+  "group": "p2",
+  "purpose": "placeholder-style 6-digit pincode: silent 0 or error?",
+  "timestamp": "2026-10-10T21:53:16.176544+00:00",
+  "request": {
+    "tool": "check_eligibility",
+    "arguments": {
+      "pincode": "123456",
+      "annual_income": "600000",
+      "employment_status": "self_employed"
+    }
+  },
+  "latency_ms": 365,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"eligible_cards_count\": 0,\n  \"profile\": {\n    \"pincode\": \"123456\",\n    \"annual_income\": \"₹6,00,000\",\n    \"employment\": \"self_employed\"\n  },\n  \"eligible_cards\": []\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "eligible_cards_count": 0,
+      "profile": {
+        "pincode": "123456",
+        "annual_income": "₹6,00,000",
+        "employment": "self_employed"
+      },
+      "eligible_cards": []
+    }
+  ]
+}

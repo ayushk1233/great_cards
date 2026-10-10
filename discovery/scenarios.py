@@ -114,3 +114,31 @@ SCENARIOS["followup"] = [
     {"id": "details_bob_cashback", "tool": "get_card_details", "args": {"card_alias": "bob-cashback-credit-card"}, "purpose": "5% on Amazon/dining source"},
     {"id": "details_amex_gold", "tool": "get_card_details", "args": {"card_alias": "american-express-gold-card"}, "purpose": "milestone vs hidden in facade"},
 ]
+
+# Probe set 2: ground truth for edge cases in evals/CASES.md v2 (filters/limits never observed before)
+SCENARIOS["p2"] = [
+    {"id": "list_rupay", "tool": "list_cards", "args": {"card_networks": ["RuPay"], "limit": 10},
+     "purpose": "network filter: are all rows RuPay? (UPI-on-credit-card question)"},
+    {"id": "list_bank_sbi", "tool": "list_cards", "args": {"bank_ids": [3], "limit": 10, "response_format": "brief"},
+     "purpose": "bank filter with SBI bank_id=3 (from get_card_details); bank field is empty in rows"},
+    {"id": "list_credit_650", "tool": "list_cards", "args": {"credit_score": "650", "limit": 10, "response_format": "brief"},
+     "purpose": "credit_score filter semantics (undocumented format)"},
+    {"id": "list_fee_500_1000", "tool": "list_cards", "args": {"annual_fees": "500-1000", "limit": 10, "response_format": "brief"},
+     "purpose": "fee range filter: are all annual fees within 500-1000?"},
+    {"id": "compare_bad_plus_good", "tool": "compare_cards", "args": {"card_aliases": ["axis-magnus-credit-card", "sbi-cashback-credit-card"]},
+     "purpose": "one broken (description-example) alias + one valid: whole-call error or partial?"},
+    {"id": "recommend_amz15_dining5_top50", "tool": "recommend_cards",
+     "args": {"amazon_spends": 15000, "dining_or_going_out": 5000, "top_n": 50, "response_format": "brief"},
+     "purpose": "oracle nets for a spend-aware 4-card comparison (Magnus, Amazon Pay, SBI Cashback, Millenia)"},
+    {"id": "elig_123456_self_6L", "tool": "check_eligibility",
+     "args": {"pincode": "123456", "annual_income": "600000", "employment_status": "self_employed"},
+     "purpose": "placeholder-style 6-digit pincode: silent 0 or error?"},
+    {"id": "elig_delhi_self_6L", "tool": "check_eligibility",
+     "args": {"pincode": "110001", "annual_income": "600000", "employment_status": "self_employed"},
+     "purpose": "baseline for the self-employed 50k/month case"},
+    {"id": "elig_delhi_income_0", "tool": "check_eligibility",
+     "args": {"pincode": "110001", "annual_income": "0", "employment_status": "salaried"},
+     "purpose": "student / no income: what does income 0 return?"},
+    {"id": "details_idfc_wow_black", "tool": "get_card_details", "args": {"card_alias": "idfc-first-wow-black-credit-card"},
+     "purpose": "#1 card for rent: rent fee / exclusions vs recommend_cards crediting rent rewards"},
+]

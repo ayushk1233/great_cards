@@ -23,6 +23,10 @@ FALLBACK_ANSWER = ("I couldn't produce an answer I can stand behind using only t
                    "Could you rephrase or narrow the question (for example, your monthly spend by category)?")
 
 SERVICE_UNAVAILABLE = "The card data service is busy or unreachable right now. Please try again in a minute."
+TURN_TIMEOUT = "That took too long to answer, so I stopped. Please try again in a minute."
+INTERNAL_ERROR = "Something went wrong on our side while answering. Please try again."
+CALL_BUDGET_NOTE = ("not executed: this turn's tool-call budget ({n}) is used up. Answer with the results you "
+                    "already have and say what is missing.")
 LLM_UNAVAILABLE = "The assistant model is unavailable right now. Please try again in a minute."
 
 

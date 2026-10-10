@@ -16,10 +16,15 @@ from contextlib import AsyncExitStack
 from dataclasses import dataclass, field
 from typing import Any
 
+import httpx2
 from mcp import ClientSession, types
 from mcp.client.streamable_http import streamable_http_client
+from mcp.shared._httpx_utils import MCP_DEFAULT_SSE_READ_TIMEOUT, MCP_DEFAULT_TIMEOUT
+
+from app.mcp.ratelimit import RateLimiter
 
 RETRY_BACKOFF_S = 3.0
+SESSION_OPEN_REQUESTS = 3  # initialize + initialized notification + GET stream
 
 # error_kind values
 TOOL_ERROR = "tool_error"     # server rejected the call or reported an error payload
@@ -70,17 +75,24 @@ def normalize(raw_result: dict, latency_ms: int = 0) -> ToolResult:
 class McpSession:
     """Async context manager around one MCP session."""
 
-    def __init__(self, url: str, timeout_s: float = 20.0):
+    def __init__(self, url: str, timeout_s: float = 20.0, limiter: RateLimiter | None = None):
         self.url = url
         self.timeout_s = timeout_s
+        self.limiter = limiter  # paces every HTTP request of this session (see ratelimit.py)
         self.server_info: dict = {}
         self._stack = None
         self._session: ClientSession | None = None
 
     async def __aenter__(self) -> "McpSession":
+        if self.limiter:
+            await self.limiter.wait_ready(SESSION_OPEN_REQUESTS)
         self._stack = AsyncExitStack()
         try:
-            read, write = await self._stack.enter_async_context(streamable_http_client(self.url))
+            http = httpx2.AsyncClient(
+                timeout=httpx2.Timeout(MCP_DEFAULT_TIMEOUT, read=MCP_DEFAULT_SSE_READ_TIMEOUT),
+                event_hooks=self.limiter.httpx_hooks() if self.limiter else None)
+            await self._stack.enter_async_context(http)
+            read, write = await self._stack.enter_async_context(streamable_http_client(self.url, http_client=http))
             self._session = await self._stack.enter_async_context(ClientSession(read, write))
             init = await self._session.initialize()
         except BaseException:
@@ -102,6 +114,8 @@ class McpSession:
     async def list_tools(self) -> list[dict]:
         tools, cursor = [], None
         while True:
+            if self.limiter:
+                await self.limiter.wait_ready(1)
             params = types.PaginatedRequestParams(cursor=cursor) if cursor else None
             page = _dump(await self._session.list_tools(params=params))
             tools.extend(page.get("tools", []))
@@ -112,6 +126,9 @@ class McpSession:
     async def call_tool(self, name: str, arguments: dict) -> ToolResult:
         last_err = ""
         for attempt in range(2):  # one retry, never more: the server is production
+            if self.limiter:
+                # wait for the window / a 429 cooldown here, outside the SDK's read timeout
+                await self.limiter.wait_ready(1)
             started = time.perf_counter()
             try:
                 result = await self._session.call_tool(name, arguments, read_timeout_seconds=self.timeout_s)

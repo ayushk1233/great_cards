@@ -14,7 +14,8 @@ These cases are the **source of truth** for Task 2. The machine-readable copy wi
 |---|---|
 | **PASS** | All hard checks pass **and** a reviewer confirms the answer against the raw tool output: right facts, figures attributed to the right card, right clarification and safety behaviour. "Sounds reasonable" is never enough |
 | **FAIL** | A hard check failed, or the review found a wrong, made-up, missing or misleading answer |
-| **INCONCLUSIVE (infra)** | MCP or LLM unavailable, 429 or timeout. Reported separately; **not a product failure**. Re-run with `--only` |
+| **INCONCLUSIVE (infra)** | MCP or LLM unavailable, 429 or timeout. Reported separately; **not a product failure**. Retried by `--resume` |
+| **ERROR (internal)** | An exception in our pipeline code (traceback kept). **Neither a bot nor a server failure**. Fixed, then retried by `--resume` |
 | **INCONCLUSIVE (review)** | Evidence is not enough to decide. The open question is written down |
 
 **Hard checks** are verified automatically **from the execution trace**: tools actually called, exact arguments, answer text.
@@ -40,7 +41,7 @@ These cases are the **source of truth** for Task 2. The machine-readable copy wi
 | G2 | Report-only guardrail detectors: unreturned ₹, approval promise, tax advice | Required guardrails; blind spots listed above |
 | G3 | Each tool error recorded with its kind (`tool_error` / `malformed` / `unavailable` / `bad_arguments` / `unknown_tool`) | Separates product errors from infra errors |
 | G4 | `get_advisor_context` call count, topic, and tokens per case | Tool diagnosis GA1 |
-| G5 | MCP calls per turn ≤ 8 (flag bursts) | Production rate limit (~65 calls / 3 min) |
+| G5 | MCP calls per turn ≤ 6. The orchestrator enforces this: extra calls are refused (never sent) and flagged `tool_call_budget_exceeded` | Production rate limit (~65 requests / 3 min) |
 | G6 | Empty final answer flagged | W10 |
 
 ---
@@ -533,4 +534,6 @@ Every input class of each tool, and where it's covered. **Case** means exercised
   - Added: fee-waiver (Q03), rent (Q05), compare with 4 cards against spend (Q13), list filters (Q14), student in Hinglish (Q17), PAN handling (Q18), joining-fee follow-up (Q20 turn 2).
   - Merged: v1 Q05+Q06 → Q04; v1 Q16+Q17 → Q16 (3 turns); v1 Q12 compare → Q13.
   - Dropped: v1 Q04 "no information" (clarification is covered by Q01, Q13, Q16, Q17).
-  - Awaiting user approval before the baseline run.
+  - Approved by the user on 2026-10-11 (committed 973d901).
+- 2026-10-11: machine copy `evals/questions.json` created (same ids, inputs, severities; hard checks per turn). Kept in sync by `tests/test_cases_sync.py`. Cases are frozen from the first baseline run.
+- 2026-10-11: pipeline fixes before the baseline (approved): G5 is now an enforced budget of 6 MCP calls per turn; new status ERROR (internal) so our own bugs are never reported as MCP outages; a 180 s turn deadline counts as infra. No case inputs or expectations changed.

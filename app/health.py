@@ -12,7 +12,7 @@ import json
 import sys
 import time
 
-from app.config import ROOT, ConfigError, load_settings
+from app.config import ROOT, ConfigError, build_limiter, load_settings
 from app.mcp.client import McpSession
 from app.mcp.tools import ALLOWLIST, build_tool_specs
 
@@ -25,10 +25,10 @@ def report(status: str, name: str, detail: str = "") -> None:
     print(f"[{status}] {name}{' — ' + detail if detail else ''}")
 
 
-async def check_mcp(url: str, timeout_s: float) -> list[dict] | None:
+async def check_mcp(url: str, timeout_s: float, limiter=None) -> list[dict] | None:
     try:
         t0 = time.perf_counter()
-        async with McpSession(url, timeout_s) as s:
+        async with McpSession(url, timeout_s, limiter=limiter) as s:
             report("PASS", "mcp initialize", f"{s.server_info} in {round((time.perf_counter() - t0) * 1000)} ms")
             live = await s.list_tools()
             specs = build_tool_specs(live)  # raises if an allowlisted tool vanished
@@ -77,7 +77,7 @@ def main() -> int:
     except ConfigError as e:
         report("FAIL", "config", str(e))
         return 1
-    specs = asyncio.run(check_mcp(settings.mcp_url, settings.tool_timeout_s))
+    specs = asyncio.run(check_mcp(settings.mcp_url, settings.tool_timeout_s, build_limiter(settings)))
     check_llm(settings, specs)
     fails = sum(1 for s, *_ in results if s == "FAIL")
     warns = sum(1 for s, *_ in results if s == "WARN")

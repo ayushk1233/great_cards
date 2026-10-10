@@ -11,7 +11,8 @@ import json
 import pytest
 
 from app.agent.validation import check_approval_promise, check_tax_advice, check_unreturned_rupees, allowed_amounts, validate
-from app.mcp.client import RETRY_BACKOFF_S, ToolResult, normalize
+from app.agent.orchestrator import Agent
+from app.mcp.client import ToolResult, normalize
 from tests.test_orchestrator import FakeLlm, FakeMcp, call, make, settings
 from app.agent.llm import LlmReply
 
@@ -104,14 +105,14 @@ def test_W10_empty_final_answer_gets_fallback(live_catalog):
     assert r.answer.strip() != ""
 
 
-@weak
 def test_W11_per_turn_tool_call_budget(live_catalog):
-    """W11 (S2, prod server). Rounds are capped (6) but calls per round are not: one reply with
-    12 tool calls sends 12 MCP requests in a single turn (rate limit ~65 per 3 min)."""
+    """W11 (S2, prod server). FIXED (approved pipeline fix): at most max_tool_calls_per_turn (6) MCP
+    calls per turn; extra calls are answered with a call_budget error and never sent."""
     burst = [call("get_card_details", {"card_alias": f"x{i}"}, cid=f"c{i}") for i in range(12)]
     mcp = FakeMcp(live_catalog)
-    make(FakeLlm([LlmReply("", burst), LlmReply("done")]), mcp).run_turn([], "hi")
-    assert len(mcp.calls) <= 8
+    r = make(FakeLlm([LlmReply("", burst), LlmReply("done")]), mcp).run_turn([], "hi")
+    assert len(mcp.calls) == 6
+    assert [t.result.error_kind for t in r.trace].count("call_budget") == 6
 
 
 @weak
@@ -139,10 +140,9 @@ def test_W13_playbook_not_duplicated_in_history(live_catalog, raw):
     assert copies <= 1
 
 
-@weak
 def test_W14_tool_catalog_cached_across_turns(live_catalog):
-    """W14 (S3, prod server). The approved plan says tools/list is cached per process; the code
-    lists tools on every turn (one extra MCP request per turn)."""
+    """W14 (S3, prod server). FIXED in runner v2 (approved): tools/list is cached per Agent for
+    catalog_ttl_s, saving one MCP request per turn. Kept as a regression test."""
     class Counting(FakeMcp):
         lists = 0
 
@@ -158,10 +158,18 @@ def test_W14_tool_catalog_cached_across_turns(live_catalog):
     assert Counting.lists == 1
 
 
-@weak
-def test_W15_turn_has_a_bounded_worst_case_latency():
-    """W15 (S3). No overall turn deadline: 6 rounds x (2 attempts x 20 s timeout + 3 s backoff)
-    = 258 s of tool time alone, before 7 LLM calls of up to 60 s each."""
-    s = settings()
-    worst_tool_s = s.max_tool_rounds * (2 * s.tool_timeout_s + RETRY_BACKOFF_S)
-    assert worst_tool_s <= 60
+def test_W15_turn_has_a_bounded_worst_case_latency(live_catalog):
+    """W15 (S3). FIXED (approved pipeline fix): the whole turn has a deadline (turn_deadline_s,
+    default 180 s). A hung tool call ends the turn as error=turn_timeout with the trace so far."""
+    import asyncio
+    from dataclasses import replace
+
+    class Hung(FakeMcp):
+        async def call_tool(self, name, args):
+            await asyncio.sleep(5)
+
+    agent = Agent(replace(settings(), turn_deadline_s=0.2),
+                  FakeLlm([LlmReply("", [call("list_cards", {})]), LlmReply("never")]),
+                  session_factory=lambda: Hung(live_catalog))
+    r = agent.run_turn([], "hi")
+    assert r.error == "turn_timeout" and r.latency_ms < 2000

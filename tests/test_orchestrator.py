@@ -187,3 +187,59 @@ def test_usage_summed_across_calls(live_catalog):
                    LlmReply("done", usage={"prompt_tokens": 200, "completion_tokens": 10, "cost": 0.002})])
     r = make(llm, mcp).run_turn([], "hi")
     assert r.usage == {"llm_calls": 2, "prompt_tokens": 300, "completion_tokens": 15, "cost": pytest.approx(0.003)}
+
+
+def test_catalog_cached_until_ttl_then_refetched(live_catalog, monkeypatch):
+    from dataclasses import replace
+
+    class Counting(FakeMcp):
+        lists = 0
+
+        async def list_tools(self):
+            Counting.lists += 1
+            return self.catalog
+
+    mcp = Counting(live_catalog)
+    agent = Agent(replace(settings(), catalog_ttl_s=100), FakeLlm([LlmReply("a"), LlmReply("b"), LlmReply("c")]),
+                  session_factory=lambda: mcp)
+    clock = [0.0]
+    monkeypatch.setattr("app.agent.orchestrator.time.monotonic", lambda: clock[0])
+    agent.run_turn([], "1")
+    agent.run_turn([], "2")
+    assert Counting.lists == 1
+    clock[0] = 101
+    agent.run_turn([], "3")
+    assert Counting.lists == 2
+    assert set(agent.tool_schemas()) <= {"get_advisor_context", "recommend_cards", "get_card_details", "list_cards",
+                                         "compare_cards", "check_eligibility", "whatsapp_resolve_card_or_category"}
+
+
+def test_bug_in_our_code_is_internal_error_not_mcp_outage(live_catalog, monkeypatch):
+    def broken(*a, **k):
+        raise KeyError("validator bug")
+
+    monkeypatch.setattr("app.agent.orchestrator.validate", broken)
+    r = make(FakeLlm([LlmReply("answer")]), FakeMcp(live_catalog)).run_turn([], "hi")
+    assert r.error == "internal_error" and "validator bug" in r.error_detail
+    assert r.answer == prompts.INTERNAL_ERROR
+
+
+def test_connect_failure_is_still_mcp_unavailable(live_catalog):
+    class Down(FakeMcp):
+        async def __aenter__(self):
+            raise ConnectionError("refused")
+
+    r = make(FakeLlm([]), Down(live_catalog)).run_turn([], "hi")
+    assert r.error == "mcp_unavailable" and "connect" in r.error_detail
+
+
+def test_session_is_closed_even_when_the_loop_fails(live_catalog):
+    class Tracking(FakeMcp):
+        closed = False
+
+        async def __aexit__(self, *a):
+            Tracking.closed = True
+
+    mcp = Tracking(live_catalog)
+    make(FakeLlm([LlmError("down")]), mcp).run_turn([], "hi")
+    assert Tracking.closed

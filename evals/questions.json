@@ -1,0 +1,4 @@
+{
+  "_comment": "The 20 sceptical questions (Task 2). Content pending; authorship split decided by the user. Fields: id, category (everyday|mixed|traveller|loose_name|eligibility|refuse), turns (list of user messages; >1 = multi-turn), expectations {must_call_tools, must_not_call_tools, must_refuse, forbidden_phrases, required_phrases}, notes.",
+  "questions": []
+}

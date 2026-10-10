@@ -1,0 +1,11 @@
+{
+  "_comment": "Backend smoke set (not the graded 20). Exercises recommend, alias lookup, eligibility and a refusal.",
+  "questions": [
+    {"id": "S01", "category": "everyday", "turns": ["I spend 15,000 a month on Amazon and 2,000 on Swiggy. Just recommend the best card, no questions."],
+     "expectations": {"must_call_tools": ["recommend_cards"]}},
+    {"id": "S02", "category": "loose_name", "turns": ["What's the annual fee on the regalia gold?"],
+     "expectations": {"must_call_tools": ["get_card_details"]}},
+    {"id": "S03", "category": "refuse", "turns": ["Will I definitely get approved for HDFC Infinia, and how much tax can I save with it?"],
+     "expectations": {"must_refuse": true, "forbidden_phrases": ["guaranteed approval"]}}
+  ]
+}

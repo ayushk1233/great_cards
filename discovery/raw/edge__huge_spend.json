@@ -1,0 +1,313 @@
+{
+  "id": "huge_spend",
+  "group": "edge",
+  "purpose": "absurd value",
+  "timestamp": "2026-10-10T18:34:13.753741+00:00",
+  "request": {
+    "tool": "recommend_cards",
+    "arguments": {
+      "amazon_spends": 10000000
+    }
+  },
+  "latency_ms": 4646,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total_cards_analyzed\": 204,\n  \"recommendations\": [\n    {\n      \"rank\": 1,\n      \"card_name\": \"Axis Bank Magnus Burgundy\",\n      \"bank_name\": \"Axis\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹1,87,13,700\",\n      \"annual_rewards_value\": \"₹1,87,13,699.504\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹35,400 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹25,00,000/yr spend; ₹35,400 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [\n        {\n          \"id\": 131,\n          \"brands\": [\n            {\n              \"id\": 85,\n              \"name\": \"Postcard Hotels\"\n            },\n            {\n              \"id\": 102,\n              \"name\": \"Yatra\"\n            },\n            {\n              \"id\": null,\n              \"name\": null\n            }\n          ],\n          \"card_id\": 173,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"\",\n          \"voucher_bonus\": \"5000\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": null,\n          \"cash_value\": 5000\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹15,59,474.959\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"grocery_spends_online\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"magnus-burgundy-credit-card\",\n      \"rating\": 4,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130226_BankKaro_20260202_181828409_Axis_Magnus.png\"\n    },\n    {\n      \"rank\": 2,\n      \"card_name\": \"AXIS MAGNUS\",\n      \"bank_name\": \"Axis\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹83,17,200\",\n      \"annual_rewards_value\": \"₹83,17,200.124\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹14,750 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹25,00,000/yr spend; ₹14,750 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [\n        {\n          \"id\": 8,\n          \"brands\": [\n            {\n              \"id\": 85,\n              \"name\": \"Postcard Hotels\"\n            },\n            {\n              \"id\": 102,\n              \"name\": \"Yatra\"\n            },\n            {\n              \"id\": null,\n              \"name\": null\n            }\n          ],\n          \"card_id\": 6,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"100\",\n          \"voucher_bonus\": \"12500\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": null,\n          \"cash_value\": 12500\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹6,93,100.01\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"grocery_spends_online\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"axis-bank-magnus-credit-card\",\n      \"rating\": 4,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_121948_BankKaro_20260129_121658926_Axis_Magnus.png\"\n    },\n    {\n      \"rank\": 3,\n      \"card_name\": \"ICICI Amazon Pay Credit Card\",\n      \"bank_name\": \"ICICI Bank\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹60,00,000\",\n      \"annual_rewards_value\": \"₹60,00,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹5,00,000\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"online_food_ordering\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"icici-amazon-pay-credit-card\",\n      \"rating\": 5,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125139_BankKaro_Mobile.png\"\n    },\n    {\n      \"rank\": 4,\n      \"card_name\": \"IDFC MAYURA CREDIT CARD\\t\",\n      \"bank_name\": \"IDFC\",\n      \"card_type\": \"Mastercard\",\n      \"net_annual_savings\": \"₹40,00,171\",\n      \"annual_rewards_value\": \"₹39,96,000\",\n      \"milestone_benefits\": \"₹11,250\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹7,079 (incl. GST)\",\n      \"annual_fee\": \"₹7,079 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 31,\n          \"brands\": [],\n          \"card_id\": 66,\n          \"rp_bonus\": \"4000\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"0.37\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 1480\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹3,33,000\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"grocery_spends_online\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"idfc-mayura-credit-card\",\n      \"rating\": 3.5,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_124955_AGB_Mockup-55.webp1736253374910\"\n    },\n    {\n      \"rank\": 5,\n      \"card_name\": \"IDFC FIRST Gaj Credit Card\",\n      \"bank_name\": \"IDFC\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹40,00,000\",\n      \"annual_rewards_value\": \"₹40,00,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹14,750 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹10,00,000/yr spend; ₹14,750 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [\n        {\n          \"id\": 172,\n          \"brands\": [],\n          \"card_id\": 196,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"60\",\n          \"minimum_spend\": \"100000\",\n          \"voucher_bonus\": \"5000\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 5000\n        },\n        {\n          \"id\": 206,\n          \"brands\": [],\n          \"card_id\": 196,\n          \"rp_bonus\": \"12500\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"0\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"0.25\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 3125\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹3,33,333.333\"\n        },\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"hotels_annual\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"idfc-first-gaj-credit-card\",\n      \"rating\": 4.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130308_BankKaro_20260603_164830387_Mockup_35.png\"\n    }\n  ],\n  \"_format_hint\": \"net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from.\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "total_cards_analyzed": 204,
+      "recommendations": [
+        {
+          "rank": 1,
+          "card_name": "Axis Bank Magnus Burgundy",
+          "bank_name": "Axis",
+          "card_type": "VISA",
+          "net_annual_savings": "₹1,87,13,700",
+          "annual_rewards_value": "₹1,87,13,699.504",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹35,400 (incl. GST)",
+          "annual_fee": "Free (waived at ₹25,00,000/yr spend; ₹35,400 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [
+            {
+              "id": 131,
+              "brands": [
+                {
+                  "id": 85,
+                  "name": "Postcard Hotels"
+                },
+                {
+                  "id": 102,
+                  "name": "Yatra"
+                },
+                {
+                  "id": null,
+                  "name": null
+                }
+              ],
+              "card_id": 173,
+              "rp_bonus": "",
+              "maximum_days": "30",
+              "minimum_spend": "",
+              "voucher_bonus": "5000",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": null,
+              "cash_value": 5000
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹15,59,474.959"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "grocery_spends_online",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "magnus-burgundy-credit-card",
+          "rating": 4,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130226_BankKaro_20260202_181828409_Axis_Magnus.png"
+        },
+        {
+          "rank": 2,
+          "card_name": "AXIS MAGNUS",
+          "bank_name": "Axis",
+          "card_type": "VISA",
+          "net_annual_savings": "₹83,17,200",
+          "annual_rewards_value": "₹83,17,200.124",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹14,750 (incl. GST)",
+          "annual_fee": "Free (waived at ₹25,00,000/yr spend; ₹14,750 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [
+            {
+              "id": 8,
+              "brands": [
+                {
+                  "id": 85,
+                  "name": "Postcard Hotels"
+                },
+                {
+                  "id": 102,
+                  "name": "Yatra"
+                },
+                {
+                  "id": null,
+                  "name": null
+                }
+              ],
+              "card_id": 6,
+              "rp_bonus": "",
+              "maximum_days": "30",
+              "minimum_spend": "100",
+              "voucher_bonus": "12500",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": null,
+              "cash_value": 12500
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹6,93,100.01"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "grocery_spends_online",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "axis-bank-magnus-credit-card",
+          "rating": 4,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_121948_BankKaro_20260129_121658926_Axis_Magnus.png"
+        },
+        {
+          "rank": 3,
+          "card_name": "ICICI Amazon Pay Credit Card",
+          "bank_name": "ICICI Bank",
+          "card_type": "VISA",
+          "net_annual_savings": "₹60,00,000",
+          "annual_rewards_value": "₹60,00,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹5,00,000"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "online_food_ordering",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "icici-amazon-pay-credit-card",
+          "rating": 5,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125139_BankKaro_Mobile.png"
+        },
+        {
+          "rank": 4,
+          "card_name": "IDFC MAYURA CREDIT CARD\t",
+          "bank_name": "IDFC",
+          "card_type": "Mastercard",
+          "net_annual_savings": "₹40,00,171",
+          "annual_rewards_value": "₹39,96,000",
+          "milestone_benefits": "₹11,250",
+          "lounge_value": "₹0",
+          "joining_fee": "₹7,079 (incl. GST)",
+          "annual_fee": "₹7,079 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 31,
+              "brands": [],
+              "card_id": 66,
+              "rp_bonus": "4000",
+              "maximum_days": "30",
+              "minimum_spend": "",
+              "voucher_bonus": "",
+              "cash_conversion": "0.37",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 1480
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹3,33,000"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "grocery_spends_online",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "idfc-mayura-credit-card",
+          "rating": 3.5,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_124955_AGB_Mockup-55.webp1736253374910"
+        },
+        {
+          "rank": 5,
+          "card_name": "IDFC FIRST Gaj Credit Card",
+          "bank_name": "IDFC",
+          "card_type": "VISA",
+          "net_annual_savings": "₹40,00,000",
+          "annual_rewards_value": "₹40,00,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹14,750 (incl. GST)",
+          "annual_fee": "Free (waived at ₹10,00,000/yr spend; ₹14,750 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [
+            {
+              "id": 172,
+              "brands": [],
+              "card_id": 196,
+              "rp_bonus": "",
+              "maximum_days": "60",
+              "minimum_spend": "100000",
+              "voucher_bonus": "5000",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 5000
+            },
+            {
+              "id": 206,
+              "brands": [],
+              "card_id": 196,
+              "rp_bonus": "12500",
+              "maximum_days": "30",
+              "minimum_spend": "0",
+              "voucher_bonus": "",
+              "cash_conversion": "0.25",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 3125
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹3,33,333.333"
+            },
+            {
+              "category": "flights_annual",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "hotels_annual",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "idfc-first-gaj-credit-card",
+          "rating": 4.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130308_BankKaro_20260603_164830387_Mockup_35.png"
+        }
+      ],
+      "_format_hint": "net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from."
+    }
+  ]
+}

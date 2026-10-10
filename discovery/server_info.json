@@ -1,0 +1,16 @@
+{
+  "protocolVersion": "2025-11-25",
+  "capabilities": {
+    "prompts": {
+      "listChanged": true
+    },
+    "tools": {
+      "listChanged": true
+    }
+  },
+  "serverInfo": {
+    "name": "great-cards",
+    "version": "1.6.1",
+    "description": "Great.Cards — AI-powered credit card recommendations for the Indian market. Compare 100+ cards, get personalized recommendations based on spending patterns, check eligibility, and find the best card for any use case."
+  }
+}

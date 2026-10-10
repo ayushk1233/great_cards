@@ -1,0 +1,318 @@
+{
+  "id": "traveller_lounge_2dom",
+  "group": "recommend",
+  "purpose": "lounge value effect",
+  "timestamp": "2026-10-10T18:33:46.202650+00:00",
+  "request": {
+    "tool": "recommend_cards",
+    "arguments": {
+      "flights_annual": 300000,
+      "hotels_annual": 150000,
+      "dining_or_going_out": 15000,
+      "domestic_lounge_usage_quarterly": 2,
+      "top_n": 5
+    }
+  },
+  "latency_ms": 3230,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total_cards_analyzed\": 204,\n  \"recommendations\": [\n    {\n      \"rank\": 1,\n      \"card_name\": \"Axis Bank Magnus Burgundy\",\n      \"bank_name\": \"Axis\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹97,320\",\n      \"annual_rewards_value\": \"₹1,31,219.997\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹1,500\",\n      \"joining_fee\": \"₹35,400 (incl. GST)\",\n      \"annual_fee\": \"₹35,400 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 131,\n          \"brands\": [\n            {\n              \"id\": 85,\n              \"name\": \"Postcard Hotels\"\n            },\n            {\n              \"id\": 102,\n              \"name\": \"Yatra\"\n            },\n            {\n              \"id\": null,\n              \"name\": null\n            }\n          ],\n          \"card_id\": 173,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"\",\n          \"voucher_bonus\": \"5000\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": null,\n          \"cash_value\": 5000\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 8,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹1,500\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹6,750\"\n        },\n        {\n          \"category\": \"hotels_annual\",\n          \"annual_value\": \"₹3,375\"\n        },\n        {\n          \"category\": \"dining_or_going_out\",\n          \"annual_value\": \"₹810\"\n        }\n      ],\n      \"card_alias\": \"magnus-burgundy-credit-card\",\n      \"rating\": 4,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130226_BankKaro_20260202_181828409_Axis_Magnus.png\"\n    },\n    {\n      \"rank\": 2,\n      \"card_name\": \"HDFC Diners Club Black Metal Edition\",\n      \"bank_name\": \"HDFC\",\n      \"card_type\": \"DinersClub\",\n      \"net_annual_savings\": \"₹76,700\",\n      \"annual_rewards_value\": \"₹87,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹1,500\",\n      \"joining_fee\": \"₹11,800 (incl. GST)\",\n      \"annual_fee\": \"₹11,800 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 49,\n          \"brands\": [\n            {\n              \"id\": 31,\n              \"name\": \"Club Marriott\"\n            },\n            {\n              \"id\": 17,\n              \"name\": \"Amazon Prime\"\n            },\n            {\n              \"id\": null,\n              \"name\": null\n            }\n          ],\n          \"card_id\": 103,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"90\",\n          \"minimum_spend\": \"150000\",\n          \"voucher_bonus\": \"25000\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": null,\n          \"cash_value\": 25000\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 8,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹1,500\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹4,166.667\"\n        },\n        {\n          \"category\": \"hotels_annual\",\n          \"annual_value\": \"₹2,083.333\"\n        },\n        {\n          \"category\": \"dining_or_going_out\",\n          \"annual_value\": \"₹1,000\"\n        }\n      ],\n      \"card_alias\": \"hdfc-diners-club-black-metal-credit-card\",\n      \"rating\": 3,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125405_BankKaro_HDFC_Dineer_Bc.png\"\n    },\n    {\n      \"rank\": 3,\n      \"card_name\": \"AXIS MAGNUS\",\n      \"bank_name\": \"Axis\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹45,070\",\n      \"annual_rewards_value\": \"₹58,320.001\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹1,500\",\n      \"joining_fee\": \"₹14,750 (incl. GST)\",\n      \"annual_fee\": \"₹14,750 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 8,\n          \"brands\": [\n            {\n              \"id\": 85,\n              \"name\": \"Postcard Hotels\"\n            },\n            {\n              \"id\": 102,\n              \"name\": \"Yatra\"\n            },\n            {\n              \"id\": null,\n              \"name\": null\n            }\n          ],\n          \"card_id\": 6,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"100\",\n          \"voucher_bonus\": \"12500\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": null,\n          \"cash_value\": 12500\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 8,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹1,500\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹3,000\"\n        },\n        {\n          \"category\": \"hotels_annual\",\n          \"annual_value\": \"₹1,500\"\n        },\n        {\n          \"category\": \"domestic_lounge_usage_quarterly\",\n          \"annual_value\": \"₹500\"\n        }\n      ],\n      \"card_alias\": \"axis-bank-magnus-credit-card\",\n      \"rating\": 4,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_121948_BankKaro_20260129_121658926_Axis_Magnus.png\"\n    },\n    {\n      \"rank\": 4,\n      \"card_name\": \"SBI Landmark Reward SELECT Credit Card\",\n      \"bank_name\": \"SBI\",\n      \"card_type\": \"VISA,RuPay\",\n      \"net_annual_savings\": \"₹43,981\",\n      \"annual_rewards_value\": \"₹15,750\",\n      \"milestone_benefits\": \"₹30,000\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹1,769 (incl. GST)\",\n      \"annual_fee\": \"₹1,769 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 196,\n          \"brands\": [],\n          \"card_id\": 263,\n          \"rp_bonus\": \"6000\",\n          \"maximum_days\": \"\",\n          \"minimum_spend\": \"\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"0.25\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 1500\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹625\"\n        },\n        {\n          \"category\": \"dining_or_going_out\",\n          \"annual_value\": \"₹375\"\n        },\n        {\n          \"category\": \"hotels_annual\",\n          \"annual_value\": \"₹312.5\"\n        }\n      ],\n      \"card_alias\": \"sbi-landmark-reward-select-credit-card\",\n      \"rating\": 4.2,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260818_105810829_Mockup_64.png\"\n    },\n    {\n      \"rank\": 5,\n      \"card_name\": \"Yes Bank Paisabazaar PaisaSave Credit Card\",\n      \"bank_name\": \"Yes Bank\",\n      \"card_type\": \"Mastercard\",\n      \"net_annual_savings\": \"₹37,800\",\n      \"annual_rewards_value\": \"₹37,800\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free (waived at ₹1,20,000/yr spend; ₹589 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹1,500\"\n        },\n        {\n          \"category\": \"dining_or_going_out\",\n          \"annual_value\": \"₹900\"\n        },\n        {\n          \"category\": \"hotels_annual\",\n          \"annual_value\": \"₹750\"\n        }\n      ],\n      \"card_alias\": \"yes-bank-paisabazaar-paisasave-credit-card\",\n      \"rating\": 4.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260914_153331932_Mockup_95.png\"\n    }\n  ],\n  \"_format_hint\": \"net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from.\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "total_cards_analyzed": 204,
+      "recommendations": [
+        {
+          "rank": 1,
+          "card_name": "Axis Bank Magnus Burgundy",
+          "bank_name": "Axis",
+          "card_type": "VISA",
+          "net_annual_savings": "₹97,320",
+          "annual_rewards_value": "₹1,31,219.997",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹1,500",
+          "joining_fee": "₹35,400 (incl. GST)",
+          "annual_fee": "₹35,400 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 131,
+              "brands": [
+                {
+                  "id": 85,
+                  "name": "Postcard Hotels"
+                },
+                {
+                  "id": 102,
+                  "name": "Yatra"
+                },
+                {
+                  "id": null,
+                  "name": null
+                }
+              ],
+              "card_id": 173,
+              "rp_bonus": "",
+              "maximum_days": "30",
+              "minimum_spend": "",
+              "voucher_bonus": "5000",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": null,
+              "cash_value": 5000
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 8,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹1,500",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "flights_annual",
+              "annual_value": "₹6,750"
+            },
+            {
+              "category": "hotels_annual",
+              "annual_value": "₹3,375"
+            },
+            {
+              "category": "dining_or_going_out",
+              "annual_value": "₹810"
+            }
+          ],
+          "card_alias": "magnus-burgundy-credit-card",
+          "rating": 4,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130226_BankKaro_20260202_181828409_Axis_Magnus.png"
+        },
+        {
+          "rank": 2,
+          "card_name": "HDFC Diners Club Black Metal Edition",
+          "bank_name": "HDFC",
+          "card_type": "DinersClub",
+          "net_annual_savings": "₹76,700",
+          "annual_rewards_value": "₹87,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹1,500",
+          "joining_fee": "₹11,800 (incl. GST)",
+          "annual_fee": "₹11,800 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 49,
+              "brands": [
+                {
+                  "id": 31,
+                  "name": "Club Marriott"
+                },
+                {
+                  "id": 17,
+                  "name": "Amazon Prime"
+                },
+                {
+                  "id": null,
+                  "name": null
+                }
+              ],
+              "card_id": 103,
+              "rp_bonus": "",
+              "maximum_days": "90",
+              "minimum_spend": "150000",
+              "voucher_bonus": "25000",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": null,
+              "cash_value": 25000
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 8,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹1,500",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "flights_annual",
+              "annual_value": "₹4,166.667"
+            },
+            {
+              "category": "hotels_annual",
+              "annual_value": "₹2,083.333"
+            },
+            {
+              "category": "dining_or_going_out",
+              "annual_value": "₹1,000"
+            }
+          ],
+          "card_alias": "hdfc-diners-club-black-metal-credit-card",
+          "rating": 3,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125405_BankKaro_HDFC_Dineer_Bc.png"
+        },
+        {
+          "rank": 3,
+          "card_name": "AXIS MAGNUS",
+          "bank_name": "Axis",
+          "card_type": "VISA",
+          "net_annual_savings": "₹45,070",
+          "annual_rewards_value": "₹58,320.001",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹1,500",
+          "joining_fee": "₹14,750 (incl. GST)",
+          "annual_fee": "₹14,750 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 8,
+              "brands": [
+                {
+                  "id": 85,
+                  "name": "Postcard Hotels"
+                },
+                {
+                  "id": 102,
+                  "name": "Yatra"
+                },
+                {
+                  "id": null,
+                  "name": null
+                }
+              ],
+              "card_id": 6,
+              "rp_bonus": "",
+              "maximum_days": "30",
+              "minimum_spend": "100",
+              "voucher_bonus": "12500",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": null,
+              "cash_value": 12500
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 8,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹1,500",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "flights_annual",
+              "annual_value": "₹3,000"
+            },
+            {
+              "category": "hotels_annual",
+              "annual_value": "₹1,500"
+            },
+            {
+              "category": "domestic_lounge_usage_quarterly",
+              "annual_value": "₹500"
+            }
+          ],
+          "card_alias": "axis-bank-magnus-credit-card",
+          "rating": 4,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_121948_BankKaro_20260129_121658926_Axis_Magnus.png"
+        },
+        {
+          "rank": 4,
+          "card_name": "SBI Landmark Reward SELECT Credit Card",
+          "bank_name": "SBI",
+          "card_type": "VISA,RuPay",
+          "net_annual_savings": "₹43,981",
+          "annual_rewards_value": "₹15,750",
+          "milestone_benefits": "₹30,000",
+          "lounge_value": "₹0",
+          "joining_fee": "₹1,769 (incl. GST)",
+          "annual_fee": "₹1,769 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 196,
+              "brands": [],
+              "card_id": 263,
+              "rp_bonus": "6000",
+              "maximum_days": "",
+              "minimum_spend": "",
+              "voucher_bonus": "",
+              "cash_conversion": "0.25",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 1500
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "flights_annual",
+              "annual_value": "₹625"
+            },
+            {
+              "category": "dining_or_going_out",
+              "annual_value": "₹375"
+            },
+            {
+              "category": "hotels_annual",
+              "annual_value": "₹312.5"
+            }
+          ],
+          "card_alias": "sbi-landmark-reward-select-credit-card",
+          "rating": 4.2,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260818_105810829_Mockup_64.png"
+        },
+        {
+          "rank": 5,
+          "card_name": "Yes Bank Paisabazaar PaisaSave Credit Card",
+          "bank_name": "Yes Bank",
+          "card_type": "Mastercard",
+          "net_annual_savings": "₹37,800",
+          "annual_rewards_value": "₹37,800",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free (waived at ₹1,20,000/yr spend; ₹589 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "flights_annual",
+              "annual_value": "₹1,500"
+            },
+            {
+              "category": "dining_or_going_out",
+              "annual_value": "₹900"
+            },
+            {
+              "category": "hotels_annual",
+              "annual_value": "₹750"
+            }
+          ],
+          "card_alias": "yes-bank-paisabazaar-paisasave-credit-card",
+          "rating": 4.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260914_153331932_Mockup_95.png"
+        }
+      ],
+      "_format_hint": "net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from."
+    }
+  ]
+}

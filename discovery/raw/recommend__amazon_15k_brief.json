@@ -1,0 +1,85 @@
+{
+  "id": "amazon_15k_brief",
+  "group": "recommend",
+  "purpose": "format consistency",
+  "timestamp": "2026-10-10T18:33:20.196434+00:00",
+  "request": {
+    "tool": "recommend_cards",
+    "arguments": {
+      "amazon_spends": 15000,
+      "top_n": 5,
+      "response_format": "brief"
+    }
+  },
+  "latency_ms": 3282,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total_cards_analyzed\": 204,\n  \"recommendations\": [\n    {\n      \"rank\": 1,\n      \"card_name\": \"HDFC MILLENIA\",\n      \"bank_name\": \"HDFC\",\n      \"net_annual_savings\": \"₹9,000\",\n      \"joining_fee\": \"₹1,180\",\n      \"annual_fee\": \"Free (waived — ₹1,180 waived at ₹1,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"hdfc-millenia-credit-card\"\n    },\n    {\n      \"rank\": 2,\n      \"card_name\": \"ICICI Amazon Pay Credit Card\",\n      \"bank_name\": \"ICICI Bank\",\n      \"net_annual_savings\": \"₹9,000\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"icici-amazon-pay-credit-card\"\n    },\n    {\n      \"rank\": 3,\n      \"card_name\": \"Swiggy Ornge HDFC Bank Credit card \",\n      \"bank_name\": \"HDFC\",\n      \"net_annual_savings\": \"₹9,000\",\n      \"joining_fee\": \"₹590\",\n      \"annual_fee\": \"Free (waived — ₹590 waived at ₹1,50,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"card_alias\": \"swiggy-ornge-hdfc-credit-card\"\n    },\n    {\n      \"rank\": 4,\n      \"card_name\": \"BOB Cashback Credit Card\",\n      \"bank_name\": \"Bank of Baroda\",\n      \"net_annual_savings\": \"₹8,411\",\n      \"joining_fee\": \"₹589\",\n      \"annual_fee\": \"₹589\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"bob-cashback-credit-card\"\n    },\n    {\n      \"rank\": 5,\n      \"card_name\": \"CRED IndusInd Bank Credit Card\",\n      \"bank_name\": \"IndusInd Bank\",\n      \"net_annual_savings\": \"₹8,411\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹589\",\n      \"annual_fee_waived\": false,\n      \"card_alias\": \"cred-indusind-bank-credit-card\"\n    }\n  ],\n  \"_format_hint\": \"Present as a ranked list. net_annual_savings is the primary metric — it accounts for rewards earned MINUS fees paid (annual fee is ₹0 when annual_fee_waived is true).\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "total_cards_analyzed": 204,
+      "recommendations": [
+        {
+          "rank": 1,
+          "card_name": "HDFC MILLENIA",
+          "bank_name": "HDFC",
+          "net_annual_savings": "₹9,000",
+          "joining_fee": "₹1,180",
+          "annual_fee": "Free (waived — ₹1,180 waived at ₹1,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "hdfc-millenia-credit-card"
+        },
+        {
+          "rank": 2,
+          "card_name": "ICICI Amazon Pay Credit Card",
+          "bank_name": "ICICI Bank",
+          "net_annual_savings": "₹9,000",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "card_alias": "icici-amazon-pay-credit-card"
+        },
+        {
+          "rank": 3,
+          "card_name": "Swiggy Ornge HDFC Bank Credit card ",
+          "bank_name": "HDFC",
+          "net_annual_savings": "₹9,000",
+          "joining_fee": "₹590",
+          "annual_fee": "Free (waived — ₹590 waived at ₹1,50,000/yr spend)",
+          "annual_fee_waived": true,
+          "card_alias": "swiggy-ornge-hdfc-credit-card"
+        },
+        {
+          "rank": 4,
+          "card_name": "BOB Cashback Credit Card",
+          "bank_name": "Bank of Baroda",
+          "net_annual_savings": "₹8,411",
+          "joining_fee": "₹589",
+          "annual_fee": "₹589",
+          "annual_fee_waived": false,
+          "card_alias": "bob-cashback-credit-card"
+        },
+        {
+          "rank": 5,
+          "card_name": "CRED IndusInd Bank Credit Card",
+          "bank_name": "IndusInd Bank",
+          "net_annual_savings": "₹8,411",
+          "joining_fee": "Free",
+          "annual_fee": "₹589",
+          "annual_fee_waived": false,
+          "card_alias": "cred-indusind-bank-credit-card"
+        }
+      ],
+      "_format_hint": "Present as a ranked list. net_annual_savings is the primary metric — it accounts for rewards earned MINUS fees paid (annual fee is ₹0 when annual_fee_waived is true)."
+    }
+  ]
+}

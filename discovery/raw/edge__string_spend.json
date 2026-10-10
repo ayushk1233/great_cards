@@ -1,0 +1,28 @@
+{
+  "id": "string_spend",
+  "group": "edge",
+  "purpose": "wrong type",
+  "timestamp": "2026-10-10T18:34:05.895882+00:00",
+  "request": {
+    "tool": "recommend_cards",
+    "arguments": {
+      "amazon_spends": "15k"
+    }
+  },
+  "latency_ms": 222,
+  "client_error": null,
+  "is_error": true,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "MCP error -32602: Input validation error: Invalid arguments for tool recommend_cards: [\n  {\n    \"expected\": \"number\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"amazon_spends\"\n    ],\n    \"message\": \"Invalid input: expected number, received string\"\n  }\n]"
+      }
+    ],
+    "isError": true,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    "MCP error -32602: Input validation error: Invalid arguments for tool recommend_cards: [\n  {\n    \"expected\": \"number\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"amazon_spends\"\n    ],\n    \"message\": \"Invalid input: expected number, received string\"\n  }\n]"
+  ]
+}

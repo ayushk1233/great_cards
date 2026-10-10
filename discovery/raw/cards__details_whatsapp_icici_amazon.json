@@ -1,0 +1,57 @@
+{
+  "id": "details_whatsapp_icici_amazon",
+  "group": "cards",
+  "purpose": "facade consistency",
+  "timestamp": "2026-10-10T18:34:17.178253+00:00",
+  "request": {
+    "tool": "whatsapp_get_card_details",
+    "arguments": {
+      "card_alias": "icici-amazon-pay-credit-card"
+    }
+  },
+  "latency_ms": 151,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"reply_type\": \"card_details\",\n  \"summary\": \"Amazon Pay ICICI Bank Credit Card has annual fee Free. with unlimited reward points and no capping across spends\",\n  \"card\": {\n    \"name\": \"Amazon Pay ICICI Bank Credit Card\",\n    \"bank\": \"ICICI Bank\",\n    \"alias\": \"icici-amazon-pay-credit-card\",\n    \"fees\": {\n      \"joining\": \"Free\",\n      \"annual\": \"Free\",\n      \"waiver\": \"Not Applicable\"\n    },\n    \"top_benefits\": [\n      \"with unlimited reward points and no capping across spends\",\n      \"reward points and no capping across spends\",\n      \"with unlimited reward points and no capping across spends\"\n    ],\n    \"eligibility_notes\": {\n      \"salaried_lpa\": 2.4,\n      \"self_employed_lpa\": 3.6,\n      \"min_age\": 21,\n      \"max_age\": 65,\n      \"cibil\": 725\n    },\n    \"link\": \"https://www.great.cards/cards/icici-amazon-pay-credit-card\"\n  },\n  \"resolved_alias\": \"icici-amazon-pay-credit-card\",\n  \"resolved_from\": \"direct_alias\",\n  \"next_question\": \"Want me to check if this card fits your spending?\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "reply_type": "card_details",
+      "summary": "Amazon Pay ICICI Bank Credit Card has annual fee Free. with unlimited reward points and no capping across spends",
+      "card": {
+        "name": "Amazon Pay ICICI Bank Credit Card",
+        "bank": "ICICI Bank",
+        "alias": "icici-amazon-pay-credit-card",
+        "fees": {
+          "joining": "Free",
+          "annual": "Free",
+          "waiver": "Not Applicable"
+        },
+        "top_benefits": [
+          "with unlimited reward points and no capping across spends",
+          "reward points and no capping across spends",
+          "with unlimited reward points and no capping across spends"
+        ],
+        "eligibility_notes": {
+          "salaried_lpa": 2.4,
+          "self_employed_lpa": 3.6,
+          "min_age": 21,
+          "max_age": 65,
+          "cibil": 725
+        },
+        "link": "https://www.great.cards/cards/icici-amazon-pay-credit-card"
+      },
+      "resolved_alias": "icici-amazon-pay-credit-card",
+      "resolved_from": "direct_alias",
+      "next_question": "Want me to check if this card fits your spending?"
+    }
+  ]
+}

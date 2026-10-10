@@ -1,0 +1,272 @@
+{
+  "id": "flights_annual_10k",
+  "group": "recommend",
+  "purpose": "monthly value mis-sent as annual",
+  "timestamp": "2026-10-10T18:33:39.740953+00:00",
+  "request": {
+    "tool": "recommend_cards",
+    "arguments": {
+      "flights_annual": 10000,
+      "top_n": 5
+    }
+  },
+  "latency_ms": 3184,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total_cards_analyzed\": 204,\n  \"recommendations\": [\n    {\n      \"rank\": 1,\n      \"card_name\": \"ICICI Amazon Pay Credit Card\",\n      \"bank_name\": \"ICICI Bank\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹500\",\n      \"annual_rewards_value\": \"₹500.4\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹41.7\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"online_food_ordering\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"icici-amazon-pay-credit-card\",\n      \"rating\": 5,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125139_BankKaro_Mobile.png\"\n    },\n    {\n      \"rank\": 2,\n      \"card_name\": \"Kotak Solitaire Credit Card \",\n      \"bank_name\": \"Kotak\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹300\",\n      \"annual_rewards_value\": \"₹300.24\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹25.02\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"dining_or_going_out\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"kotak-solitaire-credit-card\",\n      \"rating\": 3.9,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260625_152823482_Mockup_44.png\"\n    },\n    {\n      \"rank\": 3,\n      \"card_name\": \"LIC Axis Bank Signature Credit Card\",\n      \"bank_name\": \"Axis\",\n      \"card_type\": \"VISA,Mastercard\",\n      \"net_annual_savings\": \"₹275\",\n      \"annual_rewards_value\": \"₹275.22\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹22.935\"\n        },\n        {\n          \"category\": \"life_insurance\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"lic-axis-bank-signature-credit-card\",\n      \"rating\": 5,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130136_BankKaro_Mockup.png\"\n    },\n    {\n      \"rank\": 4,\n      \"card_name\": \"ixigo AU credot Card\",\n      \"bank_name\": \"AU Small Finance Bank\",\n      \"card_type\": \"VISA,RuPay\",\n      \"net_annual_savings\": \"₹250\",\n      \"annual_rewards_value\": \"₹250.2\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 225,\n          \"brands\": [\n            {\n              \"id\": 471,\n              \"name\": \"Ixigo\"\n            }\n          ],\n          \"card_id\": 239,\n          \"rp_bonus\": \"1000\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"100\",\n          \"voucher_bonus\": \"1000\",\n          \"cash_conversion\": \"1\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 2000\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹20.85\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"all_pharmacy\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"ixigo-au-credit-card\",\n      \"rating\": 4.2,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260729_143058744_AU_ALTURA__2.png\"\n    },\n    {\n      \"rank\": 5,\n      \"card_name\": \"IDFC Wealth Credit Card\",\n      \"bank_name\": \"IDFC\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹125\",\n      \"annual_rewards_value\": \"₹125.1\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 63,\n          \"brands\": [\n            {\n              \"id\": 14,\n              \"name\": \"Amazon\"\n            },\n            {\n              \"id\": 26,\n              \"name\": \"BigBasket\"\n            },\n            {\n              \"id\": 110,\n              \"name\": \"Uber\"\n            },\n            {\n              \"id\": 63,\n              \"name\": \"Lifestyle\"\n            }\n          ],\n          \"card_id\": 74,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"5000\",\n          \"voucher_bonus\": \"500\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 0\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹10.425\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"idfc-first-wealth-credit-card\",\n      \"rating\": 3,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125047_BankKaro_20251218_140353112_induslnd_legend.png\"\n    }\n  ],\n  \"_format_hint\": \"net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from.\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "total_cards_analyzed": 204,
+      "recommendations": [
+        {
+          "rank": 1,
+          "card_name": "ICICI Amazon Pay Credit Card",
+          "bank_name": "ICICI Bank",
+          "card_type": "VISA",
+          "net_annual_savings": "₹500",
+          "annual_rewards_value": "₹500.4",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "flights_annual",
+              "annual_value": "₹41.7"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "online_food_ordering",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "icici-amazon-pay-credit-card",
+          "rating": 5,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125139_BankKaro_Mobile.png"
+        },
+        {
+          "rank": 2,
+          "card_name": "Kotak Solitaire Credit Card ",
+          "bank_name": "Kotak",
+          "card_type": "VISA",
+          "net_annual_savings": "₹300",
+          "annual_rewards_value": "₹300.24",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "flights_annual",
+              "annual_value": "₹25.02"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "dining_or_going_out",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "kotak-solitaire-credit-card",
+          "rating": 3.9,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260625_152823482_Mockup_44.png"
+        },
+        {
+          "rank": 3,
+          "card_name": "LIC Axis Bank Signature Credit Card",
+          "bank_name": "Axis",
+          "card_type": "VISA,Mastercard",
+          "net_annual_savings": "₹275",
+          "annual_rewards_value": "₹275.22",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "flights_annual",
+              "annual_value": "₹22.935"
+            },
+            {
+              "category": "life_insurance",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "lic-axis-bank-signature-credit-card",
+          "rating": 5,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130136_BankKaro_Mockup.png"
+        },
+        {
+          "rank": 4,
+          "card_name": "ixigo AU credot Card",
+          "bank_name": "AU Small Finance Bank",
+          "card_type": "VISA,RuPay",
+          "net_annual_savings": "₹250",
+          "annual_rewards_value": "₹250.2",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 225,
+              "brands": [
+                {
+                  "id": 471,
+                  "name": "Ixigo"
+                }
+              ],
+              "card_id": 239,
+              "rp_bonus": "1000",
+              "maximum_days": "30",
+              "minimum_spend": "100",
+              "voucher_bonus": "1000",
+              "cash_conversion": "1",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 2000
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "flights_annual",
+              "annual_value": "₹20.85"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "all_pharmacy",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "ixigo-au-credit-card",
+          "rating": 4.2,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260729_143058744_AU_ALTURA__2.png"
+        },
+        {
+          "rank": 5,
+          "card_name": "IDFC Wealth Credit Card",
+          "bank_name": "IDFC",
+          "card_type": "VISA",
+          "net_annual_savings": "₹125",
+          "annual_rewards_value": "₹125.1",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 63,
+              "brands": [
+                {
+                  "id": 14,
+                  "name": "Amazon"
+                },
+                {
+                  "id": 26,
+                  "name": "BigBasket"
+                },
+                {
+                  "id": 110,
+                  "name": "Uber"
+                },
+                {
+                  "id": 63,
+                  "name": "Lifestyle"
+                }
+              ],
+              "card_id": 74,
+              "rp_bonus": "",
+              "maximum_days": "30",
+              "minimum_spend": "5000",
+              "voucher_bonus": "500",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 0
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "flights_annual",
+              "annual_value": "₹10.425"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "idfc-first-wealth-credit-card",
+          "rating": 3,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125047_BankKaro_20251218_140353112_induslnd_legend.png"
+        }
+      ],
+      "_format_hint": "net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from."
+    }
+  ]
+}

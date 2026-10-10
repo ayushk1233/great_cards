@@ -1,0 +1,211 @@
+{
+  "id": "details_amex_gold",
+  "group": "followup",
+  "purpose": "milestone vs hidden in facade",
+  "timestamp": "2026-10-10T18:37:11.880083+00:00",
+  "request": {
+    "tool": "get_card_details",
+    "arguments": {
+      "card_alias": "american-express-gold-card"
+    }
+  },
+  "latency_ms": 120,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"name\": \"American Express Gold Card\",\n  \"nick_name\": \"American Express Gold, Card\",\n  \"bank\": \"American Express\",\n  \"bank_id\": 11,\n  \"card_type\": \"AmericanExpress\",\n  \"card_network\": null,\n  \"rating\": 4,\n  \"user_ratings\": 4000,\n  \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_124959_AGB_Mockup-17.webp1737007970148\",\n  \"priority_tag\": null,\n  \"invite_only\": false,\n  \"employment_type\": \"both\",\n  \"new_to_credit\": true,\n  \"existing_customer_only\": true,\n  \"fees\": {\n    \"joining\": \"₹1,180 (₹1,000 + GST)\",\n    \"joining_note\": null,\n    \"annual\": \"₹5,310 (₹4,500 + GST)\",\n    \"annual_note\": null,\n    \"annual_fee_waiver\": \"Not Applicable\",\n    \"gst_note\": \"All fees include 18% GST.\"\n  },\n  \"fee_schedule\": {\n    \"apr_monthly\": \"Not Applicable\",\n    \"apr_annual\": null,\n    \"forex_markup\": \"3.50%\",\n    \"forex_markup_note\": \"3.5% forex markup is charged on transactions made in currencies other than INR. Applies to international POS payments and online purchases charged in foreign currency.Examples (3.5%):₹100 → ₹3.5₹1,000 → ₹35₹10,000 → ₹350₹1,00,000 → ₹3,500\",\n    \"atm_withdrawal_fee\": \"3.50%\",\n    \"atm_withdrawal_note\": \"For every withdraw money transaction you will be charged 3.5% of the amount withdrawn or Rs 500 whichever is higher.&nbsp;\",\n    \"railway_surcharge\": \"1%\",\n    \"railway_surcharge_note\": \"A surcharge of 1% is applied to transactions made for booking railway tickets\",\n    \"rent_payment_fee\": \"Not Applicable\",\n    \"cash_payment_fee\": \"Not Applicable\",\n    \"cheque_payment_fee\": \"Not Applicable\",\n    \"reward_redemption_fee\": \"₹99\",\n    \"late_payment_slabs\": [\n      {\n        \"outstanding\": \"₹1 - ₹10000\",\n        \"fee\": \"₹400\"\n      },\n      {\n        \"outstanding\": \"₹10001 - ₹25000\",\n        \"fee\": \"₹750\"\n      },\n      {\n        \"outstanding\": \"₹25000 and above\",\n        \"fee\": \"₹1000\"\n      }\n    ],\n    \"late_payment_note\": \"he total amount due must be paid in full by the due dateNo revolving credit &nbsp;applicable\",\n    \"tnc_url\": \"https://www.americanexpress.com/content/dam/amex/in/legal/mitc/Gold_RCP_CMA.pdf\"\n  },\n  \"rewards\": {\n    \"point_value\": \"1 Reward Point = ₹0.50\",\n    \"redemption_options\": \"• 18K / 24K Gold Collection vouchers\\n• Amazon\\n• Flipkart\\n• Taj\\n• Myntra\\n• Tanishq\",\n    \"redemption_catalogue\": null,\n    \"exclusions\": \"Fuel Spends, Insurance Payments, EMI Spends, ATM Cash Withdrawals, Jewellery Purchases, Government-related Transactions, Wallet Loads, Bank Charges & Fees, All Reversals, Gambling Transactions, Toll Payments, Security Broker Services, Charity\",\n    \"exclusion_spends\": \"Fuel Spends, Insurance Payments, EMI Spends, ATM Cash Withdrawals, Jewellery Purchases, Government-related Transactions, Wallet Loads, Bank Charges & Fees, All Reversals, Gambling Transactions, Toll Payments, Security Broker Services, Charity\"\n  },\n  \"welcome_benefits\": null,\n  \"lounge_summary\": null,\n  \"annual_saving_claimed\": 4567,\n  \"milestone_benefits\": [\n    {\n      \"spend_target\": null,\n      \"reward\": null,\n      \"description\": null\n    }\n  ],\n  \"key_benefits\": [\n    {\n      \"title\": \"Get 4,000 Bonus Membership Rewards Points\",\n      \"description\": \"as a welcome gift credited post card issuance\"\n    },\n    {\n      \"title\": \"Enjoy up to 20% off\",\n      \"description\": \"When you Dine at select partner restaurants using your American Express Gold Credit Card\"\n    },\n    {\n      \"title\": \"Enjoy a Room Upgrade and a $100 Hotel Credit\",\n      \"description\": \"when you stay two consecutive nights at select hotels worldwide under The Hotel Collection\"\n    },\n    {\n      \"title\": \"Enjoy 24,000 Membership Rewards Points\",\n      \"description\": \"for a Taj voucher worth ₹14,000via the 24 Karat Gold Collection, or choose from Shoppers Stop, Tanishq, Tata Cliq, Amazon, Flipkart, or Reliance Digital vouchers worth ₹8,000 to ₹14,000\"\n    },\n    {\n      \"title\": \"Get up to ₹10,000 instant cashback on Apple\",\n      \"description\": \"purchases available at the Apple Store Online, Apple BKC Mumbai, or Apple Saket Delhi on eligible products\"\n    },\n    {\n      \"title\": \"Earn 1 Membership Rewards Point for Every ₹50 Spent\",\n      \"description\": \"eligible purchases, including utilities (utility points capped at 10,000 per calendar month). No points are earned on insurance, cash transactions, and fuel payments\"\n    }\n  ],\n  \"tags\": [\n    \"Shopping\",\n    \"Dining\",\n    \"Travel\"\n  ],\n  \"detailed_benefits\": [\n    {\n      \"type\": \"all\",\n      \"sub_type\": \"All Benefits\",\n      \"details\": \"• Earn 5X Membership Rewards Points on purchases via the Reward Multiplier platform\\n• Up to ₹10,000 instant cashback on eligible purchases at Apple Store Online\\n• Enjoy 20% off on room stays at Best Available Rate across all participating properties of The Lalit Hotels\\n• Redeem 24,000 Membership Rewards Points for a Taj voucher worth ₹14,000 via the Gold Collection (or equivalent from Shoppers Stop, Tanishq, Tata Cliq, Amazon, Flipkart, Reliance Digital)\"\n    },\n    {\n      \"type\": \"welcome\",\n      \"sub_type\": \"Welcome Benefits\",\n      \"details\": \"• Get 4,000 Bonus Membership Rewards Points as a welcome gift upon card issuance\"\n    },\n    {\n      \"type\": \"travel\",\n      \"sub_type\": \"Flight Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"travel\",\n      \"sub_type\": \"Railway Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"travel\",\n      \"sub_type\": \"Cab Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"travel\",\n      \"sub_type\": \"Bus Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"lounge\",\n      \"sub_type\": \"Airport Lounge Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"lounge\",\n      \"sub_type\": \"Railway Lounge Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"movie_ticket\",\n      \"sub_type\": \"Movie Ticket Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"dining\",\n      \"sub_type\": \"Dining Benefits\",\n      \"details\": \"• Up to 20% off every time you dine at select restaurant partners\"\n    },\n    {\n      \"type\": \"fuel\",\n      \"sub_type\": \"Fuel Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"fuel\",\n      \"sub_type\": \"Fuel Surcharge Waiver Benefits\",\n      \"details\": \"• Fuel Convenience Fee Waiver at HPCL\"\n    },\n    {\n      \"type\": \"insurance\",\n      \"sub_type\": \"Insurance Benefits\",\n      \"details\": \"• Zero Lost Card Liability: protection against unauthorised fraudulent use of the card, provided the loss is reported to American Express within 3 working days\\n• Complimentary air accident insurance cover of ₹30,00,000 when air tickets are booked with the card\"\n    },\n    {\n      \"type\": \"bank_offers\",\n      \"sub_type\": \"Bank Offers\",\n      \"details\": \"• Earn 5X Membership Rewards Points on purchases made through the Reward Multiplier platform at select partner merchants\\n• Get up to ₹10,000 instant cashback on eligible product purchases at the Apple Store Online, Apple BKC (Mumbai), or Apple Saket (Delhi)\"\n    }\n  ],\n  \"eligibility\": {\n    \"min_age\": 21,\n    \"max_age\": 60,\n    \"income_salaried_lpa\": 6,\n    \"income_self_emp_lpa\": 6,\n    \"min_income_monthly\": 50000,\n    \"crif_salaried\": 720,\n    \"crif_self_emp\": 720\n  },\n  \"card_alias\": \"american-express-gold-card\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "name": "American Express Gold Card",
+      "nick_name": "American Express Gold, Card",
+      "bank": "American Express",
+      "bank_id": 11,
+      "card_type": "AmericanExpress",
+      "card_network": null,
+      "rating": 4,
+      "user_ratings": 4000,
+      "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_124959_AGB_Mockup-17.webp1737007970148",
+      "priority_tag": null,
+      "invite_only": false,
+      "employment_type": "both",
+      "new_to_credit": true,
+      "existing_customer_only": true,
+      "fees": {
+        "joining": "₹1,180 (₹1,000 + GST)",
+        "joining_note": null,
+        "annual": "₹5,310 (₹4,500 + GST)",
+        "annual_note": null,
+        "annual_fee_waiver": "Not Applicable",
+        "gst_note": "All fees include 18% GST."
+      },
+      "fee_schedule": {
+        "apr_monthly": "Not Applicable",
+        "apr_annual": null,
+        "forex_markup": "3.50%",
+        "forex_markup_note": "3.5% forex markup is charged on transactions made in currencies other than INR. Applies to international POS payments and online purchases charged in foreign currency.Examples (3.5%):₹100 → ₹3.5₹1,000 → ₹35₹10,000 → ₹350₹1,00,000 → ₹3,500",
+        "atm_withdrawal_fee": "3.50%",
+        "atm_withdrawal_note": "For every withdraw money transaction you will be charged 3.5% of the amount withdrawn or Rs 500 whichever is higher.&nbsp;",
+        "railway_surcharge": "1%",
+        "railway_surcharge_note": "A surcharge of 1% is applied to transactions made for booking railway tickets",
+        "rent_payment_fee": "Not Applicable",
+        "cash_payment_fee": "Not Applicable",
+        "cheque_payment_fee": "Not Applicable",
+        "reward_redemption_fee": "₹99",
+        "late_payment_slabs": [
+          {
+            "outstanding": "₹1 - ₹10000",
+            "fee": "₹400"
+          },
+          {
+            "outstanding": "₹10001 - ₹25000",
+            "fee": "₹750"
+          },
+          {
+            "outstanding": "₹25000 and above",
+            "fee": "₹1000"
+          }
+        ],
+        "late_payment_note": "he total amount due must be paid in full by the due dateNo revolving credit &nbsp;applicable",
+        "tnc_url": "https://www.americanexpress.com/content/dam/amex/in/legal/mitc/Gold_RCP_CMA.pdf"
+      },
+      "rewards": {
+        "point_value": "1 Reward Point = ₹0.50",
+        "redemption_options": "• 18K / 24K Gold Collection vouchers\n• Amazon\n• Flipkart\n• Taj\n• Myntra\n• Tanishq",
+        "redemption_catalogue": null,
+        "exclusions": "Fuel Spends, Insurance Payments, EMI Spends, ATM Cash Withdrawals, Jewellery Purchases, Government-related Transactions, Wallet Loads, Bank Charges & Fees, All Reversals, Gambling Transactions, Toll Payments, Security Broker Services, Charity",
+        "exclusion_spends": "Fuel Spends, Insurance Payments, EMI Spends, ATM Cash Withdrawals, Jewellery Purchases, Government-related Transactions, Wallet Loads, Bank Charges & Fees, All Reversals, Gambling Transactions, Toll Payments, Security Broker Services, Charity"
+      },
+      "welcome_benefits": null,
+      "lounge_summary": null,
+      "annual_saving_claimed": 4567,
+      "milestone_benefits": [
+        {
+          "spend_target": null,
+          "reward": null,
+          "description": null
+        }
+      ],
+      "key_benefits": [
+        {
+          "title": "Get 4,000 Bonus Membership Rewards Points",
+          "description": "as a welcome gift credited post card issuance"
+        },
+        {
+          "title": "Enjoy up to 20% off",
+          "description": "When you Dine at select partner restaurants using your American Express Gold Credit Card"
+        },
+        {
+          "title": "Enjoy a Room Upgrade and a $100 Hotel Credit",
+          "description": "when you stay two consecutive nights at select hotels worldwide under The Hotel Collection"
+        },
+        {
+          "title": "Enjoy 24,000 Membership Rewards Points",
+          "description": "for a Taj voucher worth ₹14,000via the 24 Karat Gold Collection, or choose from Shoppers Stop, Tanishq, Tata Cliq, Amazon, Flipkart, or Reliance Digital vouchers worth ₹8,000 to ₹14,000"
+        },
+        {
+          "title": "Get up to ₹10,000 instant cashback on Apple",
+          "description": "purchases available at the Apple Store Online, Apple BKC Mumbai, or Apple Saket Delhi on eligible products"
+        },
+        {
+          "title": "Earn 1 Membership Rewards Point for Every ₹50 Spent",
+          "description": "eligible purchases, including utilities (utility points capped at 10,000 per calendar month). No points are earned on insurance, cash transactions, and fuel payments"
+        }
+      ],
+      "tags": [
+        "Shopping",
+        "Dining",
+        "Travel"
+      ],
+      "detailed_benefits": [
+        {
+          "type": "all",
+          "sub_type": "All Benefits",
+          "details": "• Earn 5X Membership Rewards Points on purchases via the Reward Multiplier platform\n• Up to ₹10,000 instant cashback on eligible purchases at Apple Store Online\n• Enjoy 20% off on room stays at Best Available Rate across all participating properties of The Lalit Hotels\n• Redeem 24,000 Membership Rewards Points for a Taj voucher worth ₹14,000 via the Gold Collection (or equivalent from Shoppers Stop, Tanishq, Tata Cliq, Amazon, Flipkart, Reliance Digital)"
+        },
+        {
+          "type": "welcome",
+          "sub_type": "Welcome Benefits",
+          "details": "• Get 4,000 Bonus Membership Rewards Points as a welcome gift upon card issuance"
+        },
+        {
+          "type": "travel",
+          "sub_type": "Flight Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "travel",
+          "sub_type": "Railway Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "travel",
+          "sub_type": "Cab Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "travel",
+          "sub_type": "Bus Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "lounge",
+          "sub_type": "Airport Lounge Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "lounge",
+          "sub_type": "Railway Lounge Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "movie_ticket",
+          "sub_type": "Movie Ticket Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "dining",
+          "sub_type": "Dining Benefits",
+          "details": "• Up to 20% off every time you dine at select restaurant partners"
+        },
+        {
+          "type": "fuel",
+          "sub_type": "Fuel Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "fuel",
+          "sub_type": "Fuel Surcharge Waiver Benefits",
+          "details": "• Fuel Convenience Fee Waiver at HPCL"
+        },
+        {
+          "type": "insurance",
+          "sub_type": "Insurance Benefits",
+          "details": "• Zero Lost Card Liability: protection against unauthorised fraudulent use of the card, provided the loss is reported to American Express within 3 working days\n• Complimentary air accident insurance cover of ₹30,00,000 when air tickets are booked with the card"
+        },
+        {
+          "type": "bank_offers",
+          "sub_type": "Bank Offers",
+          "details": "• Earn 5X Membership Rewards Points on purchases made through the Reward Multiplier platform at select partner merchants\n• Get up to ₹10,000 instant cashback on eligible product purchases at the Apple Store Online, Apple BKC (Mumbai), or Apple Saket (Delhi)"
+        }
+      ],
+      "eligibility": {
+        "min_age": 21,
+        "max_age": 60,
+        "income_salaried_lpa": 6,
+        "income_self_emp_lpa": 6,
+        "min_income_monthly": 50000,
+        "crif_salaried": 720,
+        "crif_self_emp": 720
+      },
+      "card_alias": "american-express-gold-card"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "advisor_unit_conversion",
+  "group": "context",
+  "purpose": "unit rules",
+  "timestamp": "2026-10-10T18:32:45.888184+00:00",
+  "request": {
+    "tool": "get_advisor_context",
+    "arguments": {
+      "topic": "unit_conversion"
+    }
+  },
+  "latency_ms": 182,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"topic\": \"unit_conversion\",\n  \"description\": \"Rules for parsing Indian number formats (5k, 1.5L, 10 lakhs, 2 crore) and converting between monthly/annual/quarterly units. Critical: which fields are MONTHLY vs ANNUAL vs QUARTERLY.\",\n  \"context\": \"SECTION 5: UNIT CONVERSION (users state amounts inconsistently)\\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\\n\\nAMOUNT PARSING:\\n• \\\"5k\\\" or \\\"5K\\\" or \\\"5000\\\" = 5,000\\n• \\\"1.5L\\\" or \\\"1.5 lakh\\\" or \\\"1,50,000\\\" = 150,000\\n• \\\"10 lakhs\\\" = 10,00,000\\n• \\\"2 crore\\\" = 2,00,00,000\\n\\nCRITICAL UNIT RULES:\\n• Most fields are MONTHLY: amazon_spends, flipkart_spends, other_online_spends, other_offline_spends, grocery_spends_online, offline_grocery, online_food_ordering, fuel, dining_or_going_out, mobile_phone_bills, electricity_bills, water_bills, rent, school_fees\\n• These are ANNUAL: flights_annual, hotels_annual, insurance_health_annual, insurance_car_or_bike_annual, life_insurance\\n• These are QUARTERLY: domestic_lounge_usage_quarterly, international_lounge_usage_quarterly\\n\\nCONVERSION EXAMPLES:\\n• \\\"I spend 5k on Amazon\\\" → amazon_spends: 5000 (monthly, as stated)\\n• \\\"I fly twice a year, 15k each trip\\\" → flights_annual: 30000 (ANNUAL total)\\n• \\\"My annual hotel spend is 50k\\\" → hotels_annual: 50000 (already annual)\\n• \\\"I visit lounges when I fly, about 4 times a year\\\" → domestic_lounge_usage_quarterly: 1 (4÷4=1 per quarter)\\n• \\\"I visit lounges twice a month\\\" → domestic_lounge_usage_quarterly: 6 (2×3=6 per quarter)\\n• \\\"Insurance is 25k\\\" → ASK: \\\"Is that annual or monthly?\\\" (usually annual for insurance)\\n• \\\"I spend 1L per month\\\" → 100,000 (monthly — ask which categories)\\n• \\\"My yearly shopping is around 3 lakhs\\\" → other_online_spends: 25000 (300,000÷12 per month)\\n\\nWHEN IN DOUBT: Ask the user if the amount is monthly or annual. Never assume.\",\n  \"available_topics\": [\n    \"conversation_flow\",\n    \"data_collection\",\n    \"brand_mappings\",\n    \"correlated_pairs\",\n    \"feature_mapping\",\n    \"personas\",\n    \"vague_queries\",\n    \"presentation\",\n    \"guardrails\",\n    \"tool_guide\",\n    \"domain_knowledge\"\n  ],\n  \"_llm_instructions\": {\n    \"how_to_use\": [\n      \"This is the \\\"unit_conversion\\\" section of the advisory playbook.\",\n      \"Internalize it and apply it to the current conversation.\",\n      \"Other sections available: conversation_flow, data_collection, brand_mappings, correlated_pairs, feature_mapping, personas, vague_queries, presentation, guardrails, tool_guide, domain_knowledge\",\n      \"Call get_advisor_context again with a different topic if you need more context.\"\n    ],\n    \"other_tools_available\": {\n      \"generate_content_brief\": \"Call for ANY content/editorial request — \\\"best X cards\\\", \\\"write article\\\", \\\"content ideas\\\", \\\"carousel about X\\\", \\\"top cards for Y\\\". NEVER answer from training knowledge.\",\n      \"run_api_diagnostics\": \"Call when testing API health, diagnosing flaky MCP behavior, or validating deployments.\"\n    }\n  }\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "topic": "unit_conversion",
+      "description": "Rules for parsing Indian number formats (5k, 1.5L, 10 lakhs, 2 crore) and converting between monthly/annual/quarterly units. Critical: which fields are MONTHLY vs ANNUAL vs QUARTERLY.",
+      "context": "SECTION 5: UNIT CONVERSION (users state amounts inconsistently)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nAMOUNT PARSING:\n• \"5k\" or \"5K\" or \"5000\" = 5,000\n• \"1.5L\" or \"1.5 lakh\" or \"1,50,000\" = 150,000\n• \"10 lakhs\" = 10,00,000\n• \"2 crore\" = 2,00,00,000\n\nCRITICAL UNIT RULES:\n• Most fields are MONTHLY: amazon_spends, flipkart_spends, other_online_spends, other_offline_spends, grocery_spends_online, offline_grocery, online_food_ordering, fuel, dining_or_going_out, mobile_phone_bills, electricity_bills, water_bills, rent, school_fees\n• These are ANNUAL: flights_annual, hotels_annual, insurance_health_annual, insurance_car_or_bike_annual, life_insurance\n• These are QUARTERLY: domestic_lounge_usage_quarterly, international_lounge_usage_quarterly\n\nCONVERSION EXAMPLES:\n• \"I spend 5k on Amazon\" → amazon_spends: 5000 (monthly, as stated)\n• \"I fly twice a year, 15k each trip\" → flights_annual: 30000 (ANNUAL total)\n• \"My annual hotel spend is 50k\" → hotels_annual: 50000 (already annual)\n• \"I visit lounges when I fly, about 4 times a year\" → domestic_lounge_usage_quarterly: 1 (4÷4=1 per quarter)\n• \"I visit lounges twice a month\" → domestic_lounge_usage_quarterly: 6 (2×3=6 per quarter)\n• \"Insurance is 25k\" → ASK: \"Is that annual or monthly?\" (usually annual for insurance)\n• \"I spend 1L per month\" → 100,000 (monthly — ask which categories)\n• \"My yearly shopping is around 3 lakhs\" → other_online_spends: 25000 (300,000÷12 per month)\n\nWHEN IN DOUBT: Ask the user if the amount is monthly or annual. Never assume.",
+      "available_topics": [
+        "conversation_flow",
+        "data_collection",
+        "brand_mappings",
+        "correlated_pairs",
+        "feature_mapping",
+        "personas",
+        "vague_queries",
+        "presentation",
+        "guardrails",
+        "tool_guide",
+        "domain_knowledge"
+      ],
+      "_llm_instructions": {
+        "how_to_use": [
+          "This is the \"unit_conversion\" section of the advisory playbook.",
+          "Internalize it and apply it to the current conversation.",
+          "Other sections available: conversation_flow, data_collection, brand_mappings, correlated_pairs, feature_mapping, personas, vague_queries, presentation, guardrails, tool_guide, domain_knowledge",
+          "Call get_advisor_context again with a different topic if you need more context."
+        ],
+        "other_tools_available": {
+          "generate_content_brief": "Call for ANY content/editorial request — \"best X cards\", \"write article\", \"content ideas\", \"carousel about X\", \"top cards for Y\". NEVER answer from training knowledge.",
+          "run_api_diagnostics": "Call when testing API health, diagnosing flaky MCP behavior, or validating deployments."
+        }
+      }
+    }
+  ]
+}

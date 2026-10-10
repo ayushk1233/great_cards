@@ -1,0 +1,1784 @@
+{
+  "id": "list_all_brief_200",
+  "group": "cards",
+  "purpose": "alias inventory",
+  "timestamp": "2026-10-10T18:34:18.468148+00:00",
+  "request": {
+    "tool": "list_cards",
+    "arguments": {
+      "limit": 250,
+      "response_format": "brief"
+    }
+  },
+  "latency_ms": 779,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total_available\": 258,\n  \"showing\": 250,\n  \"cards\": [\n    {\n      \"name\": \"SBI Cashback Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,179 (₹999 + GST)\",\n      \"annual_fee\": \"₹1,179 (₹999 + GST)\",\n      \"card_alias\": \"sbi-cashback-credit-card\"\n    },\n    {\n      \"name\": \"Axis Flipkart Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"axis-flipkart-credit-card\"\n    },\n    {\n      \"name\": \"HSBC Cashback Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹1,179 (₹999 + GST)\",\n      \"card_alias\": \"hsbc-cashback-credit-card\"\n    },\n    {\n      \"name\": \"Kiwi Klick Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"kiwi-klick-credit-card\"\n    },\n    {\n      \"name\": \"SBI Simply Click Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"sbi-simply-click-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Regalia Gold Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹2,950 (₹2,500 + GST)\",\n      \"annual_fee\": \"₹2,950 (₹2,500 + GST)\",\n      \"card_alias\": \"hdfc-regalia-gold\"\n    },\n    {\n      \"name\": \"Flipkart SBI Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"flipkart-sbi-credit-card\"\n    },\n    {\n      \"name\": \"Swiggy BLCK HDFC Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"swiggy-blck-hdfc-credit-card\"\n    },\n    {\n      \"name\": \"IDFC FIRST Millennia Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"idfc-first-millennia-credit-card\"\n    },\n    {\n      \"name\": \"Tata Neu Infinity HDFC Bank Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"annual_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"card_alias\": \"tata-neu-hdfc-bank-credit-card\"\n    },\n    {\n      \"name\": \"Axis MyZone Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"axis-bank-myzone-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Millennia Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"hdfc-millenia-credit-card\"\n    },\n    {\n      \"name\": \"Standard Chartered Smart Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"stanc-smart-credit-card\"\n    },\n    {\n      \"name\": \"HSBC Travel One Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"annual_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"card_alias\": \"hsbc-travel-one\"\n    },\n    {\n      \"name\": \"Indian Oil RBL Bank XTRA Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,770 (₹1,500 + GST)\",\n      \"annual_fee\": \"₹1,770 (₹1,500 + GST)\",\n      \"card_alias\": \"indian-oil-rbl-bank-xtra-credit-card\"\n    },\n    {\n      \"name\": \"IDFC FIRST Wealth Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"idfc-first-wealth-credit-card\"\n    },\n    {\n      \"name\": \"ICICI Emeralde Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹14,160 (₹12,000 + GST)\",\n      \"annual_fee\": \"₹14,160 (₹12,000 + GST)\",\n      \"card_alias\": \"icici-emeralde-credit-card\"\n    },\n    {\n      \"name\": \"HSBC Taj Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,29,800 (₹1,10,000 + GST)\",\n      \"annual_fee\": \"₹1,29,800 (₹1,10,000 + GST)\",\n      \"card_alias\": \"hsbc-taj-credit-card\"\n    },\n    {\n      \"name\": \"IDFC FIRST Power Plus Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"idfc-power-plus-credit-card\"\n    },\n    {\n      \"name\": \"Scapia Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1 (₹1 + GST)\",\n      \"annual_fee\": \"₹1 (₹1 + GST)\",\n      \"card_alias\": \"scapia-credit-card\"\n    },\n    {\n      \"name\": \"Axis Airtel Rupay Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"axis-airtel-credit-card\"\n    },\n    {\n      \"name\": \"IDFC FIRST Select Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"idfc-first-select-credit-card\"\n    },\n    {\n      \"name\": \"Axis Magnus Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹14,750 (₹12,500 + GST)\",\n      \"annual_fee\": \"₹14,750 (₹12,500 + GST)\",\n      \"card_alias\": \"axis-bank-magnus-credit-card\"\n    },\n    {\n      \"name\": \"Swiggy Ornge HDFC Bank Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"swiggy-ornge-hdfc-credit-card\"\n    },\n    {\n      \"name\": \"YES BANK MARQUÉE Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹11,799 (₹9,999 + GST)\",\n      \"annual_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"card_alias\": \"yes-bank-marquee-credit-card\"\n    },\n    {\n      \"name\": \"HSBC Live Plus Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,179 (₹999 + GST)\",\n      \"annual_fee\": \"₹1,179 (₹999 + GST)\",\n      \"card_alias\": \"hsbc-live-plus-credit-card\"\n    },\n    {\n      \"name\": \"Myntra Kotak Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"myntra-kotak-credit-card\"\n    },\n    {\n      \"name\": \"Axis Privilege Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,770 (₹1,500 + GST)\",\n      \"annual_fee\": \"₹1,770 (₹1,500 + GST)\",\n      \"card_alias\": \"axis-bank-privilege-credit-card\"\n    },\n    {\n      \"name\": \"ICICI Sapphiro Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹7,670 (₹6,500 + GST)\",\n      \"annual_fee\": \"₹4,130 (₹3,500 + GST)\",\n      \"card_alias\": \"icici-sapphiro-credit-card\"\n    },\n    {\n      \"name\": \"HDFC BizBlack Metal Edition Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹11,800 (₹10,000 + GST)\",\n      \"annual_fee\": \"₹11,800 (₹10,000 + GST)\",\n      \"card_alias\": \"hdfc-biz-black-metal-edition-credit-card\"\n    },\n    {\n      \"name\": \"Axis Cashback Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"axis-cashback-credit-card\"\n    },\n    {\n      \"name\": \"YES BANK ACE Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"yes-bank-ace-credit-card\"\n    },\n    {\n      \"name\": \"Axis Horizon Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹3,540 (₹3,000 + GST)\",\n      \"annual_fee\": \"₹3,540 (₹3,000 + GST)\",\n      \"card_alias\": \"axis-bank-horizon-credit-card\"\n    },\n    {\n      \"name\": \"Axis Burgundy Magnus Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹35,400 (₹30,000 + GST)\",\n      \"annual_fee\": \"₹35,400 (₹30,000 + GST)\",\n      \"card_alias\": \"magnus-burgundy-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Biz Grow Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"hdfc-biz-grow-credit-card\"\n    },\n    {\n      \"name\": \"PhonePe HDFC Bank Ultimo Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,179 (₹999 + GST)\",\n      \"annual_fee\": \"₹1,179 (₹999 + GST)\",\n      \"card_alias\": \"hdfc-phonepe-ultimo-credit-card\"\n    },\n    {\n      \"name\": \"ICICI Emeralde Private Metal Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹14,749 (₹12,499 + GST)\",\n      \"annual_fee\": \"₹14,749 (₹12,499 + GST)\",\n      \"card_alias\": \"icici-emeralde-private-metal-credit-card\"\n    },\n    {\n      \"name\": \"IndusInd Bank Avios Infinite Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹47,200 (₹40,000 + GST)\",\n      \"annual_fee\": \"₹11,800 (₹10,000 + GST)\",\n      \"card_alias\": \"indusind-bank-avios-infinite-credit-card\"\n    },\n    {\n      \"name\": \"HDFC PIXEL Play Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"hdfc-pixel-play-credit-card\"\n    },\n    {\n      \"name\": \"IndianOil Axis Premium Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"indianoil-axis-premium-credit-card\"\n    },\n    {\n      \"name\": \"ICICI Emirates Skywards Rubyx Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"icici-emirates-skywards-rubyx-credit-card\"\n    },\n    {\n      \"name\": \"Zagg Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"zagg-rupay-credit-card\"\n    },\n    {\n      \"name\": \"BOB Eterna Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹2,949 (₹2,499 + GST)\",\n      \"card_alias\": \"bob-eterna-credit-card\"\n    },\n    {\n      \"name\": \"IndusInd Indulge Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹88,500 (₹75,000 + GST)\",\n      \"annual_fee\": \"₹11,800 (₹10,000 + GST)\",\n      \"card_alias\": \"indusind-indulge-credit-card\"\n    },\n    {\n      \"name\": \"Pop Club Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"pop-club-credit-card\"\n    },\n    {\n      \"name\": \"IDFC FIRST HELLO Cashback Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"idfc-first-hello-cashback-credit-card\"\n    },\n    {\n      \"name\": \"RBL Shoprite Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"rbl-shoprite-credit-card\"\n    },\n    {\n      \"name\": \"SBI AURUM Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹11,799 (₹9,999 + GST)\",\n      \"annual_fee\": \"₹11,799 (₹9,999 + GST)\",\n      \"card_alias\": \"sbi-aurum-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Diners Club Black Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹11,800 (₹10,000 + GST)\",\n      \"annual_fee\": \"₹11,800 (₹10,000 + GST)\",\n      \"card_alias\": \"hdfc-diners-club-black\"\n    },\n    {\n      \"name\": \"EazyDiner IndusInd Bank Signature Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"annual_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"card_alias\": \"indusind-eazydiner-signature-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Marriott Bonvoy Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹3,540 (₹3,000 + GST)\",\n      \"annual_fee\": \"₹3,540 (₹3,000 + GST)\",\n      \"card_alias\": \"hdfc-marriott-bonvoy-credit-card\"\n    },\n    {\n      \"name\": \"CRED IndusInd Bank Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"cred-indusind-bank-credit-card\"\n    },\n    {\n      \"name\": \"YES BANK SELECT Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹707 (₹599 + GST)\",\n      \"annual_fee\": \"₹707 (₹599 + GST)\",\n      \"card_alias\": \"yes-bank-select-credit-card\"\n    },\n    {\n      \"name\": \"IndusInd epay Amex credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"indusind-epay-amex-credit-card\"\n    },\n    {\n      \"name\": \"PNB Zaggle Twin Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"pnb-zaggle-twin-credit-card\"\n    },\n    {\n      \"name\": \"Axis IOCL Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"axis-indian-oil-rupay-credit-card\"\n    },\n    {\n      \"name\": \"Tata Neu Plus SBI Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"tata-neu-plus-sbi-card\"\n    },\n    {\n      \"name\": \"SBI BPCL Octane Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"annual_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"card_alias\": \"sbi-bpcl-octane-credit-card\"\n    },\n    {\n      \"name\": \"BOB SELECT Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹885 (₹750 + GST)\",\n      \"annual_fee\": \"₹885 (₹750 + GST)\",\n      \"card_alias\": \"bob-select-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Tata Neu Plus Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"hdfc-tata-neu-plus-credit-card\"\n    },\n    {\n      \"name\": \"IDFC FIRST Classic Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"idfc-first-classic-credit-card\"\n    },\n    {\n      \"name\": \"YES BANK RESERV Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹2,949 (₹2,499 + GST)\",\n      \"annual_fee\": \"₹2,949 (₹2,499 + GST)\",\n      \"card_alias\": \"yes-bank-reserv-credit-card\"\n    },\n    {\n      \"name\": \"SBI Titan Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"annual_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"card_alias\": \"sbi-titan-credit-card\"\n    },\n    {\n      \"name\": \"RBL Platinum Maxima Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹2,360 (₹2,000 + GST)\",\n      \"annual_fee\": \"₹2,360 (₹2,000 + GST)\",\n      \"card_alias\": \"rbl-platinum-maxima-credit-card\"\n    },\n    {\n      \"name\": \"IDFC FIRST SWYP Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"idfc-swyp-credit-card\"\n    },\n    {\n      \"name\": \"YES BANK ELITE PLUS Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,179 (₹999 + GST)\",\n      \"annual_fee\": \"₹1,179 (₹999 + GST)\",\n      \"card_alias\": \"yes-bank-elite-plus-credit-card\"\n    },\n    {\n      \"name\": \"BOB HPCL ENERGIE Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"bob-hpcl-energie-credit-card\"\n    },\n    {\n      \"name\": \"HSBC Rupay Platinum Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"hsbc-rupay-platinum-credit-card\"\n    },\n    {\n      \"name\": \"OneCard Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"onecard-credit-card\"\n    },\n    {\n      \"name\": \"RBL Bank NOVA Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹14,750 (₹12,500 + GST)\",\n      \"card_alias\": \"rbl-bank-nova-credit-card\"\n    },\n    {\n      \"name\": \"RBL Bank Icon Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹5,900 (₹5,000 + GST)\",\n      \"card_alias\": \"rbl-bank-icon-credit-card\"\n    },\n    {\n      \"name\": \"SalarySe Level UP Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"salaryse-level-up-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Pixel Go Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"hdfc-pixel-go-credit-card\"\n    },\n    {\n      \"name\": \"SBI MILES PRIME Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"annual_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"card_alias\": \"sbi-miles-prime-credit-card\"\n    },\n    {\n      \"name\": \"PNB LUXURA Metal Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹10,620 (₹9,000 + GST)\",\n      \"annual_fee\": \"₹8,850 (₹7,500 + GST)\",\n      \"card_alias\": \"pnb-luxura-metal-credit-card\"\n    },\n    {\n      \"name\": \"IndianOil Axis Rupay Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"indianoil-axis-rupay-credit-card\"\n    },\n    {\n      \"name\": \"PhonePe SBI Card SELECT BLACK \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"annual_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"card_alias\": \"phonepe-sbi-card-select-black\"\n    },\n    {\n      \"name\": \"Axis Reserve Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹59,000 (₹50,000 + GST)\",\n      \"annual_fee\": \"₹59,000 (₹50,000 + GST)\",\n      \"card_alias\": \"axis-reserve-credit-card\"\n    },\n    {\n      \"name\": \"Air India SBI Platinum Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"annual_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"card_alias\": \"air-india-sbi-platinum-credit-card\"\n    },\n    {\n      \"name\": \"AU Vetta Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"annual_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"card_alias\": \"au-vetta-credit-card\"\n    },\n    {\n      \"name\": \"Kotak Air Plus Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹3,540 (₹3,000 + GST)\",\n      \"annual_fee\": \"₹3,540 (₹3,000 + GST)\",\n      \"card_alias\": \"kotak-air-plus-credit-card\"\n    },\n    {\n      \"name\": \"BOB Uni GoldX Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"bob-uni-goldx-credit-card\"\n    },\n    {\n      \"name\": \"BOB Tiara Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹2,949 (₹2,499 + GST)\",\n      \"annual_fee\": \"₹2,949 (₹2,499 + GST)\",\n      \"card_alias\": \"bob-tiara-credit-card\"\n    },\n    {\n      \"name\": \"IndusInd Solitaire Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹35,400 (₹30,000 + GST)\",\n      \"annual_fee\": \"₹11,800 (₹10,000 + GST)\",\n      \"card_alias\": \"indusind-solitarie-credit-card\"\n    },\n    {\n      \"name\": \"Kotak White Reserve Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹14,750 (₹12,500 + GST)\",\n      \"annual_fee\": \"₹14,750 (₹12,500 + GST)\",\n      \"card_alias\": \"kotak-white-reserve-credit-card\"\n    },\n    {\n      \"name\": \"SBM Kredit.Pe Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"sbm-kreditpe-credit-card\"\n    },\n    {\n      \"name\": \"IDFC FIRST Quantum Plus Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"idfc-first-quantum-plus-credit-card\"\n    },\n    {\n      \"name\": \"Tata Neu Infinity SBI Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"annual_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"card_alias\": \"tata-neu-infinity-sbi-card\"\n    },\n    {\n      \"name\": \"HDFC Diners Club Black Metal Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹11,800 (₹10,000 + GST)\",\n      \"annual_fee\": \"₹11,800 (₹10,000 + GST)\",\n      \"card_alias\": \"hdfc-diners-club-black-metal-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Moneyback Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"hdfc-moneyback-credit-card\"\n    },\n    {\n      \"name\": \"ICICI HPCL Super Saver Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"icici-hpcl-super-saver-credit-card\"\n    },\n    {\n      \"name\": \"BOB Etihad Guest Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹2,950 (₹2,500 + GST)\",\n      \"annual_fee\": \"₹2,950 (₹2,500 + GST)\",\n      \"card_alias\": \"bob-etihad-guest-credit-card\"\n    },\n    {\n      \"name\": \"Equitas PowerMiles Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,900 (₹5,000 + GST)\",\n      \"annual_fee\": \"₹5,900 (₹5,000 + GST)\",\n      \"card_alias\": \"equitas-power-miles-credit-card\"\n    },\n    {\n      \"name\": \"IDFC FIRST WOW! Black Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹885 (₹750 + GST)\",\n      \"annual_fee\": \"₹885 (₹750 + GST)\",\n      \"card_alias\": \"idfc-first-wow-black-credit-card\"\n    },\n    {\n      \"name\": \"IndiGo Axis Premium Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,900 (₹5,000 + GST)\",\n      \"annual_fee\": \"₹5,900 (₹5,000 + GST)\",\n      \"card_alias\": \"indigo-axis-premium-credit-card\"\n    },\n    {\n      \"name\": \"SBI IRCTC Premier Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"annual_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"card_alias\": \"sbi-irctc-premier-crerdit-card\"\n    },\n    {\n      \"name\": \"Kotak White Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹3,540 (₹3,000 + GST)\",\n      \"annual_fee\": \"₹3,540 (₹3,000 + GST)\",\n      \"card_alias\": \"kotak-white-credit-card\"\n    },\n    {\n      \"name\": \"Canara Rupay Select Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹354 (₹300 + GST)\",\n      \"card_alias\": \"canara-rupay-select-credit-card\"\n    },\n    {\n      \"name\": \"Axis Samsung Signature Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"axis-samsung-signature-credit-card\"\n    },\n    {\n      \"name\": \"BOB Etihad Guest Premium Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,900 (₹5,000 + GST)\",\n      \"annual_fee\": \"₹5,900 (₹5,000 + GST)\",\n      \"card_alias\": \"bob-etihad-guest-premium-credit-card\"\n    },\n    {\n      \"name\": \"Axis Flipkart Super Elite Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"axis-flipkart-super-elite-credit-card\"\n    },\n    {\n      \"name\": \"Amazon Pay ICICI Bank Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"icici-amazon-pay-credit-card\"\n    },\n    {\n      \"name\": \"EazyDiner IndusInd Bank Platinum Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"eazydiner-indusind-bank-platinum\"\n    },\n    {\n      \"name\": \"ICICI Emirates Skywards Sapphiro Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,900 (₹5,000 + GST)\",\n      \"annual_fee\": \"₹5,900 (₹5,000 + GST)\",\n      \"card_alias\": \"icici-emirates-skywards-sapphiro-credit-card\"\n    },\n    {\n      \"name\": \"AU Tejas Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"au-tejas-credit-card\"\n    },\n    {\n      \"name\": \"SBI MILES ELITE Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"annual_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"card_alias\": \"sbi-miles-elite-credit-card\"\n    },\n    {\n      \"name\": \"IndianOil RBL Bank Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"indianoil-rbl-bank-credit-card\"\n    },\n    {\n      \"name\": \"AU Ananta Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹2,360 (₹2,000 + GST)\",\n      \"annual_fee\": \"₹2,360 (₹2,000 + GST)\",\n      \"card_alias\": \"au-ananta-credit-card\"\n    },\n    {\n      \"name\": \"AU Prathama Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹117 (₹99 + GST)\",\n      \"annual_fee\": \"₹118 (₹100 + GST)\",\n      \"card_alias\": \"au-prathama-credit-card\"\n    },\n    {\n      \"name\": \"HSBC Platinum Rewards Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"hsbc-platinum-credit-card\"\n    },\n    {\n      \"name\": \"IndusInd Platinum RuPay Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"indusind-platinum-rupay-credit-card\"\n    },\n    {\n      \"name\": \"American Express Platinum Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹77,880 (₹66,000 + GST)\",\n      \"annual_fee\": \"₹77,880 (₹66,000 + GST)\",\n      \"card_alias\": \"amexmetal\"\n    },\n    {\n      \"name\": \"AU Laksya Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"au-laksya-credit-card\"\n    },\n    {\n      \"name\": \"SBI KrisFlyer Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"annual_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"card_alias\": \"sbi-krisflyer-credit-card\"\n    },\n    {\n      \"name\": \"Standard Chartered Rewards Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"standard-chartered-rewards-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Infinia Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹14,750 (₹12,500 + GST)\",\n      \"annual_fee\": \"₹14,750 (₹12,500 + GST)\",\n      \"card_alias\": \"hdfc-infinia-credit-card\"\n    },\n    {\n      \"name\": \"Air India SBI Signature Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"annual_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"card_alias\": \"air-india-sbi-signature-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Biz Power Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹2,950 (₹2,500 + GST)\",\n      \"annual_fee\": \"₹2,950 (₹2,500 + GST)\",\n      \"card_alias\": \"hdfc-biz-power-credit-card\"\n    },\n    {\n      \"name\": \"Fibe Axis Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"fibe-axis-credit-card\"\n    },\n    {\n      \"name\": \"AU Xcite ACE Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹884 (₹749 + GST)\",\n      \"annual_fee\": \"₹884 (₹749 + GST)\",\n      \"card_alias\": \"au-xcite-ace-credit-card\"\n    },\n    {\n      \"name\": \"IndiGo Axis Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"indigo-axis-credit-card\"\n    },\n    {\n      \"name\": \"RBL Super Binge Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,179 (₹999 + GST)\",\n      \"annual_fee\": \"₹1,179 (₹999 + GST)\",\n      \"card_alias\": \"rbl-super-binge-credit-card\"\n    },\n    {\n      \"name\": \"HSBC Premier Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹14,160 (₹12,000 + GST)\",\n      \"annual_fee\": \"₹23,600 (₹20,000 + GST)\",\n      \"card_alias\": \"hsbc-premier-credit-card\"\n    },\n    {\n      \"name\": \"Equitas Selfe Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"equitas-selfe-credit-card\"\n    },\n    {\n      \"name\": \"Kotak Air Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,179 (₹999 + GST)\",\n      \"annual_fee\": \"₹1,179 (₹999 + GST)\",\n      \"card_alias\": \"kotak-air-credit-card\"\n    },\n    {\n      \"name\": \"RBL World Safari Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹3,540 (₹3,000 + GST)\",\n      \"annual_fee\": \"₹3,540 (₹3,000 + GST)\",\n      \"card_alias\": \"rbl-world-safari-credit-card\"\n    },\n    {\n      \"name\": \"KrisFlyer SBI Apex Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹11,799 (₹9,999 + GST)\",\n      \"annual_fee\": \"₹11,799 (₹9,999 + GST)\",\n      \"card_alias\": \"krisflyer-sbi-apex-credit-card\"\n    },\n    {\n      \"name\": \"IDFC FIRST Mayura Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹7,079 (₹5,999 + GST)\",\n      \"annual_fee\": \"₹7,079 (₹5,999 + GST)\",\n      \"card_alias\": \"idfc-mayura-credit-card\"\n    },\n    {\n      \"name\": \"YES Bank Prosperity Reward Plus Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"yes-bank-prosperity-reward-plus-credit-card\"\n    },\n    {\n      \"name\": \"Axis Neo Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹295 (₹250 + GST)\",\n      \"card_alias\": \"Axis-Neo-Credit\"\n    },\n    {\n      \"name\": \"IDFC FIRST Ashva Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"annual_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"card_alias\": \"idfc-ashva-credit-card\"\n    },\n    {\n      \"name\": \"IndusInd Bank Pinnacle Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹17,700 (₹15,000 + GST)\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"indusind-bank-pinnacle-credit-card\"\n    },\n    {\n      \"name\": \"ixigo AU Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"ixigo-au-credit-card\"\n    },\n    {\n      \"name\": \"Jupiter Edge Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"jupiter-edge-credit-card\"\n    },\n    {\n      \"name\": \"Kotak Cashback+ Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹885 (₹750 + GST)\",\n      \"annual_fee\": \"₹885 (₹750 + GST)\",\n      \"card_alias\": \"kotak-cashback-plus-credit-card\"\n    },\n    {\n      \"name\": \"Reliance SBI Card PRIME  \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"annual_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"card_alias\": \"reliance-sbi-card-prime\"\n    },\n    {\n      \"name\": \"Apollo SBI Select Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"annual_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"card_alias\": \"apollo-sbi-select-credit-card\"\n    },\n    {\n      \"name\": \"BOB PREMIER Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"bob-premier-credit-card\"\n    },\n    {\n      \"name\": \"IDFC FIRST EA₹N Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"idfc-first-earn-credit-card\"\n    },\n    {\n      \"name\": \"AU InstaPay Rupay Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"au-instapay-rupay-credit-card\"\n    },\n    {\n      \"name\": \"SBI Unnati Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"sbi-unnati-credit-card\"\n    },\n    {\n      \"name\": \"IndusInd Jio-bp Mobility+ Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"indusind-jio-bp-mobility-credit-card\"\n    },\n    {\n      \"name\": \"SBI Card Pulse Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"annual_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"card_alias\": \"sbi-card-pulse-credit-card\"\n    },\n    {\n      \"name\": \"Standard Chartered Manhattan Platinum Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,179 (₹999 + GST)\",\n      \"annual_fee\": \"₹1,179 (₹999 + GST)\",\n      \"card_alias\": \"standard-chartered-manhattan-credit-card\"\n    },\n    {\n      \"name\": \"IDFC FIRST GAJ Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹14,750 (₹12,500 + GST)\",\n      \"annual_fee\": \"₹14,750 (₹12,500 + GST)\",\n      \"card_alias\": \"idfc-first-gaj-credit-card\"\n    },\n    {\n      \"name\": \"Celesta Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"celesta-credit-card\"\n    },\n    {\n      \"name\": \"HSBC RuPay Cashback Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"hsbc-rupay-cashback-credit-card\"\n    },\n    {\n      \"name\": \"Times Black ICICI Bank Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹23,600 (₹20,000 + GST)\",\n      \"annual_fee\": \"₹23,600 (₹20,000 + GST)\",\n      \"card_alias\": \"times-black-credit-card\"\n    },\n    {\n      \"name\": \"SBI BPCL Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"sbi-bpcl-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Diners Privilege Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"hdfc-diners-privilege-credit-card\"\n    },\n    {\n      \"name\": \"Kotak Solitaire Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"kotak-solitaire-credit-card\"\n    },\n    {\n      \"name\": \"BOBCARD PRIME Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"bobcard-prime-credit-card\"\n    },\n    {\n      \"name\": \"AU Xcite Ultra Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹884 (₹749 + GST)\",\n      \"annual_fee\": \"₹884 (₹749 + GST)\",\n      \"card_alias\": \"xcite-ultra-credit-card\"\n    },\n    {\n      \"name\": \"Equitas Tiga Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"equitas-tiga-credit-card\"\n    },\n    {\n      \"name\": \"Standard Chartered Super Value Titanium Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹885 (₹750 + GST)\",\n      \"annual_fee\": \"₹885 (₹750 + GST)\",\n      \"card_alias\": \"standard-chartered-super-value-titanium-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Biz First Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"hdfc-biz-first-credit-card\"\n    },\n    {\n      \"name\": \"Paisabazaar Step-Up SBM Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"paizabazaar-step-up-sbm-credit-card\"\n    },\n    {\n      \"name\": \"Signet Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"signet-credit-card\"\n    },\n    {\n      \"name\": \"Imperio Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"imperio-credit-card\"\n    },\n    {\n      \"name\": \"IDFC FIRST POWER Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹235 (₹199 + GST)\",\n      \"annual_fee\": \"₹235 (₹199 + GST)\",\n      \"card_alias\": \"idfc-first-power-credit-card\"\n    },\n    {\n      \"name\": \"IndusInd Tiger Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"indusind-tiger-credit-card\"\n    },\n    {\n      \"name\": \"SBI ELITE Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"annual_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"card_alias\": \"sbi-elite-card\"\n    },\n    {\n      \"name\": \"SBI Elite Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"annual_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"card_alias\": \"sbi-elite-credit-card\"\n    },\n    {\n      \"name\": \"American Express Gold Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹5,310 (₹4,500 + GST)\",\n      \"card_alias\": \"american-express-gold-card\"\n    },\n    {\n      \"name\": \"BOB IRCTC Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹413 (₹350 + GST)\",\n      \"card_alias\": \"bob-irctc-credit-card\"\n    },\n    {\n      \"name\": \"SBI Etihad Premier Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"annual_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"card_alias\": \"sbi-etihad-premier-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Flipkart Wholesale Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"hdfc-flipkart-wholesale-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Indian Oil Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"hdfc-indian-oil-credit-card\"\n    },\n    {\n      \"name\": \"Standard Chartered DigiSmart Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"standard-chartered-digismart-credit-card\"\n    },\n    {\n      \"name\": \"SBI Simply Save Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"sbi-simply-save-credit-card\"\n    },\n    {\n      \"name\": \"AU Altura Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹235 (₹199 + GST)\",\n      \"annual_fee\": \"₹235 (₹199 + GST)\",\n      \"card_alias\": \"au-altura-credit-card\"\n    },\n    {\n      \"name\": \"IndusInd Nexxt Creditt card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹11,800 (₹10,000 + GST)\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"indusind-nexxt-credit-card\"\n    },\n    {\n      \"name\": \"IndusInd Legend Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"indusind-legend-credit-card\"\n    },\n    {\n      \"name\": \"SBI OLA Money Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"sbi-ola-money-credit-card\"\n    },\n    {\n      \"name\": \"Axis Atlas Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,900 (₹5,000 + GST)\",\n      \"annual_fee\": \"₹5,900 (₹5,000 + GST)\",\n      \"card_alias\": \"axis-atlas-credit-card\"\n    },\n    {\n      \"name\": \"Google Pay Flex Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"google-pay-flex-credit-card\"\n    },\n    {\n      \"name\": \"SBI Reliance Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"sbi-reliance-credit-card\"\n    },\n    {\n      \"name\": \"SBI Landmark Reward PRIME Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"annual_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"card_alias\": \"sbi-landmark-reward-prime-credit-card\"\n    },\n    {\n      \"name\": \"AU Altura Plus Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"au-altura-plus-credit-card\"\n    },\n    {\n      \"name\": \"SBI Landmark Reward SELECT Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"annual_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"card_alias\": \"sbi-landmark-reward-select-credit-card\"\n    },\n    {\n      \"name\": \"RBL Bank Cookies Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹118 (₹100 + GST)\",\n      \"annual_fee\": \"₹1,416 (₹1,200 + GST)\",\n      \"card_alias\": \"rbl-cookies-credit-card\"\n    },\n    {\n      \"name\": \"Roarbank Rupay Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"roarbank-rupay-credit-card\"\n    },\n    {\n      \"name\": \"SBI Landmark Reward Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"sbi-landmark-reward-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Shoppers Stop Black Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,310 (₹4,500 + GST)\",\n      \"annual_fee\": \"₹5,310 (₹4,500 + GST)\",\n      \"card_alias\": \"shoppers-stop-black-hdfc-credit-card\"\n    },\n    {\n      \"name\": \"SBM ZET Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"sbm-zet-credit-card\"\n    },\n    {\n      \"name\": \"ICICI Rubyx Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹3,540 (₹3,000 + GST)\",\n      \"annual_fee\": \"₹2,360 (₹2,000 + GST)\",\n      \"card_alias\": \"icici-rubyx-credit-card\"\n    },\n    {\n      \"name\": \"BOB Snapdeal Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹294 (₹249 + GST)\",\n      \"annual_fee\": \"₹294 (₹249 + GST)\",\n      \"card_alias\": \"bob-snapdeal-credit-card\"\n    },\n    {\n      \"name\": \"PhonePe HDFC Bank Uno Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"phonepe-hdfc-bank-uno-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Diners Club Rewardz Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"hdfc-diners-club-rewardz-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Freedom Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"hdfc-freedom-credit-card\"\n    },\n    {\n      \"name\": \"HDFC 6E Rewards Indigo Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"hdfc-indigo-credit-card\"\n    },\n    {\n      \"name\": \"Axis Rewards Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"axis-rewards-credit-card\"\n    },\n    {\n      \"name\": \"Kotak Urbane Gold Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹235 (₹199 + GST)\",\n      \"card_alias\": \"kotak-urbane-gold-credit-card\"\n    },\n    {\n      \"name\": \"RBL Blockbuster Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹3,540 (₹3,000 + GST)\",\n      \"annual_fee\": \"₹3,540 (₹3,000 + GST)\",\n      \"card_alias\": \"rbl-blockbuster-credit-card\"\n    },\n    {\n      \"name\": \"Poonawalla Fincrop IndusInd eLITE Rupay Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"poonawalla-fincrop-indusind-elite-rupay-credit-card\"\n    },\n    {\n      \"name\": \"ICICI Platinum Chip Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"icici-platinum-chip-credit-card\"\n    },\n    {\n      \"name\": \"SBI Etihad Guest Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"annual_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"card_alias\": \"sbi-etihad-guest-credit-card\"\n    },\n    {\n      \"name\": \"IndusInd Platinum Aura Edge Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"indus-bank-platinum-aura-edge-credit-card\"\n    },\n    {\n      \"name\": \"SBI IndiGo ELITE Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"annual_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"card_alias\": \"sbi-indigo-elite-credit-card\"\n    },\n    {\n      \"name\": \"HDFC Shoppers Stop Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹353 (₹299 + GST)\",\n      \"annual_fee\": \"₹353 (₹299 + GST)\",\n      \"card_alias\": \"hdfc-shoppers-stop-credit-card\"\n    },\n    {\n      \"name\": \"AU Zenith Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"au-zenith-credit-card\"\n    },\n    {\n      \"name\": \"American Express Membership Rewards Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹5,310 (₹4,500 + GST)\",\n      \"card_alias\": \"american-express-mr-credit-card\"\n    },\n    {\n      \"name\": \"American Express Platinum Travel Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,900 (₹5,000 + GST)\",\n      \"annual_fee\": \"₹5,900 (₹5,000 + GST)\",\n      \"card_alias\": \"american-express-platinum-travel-credit-card\"\n    },\n    {\n      \"name\": \"American Express SmartEarn Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹584 (₹495 + GST)\",\n      \"annual_fee\": \"₹584 (₹495 + GST)\",\n      \"card_alias\": \"american-express-smart-earn-credit-card\"\n    },\n    {\n      \"name\": \"SBI Yatra Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"sbi-yatra-credit-card\"\n    },\n    {\n      \"name\": \"AU Zenith Plus Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"annual_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"card_alias\": \"au-zenith-plus-credit-card\"\n    },\n    {\n      \"name\": \"ICICI HPCL Coral Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹235 (₹199 + GST)\",\n      \"annual_fee\": \"₹235 (₹199 + GST)\",\n      \"card_alias\": \"icici-hpcl-coral-credit-card\"\n    },\n    {\n      \"name\": \"SBI IndiGo Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"annual_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"card_alias\": \"sbi-indigo-credit-card\"\n    },\n    {\n      \"name\": \"BOB EASY Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"bob-easy-credit-card\"\n    },\n    {\n      \"name\": \"SBI Paytm Select Credit card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"annual_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"card_alias\": \"sbi-paytm-select-credit-card\"\n    },\n    {\n      \"name\": \"DBS Vantage Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹23,600 (₹20,000 + GST)\",\n      \"annual_fee\": \"₹23,600 (₹20,000 + GST)\",\n      \"card_alias\": \"dbs-vantage-credit-card\"\n    },\n    {\n      \"name\": \"ICICI MakeMyTrip Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,179 (₹999 + GST)\",\n      \"annual_fee\": \"₹1,179 (₹999 + GST)\",\n      \"card_alias\": \"icici-mmt-platinum-credit-card\"\n    },\n    {\n      \"name\": \"Axis Samsung Infinite Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,900 (₹5,000 + GST)\",\n      \"annual_fee\": \"₹5,900 (₹5,000 + GST)\",\n      \"card_alias\": \"axis-samsung-infinite-credit-card\"\n    },\n    {\n      \"name\": \"SBI Paytm Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"sbi-paytm-credit-card\"\n    },\n    {\n      \"name\": \"RBL Movie and More Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"rbl-movie-and-more-credit-card\"\n    },\n    {\n      \"name\": \"Axis Select Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹3,540 (₹3,000 + GST)\",\n      \"annual_fee\": \"₹3,540 (₹3,000 + GST)\",\n      \"card_alias\": \"axis-select-credit-card\"\n    },\n    {\n      \"name\": \"SBI Aditya Birla Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"sbi-aditya-birla-credit-card\"\n    },\n    {\n      \"name\": \"HDFC IRCTC Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"hdfc-irctc-credit-card\"\n    },\n    {\n      \"name\": \"HDFC RuPay Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹117 (₹99 + GST)\",\n      \"annual_fee\": \"₹117 (₹99 + GST)\",\n      \"card_alias\": \"hdfc-rupay-credit-card\"\n    },\n    {\n      \"name\": \"IDFC FIRST WOW Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"idfc-first-wow-credit-card\"\n    },\n    {\n      \"name\": \"SBI Prime Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"annual_fee\": \"₹3,539 (₹2,999 + GST)\",\n      \"card_alias\": \"sbi-prime-credit-card\"\n    },\n    {\n      \"name\": \"Axis Aura Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹884 (₹749 + GST)\",\n      \"annual_fee\": \"₹884 (₹749 + GST)\",\n      \"card_alias\": \"axis-aura-credit-card\"\n    },\n    {\n      \"name\": \"American Express Platinum Reserve Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹11,800 (₹10,000 + GST)\",\n      \"annual_fee\": \"₹11,800 (₹10,000 + GST)\",\n      \"card_alias\": \"american-express-platinum-reserve\"\n    },\n    {\n      \"name\": \"HDFC Superia Airline Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"hdfc-superia-airline-credit-card\"\n    },\n    {\n      \"name\": \"IDFC FIRST Private Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹59,000 (₹50,000 + GST)\",\n      \"annual_fee\": \"₹59,000 (₹50,000 + GST)\",\n      \"card_alias\": \"idfc-first-private-credit-card\"\n    },\n    {\n      \"name\": \"Yes Bank Paisabazaar PaisaSave Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"card_alias\": \"yes-bank-paisabazaar-paisasave-credit-card\"\n    },\n    {\n      \"name\": \"HDFC MoneyBack Plus Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"hdfc-moneyback-plus-credit-card\"\n    },\n    {\n      \"name\": \"Axis IKEA Family Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"axis-ikea-family-credit-card\"\n    },\n    {\n      \"name\": \"RBL Popcorn Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"rbl-popcorn-credit-card\"\n    },\n    {\n      \"name\": \"RBL World Plus Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"annual_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"card_alias\": \"rbl-world-plus-credit-card\"\n    },\n    {\n      \"name\": \"RBL Insignia Preferred Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹8,260 (₹7,000 + GST)\",\n      \"card_alias\": \"rbl-insignia-preferred-credit-card\"\n    },\n    {\n      \"name\": \"Kotak IndianOil Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹530 (₹449 + GST)\",\n      \"annual_fee\": \"₹530 (₹449 + GST)\",\n      \"card_alias\": \"kotak-indianoil-credit-card\"\n    },\n    {\n      \"name\": \"AU Nomo Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹235 (₹199 + GST)\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"au-nomo-credit-card\"\n    },\n    {\n      \"name\": \"Kotak Zen Signature Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,770 (₹1,500 + GST)\",\n      \"annual_fee\": \"₹1,770 (₹1,500 + GST)\",\n      \"card_alias\": \"kotak-zen-signature-credit-card\"\n    },\n    {\n      \"name\": \"Standard Chartered Ultimate Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,900 (₹5,000 + GST)\",\n      \"annual_fee\": \"₹5,900 (₹5,000 + GST)\",\n      \"card_alias\": \"standard-chartered-ultimate-credit-card\"\n    },\n    {\n      \"name\": \"IRCTC SBI Platinum Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"irctc-sbi-platinum-card\"\n    },\n    {\n      \"name\": \"Axis Shoppers Stop Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"axis-shopper-stop-credit-card\"\n    },\n    {\n      \"name\": \"IRCTC RBL Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"irctc-rbl-credit-card\"\n    },\n    {\n      \"name\": \"SBI Card Miles Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"annual_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"card_alias\": \"sbi-card-miles\"\n    },\n    {\n      \"name\": \"MakeMyTrip ICICI Bank Signature Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹2,950 (₹2,500 + GST)\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"makemytrip-icici-signature\"\n    },\n    {\n      \"name\": \"PVR Kotak Platinum Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹1,179 (₹999 + GST)\",\n      \"card_alias\": \"pvr-kotak-platinum\"\n    },\n    {\n      \"name\": \"Paytm HDFC Bank Select Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"paytm-hdfc-bank-select-credit-card\"\n    },\n    {\n      \"name\": \"Kotak Delight Platinum Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹2,359 (₹1,999 + GST)\",\n      \"annual_fee\": \"₹353 (₹299 + GST)\",\n      \"card_alias\": \"kotak-delight-platinum-credit-card\"\n    },\n    {\n      \"name\": \"Kotak Essentia Platinum Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"annual_fee\": \"₹884 (₹749 + GST)\",\n      \"card_alias\": \"kotak-essentia-platinum-credit-card\"\n    },\n    {\n      \"name\": \"Axis Privilege Amex Credit Card \",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"axis-privilege-amex-credit-card\"\n    },\n    {\n      \"name\": \"Axis Supermoney Rupay Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"card_alias\": \"supermoney-rupay-credit-card\"\n    },\n    {\n      \"name\": \"RBL Bank Play Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"card_alias\": \"rbl-bank-play-credit-card\"\n    },\n    {\n      \"name\": \"Kotak Mojo Platinum Credit card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"card_alias\": \"kotak-mojo-platinum-credit-card\"\n    },\n    {\n      \"name\": \"RBL Platinum Maxima Plus Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹2,950 (₹2,500 + GST)\",\n      \"card_alias\": \"rbl-platinum-maxima-plus-credit-card\"\n    },\n    {\n      \"name\": \"IDFC FIRST Dual Indigo Credit Card\",\n      \"bank\": \"\",\n      \"joining_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"annual_fee\": \"₹5,899 (₹4,999 + GST)\",\n      \"card_alias\": \"idfc-first-dual-indigo-credit-card\"\n    }\n  ]\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "total_available": 258,
+      "showing": 250,
+      "cards": [
+        {
+          "name": "SBI Cashback Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,179 (₹999 + GST)",
+          "annual_fee": "₹1,179 (₹999 + GST)",
+          "card_alias": "sbi-cashback-credit-card"
+        },
+        {
+          "name": "Axis Flipkart Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "axis-flipkart-credit-card"
+        },
+        {
+          "name": "HSBC Cashback Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹1,179 (₹999 + GST)",
+          "card_alias": "hsbc-cashback-credit-card"
+        },
+        {
+          "name": "Kiwi Klick Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "kiwi-klick-credit-card"
+        },
+        {
+          "name": "SBI Simply Click Credit Card",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "sbi-simply-click-credit-card"
+        },
+        {
+          "name": "HDFC Regalia Gold Credit Card",
+          "bank": "",
+          "joining_fee": "₹2,950 (₹2,500 + GST)",
+          "annual_fee": "₹2,950 (₹2,500 + GST)",
+          "card_alias": "hdfc-regalia-gold"
+        },
+        {
+          "name": "Flipkart SBI Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "flipkart-sbi-credit-card"
+        },
+        {
+          "name": "Swiggy BLCK HDFC Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "swiggy-blck-hdfc-credit-card"
+        },
+        {
+          "name": "IDFC FIRST Millennia Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "idfc-first-millennia-credit-card"
+        },
+        {
+          "name": "Tata Neu Infinity HDFC Bank Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,769 (₹1,499 + GST)",
+          "annual_fee": "₹1,769 (₹1,499 + GST)",
+          "card_alias": "tata-neu-hdfc-bank-credit-card"
+        },
+        {
+          "name": "Axis MyZone Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "axis-bank-myzone-credit-card"
+        },
+        {
+          "name": "HDFC Millennia Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "hdfc-millenia-credit-card"
+        },
+        {
+          "name": "Standard Chartered Smart Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "stanc-smart-credit-card"
+        },
+        {
+          "name": "HSBC Travel One Credit Card",
+          "bank": "",
+          "joining_fee": "₹5,899 (₹4,999 + GST)",
+          "annual_fee": "₹5,899 (₹4,999 + GST)",
+          "card_alias": "hsbc-travel-one"
+        },
+        {
+          "name": "Indian Oil RBL Bank XTRA Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,770 (₹1,500 + GST)",
+          "annual_fee": "₹1,770 (₹1,500 + GST)",
+          "card_alias": "indian-oil-rbl-bank-xtra-credit-card"
+        },
+        {
+          "name": "IDFC FIRST Wealth Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "idfc-first-wealth-credit-card"
+        },
+        {
+          "name": "ICICI Emeralde Credit Card",
+          "bank": "",
+          "joining_fee": "₹14,160 (₹12,000 + GST)",
+          "annual_fee": "₹14,160 (₹12,000 + GST)",
+          "card_alias": "icici-emeralde-credit-card"
+        },
+        {
+          "name": "HSBC Taj Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,29,800 (₹1,10,000 + GST)",
+          "annual_fee": "₹1,29,800 (₹1,10,000 + GST)",
+          "card_alias": "hsbc-taj-credit-card"
+        },
+        {
+          "name": "IDFC FIRST Power Plus Credit Card",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "idfc-power-plus-credit-card"
+        },
+        {
+          "name": "Scapia Credit Card",
+          "bank": "",
+          "joining_fee": "₹1 (₹1 + GST)",
+          "annual_fee": "₹1 (₹1 + GST)",
+          "card_alias": "scapia-credit-card"
+        },
+        {
+          "name": "Axis Airtel Rupay Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "axis-airtel-credit-card"
+        },
+        {
+          "name": "IDFC FIRST Select Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "idfc-first-select-credit-card"
+        },
+        {
+          "name": "Axis Magnus Credit Card",
+          "bank": "",
+          "joining_fee": "₹14,750 (₹12,500 + GST)",
+          "annual_fee": "₹14,750 (₹12,500 + GST)",
+          "card_alias": "axis-bank-magnus-credit-card"
+        },
+        {
+          "name": "Swiggy Ornge HDFC Bank Credit Card ",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "swiggy-ornge-hdfc-credit-card"
+        },
+        {
+          "name": "YES BANK MARQUÉE Credit Card",
+          "bank": "",
+          "joining_fee": "₹11,799 (₹9,999 + GST)",
+          "annual_fee": "₹5,899 (₹4,999 + GST)",
+          "card_alias": "yes-bank-marquee-credit-card"
+        },
+        {
+          "name": "HSBC Live Plus Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,179 (₹999 + GST)",
+          "annual_fee": "₹1,179 (₹999 + GST)",
+          "card_alias": "hsbc-live-plus-credit-card"
+        },
+        {
+          "name": "Myntra Kotak Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "myntra-kotak-credit-card"
+        },
+        {
+          "name": "Axis Privilege Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,770 (₹1,500 + GST)",
+          "annual_fee": "₹1,770 (₹1,500 + GST)",
+          "card_alias": "axis-bank-privilege-credit-card"
+        },
+        {
+          "name": "ICICI Sapphiro Credit Card",
+          "bank": "",
+          "joining_fee": "₹7,670 (₹6,500 + GST)",
+          "annual_fee": "₹4,130 (₹3,500 + GST)",
+          "card_alias": "icici-sapphiro-credit-card"
+        },
+        {
+          "name": "HDFC BizBlack Metal Edition Credit Card",
+          "bank": "",
+          "joining_fee": "₹11,800 (₹10,000 + GST)",
+          "annual_fee": "₹11,800 (₹10,000 + GST)",
+          "card_alias": "hdfc-biz-black-metal-edition-credit-card"
+        },
+        {
+          "name": "Axis Cashback Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "axis-cashback-credit-card"
+        },
+        {
+          "name": "YES BANK ACE Credit Card",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "yes-bank-ace-credit-card"
+        },
+        {
+          "name": "Axis Horizon Credit Card",
+          "bank": "",
+          "joining_fee": "₹3,540 (₹3,000 + GST)",
+          "annual_fee": "₹3,540 (₹3,000 + GST)",
+          "card_alias": "axis-bank-horizon-credit-card"
+        },
+        {
+          "name": "Axis Burgundy Magnus Credit Card",
+          "bank": "",
+          "joining_fee": "₹35,400 (₹30,000 + GST)",
+          "annual_fee": "₹35,400 (₹30,000 + GST)",
+          "card_alias": "magnus-burgundy-credit-card"
+        },
+        {
+          "name": "HDFC Biz Grow Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "hdfc-biz-grow-credit-card"
+        },
+        {
+          "name": "PhonePe HDFC Bank Ultimo Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,179 (₹999 + GST)",
+          "annual_fee": "₹1,179 (₹999 + GST)",
+          "card_alias": "hdfc-phonepe-ultimo-credit-card"
+        },
+        {
+          "name": "ICICI Emeralde Private Metal Credit Card",
+          "bank": "",
+          "joining_fee": "₹14,749 (₹12,499 + GST)",
+          "annual_fee": "₹14,749 (₹12,499 + GST)",
+          "card_alias": "icici-emeralde-private-metal-credit-card"
+        },
+        {
+          "name": "IndusInd Bank Avios Infinite Credit Card",
+          "bank": "",
+          "joining_fee": "₹47,200 (₹40,000 + GST)",
+          "annual_fee": "₹11,800 (₹10,000 + GST)",
+          "card_alias": "indusind-bank-avios-infinite-credit-card"
+        },
+        {
+          "name": "HDFC PIXEL Play Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "hdfc-pixel-play-credit-card"
+        },
+        {
+          "name": "IndianOil Axis Premium Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "indianoil-axis-premium-credit-card"
+        },
+        {
+          "name": "ICICI Emirates Skywards Rubyx Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "icici-emirates-skywards-rubyx-credit-card"
+        },
+        {
+          "name": "Zagg Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "zagg-rupay-credit-card"
+        },
+        {
+          "name": "BOB Eterna Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹2,949 (₹2,499 + GST)",
+          "card_alias": "bob-eterna-credit-card"
+        },
+        {
+          "name": "IndusInd Indulge Credit Card",
+          "bank": "",
+          "joining_fee": "₹88,500 (₹75,000 + GST)",
+          "annual_fee": "₹11,800 (₹10,000 + GST)",
+          "card_alias": "indusind-indulge-credit-card"
+        },
+        {
+          "name": "Pop Club Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "pop-club-credit-card"
+        },
+        {
+          "name": "IDFC FIRST HELLO Cashback Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "idfc-first-hello-cashback-credit-card"
+        },
+        {
+          "name": "RBL Shoprite Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "rbl-shoprite-credit-card"
+        },
+        {
+          "name": "SBI AURUM Credit Card",
+          "bank": "",
+          "joining_fee": "₹11,799 (₹9,999 + GST)",
+          "annual_fee": "₹11,799 (₹9,999 + GST)",
+          "card_alias": "sbi-aurum-credit-card"
+        },
+        {
+          "name": "HDFC Diners Club Black Credit Card",
+          "bank": "",
+          "joining_fee": "₹11,800 (₹10,000 + GST)",
+          "annual_fee": "₹11,800 (₹10,000 + GST)",
+          "card_alias": "hdfc-diners-club-black"
+        },
+        {
+          "name": "EazyDiner IndusInd Bank Signature Credit Card ",
+          "bank": "",
+          "joining_fee": "₹3,539 (₹2,999 + GST)",
+          "annual_fee": "₹3,539 (₹2,999 + GST)",
+          "card_alias": "indusind-eazydiner-signature-credit-card"
+        },
+        {
+          "name": "HDFC Marriott Bonvoy Credit Card",
+          "bank": "",
+          "joining_fee": "₹3,540 (₹3,000 + GST)",
+          "annual_fee": "₹3,540 (₹3,000 + GST)",
+          "card_alias": "hdfc-marriott-bonvoy-credit-card"
+        },
+        {
+          "name": "CRED IndusInd Bank Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "cred-indusind-bank-credit-card"
+        },
+        {
+          "name": "YES BANK SELECT Credit Card",
+          "bank": "",
+          "joining_fee": "₹707 (₹599 + GST)",
+          "annual_fee": "₹707 (₹599 + GST)",
+          "card_alias": "yes-bank-select-credit-card"
+        },
+        {
+          "name": "IndusInd epay Amex credit Card ",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "indusind-epay-amex-credit-card"
+        },
+        {
+          "name": "PNB Zaggle Twin Credit Card ",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "pnb-zaggle-twin-credit-card"
+        },
+        {
+          "name": "Axis IOCL Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "axis-indian-oil-rupay-credit-card"
+        },
+        {
+          "name": "Tata Neu Plus SBI Card",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "tata-neu-plus-sbi-card"
+        },
+        {
+          "name": "SBI BPCL Octane Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,769 (₹1,499 + GST)",
+          "annual_fee": "₹1,769 (₹1,499 + GST)",
+          "card_alias": "sbi-bpcl-octane-credit-card"
+        },
+        {
+          "name": "BOB SELECT Credit Card",
+          "bank": "",
+          "joining_fee": "₹885 (₹750 + GST)",
+          "annual_fee": "₹885 (₹750 + GST)",
+          "card_alias": "bob-select-credit-card"
+        },
+        {
+          "name": "HDFC Tata Neu Plus Credit Card",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "hdfc-tata-neu-plus-credit-card"
+        },
+        {
+          "name": "IDFC FIRST Classic Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "idfc-first-classic-credit-card"
+        },
+        {
+          "name": "YES BANK RESERV Credit Card",
+          "bank": "",
+          "joining_fee": "₹2,949 (₹2,499 + GST)",
+          "annual_fee": "₹2,949 (₹2,499 + GST)",
+          "card_alias": "yes-bank-reserv-credit-card"
+        },
+        {
+          "name": "SBI Titan Credit Card",
+          "bank": "",
+          "joining_fee": "₹3,539 (₹2,999 + GST)",
+          "annual_fee": "₹3,539 (₹2,999 + GST)",
+          "card_alias": "sbi-titan-credit-card"
+        },
+        {
+          "name": "RBL Platinum Maxima Credit Card",
+          "bank": "",
+          "joining_fee": "₹2,360 (₹2,000 + GST)",
+          "annual_fee": "₹2,360 (₹2,000 + GST)",
+          "card_alias": "rbl-platinum-maxima-credit-card"
+        },
+        {
+          "name": "IDFC FIRST SWYP Credit Card",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "idfc-swyp-credit-card"
+        },
+        {
+          "name": "YES BANK ELITE PLUS Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,179 (₹999 + GST)",
+          "annual_fee": "₹1,179 (₹999 + GST)",
+          "card_alias": "yes-bank-elite-plus-credit-card"
+        },
+        {
+          "name": "BOB HPCL ENERGIE Credit Card ",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "bob-hpcl-energie-credit-card"
+        },
+        {
+          "name": "HSBC Rupay Platinum Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "hsbc-rupay-platinum-credit-card"
+        },
+        {
+          "name": "OneCard Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "onecard-credit-card"
+        },
+        {
+          "name": "RBL Bank NOVA Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹14,750 (₹12,500 + GST)",
+          "card_alias": "rbl-bank-nova-credit-card"
+        },
+        {
+          "name": "RBL Bank Icon Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹5,900 (₹5,000 + GST)",
+          "card_alias": "rbl-bank-icon-credit-card"
+        },
+        {
+          "name": "SalarySe Level UP Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "salaryse-level-up-credit-card"
+        },
+        {
+          "name": "HDFC Pixel Go Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "hdfc-pixel-go-credit-card"
+        },
+        {
+          "name": "SBI MILES PRIME Credit Card",
+          "bank": "",
+          "joining_fee": "₹3,539 (₹2,999 + GST)",
+          "annual_fee": "₹3,539 (₹2,999 + GST)",
+          "card_alias": "sbi-miles-prime-credit-card"
+        },
+        {
+          "name": "PNB LUXURA Metal Credit Card",
+          "bank": "",
+          "joining_fee": "₹10,620 (₹9,000 + GST)",
+          "annual_fee": "₹8,850 (₹7,500 + GST)",
+          "card_alias": "pnb-luxura-metal-credit-card"
+        },
+        {
+          "name": "IndianOil Axis Rupay Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "indianoil-axis-rupay-credit-card"
+        },
+        {
+          "name": "PhonePe SBI Card SELECT BLACK ",
+          "bank": "",
+          "joining_fee": "₹1,769 (₹1,499 + GST)",
+          "annual_fee": "₹1,769 (₹1,499 + GST)",
+          "card_alias": "phonepe-sbi-card-select-black"
+        },
+        {
+          "name": "Axis Reserve Credit Card",
+          "bank": "",
+          "joining_fee": "₹59,000 (₹50,000 + GST)",
+          "annual_fee": "₹59,000 (₹50,000 + GST)",
+          "card_alias": "axis-reserve-credit-card"
+        },
+        {
+          "name": "Air India SBI Platinum Credit Card ",
+          "bank": "",
+          "joining_fee": "₹1,769 (₹1,499 + GST)",
+          "annual_fee": "₹1,769 (₹1,499 + GST)",
+          "card_alias": "air-india-sbi-platinum-credit-card"
+        },
+        {
+          "name": "AU Vetta Credit Card",
+          "bank": "",
+          "joining_fee": "₹3,539 (₹2,999 + GST)",
+          "annual_fee": "₹3,539 (₹2,999 + GST)",
+          "card_alias": "au-vetta-credit-card"
+        },
+        {
+          "name": "Kotak Air Plus Credit Card ",
+          "bank": "",
+          "joining_fee": "₹3,540 (₹3,000 + GST)",
+          "annual_fee": "₹3,540 (₹3,000 + GST)",
+          "card_alias": "kotak-air-plus-credit-card"
+        },
+        {
+          "name": "BOB Uni GoldX Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "bob-uni-goldx-credit-card"
+        },
+        {
+          "name": "BOB Tiara Credit Card",
+          "bank": "",
+          "joining_fee": "₹2,949 (₹2,499 + GST)",
+          "annual_fee": "₹2,949 (₹2,499 + GST)",
+          "card_alias": "bob-tiara-credit-card"
+        },
+        {
+          "name": "IndusInd Solitaire Credit Card",
+          "bank": "",
+          "joining_fee": "₹35,400 (₹30,000 + GST)",
+          "annual_fee": "₹11,800 (₹10,000 + GST)",
+          "card_alias": "indusind-solitarie-credit-card"
+        },
+        {
+          "name": "Kotak White Reserve Credit Card",
+          "bank": "",
+          "joining_fee": "₹14,750 (₹12,500 + GST)",
+          "annual_fee": "₹14,750 (₹12,500 + GST)",
+          "card_alias": "kotak-white-reserve-credit-card"
+        },
+        {
+          "name": "SBM Kredit.Pe Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "sbm-kreditpe-credit-card"
+        },
+        {
+          "name": "IDFC FIRST Quantum Plus Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "idfc-first-quantum-plus-credit-card"
+        },
+        {
+          "name": "Tata Neu Infinity SBI Card",
+          "bank": "",
+          "joining_fee": "₹1,769 (₹1,499 + GST)",
+          "annual_fee": "₹1,769 (₹1,499 + GST)",
+          "card_alias": "tata-neu-infinity-sbi-card"
+        },
+        {
+          "name": "HDFC Diners Club Black Metal Credit Card",
+          "bank": "",
+          "joining_fee": "₹11,800 (₹10,000 + GST)",
+          "annual_fee": "₹11,800 (₹10,000 + GST)",
+          "card_alias": "hdfc-diners-club-black-metal-credit-card"
+        },
+        {
+          "name": "HDFC Moneyback Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "hdfc-moneyback-credit-card"
+        },
+        {
+          "name": "ICICI HPCL Super Saver Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "icici-hpcl-super-saver-credit-card"
+        },
+        {
+          "name": "BOB Etihad Guest Credit Card",
+          "bank": "",
+          "joining_fee": "₹2,950 (₹2,500 + GST)",
+          "annual_fee": "₹2,950 (₹2,500 + GST)",
+          "card_alias": "bob-etihad-guest-credit-card"
+        },
+        {
+          "name": "Equitas PowerMiles Credit Card",
+          "bank": "",
+          "joining_fee": "₹5,900 (₹5,000 + GST)",
+          "annual_fee": "₹5,900 (₹5,000 + GST)",
+          "card_alias": "equitas-power-miles-credit-card"
+        },
+        {
+          "name": "IDFC FIRST WOW! Black Credit Card",
+          "bank": "",
+          "joining_fee": "₹885 (₹750 + GST)",
+          "annual_fee": "₹885 (₹750 + GST)",
+          "card_alias": "idfc-first-wow-black-credit-card"
+        },
+        {
+          "name": "IndiGo Axis Premium Credit Card",
+          "bank": "",
+          "joining_fee": "₹5,900 (₹5,000 + GST)",
+          "annual_fee": "₹5,900 (₹5,000 + GST)",
+          "card_alias": "indigo-axis-premium-credit-card"
+        },
+        {
+          "name": "SBI IRCTC Premier Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,769 (₹1,499 + GST)",
+          "annual_fee": "₹1,769 (₹1,499 + GST)",
+          "card_alias": "sbi-irctc-premier-crerdit-card"
+        },
+        {
+          "name": "Kotak White Credit Card",
+          "bank": "",
+          "joining_fee": "₹3,540 (₹3,000 + GST)",
+          "annual_fee": "₹3,540 (₹3,000 + GST)",
+          "card_alias": "kotak-white-credit-card"
+        },
+        {
+          "name": "Canara Rupay Select Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹354 (₹300 + GST)",
+          "card_alias": "canara-rupay-select-credit-card"
+        },
+        {
+          "name": "Axis Samsung Signature Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "axis-samsung-signature-credit-card"
+        },
+        {
+          "name": "BOB Etihad Guest Premium Credit Card",
+          "bank": "",
+          "joining_fee": "₹5,900 (₹5,000 + GST)",
+          "annual_fee": "₹5,900 (₹5,000 + GST)",
+          "card_alias": "bob-etihad-guest-premium-credit-card"
+        },
+        {
+          "name": "Axis Flipkart Super Elite Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "axis-flipkart-super-elite-credit-card"
+        },
+        {
+          "name": "Amazon Pay ICICI Bank Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "icici-amazon-pay-credit-card"
+        },
+        {
+          "name": "EazyDiner IndusInd Bank Platinum Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "eazydiner-indusind-bank-platinum"
+        },
+        {
+          "name": "ICICI Emirates Skywards Sapphiro Credit Card",
+          "bank": "",
+          "joining_fee": "₹5,900 (₹5,000 + GST)",
+          "annual_fee": "₹5,900 (₹5,000 + GST)",
+          "card_alias": "icici-emirates-skywards-sapphiro-credit-card"
+        },
+        {
+          "name": "AU Tejas Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "au-tejas-credit-card"
+        },
+        {
+          "name": "SBI MILES ELITE Credit Card ",
+          "bank": "",
+          "joining_fee": "₹5,899 (₹4,999 + GST)",
+          "annual_fee": "₹5,899 (₹4,999 + GST)",
+          "card_alias": "sbi-miles-elite-credit-card"
+        },
+        {
+          "name": "IndianOil RBL Bank Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "indianoil-rbl-bank-credit-card"
+        },
+        {
+          "name": "AU Ananta Credit Card",
+          "bank": "",
+          "joining_fee": "₹2,360 (₹2,000 + GST)",
+          "annual_fee": "₹2,360 (₹2,000 + GST)",
+          "card_alias": "au-ananta-credit-card"
+        },
+        {
+          "name": "AU Prathama Credit Card",
+          "bank": "",
+          "joining_fee": "₹117 (₹99 + GST)",
+          "annual_fee": "₹118 (₹100 + GST)",
+          "card_alias": "au-prathama-credit-card"
+        },
+        {
+          "name": "HSBC Platinum Rewards Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "hsbc-platinum-credit-card"
+        },
+        {
+          "name": "IndusInd Platinum RuPay Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "indusind-platinum-rupay-credit-card"
+        },
+        {
+          "name": "American Express Platinum Card",
+          "bank": "",
+          "joining_fee": "₹77,880 (₹66,000 + GST)",
+          "annual_fee": "₹77,880 (₹66,000 + GST)",
+          "card_alias": "amexmetal"
+        },
+        {
+          "name": "AU Laksya Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "au-laksya-credit-card"
+        },
+        {
+          "name": "SBI KrisFlyer Credit Card",
+          "bank": "",
+          "joining_fee": "₹3,539 (₹2,999 + GST)",
+          "annual_fee": "₹3,539 (₹2,999 + GST)",
+          "card_alias": "sbi-krisflyer-credit-card"
+        },
+        {
+          "name": "Standard Chartered Rewards Credit Card ",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "standard-chartered-rewards-credit-card"
+        },
+        {
+          "name": "HDFC Infinia Credit Card",
+          "bank": "",
+          "joining_fee": "₹14,750 (₹12,500 + GST)",
+          "annual_fee": "₹14,750 (₹12,500 + GST)",
+          "card_alias": "hdfc-infinia-credit-card"
+        },
+        {
+          "name": "Air India SBI Signature Credit Card",
+          "bank": "",
+          "joining_fee": "₹5,899 (₹4,999 + GST)",
+          "annual_fee": "₹5,899 (₹4,999 + GST)",
+          "card_alias": "air-india-sbi-signature-credit-card"
+        },
+        {
+          "name": "HDFC Biz Power Credit Card",
+          "bank": "",
+          "joining_fee": "₹2,950 (₹2,500 + GST)",
+          "annual_fee": "₹2,950 (₹2,500 + GST)",
+          "card_alias": "hdfc-biz-power-credit-card"
+        },
+        {
+          "name": "Fibe Axis Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "fibe-axis-credit-card"
+        },
+        {
+          "name": "AU Xcite ACE Credit Card",
+          "bank": "",
+          "joining_fee": "₹884 (₹749 + GST)",
+          "annual_fee": "₹884 (₹749 + GST)",
+          "card_alias": "au-xcite-ace-credit-card"
+        },
+        {
+          "name": "IndiGo Axis Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "indigo-axis-credit-card"
+        },
+        {
+          "name": "RBL Super Binge Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,179 (₹999 + GST)",
+          "annual_fee": "₹1,179 (₹999 + GST)",
+          "card_alias": "rbl-super-binge-credit-card"
+        },
+        {
+          "name": "HSBC Premier Credit Card",
+          "bank": "",
+          "joining_fee": "₹14,160 (₹12,000 + GST)",
+          "annual_fee": "₹23,600 (₹20,000 + GST)",
+          "card_alias": "hsbc-premier-credit-card"
+        },
+        {
+          "name": "Equitas Selfe Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "equitas-selfe-credit-card"
+        },
+        {
+          "name": "Kotak Air Credit Card ",
+          "bank": "",
+          "joining_fee": "₹1,179 (₹999 + GST)",
+          "annual_fee": "₹1,179 (₹999 + GST)",
+          "card_alias": "kotak-air-credit-card"
+        },
+        {
+          "name": "RBL World Safari Credit Card",
+          "bank": "",
+          "joining_fee": "₹3,540 (₹3,000 + GST)",
+          "annual_fee": "₹3,540 (₹3,000 + GST)",
+          "card_alias": "rbl-world-safari-credit-card"
+        },
+        {
+          "name": "KrisFlyer SBI Apex Credit Card ",
+          "bank": "",
+          "joining_fee": "₹11,799 (₹9,999 + GST)",
+          "annual_fee": "₹11,799 (₹9,999 + GST)",
+          "card_alias": "krisflyer-sbi-apex-credit-card"
+        },
+        {
+          "name": "IDFC FIRST Mayura Credit Card",
+          "bank": "",
+          "joining_fee": "₹7,079 (₹5,999 + GST)",
+          "annual_fee": "₹7,079 (₹5,999 + GST)",
+          "card_alias": "idfc-mayura-credit-card"
+        },
+        {
+          "name": "YES Bank Prosperity Reward Plus Credit Card",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "yes-bank-prosperity-reward-plus-credit-card"
+        },
+        {
+          "name": "Axis Neo Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹295 (₹250 + GST)",
+          "card_alias": "Axis-Neo-Credit"
+        },
+        {
+          "name": "IDFC FIRST Ashva Credit Card",
+          "bank": "",
+          "joining_fee": "₹3,539 (₹2,999 + GST)",
+          "annual_fee": "₹3,539 (₹2,999 + GST)",
+          "card_alias": "idfc-ashva-credit-card"
+        },
+        {
+          "name": "IndusInd Bank Pinnacle Credit Card",
+          "bank": "",
+          "joining_fee": "₹17,700 (₹15,000 + GST)",
+          "annual_fee": "Free",
+          "card_alias": "indusind-bank-pinnacle-credit-card"
+        },
+        {
+          "name": "ixigo AU Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "ixigo-au-credit-card"
+        },
+        {
+          "name": "Jupiter Edge Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "jupiter-edge-credit-card"
+        },
+        {
+          "name": "Kotak Cashback+ Credit Card",
+          "bank": "",
+          "joining_fee": "₹885 (₹750 + GST)",
+          "annual_fee": "₹885 (₹750 + GST)",
+          "card_alias": "kotak-cashback-plus-credit-card"
+        },
+        {
+          "name": "Reliance SBI Card PRIME  ",
+          "bank": "",
+          "joining_fee": "₹3,539 (₹2,999 + GST)",
+          "annual_fee": "₹3,539 (₹2,999 + GST)",
+          "card_alias": "reliance-sbi-card-prime"
+        },
+        {
+          "name": "Apollo SBI Select Credit Card ",
+          "bank": "",
+          "joining_fee": "₹1,769 (₹1,499 + GST)",
+          "annual_fee": "₹1,769 (₹1,499 + GST)",
+          "card_alias": "apollo-sbi-select-credit-card"
+        },
+        {
+          "name": "BOB PREMIER Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "bob-premier-credit-card"
+        },
+        {
+          "name": "IDFC FIRST EA₹N Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "idfc-first-earn-credit-card"
+        },
+        {
+          "name": "AU InstaPay Rupay Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "au-instapay-rupay-credit-card"
+        },
+        {
+          "name": "SBI Unnati Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "sbi-unnati-credit-card"
+        },
+        {
+          "name": "IndusInd Jio-bp Mobility+ Credit Card ",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "Free",
+          "card_alias": "indusind-jio-bp-mobility-credit-card"
+        },
+        {
+          "name": "SBI Card Pulse Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,769 (₹1,499 + GST)",
+          "annual_fee": "₹1,769 (₹1,499 + GST)",
+          "card_alias": "sbi-card-pulse-credit-card"
+        },
+        {
+          "name": "Standard Chartered Manhattan Platinum Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,179 (₹999 + GST)",
+          "annual_fee": "₹1,179 (₹999 + GST)",
+          "card_alias": "standard-chartered-manhattan-credit-card"
+        },
+        {
+          "name": "IDFC FIRST GAJ Credit Card",
+          "bank": "",
+          "joining_fee": "₹14,750 (₹12,500 + GST)",
+          "annual_fee": "₹14,750 (₹12,500 + GST)",
+          "card_alias": "idfc-first-gaj-credit-card"
+        },
+        {
+          "name": "Celesta Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "celesta-credit-card"
+        },
+        {
+          "name": "HSBC RuPay Cashback Credit Card",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "hsbc-rupay-cashback-credit-card"
+        },
+        {
+          "name": "Times Black ICICI Bank Credit Card",
+          "bank": "",
+          "joining_fee": "₹23,600 (₹20,000 + GST)",
+          "annual_fee": "₹23,600 (₹20,000 + GST)",
+          "card_alias": "times-black-credit-card"
+        },
+        {
+          "name": "SBI BPCL Credit Card",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "sbi-bpcl-credit-card"
+        },
+        {
+          "name": "HDFC Diners Privilege Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "hdfc-diners-privilege-credit-card"
+        },
+        {
+          "name": "Kotak Solitaire Credit Card ",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "kotak-solitaire-credit-card"
+        },
+        {
+          "name": "BOBCARD PRIME Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "bobcard-prime-credit-card"
+        },
+        {
+          "name": "AU Xcite Ultra Credit Card",
+          "bank": "",
+          "joining_fee": "₹884 (₹749 + GST)",
+          "annual_fee": "₹884 (₹749 + GST)",
+          "card_alias": "xcite-ultra-credit-card"
+        },
+        {
+          "name": "Equitas Tiga Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "equitas-tiga-credit-card"
+        },
+        {
+          "name": "Standard Chartered Super Value Titanium Credit Card ",
+          "bank": "",
+          "joining_fee": "₹885 (₹750 + GST)",
+          "annual_fee": "₹885 (₹750 + GST)",
+          "card_alias": "standard-chartered-super-value-titanium-credit-card"
+        },
+        {
+          "name": "HDFC Biz First Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "hdfc-biz-first-credit-card"
+        },
+        {
+          "name": "Paisabazaar Step-Up SBM Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "Free",
+          "card_alias": "paizabazaar-step-up-sbm-credit-card"
+        },
+        {
+          "name": "Signet Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "signet-credit-card"
+        },
+        {
+          "name": "Imperio Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "imperio-credit-card"
+        },
+        {
+          "name": "IDFC FIRST POWER Credit Card",
+          "bank": "",
+          "joining_fee": "₹235 (₹199 + GST)",
+          "annual_fee": "₹235 (₹199 + GST)",
+          "card_alias": "idfc-first-power-credit-card"
+        },
+        {
+          "name": "IndusInd Tiger Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "indusind-tiger-credit-card"
+        },
+        {
+          "name": "SBI ELITE Card",
+          "bank": "",
+          "joining_fee": "₹5,899 (₹4,999 + GST)",
+          "annual_fee": "₹5,899 (₹4,999 + GST)",
+          "card_alias": "sbi-elite-card"
+        },
+        {
+          "name": "SBI Elite Credit Card",
+          "bank": "",
+          "joining_fee": "₹5,899 (₹4,999 + GST)",
+          "annual_fee": "₹5,899 (₹4,999 + GST)",
+          "card_alias": "sbi-elite-credit-card"
+        },
+        {
+          "name": "American Express Gold Card",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹5,310 (₹4,500 + GST)",
+          "card_alias": "american-express-gold-card"
+        },
+        {
+          "name": "BOB IRCTC Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹413 (₹350 + GST)",
+          "card_alias": "bob-irctc-credit-card"
+        },
+        {
+          "name": "SBI Etihad Premier Credit Card ",
+          "bank": "",
+          "joining_fee": "₹5,899 (₹4,999 + GST)",
+          "annual_fee": "₹5,899 (₹4,999 + GST)",
+          "card_alias": "sbi-etihad-premier-credit-card"
+        },
+        {
+          "name": "HDFC Flipkart Wholesale Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "hdfc-flipkart-wholesale-credit-card"
+        },
+        {
+          "name": "HDFC Indian Oil Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "hdfc-indian-oil-credit-card"
+        },
+        {
+          "name": "Standard Chartered DigiSmart Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "standard-chartered-digismart-credit-card"
+        },
+        {
+          "name": "SBI Simply Save Credit Card",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "sbi-simply-save-credit-card"
+        },
+        {
+          "name": "AU Altura Credit Card",
+          "bank": "",
+          "joining_fee": "₹235 (₹199 + GST)",
+          "annual_fee": "₹235 (₹199 + GST)",
+          "card_alias": "au-altura-credit-card"
+        },
+        {
+          "name": "IndusInd Nexxt Creditt card",
+          "bank": "",
+          "joining_fee": "₹11,800 (₹10,000 + GST)",
+          "annual_fee": "Free",
+          "card_alias": "indusind-nexxt-credit-card"
+        },
+        {
+          "name": "IndusInd Legend Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "indusind-legend-credit-card"
+        },
+        {
+          "name": "SBI OLA Money Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "sbi-ola-money-credit-card"
+        },
+        {
+          "name": "Axis Atlas Credit Card",
+          "bank": "",
+          "joining_fee": "₹5,900 (₹5,000 + GST)",
+          "annual_fee": "₹5,900 (₹5,000 + GST)",
+          "card_alias": "axis-atlas-credit-card"
+        },
+        {
+          "name": "Google Pay Flex Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "google-pay-flex-credit-card"
+        },
+        {
+          "name": "SBI Reliance Credit Card ",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "sbi-reliance-credit-card"
+        },
+        {
+          "name": "SBI Landmark Reward PRIME Credit Card",
+          "bank": "",
+          "joining_fee": "₹3,539 (₹2,999 + GST)",
+          "annual_fee": "₹3,539 (₹2,999 + GST)",
+          "card_alias": "sbi-landmark-reward-prime-credit-card"
+        },
+        {
+          "name": "AU Altura Plus Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "au-altura-plus-credit-card"
+        },
+        {
+          "name": "SBI Landmark Reward SELECT Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,769 (₹1,499 + GST)",
+          "annual_fee": "₹1,769 (₹1,499 + GST)",
+          "card_alias": "sbi-landmark-reward-select-credit-card"
+        },
+        {
+          "name": "RBL Bank Cookies Credit Card",
+          "bank": "",
+          "joining_fee": "₹118 (₹100 + GST)",
+          "annual_fee": "₹1,416 (₹1,200 + GST)",
+          "card_alias": "rbl-cookies-credit-card"
+        },
+        {
+          "name": "Roarbank Rupay Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "roarbank-rupay-credit-card"
+        },
+        {
+          "name": "SBI Landmark Reward Credit Card",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "sbi-landmark-reward-credit-card"
+        },
+        {
+          "name": "HDFC Shoppers Stop Black Credit Card",
+          "bank": "",
+          "joining_fee": "₹5,310 (₹4,500 + GST)",
+          "annual_fee": "₹5,310 (₹4,500 + GST)",
+          "card_alias": "shoppers-stop-black-hdfc-credit-card"
+        },
+        {
+          "name": "SBM ZET Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "sbm-zet-credit-card"
+        },
+        {
+          "name": "ICICI Rubyx Credit Card",
+          "bank": "",
+          "joining_fee": "₹3,540 (₹3,000 + GST)",
+          "annual_fee": "₹2,360 (₹2,000 + GST)",
+          "card_alias": "icici-rubyx-credit-card"
+        },
+        {
+          "name": "BOB Snapdeal Credit Card",
+          "bank": "",
+          "joining_fee": "₹294 (₹249 + GST)",
+          "annual_fee": "₹294 (₹249 + GST)",
+          "card_alias": "bob-snapdeal-credit-card"
+        },
+        {
+          "name": "PhonePe HDFC Bank Uno Credit Card",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "phonepe-hdfc-bank-uno-credit-card"
+        },
+        {
+          "name": "HDFC Diners Club Rewardz Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "hdfc-diners-club-rewardz-credit-card"
+        },
+        {
+          "name": "HDFC Freedom Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "hdfc-freedom-credit-card"
+        },
+        {
+          "name": "HDFC 6E Rewards Indigo Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "hdfc-indigo-credit-card"
+        },
+        {
+          "name": "Axis Rewards Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "axis-rewards-credit-card"
+        },
+        {
+          "name": "Kotak Urbane Gold Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹235 (₹199 + GST)",
+          "card_alias": "kotak-urbane-gold-credit-card"
+        },
+        {
+          "name": "RBL Blockbuster Credit Card",
+          "bank": "",
+          "joining_fee": "₹3,540 (₹3,000 + GST)",
+          "annual_fee": "₹3,540 (₹3,000 + GST)",
+          "card_alias": "rbl-blockbuster-credit-card"
+        },
+        {
+          "name": "Poonawalla Fincrop IndusInd eLITE Rupay Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "poonawalla-fincrop-indusind-elite-rupay-credit-card"
+        },
+        {
+          "name": "ICICI Platinum Chip Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "icici-platinum-chip-credit-card"
+        },
+        {
+          "name": "SBI Etihad Guest Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,769 (₹1,499 + GST)",
+          "annual_fee": "₹1,769 (₹1,499 + GST)",
+          "card_alias": "sbi-etihad-guest-credit-card"
+        },
+        {
+          "name": "IndusInd Platinum Aura Edge Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "indus-bank-platinum-aura-edge-credit-card"
+        },
+        {
+          "name": "SBI IndiGo ELITE Credit Card",
+          "bank": "",
+          "joining_fee": "₹5,899 (₹4,999 + GST)",
+          "annual_fee": "₹5,899 (₹4,999 + GST)",
+          "card_alias": "sbi-indigo-elite-credit-card"
+        },
+        {
+          "name": "HDFC Shoppers Stop Credit Card",
+          "bank": "",
+          "joining_fee": "₹353 (₹299 + GST)",
+          "annual_fee": "₹353 (₹299 + GST)",
+          "card_alias": "hdfc-shoppers-stop-credit-card"
+        },
+        {
+          "name": "AU Zenith Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "au-zenith-credit-card"
+        },
+        {
+          "name": "American Express Membership Rewards Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹5,310 (₹4,500 + GST)",
+          "card_alias": "american-express-mr-credit-card"
+        },
+        {
+          "name": "American Express Platinum Travel Credit Card",
+          "bank": "",
+          "joining_fee": "₹5,900 (₹5,000 + GST)",
+          "annual_fee": "₹5,900 (₹5,000 + GST)",
+          "card_alias": "american-express-platinum-travel-credit-card"
+        },
+        {
+          "name": "American Express SmartEarn Credit Card",
+          "bank": "",
+          "joining_fee": "₹584 (₹495 + GST)",
+          "annual_fee": "₹584 (₹495 + GST)",
+          "card_alias": "american-express-smart-earn-credit-card"
+        },
+        {
+          "name": "SBI Yatra Credit Card",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "sbi-yatra-credit-card"
+        },
+        {
+          "name": "AU Zenith Plus Credit Card",
+          "bank": "",
+          "joining_fee": "₹5,899 (₹4,999 + GST)",
+          "annual_fee": "₹5,899 (₹4,999 + GST)",
+          "card_alias": "au-zenith-plus-credit-card"
+        },
+        {
+          "name": "ICICI HPCL Coral Credit Card",
+          "bank": "",
+          "joining_fee": "₹235 (₹199 + GST)",
+          "annual_fee": "₹235 (₹199 + GST)",
+          "card_alias": "icici-hpcl-coral-credit-card"
+        },
+        {
+          "name": "SBI IndiGo Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,769 (₹1,499 + GST)",
+          "annual_fee": "₹1,769 (₹1,499 + GST)",
+          "card_alias": "sbi-indigo-credit-card"
+        },
+        {
+          "name": "BOB EASY Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "bob-easy-credit-card"
+        },
+        {
+          "name": "SBI Paytm Select Credit card ",
+          "bank": "",
+          "joining_fee": "₹1,769 (₹1,499 + GST)",
+          "annual_fee": "₹1,769 (₹1,499 + GST)",
+          "card_alias": "sbi-paytm-select-credit-card"
+        },
+        {
+          "name": "DBS Vantage Credit Card",
+          "bank": "",
+          "joining_fee": "₹23,600 (₹20,000 + GST)",
+          "annual_fee": "₹23,600 (₹20,000 + GST)",
+          "card_alias": "dbs-vantage-credit-card"
+        },
+        {
+          "name": "ICICI MakeMyTrip Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,179 (₹999 + GST)",
+          "annual_fee": "₹1,179 (₹999 + GST)",
+          "card_alias": "icici-mmt-platinum-credit-card"
+        },
+        {
+          "name": "Axis Samsung Infinite Credit Card",
+          "bank": "",
+          "joining_fee": "₹5,900 (₹5,000 + GST)",
+          "annual_fee": "₹5,900 (₹5,000 + GST)",
+          "card_alias": "axis-samsung-infinite-credit-card"
+        },
+        {
+          "name": "SBI Paytm Credit Card ",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "sbi-paytm-credit-card"
+        },
+        {
+          "name": "RBL Movie and More Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "rbl-movie-and-more-credit-card"
+        },
+        {
+          "name": "Axis Select Credit Card",
+          "bank": "",
+          "joining_fee": "₹3,540 (₹3,000 + GST)",
+          "annual_fee": "₹3,540 (₹3,000 + GST)",
+          "card_alias": "axis-select-credit-card"
+        },
+        {
+          "name": "SBI Aditya Birla Credit Card",
+          "bank": "",
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "sbi-aditya-birla-credit-card"
+        },
+        {
+          "name": "HDFC IRCTC Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "hdfc-irctc-credit-card"
+        },
+        {
+          "name": "HDFC RuPay Credit Card",
+          "bank": "",
+          "joining_fee": "₹117 (₹99 + GST)",
+          "annual_fee": "₹117 (₹99 + GST)",
+          "card_alias": "hdfc-rupay-credit-card"
+        },
+        {
+          "name": "IDFC FIRST WOW Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "idfc-first-wow-credit-card"
+        },
+        {
+          "name": "SBI Prime Credit Card",
+          "bank": "",
+          "joining_fee": "₹3,539 (₹2,999 + GST)",
+          "annual_fee": "₹3,539 (₹2,999 + GST)",
+          "card_alias": "sbi-prime-credit-card"
+        },
+        {
+          "name": "Axis Aura Credit Card",
+          "bank": "",
+          "joining_fee": "₹884 (₹749 + GST)",
+          "annual_fee": "₹884 (₹749 + GST)",
+          "card_alias": "axis-aura-credit-card"
+        },
+        {
+          "name": "American Express Platinum Reserve Credit Card",
+          "bank": "",
+          "joining_fee": "₹11,800 (₹10,000 + GST)",
+          "annual_fee": "₹11,800 (₹10,000 + GST)",
+          "card_alias": "american-express-platinum-reserve"
+        },
+        {
+          "name": "HDFC Superia Airline Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "hdfc-superia-airline-credit-card"
+        },
+        {
+          "name": "IDFC FIRST Private Credit Card",
+          "bank": "",
+          "joining_fee": "₹59,000 (₹50,000 + GST)",
+          "annual_fee": "₹59,000 (₹50,000 + GST)",
+          "card_alias": "idfc-first-private-credit-card"
+        },
+        {
+          "name": "Yes Bank Paisabazaar PaisaSave Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "card_alias": "yes-bank-paisabazaar-paisasave-credit-card"
+        },
+        {
+          "name": "HDFC MoneyBack Plus Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "hdfc-moneyback-plus-credit-card"
+        },
+        {
+          "name": "Axis IKEA Family Credit Card ",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "axis-ikea-family-credit-card"
+        },
+        {
+          "name": "RBL Popcorn Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "rbl-popcorn-credit-card"
+        },
+        {
+          "name": "RBL World Plus Credit Card",
+          "bank": "",
+          "joining_fee": "₹5,899 (₹4,999 + GST)",
+          "annual_fee": "₹5,899 (₹4,999 + GST)",
+          "card_alias": "rbl-world-plus-credit-card"
+        },
+        {
+          "name": "RBL Insignia Preferred Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹8,260 (₹7,000 + GST)",
+          "card_alias": "rbl-insignia-preferred-credit-card"
+        },
+        {
+          "name": "Kotak IndianOil Credit Card",
+          "bank": "",
+          "joining_fee": "₹530 (₹449 + GST)",
+          "annual_fee": "₹530 (₹449 + GST)",
+          "card_alias": "kotak-indianoil-credit-card"
+        },
+        {
+          "name": "AU Nomo Credit Card",
+          "bank": "",
+          "joining_fee": "₹235 (₹199 + GST)",
+          "annual_fee": "Free",
+          "card_alias": "au-nomo-credit-card"
+        },
+        {
+          "name": "Kotak Zen Signature Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,770 (₹1,500 + GST)",
+          "annual_fee": "₹1,770 (₹1,500 + GST)",
+          "card_alias": "kotak-zen-signature-credit-card"
+        },
+        {
+          "name": "Standard Chartered Ultimate Credit Card",
+          "bank": "",
+          "joining_fee": "₹5,900 (₹5,000 + GST)",
+          "annual_fee": "₹5,900 (₹5,000 + GST)",
+          "card_alias": "standard-chartered-ultimate-credit-card"
+        },
+        {
+          "name": "IRCTC SBI Platinum Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "irctc-sbi-platinum-card"
+        },
+        {
+          "name": "Axis Shoppers Stop Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "axis-shopper-stop-credit-card"
+        },
+        {
+          "name": "IRCTC RBL Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "irctc-rbl-credit-card"
+        },
+        {
+          "name": "SBI Card Miles Credit Card",
+          "bank": "",
+          "joining_fee": "₹1,769 (₹1,499 + GST)",
+          "annual_fee": "₹1,769 (₹1,499 + GST)",
+          "card_alias": "sbi-card-miles"
+        },
+        {
+          "name": "MakeMyTrip ICICI Bank Signature Credit Card",
+          "bank": "",
+          "joining_fee": "₹2,950 (₹2,500 + GST)",
+          "annual_fee": "Free",
+          "card_alias": "makemytrip-icici-signature"
+        },
+        {
+          "name": "PVR Kotak Platinum Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹1,179 (₹999 + GST)",
+          "card_alias": "pvr-kotak-platinum"
+        },
+        {
+          "name": "Paytm HDFC Bank Select Credit Card ",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "paytm-hdfc-bank-select-credit-card"
+        },
+        {
+          "name": "Kotak Delight Platinum Credit Card",
+          "bank": "",
+          "joining_fee": "₹2,359 (₹1,999 + GST)",
+          "annual_fee": "₹353 (₹299 + GST)",
+          "card_alias": "kotak-delight-platinum-credit-card"
+        },
+        {
+          "name": "Kotak Essentia Platinum Credit Card ",
+          "bank": "",
+          "joining_fee": "₹1,769 (₹1,499 + GST)",
+          "annual_fee": "₹884 (₹749 + GST)",
+          "card_alias": "kotak-essentia-platinum-credit-card"
+        },
+        {
+          "name": "Axis Privilege Amex Credit Card ",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "axis-privilege-amex-credit-card"
+        },
+        {
+          "name": "Axis Supermoney Rupay Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "card_alias": "supermoney-rupay-credit-card"
+        },
+        {
+          "name": "RBL Bank Play Credit Card",
+          "bank": "",
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "card_alias": "rbl-bank-play-credit-card"
+        },
+        {
+          "name": "Kotak Mojo Platinum Credit card",
+          "bank": "",
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "card_alias": "kotak-mojo-platinum-credit-card"
+        },
+        {
+          "name": "RBL Platinum Maxima Plus Credit Card",
+          "bank": "",
+          "joining_fee": "Free",
+          "annual_fee": "₹2,950 (₹2,500 + GST)",
+          "card_alias": "rbl-platinum-maxima-plus-credit-card"
+        },
+        {
+          "name": "IDFC FIRST Dual Indigo Credit Card",
+          "bank": "",
+          "joining_fee": "₹5,899 (₹4,999 + GST)",
+          "annual_fee": "₹5,899 (₹4,999 + GST)",
+          "card_alias": "idfc-first-dual-indigo-credit-card"
+        }
+      ]
+    }
+  ]
+}

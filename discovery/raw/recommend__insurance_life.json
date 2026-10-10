@@ -1,0 +1,238 @@
+{
+  "id": "insurance_life",
+  "group": "recommend",
+  "purpose": "annual insurance keys",
+  "timestamp": "2026-10-10T18:33:55.725060+00:00",
+  "request": {
+    "tool": "recommend_cards",
+    "arguments": {
+      "life_insurance": 50000,
+      "insurance_health_annual": 25000,
+      "top_n": 5
+    }
+  },
+  "latency_ms": 3162,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total_cards_analyzed\": 204,\n  \"recommendations\": [\n    {\n      \"rank\": 1,\n      \"card_name\": \"LIC Axis Bank Platinum Credit Card \",\n      \"bank_name\": \"Axis\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹1,005\",\n      \"annual_rewards_value\": \"₹1,005.161\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"life_insurance\",\n          \"annual_value\": \"₹55.838\"\n        },\n        {\n          \"category\": \"insurance_health_annual\",\n          \"annual_value\": \"₹27.926\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"lic-axis-credit-card\",\n      \"rating\": 4.2,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130125_BankKaro_Platinum_ace_axis_bc.png\"\n    },\n    {\n      \"rank\": 2,\n      \"card_name\": \"SBI Reliance Credit Card \",\n      \"bank_name\": \"SBI\",\n      \"card_type\": \"Mastercard,RuPay\",\n      \"net_annual_savings\": \"₹849\",\n      \"annual_rewards_value\": \"₹187.53\",\n      \"milestone_benefits\": \"₹1,250\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹589 (incl. GST)\",\n      \"annual_fee\": \"₹589 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 218,\n          \"brands\": [],\n          \"card_id\": 261,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"\",\n          \"voucher_bonus\": \"500\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 500\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"life_insurance\",\n          \"annual_value\": \"₹10.418\"\n        },\n        {\n          \"category\": \"insurance_health_annual\",\n          \"annual_value\": \"₹5.21\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"sbi-reliance-credit-card\",\n      \"rating\": 4.3,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260817_155700303_Mockup_62.png\"\n    },\n    {\n      \"rank\": 3,\n      \"card_name\": \"IndusInd Tiger Credit Card\",\n      \"bank_name\": \"IndusInd Bank\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹750\",\n      \"annual_rewards_value\": \"₹750.12\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"life_insurance\",\n          \"annual_value\": \"₹41.67\"\n        },\n        {\n          \"category\": \"insurance_health_annual\",\n          \"annual_value\": \"₹20.84\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"indusind-tiger-credit-card\",\n      \"rating\": 4,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125059_BankKaro_Mockup_Desktop_1.png\"\n    },\n    {\n      \"rank\": 4,\n      \"card_name\": \"AU Altura Plus Credit Card\",\n      \"bank_name\": \"AU Small Finance Bank\",\n      \"card_type\": \"VISA,RuPay\",\n      \"net_annual_savings\": \"₹750\",\n      \"annual_rewards_value\": \"₹750.12\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"life_insurance\",\n          \"annual_value\": \"₹41.67\"\n        },\n        {\n          \"category\": \"insurance_health_annual\",\n          \"annual_value\": \"₹20.84\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"au-altura-plus-credit-card\",\n      \"rating\": 4.2,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130058_BankKaro_20260417_162335852_tura.png\"\n    },\n    {\n      \"rank\": 5,\n      \"card_name\": \"HDFC Pixel Go Credit Card\",\n      \"bank_name\": \"HDFC\",\n      \"card_type\": \"VISA,RuPay\",\n      \"net_annual_savings\": \"₹750\",\n      \"annual_rewards_value\": \"₹750.12\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"life_insurance\",\n          \"annual_value\": \"₹41.67\"\n        },\n        {\n          \"category\": \"insurance_health_annual\",\n          \"annual_value\": \"₹20.84\"\n        },\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"hdfc-pixel-go-credit-card\",\n      \"rating\": 4.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260724_121904680_HDFC_Pixel_Go_credit_Card.png\"\n    }\n  ],\n  \"_format_hint\": \"net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from.\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "total_cards_analyzed": 204,
+      "recommendations": [
+        {
+          "rank": 1,
+          "card_name": "LIC Axis Bank Platinum Credit Card ",
+          "bank_name": "Axis",
+          "card_type": "VISA",
+          "net_annual_savings": "₹1,005",
+          "annual_rewards_value": "₹1,005.161",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "life_insurance",
+              "annual_value": "₹55.838"
+            },
+            {
+              "category": "insurance_health_annual",
+              "annual_value": "₹27.926"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "lic-axis-credit-card",
+          "rating": 4.2,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130125_BankKaro_Platinum_ace_axis_bc.png"
+        },
+        {
+          "rank": 2,
+          "card_name": "SBI Reliance Credit Card ",
+          "bank_name": "SBI",
+          "card_type": "Mastercard,RuPay",
+          "net_annual_savings": "₹849",
+          "annual_rewards_value": "₹187.53",
+          "milestone_benefits": "₹1,250",
+          "lounge_value": "₹0",
+          "joining_fee": "₹589 (incl. GST)",
+          "annual_fee": "₹589 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 218,
+              "brands": [],
+              "card_id": 261,
+              "rp_bonus": "",
+              "maximum_days": "30",
+              "minimum_spend": "",
+              "voucher_bonus": "500",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 500
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "life_insurance",
+              "annual_value": "₹10.418"
+            },
+            {
+              "category": "insurance_health_annual",
+              "annual_value": "₹5.21"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "sbi-reliance-credit-card",
+          "rating": 4.3,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260817_155700303_Mockup_62.png"
+        },
+        {
+          "rank": 3,
+          "card_name": "IndusInd Tiger Credit Card",
+          "bank_name": "IndusInd Bank",
+          "card_type": "VISA",
+          "net_annual_savings": "₹750",
+          "annual_rewards_value": "₹750.12",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "life_insurance",
+              "annual_value": "₹41.67"
+            },
+            {
+              "category": "insurance_health_annual",
+              "annual_value": "₹20.84"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "indusind-tiger-credit-card",
+          "rating": 4,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125059_BankKaro_Mockup_Desktop_1.png"
+        },
+        {
+          "rank": 4,
+          "card_name": "AU Altura Plus Credit Card",
+          "bank_name": "AU Small Finance Bank",
+          "card_type": "VISA,RuPay",
+          "net_annual_savings": "₹750",
+          "annual_rewards_value": "₹750.12",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "life_insurance",
+              "annual_value": "₹41.67"
+            },
+            {
+              "category": "insurance_health_annual",
+              "annual_value": "₹20.84"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "au-altura-plus-credit-card",
+          "rating": 4.2,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130058_BankKaro_20260417_162335852_tura.png"
+        },
+        {
+          "rank": 5,
+          "card_name": "HDFC Pixel Go Credit Card",
+          "bank_name": "HDFC",
+          "card_type": "VISA,RuPay",
+          "net_annual_savings": "₹750",
+          "annual_rewards_value": "₹750.12",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "life_insurance",
+              "annual_value": "₹41.67"
+            },
+            {
+              "category": "insurance_health_annual",
+              "annual_value": "₹20.84"
+            },
+            {
+              "category": "flights_annual",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "hdfc-pixel-go-credit-card",
+          "rating": 4.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260724_121904680_HDFC_Pixel_Go_credit_Card.png"
+        }
+      ],
+      "_format_hint": "net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from."
+    }
+  ]
+}

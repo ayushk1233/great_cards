@@ -1,0 +1,110 @@
+{
+  "id": "amazon_15k_comparison",
+  "group": "recommend",
+  "purpose": "format consistency",
+  "timestamp": "2026-10-10T18:33:23.535870+00:00",
+  "request": {
+    "tool": "recommend_cards",
+    "arguments": {
+      "amazon_spends": 15000,
+      "top_n": 5,
+      "response_format": "comparison"
+    }
+  },
+  "latency_ms": 3337,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total_cards_analyzed\": 204,\n  \"recommendations\": [\n    {\n      \"rank\": 1,\n      \"card_name\": \"HDFC MILLENIA\",\n      \"bank_name\": \"HDFC\",\n      \"net_annual_savings\": 9000,\n      \"annual_rewards\": 9000,\n      \"milestone_benefits\": 0,\n      \"lounge_value\": 0,\n      \"joining_fee\": 1180,\n      \"annual_fee\": 0,\n      \"annual_fee_full\": 1180,\n      \"annual_fee_waived\": true,\n      \"annual_fee_waiver_threshold\": 100000,\n      \"card_alias\": \"hdfc-millenia-credit-card\"\n    },\n    {\n      \"rank\": 2,\n      \"card_name\": \"ICICI Amazon Pay Credit Card\",\n      \"bank_name\": \"ICICI Bank\",\n      \"net_annual_savings\": 9000,\n      \"annual_rewards\": 9000,\n      \"milestone_benefits\": 0,\n      \"lounge_value\": 0,\n      \"joining_fee\": 0,\n      \"annual_fee\": 0,\n      \"annual_fee_full\": 0,\n      \"annual_fee_waived\": false,\n      \"annual_fee_waiver_threshold\": null,\n      \"card_alias\": \"icici-amazon-pay-credit-card\"\n    },\n    {\n      \"rank\": 3,\n      \"card_name\": \"Swiggy Ornge HDFC Bank Credit card \",\n      \"bank_name\": \"HDFC\",\n      \"net_annual_savings\": 9000,\n      \"annual_rewards\": 9000,\n      \"milestone_benefits\": 0,\n      \"lounge_value\": 0,\n      \"joining_fee\": 590,\n      \"annual_fee\": 0,\n      \"annual_fee_full\": 590,\n      \"annual_fee_waived\": true,\n      \"annual_fee_waiver_threshold\": 150000,\n      \"card_alias\": \"swiggy-ornge-hdfc-credit-card\"\n    },\n    {\n      \"rank\": 4,\n      \"card_name\": \"BOB Cashback Credit Card\",\n      \"bank_name\": \"Bank of Baroda\",\n      \"net_annual_savings\": 8411,\n      \"annual_rewards\": 9000,\n      \"milestone_benefits\": 0,\n      \"lounge_value\": 0,\n      \"joining_fee\": 589,\n      \"annual_fee\": 589,\n      \"annual_fee_full\": 589,\n      \"annual_fee_waived\": false,\n      \"annual_fee_waiver_threshold\": null,\n      \"card_alias\": \"bob-cashback-credit-card\"\n    },\n    {\n      \"rank\": 5,\n      \"card_name\": \"CRED IndusInd Bank Credit Card\",\n      \"bank_name\": \"IndusInd Bank\",\n      \"net_annual_savings\": 8411,\n      \"annual_rewards\": 9000,\n      \"milestone_benefits\": 0,\n      \"lounge_value\": 0,\n      \"joining_fee\": 0,\n      \"annual_fee\": 589,\n      \"annual_fee_full\": 589,\n      \"annual_fee_waived\": false,\n      \"annual_fee_waiver_threshold\": null,\n      \"card_alias\": \"cred-indusind-bank-credit-card\"\n    }\n  ],\n  \"_format_hint\": \"Numeric values for easy comparison. Present as a table. net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. annual_fee is already 0 when annual_fee_waived=true (waived at annual_fee_waiver_threshold spend).\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "total_cards_analyzed": 204,
+      "recommendations": [
+        {
+          "rank": 1,
+          "card_name": "HDFC MILLENIA",
+          "bank_name": "HDFC",
+          "net_annual_savings": 9000,
+          "annual_rewards": 9000,
+          "milestone_benefits": 0,
+          "lounge_value": 0,
+          "joining_fee": 1180,
+          "annual_fee": 0,
+          "annual_fee_full": 1180,
+          "annual_fee_waived": true,
+          "annual_fee_waiver_threshold": 100000,
+          "card_alias": "hdfc-millenia-credit-card"
+        },
+        {
+          "rank": 2,
+          "card_name": "ICICI Amazon Pay Credit Card",
+          "bank_name": "ICICI Bank",
+          "net_annual_savings": 9000,
+          "annual_rewards": 9000,
+          "milestone_benefits": 0,
+          "lounge_value": 0,
+          "joining_fee": 0,
+          "annual_fee": 0,
+          "annual_fee_full": 0,
+          "annual_fee_waived": false,
+          "annual_fee_waiver_threshold": null,
+          "card_alias": "icici-amazon-pay-credit-card"
+        },
+        {
+          "rank": 3,
+          "card_name": "Swiggy Ornge HDFC Bank Credit card ",
+          "bank_name": "HDFC",
+          "net_annual_savings": 9000,
+          "annual_rewards": 9000,
+          "milestone_benefits": 0,
+          "lounge_value": 0,
+          "joining_fee": 590,
+          "annual_fee": 0,
+          "annual_fee_full": 590,
+          "annual_fee_waived": true,
+          "annual_fee_waiver_threshold": 150000,
+          "card_alias": "swiggy-ornge-hdfc-credit-card"
+        },
+        {
+          "rank": 4,
+          "card_name": "BOB Cashback Credit Card",
+          "bank_name": "Bank of Baroda",
+          "net_annual_savings": 8411,
+          "annual_rewards": 9000,
+          "milestone_benefits": 0,
+          "lounge_value": 0,
+          "joining_fee": 589,
+          "annual_fee": 589,
+          "annual_fee_full": 589,
+          "annual_fee_waived": false,
+          "annual_fee_waiver_threshold": null,
+          "card_alias": "bob-cashback-credit-card"
+        },
+        {
+          "rank": 5,
+          "card_name": "CRED IndusInd Bank Credit Card",
+          "bank_name": "IndusInd Bank",
+          "net_annual_savings": 8411,
+          "annual_rewards": 9000,
+          "milestone_benefits": 0,
+          "lounge_value": 0,
+          "joining_fee": 0,
+          "annual_fee": 589,
+          "annual_fee_full": 589,
+          "annual_fee_waived": false,
+          "annual_fee_waiver_threshold": null,
+          "card_alias": "cred-indusind-bank-credit-card"
+        }
+      ],
+      "_format_hint": "Numeric values for easy comparison. Present as a table. net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. annual_fee is already 0 when annual_fee_waived=true (waived at annual_fee_waiver_threshold spend)."
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "id": "details_bob_cashback",
+  "group": "followup",
+  "purpose": "5% on Amazon/dining source",
+  "timestamp": "2026-10-10T18:37:11.757892+00:00",
+  "request": {
+    "tool": "get_card_details",
+    "arguments": {
+      "card_alias": "bob-cashback-credit-card"
+    }
+  },
+  "latency_ms": 117,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"name\": \"BOB Cashback Credit Card\",\n  \"nick_name\": \"BOB Cashback, Credit card\",\n  \"bank\": \"Bank of Baroda\",\n  \"bank_id\": 19,\n  \"card_type\": \"Mastercard\",\n  \"card_network\": null,\n  \"rating\": 4.1,\n  \"user_ratings\": 348,\n  \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130247_BankKaro_20260507_124725695_Mockup_1.png\",\n  \"priority_tag\": null,\n  \"invite_only\": false,\n  \"employment_type\": \"both\",\n  \"new_to_credit\": true,\n  \"existing_customer_only\": false,\n  \"fees\": {\n    \"joining\": \"₹589 (₹499 + GST)\",\n    \"joining_note\": \"A one-time joining fee of ₹499 is charged at the time of card issuance as per the bank's policy\",\n    \"annual\": \"₹589 (₹499 + GST)\",\n    \"annual_note\": \"The annual fee is charged every year and may be waived if you meet the bank's spending conditions.\",\n    \"annual_fee_waiver\": \"Not Applicable\",\n    \"gst_note\": \"All fees include 18% GST.\"\n  },\n  \"fee_schedule\": {\n    \"apr_monthly\": \"3.75%\",\n    \"apr_annual\": \"45.00%\",\n    \"forex_markup\": \"3.50%\",\n    \"forex_markup_note\": \"3.5% forex markup is charged on transactions made in currencies other than INR. Applies to international POS payments and online purchases charged in foreign currencyExamples (3.5%):₹100 → ₹3.5₹1,000 → ₹35₹10,000 → ₹350₹1,00,000 → ₹3,500\",\n    \"atm_withdrawal_fee\": \"2.5%\",\n    \"atm_withdrawal_note\": \"2.5% of the withdrawn amount is charged on cash advances using the credit card, subject to a minimum of ₹500\",\n    \"railway_surcharge\": \"1%\",\n    \"railway_surcharge_note\": \"A surcharge of 1% is applied to transactions made for booking railway tickets\",\n    \"rent_payment_fee\": \"1%\",\n    \"cash_payment_fee\": \"₹250\",\n    \"cheque_payment_fee\": \"₹100\",\n    \"reward_redemption_fee\": \"Not Applicable\",\n    \"late_payment_slabs\": [\n      {\n        \"outstanding\": \"₹0 - ₹100\",\n        \"fee\": \"₹0\"\n      },\n      {\n        \"outstanding\": \"₹101 - ₹500\",\n        \"fee\": \"₹100\"\n      },\n      {\n        \"outstanding\": \"₹501 - ₹1,000\",\n        \"fee\": \"₹400\"\n      },\n      {\n        \"outstanding\": \"₹1,001 - ₹10,000\",\n        \"fee\": \"₹750\"\n      },\n      {\n        \"outstanding\": \"₹10,001 - ₹25,000\",\n        \"fee\": \"₹950\"\n      },\n      {\n        \"outstanding\": \"₹25,001 - ₹50,000\",\n        \"fee\": \"₹1,100\"\n      },\n      {\n        \"outstanding\": \"Above ₹50,000\",\n        \"fee\": \"₹1,300\"\n      }\n    ],\n    \"late_payment_note\": \"Additional ₹100 is charged if Minimum Amount Due remains unpaid for two consecutive cycles, continuing until cleared\",\n    \"tnc_url\": \"https://www.bobcard.co.in/most-important-terms-and-condition/bobcard-mitc\"\n  },\n  \"rewards\": {\n    \"point_value\": null,\n    \"redemption_options\": \"This is a cashback card, and the earned cashback is adjusted directly in your monthly statement.\",\n    \"redemption_catalogue\": null,\n    \"exclusions\": \"Fuel, EMI Transactions, Wallet Load, Rent, Utility Bill Payments, Government Spends, Cash Advances, ATM Withdrawals, Jewellery\",\n    \"exclusion_spends\": \"Fuel, EMI Transactions, Wallet Load, Rent, Utility Bill Payments, Government Spends, Cash Advances, ATM Withdrawals, Jewellery\"\n  },\n  \"welcome_benefits\": null,\n  \"lounge_summary\": null,\n  \"annual_saving_claimed\": 60000,\n  \"milestone_benefits\": null,\n  \"key_benefits\": [\n    {\n      \"title\": \"Earn 5% Cashback\",\n      \"description\": \"on online spends on all eligible domestic online purchases, capped at ₹1,500 per month\"\n    },\n    {\n      \"title\": \"Earn 1% Unlimited Cashback\",\n      \"description\": \"on all other spends on every eligible offline and other transaction, with no upper limit\"\n    }\n  ],\n  \"tags\": [\n    \"Shopping\"\n  ],\n  \"detailed_benefits\": [\n    {\n      \"type\": \"all\",\n      \"sub_type\": \"All Benefits\",\n      \"details\": \"• 5% cashback on eligible domestic online spends, capped at ₹1,500/month\\n• 1% unlimited cashback on all other eligible spends\"\n    },\n    {\n      \"type\": \"welcome\",\n      \"sub_type\": \"Welcome Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"travel\",\n      \"sub_type\": \"Flight Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"travel\",\n      \"sub_type\": \"Railway Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"travel\",\n      \"sub_type\": \"Cab Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"travel\",\n      \"sub_type\": \"Bus Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"lounge\",\n      \"sub_type\": \"Airport Lounge Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"lounge\",\n      \"sub_type\": \"Railway Lounge Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"movie_ticket\",\n      \"sub_type\": \"Movie Ticket Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"dining\",\n      \"sub_type\": \"Dining Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"fuel\",\n      \"sub_type\": \"Fuel Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"fuel\",\n      \"sub_type\": \"Fuel Surcharge Waiver Benefits\",\n      \"details\": \"• Avail 1% fuel surcharge waiver on transactions between ₹400 and ₹5,000, capped at ₹250 per statement cycle. Cashback is not applicable on fuel transactions\"\n    },\n    {\n      \"type\": \"insurance\",\n      \"sub_type\": \"Insurance Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"bank_offers\",\n      \"sub_type\": \"Bank Offers\",\n      \"details\": \"• Unlock additional offers and partner discounts across top brands by checking the BOBCARD offers page, updated regularly.\\n• Smart EMI convert purchases above ₹2,500 into EMIs of 6 to 48 months\"\n    }\n  ],\n  \"eligibility\": {\n    \"min_age\": 25,\n    \"max_age\": 55,\n    \"income_salaried_lpa\": 3,\n    \"income_self_emp_lpa\": 3.6,\n    \"min_income_monthly\": 30000,\n    \"crif_salaried\": 720,\n    \"crif_self_emp\": 720\n  },\n  \"card_alias\": \"bob-cashback-credit-card\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "name": "BOB Cashback Credit Card",
+      "nick_name": "BOB Cashback, Credit card",
+      "bank": "Bank of Baroda",
+      "bank_id": 19,
+      "card_type": "Mastercard",
+      "card_network": null,
+      "rating": 4.1,
+      "user_ratings": 348,
+      "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130247_BankKaro_20260507_124725695_Mockup_1.png",
+      "priority_tag": null,
+      "invite_only": false,
+      "employment_type": "both",
+      "new_to_credit": true,
+      "existing_customer_only": false,
+      "fees": {
+        "joining": "₹589 (₹499 + GST)",
+        "joining_note": "A one-time joining fee of ₹499 is charged at the time of card issuance as per the bank's policy",
+        "annual": "₹589 (₹499 + GST)",
+        "annual_note": "The annual fee is charged every year and may be waived if you meet the bank's spending conditions.",
+        "annual_fee_waiver": "Not Applicable",
+        "gst_note": "All fees include 18% GST."
+      },
+      "fee_schedule": {
+        "apr_monthly": "3.75%",
+        "apr_annual": "45.00%",
+        "forex_markup": "3.50%",
+        "forex_markup_note": "3.5% forex markup is charged on transactions made in currencies other than INR. Applies to international POS payments and online purchases charged in foreign currencyExamples (3.5%):₹100 → ₹3.5₹1,000 → ₹35₹10,000 → ₹350₹1,00,000 → ₹3,500",
+        "atm_withdrawal_fee": "2.5%",
+        "atm_withdrawal_note": "2.5% of the withdrawn amount is charged on cash advances using the credit card, subject to a minimum of ₹500",
+        "railway_surcharge": "1%",
+        "railway_surcharge_note": "A surcharge of 1% is applied to transactions made for booking railway tickets",
+        "rent_payment_fee": "1%",
+        "cash_payment_fee": "₹250",
+        "cheque_payment_fee": "₹100",
+        "reward_redemption_fee": "Not Applicable",
+        "late_payment_slabs": [
+          {
+            "outstanding": "₹0 - ₹100",
+            "fee": "₹0"
+          },
+          {
+            "outstanding": "₹101 - ₹500",
+            "fee": "₹100"
+          },
+          {
+            "outstanding": "₹501 - ₹1,000",
+            "fee": "₹400"
+          },
+          {
+            "outstanding": "₹1,001 - ₹10,000",
+            "fee": "₹750"
+          },
+          {
+            "outstanding": "₹10,001 - ₹25,000",
+            "fee": "₹950"
+          },
+          {
+            "outstanding": "₹25,001 - ₹50,000",
+            "fee": "₹1,100"
+          },
+          {
+            "outstanding": "Above ₹50,000",
+            "fee": "₹1,300"
+          }
+        ],
+        "late_payment_note": "Additional ₹100 is charged if Minimum Amount Due remains unpaid for two consecutive cycles, continuing until cleared",
+        "tnc_url": "https://www.bobcard.co.in/most-important-terms-and-condition/bobcard-mitc"
+      },
+      "rewards": {
+        "point_value": null,
+        "redemption_options": "This is a cashback card, and the earned cashback is adjusted directly in your monthly statement.",
+        "redemption_catalogue": null,
+        "exclusions": "Fuel, EMI Transactions, Wallet Load, Rent, Utility Bill Payments, Government Spends, Cash Advances, ATM Withdrawals, Jewellery",
+        "exclusion_spends": "Fuel, EMI Transactions, Wallet Load, Rent, Utility Bill Payments, Government Spends, Cash Advances, ATM Withdrawals, Jewellery"
+      },
+      "welcome_benefits": null,
+      "lounge_summary": null,
+      "annual_saving_claimed": 60000,
+      "milestone_benefits": null,
+      "key_benefits": [
+        {
+          "title": "Earn 5% Cashback",
+          "description": "on online spends on all eligible domestic online purchases, capped at ₹1,500 per month"
+        },
+        {
+          "title": "Earn 1% Unlimited Cashback",
+          "description": "on all other spends on every eligible offline and other transaction, with no upper limit"
+        }
+      ],
+      "tags": [
+        "Shopping"
+      ],
+      "detailed_benefits": [
+        {
+          "type": "all",
+          "sub_type": "All Benefits",
+          "details": "• 5% cashback on eligible domestic online spends, capped at ₹1,500/month\n• 1% unlimited cashback on all other eligible spends"
+        },
+        {
+          "type": "welcome",
+          "sub_type": "Welcome Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "travel",
+          "sub_type": "Flight Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "travel",
+          "sub_type": "Railway Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "travel",
+          "sub_type": "Cab Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "travel",
+          "sub_type": "Bus Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "lounge",
+          "sub_type": "Airport Lounge Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "lounge",
+          "sub_type": "Railway Lounge Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "movie_ticket",
+          "sub_type": "Movie Ticket Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "dining",
+          "sub_type": "Dining Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "fuel",
+          "sub_type": "Fuel Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "fuel",
+          "sub_type": "Fuel Surcharge Waiver Benefits",
+          "details": "• Avail 1% fuel surcharge waiver on transactions between ₹400 and ₹5,000, capped at ₹250 per statement cycle. Cashback is not applicable on fuel transactions"
+        },
+        {
+          "type": "insurance",
+          "sub_type": "Insurance Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "bank_offers",
+          "sub_type": "Bank Offers",
+          "details": "• Unlock additional offers and partner discounts across top brands by checking the BOBCARD offers page, updated regularly.\n• Smart EMI convert purchases above ₹2,500 into EMIs of 6 to 48 months"
+        }
+      ],
+      "eligibility": {
+        "min_age": 25,
+        "max_age": 55,
+        "income_salaried_lpa": 3,
+        "income_self_emp_lpa": 3.6,
+        "min_income_monthly": 30000,
+        "crif_salaried": 720,
+        "crif_self_emp": 720
+      },
+      "card_alias": "bob-cashback-credit-card"
+    }
+  ]
+}

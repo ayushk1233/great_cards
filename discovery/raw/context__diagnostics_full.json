@@ -1,0 +1,150 @@
+{
+  "id": "diagnostics_full",
+  "group": "context",
+  "purpose": "server self-check",
+  "timestamp": "2026-10-10T18:32:49.566494+00:00",
+  "request": {
+    "tool": "run_api_diagnostics",
+    "arguments": {
+      "scope": "full",
+      "include_samples": true
+    }
+  },
+  "latency_ms": 3677,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"status\": \"ok\",\n  \"generated_at\": \"2026-10-10T18:32:49.538Z\",\n  \"scope\": \"full\",\n  \"api_base\": \"https://platform.bankkaro.com/partner\",\n  \"timeout_ms\": 8000,\n  \"summary\": {\n    \"total_checks\": 5,\n    \"passed\": 5,\n    \"failed\": 0,\n    \"slowest_check\": {\n      \"name\": \"recommendation_calculate\",\n      \"elapsed_ms\": 1873\n    }\n  },\n  \"checks\": [\n    {\n      \"name\": \"card_listing_all\",\n      \"status\": \"pass\",\n      \"elapsed_ms\": 651,\n      \"summary\": \"Returned 258 cards\",\n      \"sample\": [\n        {\n          \"name\": \"SBI Cashback Credit Card\",\n          \"bank\": null,\n          \"alias\": \"sbi-cashback-credit-card\"\n        },\n        {\n          \"name\": \"Axis Flipkart Credit Card\",\n          \"bank\": null,\n          \"alias\": \"axis-flipkart-credit-card\"\n        },\n        {\n          \"name\": \"HSBC Cashback Credit Card\",\n          \"bank\": null,\n          \"alias\": \"hsbc-cashback-credit-card\"\n        }\n      ]\n    },\n    {\n      \"name\": \"card_details_sbi_cashback\",\n      \"status\": \"pass\",\n      \"elapsed_ms\": 69,\n      \"summary\": \"Resolved SBI Cashback Credit Card\",\n      \"sample\": {\n        \"name\": \"SBI Cashback Credit Card\",\n        \"bank\": null,\n        \"alias\": \"sbi-cashback-credit-card\"\n      }\n    },\n    {\n      \"name\": \"recommendation_calculate\",\n      \"status\": \"pass\",\n      \"elapsed_ms\": 1873,\n      \"summary\": \"Returned 204 savings rows\",\n      \"sample\": [\n        {\n          \"card_name\": \"BOB Cashback Credit Card\",\n          \"alias\": \"bob-cashback-credit-card\",\n          \"yearly_savings\": 4200\n        },\n        {\n          \"card_name\": \"CRED IndusInd Bank Credit Card\",\n          \"alias\": \"cred-indusind-bank-credit-card\",\n          \"yearly_savings\": 4200\n        },\n        {\n          \"card_name\": \"HDFC MILLENIA\",\n          \"alias\": \"hdfc-millenia-credit-card\",\n          \"yearly_savings\": 3240\n        }\n      ]\n    },\n    {\n      \"name\": \"card_listing_shopping_category\",\n      \"status\": \"pass\",\n      \"elapsed_ms\": 341,\n      \"summary\": \"Returned 186 shopping cards\",\n      \"sample\": [\n        {\n          \"name\": \"Axis Privilege Amex Credit Card \",\n          \"bank\": null,\n          \"alias\": \"axis-privilege-amex-credit-card\"\n        },\n        {\n          \"name\": \"SalarySe Level UP Credit Card\",\n          \"bank\": null,\n          \"alias\": \"salaryse-level-up-credit-card\"\n        },\n        {\n          \"name\": \"Axis Shoppers Stop Credit Card\",\n          \"bank\": null,\n          \"alias\": \"axis-shopper-stop-credit-card\"\n        }\n      ]\n    },\n    {\n      \"name\": \"eligibility_bangalore_salaried\",\n      \"status\": \"pass\",\n      \"elapsed_ms\": 574,\n      \"summary\": \"Returned 232 eligible cards\",\n      \"sample\": [\n        {\n          \"name\": \"SBI Cashback Credit Card\",\n          \"bank\": null,\n          \"alias\": \"sbi-cashback-credit-card\"\n        },\n        {\n          \"name\": \"Axis Flipkart Credit Card\",\n          \"bank\": null,\n          \"alias\": \"axis-flipkart-credit-card\"\n        },\n        {\n          \"name\": \"HSBC Cashback Credit Card\",\n          \"bank\": null,\n          \"alias\": \"hsbc-cashback-credit-card\"\n        }\n      ]\n    }\n  ],\n  \"next_debug_step\": \"All diagnostics passed.\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "status": "ok",
+      "generated_at": "2026-10-10T18:32:49.538Z",
+      "scope": "full",
+      "api_base": "https://platform.bankkaro.com/partner",
+      "timeout_ms": 8000,
+      "summary": {
+        "total_checks": 5,
+        "passed": 5,
+        "failed": 0,
+        "slowest_check": {
+          "name": "recommendation_calculate",
+          "elapsed_ms": 1873
+        }
+      },
+      "checks": [
+        {
+          "name": "card_listing_all",
+          "status": "pass",
+          "elapsed_ms": 651,
+          "summary": "Returned 258 cards",
+          "sample": [
+            {
+              "name": "SBI Cashback Credit Card",
+              "bank": null,
+              "alias": "sbi-cashback-credit-card"
+            },
+            {
+              "name": "Axis Flipkart Credit Card",
+              "bank": null,
+              "alias": "axis-flipkart-credit-card"
+            },
+            {
+              "name": "HSBC Cashback Credit Card",
+              "bank": null,
+              "alias": "hsbc-cashback-credit-card"
+            }
+          ]
+        },
+        {
+          "name": "card_details_sbi_cashback",
+          "status": "pass",
+          "elapsed_ms": 69,
+          "summary": "Resolved SBI Cashback Credit Card",
+          "sample": {
+            "name": "SBI Cashback Credit Card",
+            "bank": null,
+            "alias": "sbi-cashback-credit-card"
+          }
+        },
+        {
+          "name": "recommendation_calculate",
+          "status": "pass",
+          "elapsed_ms": 1873,
+          "summary": "Returned 204 savings rows",
+          "sample": [
+            {
+              "card_name": "BOB Cashback Credit Card",
+              "alias": "bob-cashback-credit-card",
+              "yearly_savings": 4200
+            },
+            {
+              "card_name": "CRED IndusInd Bank Credit Card",
+              "alias": "cred-indusind-bank-credit-card",
+              "yearly_savings": 4200
+            },
+            {
+              "card_name": "HDFC MILLENIA",
+              "alias": "hdfc-millenia-credit-card",
+              "yearly_savings": 3240
+            }
+          ]
+        },
+        {
+          "name": "card_listing_shopping_category",
+          "status": "pass",
+          "elapsed_ms": 341,
+          "summary": "Returned 186 shopping cards",
+          "sample": [
+            {
+              "name": "Axis Privilege Amex Credit Card ",
+              "bank": null,
+              "alias": "axis-privilege-amex-credit-card"
+            },
+            {
+              "name": "SalarySe Level UP Credit Card",
+              "bank": null,
+              "alias": "salaryse-level-up-credit-card"
+            },
+            {
+              "name": "Axis Shoppers Stop Credit Card",
+              "bank": null,
+              "alias": "axis-shopper-stop-credit-card"
+            }
+          ]
+        },
+        {
+          "name": "eligibility_bangalore_salaried",
+          "status": "pass",
+          "elapsed_ms": 574,
+          "summary": "Returned 232 eligible cards",
+          "sample": [
+            {
+              "name": "SBI Cashback Credit Card",
+              "bank": null,
+              "alias": "sbi-cashback-credit-card"
+            },
+            {
+              "name": "Axis Flipkart Credit Card",
+              "bank": null,
+              "alias": "axis-flipkart-credit-card"
+            },
+            {
+              "name": "HSBC Cashback Credit Card",
+              "bank": null,
+              "alias": "hsbc-cashback-credit-card"
+            }
+          ]
+        }
+      ],
+      "next_debug_step": "All diagnostics passed."
+    }
+  ]
+}

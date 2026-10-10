@@ -1,0 +1,271 @@
+{
+  "id": "list_default",
+  "group": "cards",
+  "purpose": "",
+  "timestamp": "2026-10-10T18:34:17.686003+00:00",
+  "request": {
+    "tool": "list_cards",
+    "arguments": {}
+  },
+  "latency_ms": 506,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total_available\": 258,\n  \"showing\": 10,\n  \"cards\": [\n    {\n      \"name\": \"SBI Cashback Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"VISA\",\n      \"card_network\": null,\n      \"joining_fee\": \"₹1,179 (₹999 + GST)\",\n      \"annual_fee\": \"₹1,179 (₹999 + GST)\",\n      \"rating\": 4,\n      \"invite_only\": false,\n      \"employment_type\": \"both\",\n      \"new_to_credit\": false,\n      \"tags\": [\n        \"Shopping\",\n        \"Online Food Ordering\",\n        \"Dining\",\n        \"Grocery Shopping\"\n      ],\n      \"key_benefits\": [\n        \"Get 5% Cashback on Dining\",\n        \"Earn 5% Cashback on Online Spends\",\n        \"Get 5% Cashback on\"\n      ],\n      \"card_alias\": \"sbi-cashback-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122010_AGB_Mockup-24.webp1736921642945\"\n    },\n    {\n      \"name\": \"Axis Flipkart Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"VISA\",\n      \"card_network\": null,\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"rating\": 4,\n      \"invite_only\": false,\n      \"employment_type\": \"both\",\n      \"new_to_credit\": true,\n      \"tags\": [\n        \"Shopping\",\n        \"Online Food Ordering\",\n        \"Travel\"\n      ],\n      \"key_benefits\": [\n        \"Shopping Get 7.5% Cashback on Myntra\",\n        \"Get 5% Cashback on Flipkart\",\n        \"Get 5% Cashback on Cleartrip\"\n      ],\n      \"card_alias\": \"axis-flipkart-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_121912_AGB_Mockup-6.webp1736855576881\"\n    },\n    {\n      \"name\": \"HSBC Cashback Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"VISA\",\n      \"card_network\": null,\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹1,179 (₹999 + GST)\",\n      \"rating\": 1,\n      \"invite_only\": false,\n      \"employment_type\": \"salaried\",\n      \"new_to_credit\": false,\n      \"tags\": [\n        \"Online Food Ordering\",\n        \"Dining\",\n        \"Grocery Shopping\",\n        \"Travel\"\n      ],\n      \"key_benefits\": [\n        \"Get 4 Domestic Airport Lounge\",\n        \"Get 10% Cashback on dining\",\n        \"Get 10% Cashback on food delivery\"\n      ],\n      \"card_alias\": \"hsbc-cashback-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122008_BankKaro_20260331_180207158_IDFC_FIRST_Indigo_Credit_Card_-mockup_4.png\"\n    },\n    {\n      \"name\": \"Kiwi Klick Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"RuPay\",\n      \"card_network\": null,\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"rating\": 4.5,\n      \"invite_only\": false,\n      \"employment_type\": \"salaried\",\n      \"new_to_credit\": false,\n      \"tags\": [\n        \"Shopping\",\n        \"UPI\"\n      ],\n      \"key_benefits\": [\n        \"Flat ₹250 Cashback (1000 Kiwis)\",\n        \"Flat ₹250 Cashback (1000 Kiwis)\",\n        \"Get 1.5% Cashback\"\n      ],\n      \"card_alias\": \"kiwi-klick-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125208_BankKaro_Mockup-13.png\"\n    },\n    {\n      \"name\": \"SBI Simply Click Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"Mastercard\",\n      \"card_network\": null,\n      \"joining_fee\": \"₹589 (₹499 + GST)\",\n      \"annual_fee\": \"₹589 (₹499 + GST)\",\n      \"rating\": 4,\n      \"invite_only\": false,\n      \"employment_type\": \"both\",\n      \"new_to_credit\": true,\n      \"tags\": [\n        \"Shopping\"\n      ],\n      \"key_benefits\": [\n        \"Get 10X Reward Points at Cleartrip & Yatra\",\n        \"Get 10X Reward Points on Swiggy & Dominos\",\n        \"Get 10X Reward Points at Myntra, Tata Cliq\"\n      ],\n      \"card_alias\": \"sbi-simply-click-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260922_095234489_Mockup_97.png\"\n    },\n    {\n      \"name\": \"HDFC Regalia Gold Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"VISA,Mastercard\",\n      \"card_network\": null,\n      \"joining_fee\": \"₹2,950 (₹2,500 + GST)\",\n      \"annual_fee\": \"₹2,950 (₹2,500 + GST)\",\n      \"rating\": 4,\n      \"invite_only\": false,\n      \"employment_type\": \"both\",\n      \"new_to_credit\": false,\n      \"tags\": [\n        \"Shopping\",\n        \"Travel\"\n      ],\n      \"key_benefits\": [\n        \"Earn 10X SmartBuy Points on IGP.com, Jockey and Pharmeasy\",\n        \"Earn SmartBuy Travel Rewards on Flights, Hotels, RedBus\",\n        \"Earn 10X SmartBuy Points on IGP.com, Jockey and Pharmeasy\"\n      ],\n      \"card_alias\": \"hdfc-regalia-gold\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125153_BankKaro_Mockup-12.webp\"\n    },\n    {\n      \"name\": \"Flipkart SBI Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"VISA,Mastercard\",\n      \"card_network\": null,\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"rating\": 4,\n      \"invite_only\": false,\n      \"employment_type\": \"both\",\n      \"new_to_credit\": false,\n      \"tags\": [\n        \"Shopping\",\n        \"Travel\"\n      ],\n      \"key_benefits\": [\n        \"Earn 7.5% on Myntra and 5% on Flipkart & Cleartrip\",\n        \"Earn 4% Cashback on\",\n        \"Earn 7.5% Cashback on Myntra and 5% Cashback on Flipkart\"\n      ],\n      \"card_alias\": \"flipkart-sbi-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125857_BankKaro_HDFC_Bank_UPI_Rupay_Credit_Card-mockup.png\"\n    },\n    {\n      \"name\": \"Swiggy BLCK HDFC Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"Mastercard\",\n      \"card_network\": null,\n      \"joining_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"annual_fee\": \"₹1,180 (₹1,000 + GST)\",\n      \"rating\": 4.7,\n      \"invite_only\": false,\n      \"employment_type\": \"both\",\n      \"new_to_credit\": true,\n      \"tags\": [\n        \"Shopping\",\n        \"Online Food Ordering\",\n        \"Dining\",\n        \"Grocery Shopping\"\n      ],\n      \"key_benefits\": [\n        \"10% Cashback on Swiggy Instamart\",\n        \"10% Cashback on Swiggy Orders\",\n        \"10% Cashback on Swiggy Orders\"\n      ],\n      \"card_alias\": \"swiggy-blck-hdfc-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122002_BankKaro_20260316_12502238_RBL_1.png\"\n    },\n    {\n      \"name\": \"IDFC FIRST Millennia Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"VISA\",\n      \"card_network\": null,\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"rating\": 3,\n      \"invite_only\": false,\n      \"employment_type\": \"both\",\n      \"new_to_credit\": true,\n      \"tags\": [\n        \"Shopping\",\n        \"Travel\"\n      ],\n      \"key_benefits\": [\n        \"Get A ₹500 Voucher from partner brands like Amazon, BigBasket,\",\n        \"Get 5% Cashback on Converting Eligible \",\n        \"25% Off on Movie Tickets via District App\"\n      ],\n      \"card_alias\": \"idfc-first-millennia-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_124953_BankKaro_20260129_125526152_IDFC_MILLENIA.png\"\n    },\n    {\n      \"name\": \"Tata Neu Infinity HDFC Bank Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"VISA,RuPay\",\n      \"card_network\": null,\n      \"joining_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"annual_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"rating\": 3,\n      \"invite_only\": false,\n      \"employment_type\": \"both\",\n      \"new_to_credit\": false,\n      \"tags\": [\n        \"Shopping\",\n        \"Online Food Ordering\",\n        \"Grocery Shopping\",\n        \"Travel\",\n        \"Utility Bills\",\n        \"UPI\"\n      ],\n      \"key_benefits\": [\n        \"Get 5% NeuCoins at partner Tata brands Like Croma, Tata Cliq\",\n        \"Get 5% NeuCoins at bigbasket with Spends\",\n        \"Get 5% NeuCoins at IHCL, Air India Express and Air India\"\n      ],\n      \"card_alias\": \"tata-neu-hdfc-bank-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125214_BankKaro_20260129_124325671_TATA_Nue.png\"\n    }\n  ]\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "total_available": 258,
+      "showing": 10,
+      "cards": [
+        {
+          "name": "SBI Cashback Credit Card",
+          "bank": "",
+          "card_type": "VISA",
+          "card_network": null,
+          "joining_fee": "₹1,179 (₹999 + GST)",
+          "annual_fee": "₹1,179 (₹999 + GST)",
+          "rating": 4,
+          "invite_only": false,
+          "employment_type": "both",
+          "new_to_credit": false,
+          "tags": [
+            "Shopping",
+            "Online Food Ordering",
+            "Dining",
+            "Grocery Shopping"
+          ],
+          "key_benefits": [
+            "Get 5% Cashback on Dining",
+            "Earn 5% Cashback on Online Spends",
+            "Get 5% Cashback on"
+          ],
+          "card_alias": "sbi-cashback-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122010_AGB_Mockup-24.webp1736921642945"
+        },
+        {
+          "name": "Axis Flipkart Credit Card",
+          "bank": "",
+          "card_type": "VISA",
+          "card_network": null,
+          "joining_fee": "Free",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "rating": 4,
+          "invite_only": false,
+          "employment_type": "both",
+          "new_to_credit": true,
+          "tags": [
+            "Shopping",
+            "Online Food Ordering",
+            "Travel"
+          ],
+          "key_benefits": [
+            "Shopping Get 7.5% Cashback on Myntra",
+            "Get 5% Cashback on Flipkart",
+            "Get 5% Cashback on Cleartrip"
+          ],
+          "card_alias": "axis-flipkart-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_121912_AGB_Mockup-6.webp1736855576881"
+        },
+        {
+          "name": "HSBC Cashback Credit Card",
+          "bank": "",
+          "card_type": "VISA",
+          "card_network": null,
+          "joining_fee": "Free",
+          "annual_fee": "₹1,179 (₹999 + GST)",
+          "rating": 1,
+          "invite_only": false,
+          "employment_type": "salaried",
+          "new_to_credit": false,
+          "tags": [
+            "Online Food Ordering",
+            "Dining",
+            "Grocery Shopping",
+            "Travel"
+          ],
+          "key_benefits": [
+            "Get 4 Domestic Airport Lounge",
+            "Get 10% Cashback on dining",
+            "Get 10% Cashback on food delivery"
+          ],
+          "card_alias": "hsbc-cashback-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122008_BankKaro_20260331_180207158_IDFC_FIRST_Indigo_Credit_Card_-mockup_4.png"
+        },
+        {
+          "name": "Kiwi Klick Credit Card",
+          "bank": "",
+          "card_type": "RuPay",
+          "card_network": null,
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "rating": 4.5,
+          "invite_only": false,
+          "employment_type": "salaried",
+          "new_to_credit": false,
+          "tags": [
+            "Shopping",
+            "UPI"
+          ],
+          "key_benefits": [
+            "Flat ₹250 Cashback (1000 Kiwis)",
+            "Flat ₹250 Cashback (1000 Kiwis)",
+            "Get 1.5% Cashback"
+          ],
+          "card_alias": "kiwi-klick-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125208_BankKaro_Mockup-13.png"
+        },
+        {
+          "name": "SBI Simply Click Credit Card",
+          "bank": "",
+          "card_type": "Mastercard",
+          "card_network": null,
+          "joining_fee": "₹589 (₹499 + GST)",
+          "annual_fee": "₹589 (₹499 + GST)",
+          "rating": 4,
+          "invite_only": false,
+          "employment_type": "both",
+          "new_to_credit": true,
+          "tags": [
+            "Shopping"
+          ],
+          "key_benefits": [
+            "Get 10X Reward Points at Cleartrip & Yatra",
+            "Get 10X Reward Points on Swiggy & Dominos",
+            "Get 10X Reward Points at Myntra, Tata Cliq"
+          ],
+          "card_alias": "sbi-simply-click-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260922_095234489_Mockup_97.png"
+        },
+        {
+          "name": "HDFC Regalia Gold Credit Card",
+          "bank": "",
+          "card_type": "VISA,Mastercard",
+          "card_network": null,
+          "joining_fee": "₹2,950 (₹2,500 + GST)",
+          "annual_fee": "₹2,950 (₹2,500 + GST)",
+          "rating": 4,
+          "invite_only": false,
+          "employment_type": "both",
+          "new_to_credit": false,
+          "tags": [
+            "Shopping",
+            "Travel"
+          ],
+          "key_benefits": [
+            "Earn 10X SmartBuy Points on IGP.com, Jockey and Pharmeasy",
+            "Earn SmartBuy Travel Rewards on Flights, Hotels, RedBus",
+            "Earn 10X SmartBuy Points on IGP.com, Jockey and Pharmeasy"
+          ],
+          "card_alias": "hdfc-regalia-gold",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125153_BankKaro_Mockup-12.webp"
+        },
+        {
+          "name": "Flipkart SBI Credit Card",
+          "bank": "",
+          "card_type": "VISA,Mastercard",
+          "card_network": null,
+          "joining_fee": "Free",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "rating": 4,
+          "invite_only": false,
+          "employment_type": "both",
+          "new_to_credit": false,
+          "tags": [
+            "Shopping",
+            "Travel"
+          ],
+          "key_benefits": [
+            "Earn 7.5% on Myntra and 5% on Flipkart & Cleartrip",
+            "Earn 4% Cashback on",
+            "Earn 7.5% Cashback on Myntra and 5% Cashback on Flipkart"
+          ],
+          "card_alias": "flipkart-sbi-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125857_BankKaro_HDFC_Bank_UPI_Rupay_Credit_Card-mockup.png"
+        },
+        {
+          "name": "Swiggy BLCK HDFC Credit Card",
+          "bank": "",
+          "card_type": "Mastercard",
+          "card_network": null,
+          "joining_fee": "₹1,180 (₹1,000 + GST)",
+          "annual_fee": "₹1,180 (₹1,000 + GST)",
+          "rating": 4.7,
+          "invite_only": false,
+          "employment_type": "both",
+          "new_to_credit": true,
+          "tags": [
+            "Shopping",
+            "Online Food Ordering",
+            "Dining",
+            "Grocery Shopping"
+          ],
+          "key_benefits": [
+            "10% Cashback on Swiggy Instamart",
+            "10% Cashback on Swiggy Orders",
+            "10% Cashback on Swiggy Orders"
+          ],
+          "card_alias": "swiggy-blck-hdfc-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122002_BankKaro_20260316_12502238_RBL_1.png"
+        },
+        {
+          "name": "IDFC FIRST Millennia Credit Card",
+          "bank": "",
+          "card_type": "VISA",
+          "card_network": null,
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "rating": 3,
+          "invite_only": false,
+          "employment_type": "both",
+          "new_to_credit": true,
+          "tags": [
+            "Shopping",
+            "Travel"
+          ],
+          "key_benefits": [
+            "Get A ₹500 Voucher from partner brands like Amazon, BigBasket,",
+            "Get 5% Cashback on Converting Eligible ",
+            "25% Off on Movie Tickets via District App"
+          ],
+          "card_alias": "idfc-first-millennia-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_124953_BankKaro_20260129_125526152_IDFC_MILLENIA.png"
+        },
+        {
+          "name": "Tata Neu Infinity HDFC Bank Credit Card",
+          "bank": "",
+          "card_type": "VISA,RuPay",
+          "card_network": null,
+          "joining_fee": "₹1,769 (₹1,499 + GST)",
+          "annual_fee": "₹1,769 (₹1,499 + GST)",
+          "rating": 3,
+          "invite_only": false,
+          "employment_type": "both",
+          "new_to_credit": false,
+          "tags": [
+            "Shopping",
+            "Online Food Ordering",
+            "Grocery Shopping",
+            "Travel",
+            "Utility Bills",
+            "UPI"
+          ],
+          "key_benefits": [
+            "Get 5% NeuCoins at partner Tata brands Like Croma, Tata Cliq",
+            "Get 5% NeuCoins at bigbasket with Spends",
+            "Get 5% NeuCoins at IHCL, Air India Express and Air India"
+          ],
+          "card_alias": "tata-neu-hdfc-bank-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125214_BankKaro_20260129_124325671_TATA_Nue.png"
+        }
+      ]
+    }
+  ]
+}

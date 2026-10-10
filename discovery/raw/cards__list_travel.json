@@ -1,0 +1,270 @@
+{
+  "id": "list_travel",
+  "group": "cards",
+  "purpose": "",
+  "timestamp": "2026-10-10T18:34:19.758837+00:00",
+  "request": {
+    "tool": "list_cards",
+    "arguments": {
+      "category": "best-travel-credit-card",
+      "limit": 10
+    }
+  },
+  "latency_ms": 369,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total_available\": 183,\n  \"showing\": 10,\n  \"cards\": [\n    {\n      \"name\": \"Axis Privilege Amex Credit Card \",\n      \"bank\": \"\",\n      \"card_type\": \"AmericanExpress\",\n      \"card_network\": null,\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"rating\": 3,\n      \"invite_only\": false,\n      \"employment_type\": \"both\",\n      \"new_to_credit\": false,\n      \"tags\": [\n        \"Shopping\",\n        \"Online Food Ordering\",\n        \"Travel\"\n      ],\n      \"key_benefits\": [\n        \"Earn 10 EDGE Reward Points\",\n        \"Get 2 Complimentary Domestic Airport Lounge\",\n        \"Get Saturday Discount\"\n      ],\n      \"card_alias\": \"axis-privilege-amex-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125705_BankKaro_Axis_Privilege_Amex_Credit_Card-mockup.png\"\n    },\n    {\n      \"name\": \"SalarySe Level UP Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"RuPay\",\n      \"card_network\": null,\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"rating\": 4,\n      \"invite_only\": false,\n      \"employment_type\": \"salaried\",\n      \"new_to_credit\": true,\n      \"tags\": [\n        \"Shopping\",\n        \"Travel\",\n        \"UPI\"\n      ],\n      \"key_benefits\": [\n        \"Earn 37.5 SCoins per ₹100 spent via SalarySe UPI\",\n        \"Earn 37.5 SCoins per ₹100 spent via SalarySe UPI\",\n        \"Enjoy 12 Complimentary Domestic Lounge Visits \"\n      ],\n      \"card_alias\": \"salaryse-level-up-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260717_102505582_Roar_Bank_Rupay_Credit_Card_7.png\"\n    },\n    {\n      \"name\": \"HSBC Premier Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"Mastercard\",\n      \"card_network\": null,\n      \"joining_fee\": \"₹14,160 (₹12,000 + GST)\",\n      \"annual_fee\": \"₹23,600 (₹20,000 + GST)\",\n      \"rating\": 4,\n      \"invite_only\": false,\n      \"employment_type\": \"salaried\",\n      \"new_to_credit\": false,\n      \"tags\": [\n        \"Shopping\",\n        \"Dining\",\n        \"Travel\",\n        \"Utility Bills\"\n      ],\n      \"key_benefits\": [\n        \"Earn 3 Reward Points\",\n        \"Get 30% off Dining Bills up to ₹1,500 \\t\",\n        \"Earn 3 Reward Points for Every ₹100 Spent on\"\n      ],\n      \"card_alias\": \"hsbc-premier-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125211_BankKaro_20260102_100708467_HSBC_Premier_Credit_Card_bc.png\"\n    },\n    {\n      \"name\": \"Times Black ICICI Bank Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"VISA\",\n      \"card_network\": null,\n      \"joining_fee\": \"₹23,600 (₹20,000 + GST)\",\n      \"annual_fee\": \"₹23,600 (₹20,000 + GST)\",\n      \"rating\": 4,\n      \"invite_only\": false,\n      \"employment_type\": \"both\",\n      \"new_to_credit\": false,\n      \"tags\": [\n        \"Shopping\",\n        \"Dining\",\n        \"Travel\"\n      ],\n      \"key_benefits\": [\n        \"Earn Up To 12X Reward Points On Hotel\",\n        \"Save With A 1.49% Forex Markup On International Transactions\",\n        \"Get A ₹10,000 Tata CLiQ Luxury Gift Card\"\n      ],\n      \"card_alias\": \"times-black-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125804_BankKaro_Times_Black_ICICI_Bank_Credit_Card-mockup.png\"\n    },\n    {\n      \"name\": \"Scapia Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"Mastercard\",\n      \"card_network\": null,\n      \"joining_fee\": \"₹1 (₹1 + GST)\",\n      \"annual_fee\": \"₹1 (₹1 + GST)\",\n      \"rating\": 4.5,\n      \"invite_only\": false,\n      \"employment_type\": \"both\",\n      \"new_to_credit\": false,\n      \"tags\": [\n        \"Travel\"\n      ],\n      \"key_benefits\": [\n        \"Save 100% on Forex Markup Across 180+ Countries\",\n        \"Enjoy Unlimited Domestic Airport Lounge Access\",\n        \"Enjoy Unlimited Domestic Airport Lounge Access\"\n      ],\n      \"card_alias\": \"scapia-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20261008_105748563_Mockup_-_2026-10-08T105705.358.png\"\n    },\n    {\n      \"name\": \"Zagg Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"RuPay\",\n      \"card_network\": null,\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"rating\": 3,\n      \"invite_only\": false,\n      \"employment_type\": \"both\",\n      \"new_to_credit\": false,\n      \"tags\": [\n        \"Travel\",\n        \"UPI\"\n      ],\n      \"key_benefits\": [\n        \"Earn 3% Zagg Coins \",\n        \"Enjoy Lounge Visits\\t\",\n        \"Earn 3% Zagg Coins\"\n      ],\n      \"card_alias\": \"zagg-rupay-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125543_BankKaro_20260129_130112644_YES_BANK_Zagg_Credit_Card.png\"\n    },\n    {\n      \"name\": \"SBI Card Pulse Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"VISA,Mastercard\",\n      \"card_network\": null,\n      \"joining_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"annual_fee\": \"₹1,769 (₹1,499 + GST)\",\n      \"rating\": 4,\n      \"invite_only\": false,\n      \"employment_type\": \"both\",\n      \"new_to_credit\": false,\n      \"tags\": [\n        \"Shopping\",\n        \"Travel\"\n      ],\n      \"key_benefits\": [\n        \"Earn 10 Reward Points\",\n        \"Get Priority Pass Membership\",\n        \"Enjoy Domestic Lounge Visits\"\n      ],\n      \"card_alias\": \"sbi-card-pulse-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125727_BankKaro_SBI_Card_Pulse-mockup.png\"\n    },\n    {\n      \"name\": \"SBI AURUM Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"VISA,Mastercard\",\n      \"card_network\": null,\n      \"joining_fee\": \"₹11,799 (₹9,999 + GST)\",\n      \"annual_fee\": \"₹11,799 (₹9,999 + GST)\",\n      \"rating\": 4,\n      \"invite_only\": true,\n      \"employment_type\": \"both\",\n      \"new_to_credit\": false,\n      \"tags\": [\n        \"Shopping\",\n        \"Dining\",\n        \"Travel\"\n      ],\n      \"key_benefits\": [\n        \"Experience Luxury for Less with a Complimentary \",\n        \"Enjoy 4 Complimentary Domestic Airport Lounge\",\n        \"Get 4 Movie Tickets on BookMyShow\"\n      ],\n      \"card_alias\": \"sbi-aurum-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125235_BankKaro_Mockup-2.png\"\n    },\n    {\n      \"name\": \"Myntra Kotak Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"Mastercard,RuPay\",\n      \"card_network\": null,\n      \"joining_fee\": \"₹590 (₹500 + GST)\",\n      \"annual_fee\": \"₹590 (₹500 + GST)\",\n      \"rating\": 4,\n      \"invite_only\": false,\n      \"employment_type\": \"both\",\n      \"new_to_credit\": false,\n      \"tags\": [\n        \"Shopping\",\n        \"Online Food Ordering\",\n        \"Travel\"\n      ],\n      \"key_benefits\": [\n        \"\\tInstant Discount Of 7.5%\",\n        \"Get Cashback of 5%\",\n        \"Earn 5% Cashback At Swiggy\"\n      ],\n      \"card_alias\": \"myntra-kotak-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125721_BankKaro_Myntra_Kotak_Credit_Card-mockup.png\"\n    },\n    {\n      \"name\": \"HDFC Shoppers Stop Black Credit Card\",\n      \"bank\": \"\",\n      \"card_type\": \"VISA\",\n      \"card_network\": null,\n      \"joining_fee\": \"₹5,310 (₹4,500 + GST)\",\n      \"annual_fee\": \"₹5,310 (₹4,500 + GST)\",\n      \"rating\": 4.1,\n      \"invite_only\": false,\n      \"employment_type\": \"both\",\n      \"new_to_credit\": true,\n      \"tags\": [\n        \"Shopping\",\n        \"Travel\"\n      ],\n      \"key_benefits\": [\n        \"Earn 7% Reward Points on Shoppers Stop\",\n        \"Enjoy 16 Domestic and 8 International Lounge\",\n        \"Get Complimentary Shoppers Stop Black Membership\"\n      ],\n      \"card_alias\": \"shoppers-stop-black-hdfc-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130210_BankKaro_20251121_162054748\"\n    }\n  ]\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "total_available": 183,
+      "showing": 10,
+      "cards": [
+        {
+          "name": "Axis Privilege Amex Credit Card ",
+          "bank": "",
+          "card_type": "AmericanExpress",
+          "card_network": null,
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "rating": 3,
+          "invite_only": false,
+          "employment_type": "both",
+          "new_to_credit": false,
+          "tags": [
+            "Shopping",
+            "Online Food Ordering",
+            "Travel"
+          ],
+          "key_benefits": [
+            "Earn 10 EDGE Reward Points",
+            "Get 2 Complimentary Domestic Airport Lounge",
+            "Get Saturday Discount"
+          ],
+          "card_alias": "axis-privilege-amex-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125705_BankKaro_Axis_Privilege_Amex_Credit_Card-mockup.png"
+        },
+        {
+          "name": "SalarySe Level UP Credit Card",
+          "bank": "",
+          "card_type": "RuPay",
+          "card_network": null,
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "rating": 4,
+          "invite_only": false,
+          "employment_type": "salaried",
+          "new_to_credit": true,
+          "tags": [
+            "Shopping",
+            "Travel",
+            "UPI"
+          ],
+          "key_benefits": [
+            "Earn 37.5 SCoins per ₹100 spent via SalarySe UPI",
+            "Earn 37.5 SCoins per ₹100 spent via SalarySe UPI",
+            "Enjoy 12 Complimentary Domestic Lounge Visits "
+          ],
+          "card_alias": "salaryse-level-up-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260717_102505582_Roar_Bank_Rupay_Credit_Card_7.png"
+        },
+        {
+          "name": "HSBC Premier Credit Card",
+          "bank": "",
+          "card_type": "Mastercard",
+          "card_network": null,
+          "joining_fee": "₹14,160 (₹12,000 + GST)",
+          "annual_fee": "₹23,600 (₹20,000 + GST)",
+          "rating": 4,
+          "invite_only": false,
+          "employment_type": "salaried",
+          "new_to_credit": false,
+          "tags": [
+            "Shopping",
+            "Dining",
+            "Travel",
+            "Utility Bills"
+          ],
+          "key_benefits": [
+            "Earn 3 Reward Points",
+            "Get 30% off Dining Bills up to ₹1,500 \t",
+            "Earn 3 Reward Points for Every ₹100 Spent on"
+          ],
+          "card_alias": "hsbc-premier-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125211_BankKaro_20260102_100708467_HSBC_Premier_Credit_Card_bc.png"
+        },
+        {
+          "name": "Times Black ICICI Bank Credit Card",
+          "bank": "",
+          "card_type": "VISA",
+          "card_network": null,
+          "joining_fee": "₹23,600 (₹20,000 + GST)",
+          "annual_fee": "₹23,600 (₹20,000 + GST)",
+          "rating": 4,
+          "invite_only": false,
+          "employment_type": "both",
+          "new_to_credit": false,
+          "tags": [
+            "Shopping",
+            "Dining",
+            "Travel"
+          ],
+          "key_benefits": [
+            "Earn Up To 12X Reward Points On Hotel",
+            "Save With A 1.49% Forex Markup On International Transactions",
+            "Get A ₹10,000 Tata CLiQ Luxury Gift Card"
+          ],
+          "card_alias": "times-black-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125804_BankKaro_Times_Black_ICICI_Bank_Credit_Card-mockup.png"
+        },
+        {
+          "name": "Scapia Credit Card",
+          "bank": "",
+          "card_type": "Mastercard",
+          "card_network": null,
+          "joining_fee": "₹1 (₹1 + GST)",
+          "annual_fee": "₹1 (₹1 + GST)",
+          "rating": 4.5,
+          "invite_only": false,
+          "employment_type": "both",
+          "new_to_credit": false,
+          "tags": [
+            "Travel"
+          ],
+          "key_benefits": [
+            "Save 100% on Forex Markup Across 180+ Countries",
+            "Enjoy Unlimited Domestic Airport Lounge Access",
+            "Enjoy Unlimited Domestic Airport Lounge Access"
+          ],
+          "card_alias": "scapia-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20261008_105748563_Mockup_-_2026-10-08T105705.358.png"
+        },
+        {
+          "name": "Zagg Credit Card",
+          "bank": "",
+          "card_type": "RuPay",
+          "card_network": null,
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "rating": 3,
+          "invite_only": false,
+          "employment_type": "both",
+          "new_to_credit": false,
+          "tags": [
+            "Travel",
+            "UPI"
+          ],
+          "key_benefits": [
+            "Earn 3% Zagg Coins ",
+            "Enjoy Lounge Visits\t",
+            "Earn 3% Zagg Coins"
+          ],
+          "card_alias": "zagg-rupay-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125543_BankKaro_20260129_130112644_YES_BANK_Zagg_Credit_Card.png"
+        },
+        {
+          "name": "SBI Card Pulse Credit Card",
+          "bank": "",
+          "card_type": "VISA,Mastercard",
+          "card_network": null,
+          "joining_fee": "₹1,769 (₹1,499 + GST)",
+          "annual_fee": "₹1,769 (₹1,499 + GST)",
+          "rating": 4,
+          "invite_only": false,
+          "employment_type": "both",
+          "new_to_credit": false,
+          "tags": [
+            "Shopping",
+            "Travel"
+          ],
+          "key_benefits": [
+            "Earn 10 Reward Points",
+            "Get Priority Pass Membership",
+            "Enjoy Domestic Lounge Visits"
+          ],
+          "card_alias": "sbi-card-pulse-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125727_BankKaro_SBI_Card_Pulse-mockup.png"
+        },
+        {
+          "name": "SBI AURUM Credit Card",
+          "bank": "",
+          "card_type": "VISA,Mastercard",
+          "card_network": null,
+          "joining_fee": "₹11,799 (₹9,999 + GST)",
+          "annual_fee": "₹11,799 (₹9,999 + GST)",
+          "rating": 4,
+          "invite_only": true,
+          "employment_type": "both",
+          "new_to_credit": false,
+          "tags": [
+            "Shopping",
+            "Dining",
+            "Travel"
+          ],
+          "key_benefits": [
+            "Experience Luxury for Less with a Complimentary ",
+            "Enjoy 4 Complimentary Domestic Airport Lounge",
+            "Get 4 Movie Tickets on BookMyShow"
+          ],
+          "card_alias": "sbi-aurum-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125235_BankKaro_Mockup-2.png"
+        },
+        {
+          "name": "Myntra Kotak Credit Card",
+          "bank": "",
+          "card_type": "Mastercard,RuPay",
+          "card_network": null,
+          "joining_fee": "₹590 (₹500 + GST)",
+          "annual_fee": "₹590 (₹500 + GST)",
+          "rating": 4,
+          "invite_only": false,
+          "employment_type": "both",
+          "new_to_credit": false,
+          "tags": [
+            "Shopping",
+            "Online Food Ordering",
+            "Travel"
+          ],
+          "key_benefits": [
+            "\tInstant Discount Of 7.5%",
+            "Get Cashback of 5%",
+            "Earn 5% Cashback At Swiggy"
+          ],
+          "card_alias": "myntra-kotak-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125721_BankKaro_Myntra_Kotak_Credit_Card-mockup.png"
+        },
+        {
+          "name": "HDFC Shoppers Stop Black Credit Card",
+          "bank": "",
+          "card_type": "VISA",
+          "card_network": null,
+          "joining_fee": "₹5,310 (₹4,500 + GST)",
+          "annual_fee": "₹5,310 (₹4,500 + GST)",
+          "rating": 4.1,
+          "invite_only": false,
+          "employment_type": "both",
+          "new_to_credit": true,
+          "tags": [
+            "Shopping",
+            "Travel"
+          ],
+          "key_benefits": [
+            "Earn 7% Reward Points on Shoppers Stop",
+            "Enjoy 16 Domestic and 8 International Lounge",
+            "Get Complimentary Shoppers Stop Black Membership"
+          ],
+          "card_alias": "shoppers-stop-black-hdfc-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130210_BankKaro_20251121_162054748"
+        }
+      ]
+    }
+  ]
+}

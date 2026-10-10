@@ -1,0 +1,69 @@
+{
+  "id": "resolve_amazon_card",
+  "group": "resolve",
+  "purpose": "",
+  "timestamp": "2026-10-10T18:34:21.588766+00:00",
+  "request": {
+    "tool": "whatsapp_resolve_card_or_category",
+    "arguments": {
+      "phrase": "amazon card"
+    }
+  },
+  "latency_ms": 623,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"reply_type\": \"resolution\",\n  \"summary\": \"I found possible matches.\",\n  \"matches\": [\n    {\n      \"type\": \"brand\",\n      \"brand\": \"amazon\",\n      \"category\": \"shopping\",\n      \"spending_key\": \"amazon_spends\",\n      \"channel\": \"online\",\n      \"confidence\": \"high\",\n      \"matched_on\": \"brand_mapping\",\n      \"needs_clarification\": false,\n      \"next_question\": \"Roughly how much do you spend on amazon per month?\"\n    },\n    {\n      \"type\": \"card\",\n      \"name\": \"Amazon Pay ICICI Bank Credit Card\",\n      \"bank\": \"\",\n      \"alias\": \"icici-amazon-pay-credit-card\",\n      \"link\": \"https://www.great.cards/cards/icici-amazon-pay-credit-card\",\n      \"confidence\": \"medium\",\n      \"matched_on\": [\n        \"all_query_tokens\"\n      ],\n      \"score\": 53\n    }\n  ],\n  \"best_match\": {\n    \"type\": \"brand\",\n    \"brand\": \"amazon\",\n    \"category\": \"shopping\",\n    \"spending_key\": \"amazon_spends\",\n    \"channel\": \"online\",\n    \"confidence\": \"high\",\n    \"matched_on\": \"brand_mapping\",\n    \"needs_clarification\": false,\n    \"next_question\": \"Roughly how much do you spend on amazon per month?\"\n  },\n  \"next_action\": \"ask_spend_amount_then_recommend_spend_profile\",\n  \"next_question\": \"Roughly how much do you spend on amazon per month?\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "reply_type": "resolution",
+      "summary": "I found possible matches.",
+      "matches": [
+        {
+          "type": "brand",
+          "brand": "amazon",
+          "category": "shopping",
+          "spending_key": "amazon_spends",
+          "channel": "online",
+          "confidence": "high",
+          "matched_on": "brand_mapping",
+          "needs_clarification": false,
+          "next_question": "Roughly how much do you spend on amazon per month?"
+        },
+        {
+          "type": "card",
+          "name": "Amazon Pay ICICI Bank Credit Card",
+          "bank": "",
+          "alias": "icici-amazon-pay-credit-card",
+          "link": "https://www.great.cards/cards/icici-amazon-pay-credit-card",
+          "confidence": "medium",
+          "matched_on": [
+            "all_query_tokens"
+          ],
+          "score": 53
+        }
+      ],
+      "best_match": {
+        "type": "brand",
+        "brand": "amazon",
+        "category": "shopping",
+        "spending_key": "amazon_spends",
+        "channel": "online",
+        "confidence": "high",
+        "matched_on": "brand_mapping",
+        "needs_clarification": false,
+        "next_question": "Roughly how much do you spend on amazon per month?"
+      },
+      "next_action": "ask_spend_amount_then_recommend_spend_profile",
+      "next_question": "Roughly how much do you spend on amazon per month?"
+    }
+  ]
+}

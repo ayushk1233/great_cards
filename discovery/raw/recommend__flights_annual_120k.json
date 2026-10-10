@@ -1,0 +1,281 @@
+{
+  "id": "flights_annual_120k",
+  "group": "recommend",
+  "purpose": "annual unit",
+  "timestamp": "2026-10-10T18:33:36.554716+00:00",
+  "request": {
+    "tool": "recommend_cards",
+    "arguments": {
+      "flights_annual": 120000,
+      "top_n": 5
+    }
+  },
+  "latency_ms": 3284,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total_cards_analyzed\": 204,\n  \"recommendations\": [\n    {\n      \"rank\": 1,\n      \"card_name\": \"AMEX GOLD CREDIT CARD\",\n      \"bank_name\": \"American Express\",\n      \"card_type\": \"AmericanExpress\",\n      \"net_annual_savings\": \"₹8,610\",\n      \"annual_rewards_value\": \"₹6,960\",\n      \"milestone_benefits\": \"₹6,960\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹1,180 (incl. GST)\",\n      \"annual_fee\": \"₹5,310 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 59,\n          \"brands\": [],\n          \"card_id\": 69,\n          \"rp_bonus\": \"4000\",\n          \"maximum_days\": \"90\",\n          \"minimum_spend\": \"10000\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"0.50\",\n          \"welcome_benefit_tooltip\": null,\n          \"cash_value\": 2000\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹580\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"grocery_spends_online\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"american-express-gold-card\",\n      \"rating\": 4,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_124959_AGB_Mockup-17.webp1737007970148\"\n    },\n    {\n      \"rank\": 2,\n      \"card_name\": \"HDFC Diners Club Black Metal Edition\",\n      \"bank_name\": \"HDFC\",\n      \"card_type\": \"DinersClub\",\n      \"net_annual_savings\": \"₹8,200\",\n      \"annual_rewards_value\": \"₹20,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹11,800 (incl. GST)\",\n      \"annual_fee\": \"₹11,800 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 49,\n          \"brands\": [\n            {\n              \"id\": 31,\n              \"name\": \"Club Marriott\"\n            },\n            {\n              \"id\": 17,\n              \"name\": \"Amazon Prime\"\n            },\n            {\n              \"id\": null,\n              \"name\": null\n            }\n          ],\n          \"card_id\": 103,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"90\",\n          \"minimum_spend\": \"150000\",\n          \"voucher_bonus\": \"25000\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": null,\n          \"cash_value\": 0\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹1,666.667\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"hdfc-diners-club-black-metal-credit-card\",\n      \"rating\": 3,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125405_BankKaro_HDFC_Dineer_Bc.png\"\n    },\n    {\n      \"rank\": 3,\n      \"card_name\": \"Yes Bank Paisabazaar PaisaSave Credit Card\",\n      \"bank_name\": \"Yes Bank\",\n      \"card_type\": \"Mastercard\",\n      \"net_annual_savings\": \"₹7,200\",\n      \"annual_rewards_value\": \"₹7,200\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free (waived at ₹1,20,000/yr spend; ₹589 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹600\"\n        },\n        {\n          \"category\": \"dining_or_going_out\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"hotels_annual\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"yes-bank-paisabazaar-paisasave-credit-card\",\n      \"rating\": 4.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260914_153331932_Mockup_95.png\"\n    },\n    {\n      \"rank\": 4,\n      \"card_name\": \"Axis SpiceJet Bank Voyage Black Credit Card\",\n      \"bank_name\": \"Axis\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹6,040\",\n      \"annual_rewards_value\": \"₹8,400\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹2,360 (incl. GST)\",\n      \"annual_fee\": \"₹2,360 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 145,\n          \"brands\": [\n            {\n              \"id\": 125,\n              \"name\": \"SpiceJet\"\n            }\n          ],\n          \"card_id\": 146,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"200\",\n          \"voucher_bonus\": \"4000\",\n          \"cash_conversion\": \"1\",\n          \"welcome_benefit_tooltip\": \"Complete 2 transactions within 3o days of card issuance\",\n          \"cash_value\": 4000\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹700\"\n        },\n        {\n          \"category\": \"online_food_ordering\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"ott_channels\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"spicejet-axis-bank-voyage-black-credit-card\",\n      \"rating\": 3.5,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130122_BankKaro_Axis_Spicejet_Voyage_Black.png\"\n    },\n    {\n      \"rank\": 5,\n      \"card_name\": \"ICICI Amazon Pay Credit Card\",\n      \"bank_name\": \"ICICI Bank\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹6,000\",\n      \"annual_rewards_value\": \"₹6,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹500\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"online_food_ordering\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"icici-amazon-pay-credit-card\",\n      \"rating\": 5,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125139_BankKaro_Mobile.png\"\n    }\n  ],\n  \"_format_hint\": \"net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from.\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "total_cards_analyzed": 204,
+      "recommendations": [
+        {
+          "rank": 1,
+          "card_name": "AMEX GOLD CREDIT CARD",
+          "bank_name": "American Express",
+          "card_type": "AmericanExpress",
+          "net_annual_savings": "₹8,610",
+          "annual_rewards_value": "₹6,960",
+          "milestone_benefits": "₹6,960",
+          "lounge_value": "₹0",
+          "joining_fee": "₹1,180 (incl. GST)",
+          "annual_fee": "₹5,310 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 59,
+              "brands": [],
+              "card_id": 69,
+              "rp_bonus": "4000",
+              "maximum_days": "90",
+              "minimum_spend": "10000",
+              "voucher_bonus": "",
+              "cash_conversion": "0.50",
+              "welcome_benefit_tooltip": null,
+              "cash_value": 2000
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "flights_annual",
+              "annual_value": "₹580"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "grocery_spends_online",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "american-express-gold-card",
+          "rating": 4,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_124959_AGB_Mockup-17.webp1737007970148"
+        },
+        {
+          "rank": 2,
+          "card_name": "HDFC Diners Club Black Metal Edition",
+          "bank_name": "HDFC",
+          "card_type": "DinersClub",
+          "net_annual_savings": "₹8,200",
+          "annual_rewards_value": "₹20,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹11,800 (incl. GST)",
+          "annual_fee": "₹11,800 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 49,
+              "brands": [
+                {
+                  "id": 31,
+                  "name": "Club Marriott"
+                },
+                {
+                  "id": 17,
+                  "name": "Amazon Prime"
+                },
+                {
+                  "id": null,
+                  "name": null
+                }
+              ],
+              "card_id": 103,
+              "rp_bonus": "",
+              "maximum_days": "90",
+              "minimum_spend": "150000",
+              "voucher_bonus": "25000",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": null,
+              "cash_value": 0
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "flights_annual",
+              "annual_value": "₹1,666.667"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "hdfc-diners-club-black-metal-credit-card",
+          "rating": 3,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125405_BankKaro_HDFC_Dineer_Bc.png"
+        },
+        {
+          "rank": 3,
+          "card_name": "Yes Bank Paisabazaar PaisaSave Credit Card",
+          "bank_name": "Yes Bank",
+          "card_type": "Mastercard",
+          "net_annual_savings": "₹7,200",
+          "annual_rewards_value": "₹7,200",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free (waived at ₹1,20,000/yr spend; ₹589 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "flights_annual",
+              "annual_value": "₹600"
+            },
+            {
+              "category": "dining_or_going_out",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "hotels_annual",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "yes-bank-paisabazaar-paisasave-credit-card",
+          "rating": 4.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260914_153331932_Mockup_95.png"
+        },
+        {
+          "rank": 4,
+          "card_name": "Axis SpiceJet Bank Voyage Black Credit Card",
+          "bank_name": "Axis",
+          "card_type": "VISA",
+          "net_annual_savings": "₹6,040",
+          "annual_rewards_value": "₹8,400",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹2,360 (incl. GST)",
+          "annual_fee": "₹2,360 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 145,
+              "brands": [
+                {
+                  "id": 125,
+                  "name": "SpiceJet"
+                }
+              ],
+              "card_id": 146,
+              "rp_bonus": "",
+              "maximum_days": "30",
+              "minimum_spend": "200",
+              "voucher_bonus": "4000",
+              "cash_conversion": "1",
+              "welcome_benefit_tooltip": "Complete 2 transactions within 3o days of card issuance",
+              "cash_value": 4000
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "flights_annual",
+              "annual_value": "₹700"
+            },
+            {
+              "category": "online_food_ordering",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "ott_channels",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "spicejet-axis-bank-voyage-black-credit-card",
+          "rating": 3.5,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130122_BankKaro_Axis_Spicejet_Voyage_Black.png"
+        },
+        {
+          "rank": 5,
+          "card_name": "ICICI Amazon Pay Credit Card",
+          "bank_name": "ICICI Bank",
+          "card_type": "VISA",
+          "net_annual_savings": "₹6,000",
+          "annual_rewards_value": "₹6,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "flights_annual",
+              "annual_value": "₹500"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "online_food_ordering",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "icici-amazon-pay-credit-card",
+          "rating": 5,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125139_BankKaro_Mobile.png"
+        }
+      ],
+      "_format_hint": "net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from."
+    }
+  ]
+}

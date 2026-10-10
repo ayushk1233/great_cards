@@ -1,0 +1,19 @@
+{
+  "id": "income_50k_string",
+  "group": "eligibility",
+  "purpose": "",
+  "timestamp": "2026-10-10T18:34:35.535136+00:00",
+  "request": {
+    "tool": "check_eligibility",
+    "arguments": {
+      "pincode": "400001",
+      "annual_income": "50k",
+      "employment_status": "salaried"
+    }
+  },
+  "latency_ms": 95,
+  "client_error": "MCPError(-32603, 'Server returned an error response', None)",
+  "is_error": null,
+  "raw_result": null,
+  "parsed_content": null
+}

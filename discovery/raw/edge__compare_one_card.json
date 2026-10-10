@@ -1,0 +1,30 @@
+{
+  "id": "compare_one_card",
+  "group": "edge",
+  "purpose": "below min",
+  "timestamp": "2026-10-10T18:34:15.690323+00:00",
+  "request": {
+    "tool": "compare_cards",
+    "arguments": {
+      "card_aliases": [
+        "icici-amazon-pay-credit-card"
+      ]
+    }
+  },
+  "latency_ms": 110,
+  "client_error": null,
+  "is_error": true,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "MCP error -32602: Input validation error: Invalid arguments for tool compare_cards: [\n  {\n    \"origin\": \"array\",\n    \"code\": \"too_small\",\n    \"minimum\": 2,\n    \"inclusive\": true,\n    \"path\": [\n      \"card_aliases\"\n    ],\n    \"message\": \"Too small: expected array to have >=2 items\"\n  }\n]"
+      }
+    ],
+    "isError": true,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    "MCP error -32602: Input validation error: Invalid arguments for tool compare_cards: [\n  {\n    \"origin\": \"array\",\n    \"code\": \"too_small\",\n    \"minimum\": 2,\n    \"inclusive\": true,\n    \"path\": [\n      \"card_aliases\"\n    ],\n    \"message\": \"Too small: expected array to have >=2 items\"\n  }\n]"
+  ]
+}

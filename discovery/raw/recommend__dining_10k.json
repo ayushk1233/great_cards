@@ -1,0 +1,254 @@
+{
+  "id": "dining_10k",
+  "group": "recommend",
+  "purpose": "single category",
+  "timestamp": "2026-10-10T18:33:30.060387+00:00",
+  "request": {
+    "tool": "recommend_cards",
+    "arguments": {
+      "dining_or_going_out": 10000,
+      "top_n": 5
+    }
+  },
+  "latency_ms": 3318,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total_cards_analyzed\": 204,\n  \"recommendations\": [\n    {\n      \"rank\": 1,\n      \"card_name\": \"HSBC Live+ Credit Card\",\n      \"bank_name\": \"HSBC Bank\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹10,821\",\n      \"annual_rewards_value\": \"₹12,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹1,179 (incl. GST)\",\n      \"annual_fee\": \"₹1,179 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 35,\n          \"brands\": [],\n          \"card_id\": 50,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"20000\",\n          \"voucher_bonus\": \"1000\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": null,\n          \"cash_value\": 0\n        },\n        {\n          \"id\": 36,\n          \"brands\": [\n            {\n              \"id\": 14,\n              \"name\": \"Amazon\"\n            }\n          ],\n          \"card_id\": 50,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"0\",\n          \"voucher_bonus\": \"250\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": null,\n          \"cash_value\": 250\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"dining_or_going_out\",\n          \"annual_value\": \"₹1,000\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"hsbc-live-plus-credit-card\",\n      \"rating\": 4,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122030_AGB_Mockup-22.webp1735897902637\"\n    },\n    {\n      \"rank\": 2,\n      \"card_name\": \"Yes Bank Paisabazaar PaisaSave Credit Card\",\n      \"bank_name\": \"Yes Bank\",\n      \"card_type\": \"Mastercard\",\n      \"net_annual_savings\": \"₹7,200\",\n      \"annual_rewards_value\": \"₹7,200\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free (waived at ₹1,20,000/yr spend; ₹589 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"dining_or_going_out\",\n          \"annual_value\": \"₹600\"\n        },\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"hotels_annual\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"yes-bank-paisabazaar-paisasave-credit-card\",\n      \"rating\": 4.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260914_153331932_Mockup_95.png\"\n    },\n    {\n      \"rank\": 3,\n      \"card_name\": \"BOB Cashback Credit Card\",\n      \"bank_name\": \"Bank of Baroda\",\n      \"card_type\": \"Mastercard\",\n      \"net_annual_savings\": \"₹5,411\",\n      \"annual_rewards_value\": \"₹6,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹589 (incl. GST)\",\n      \"annual_fee\": \"₹589 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"dining_or_going_out\",\n          \"annual_value\": \"₹500\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"bob-cashback-credit-card\",\n      \"rating\": 4.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130247_BankKaro_20260507_124725695_Mockup_1.png\"\n    },\n    {\n      \"rank\": 4,\n      \"card_name\": \"CRED IndusInd Bank Credit Card\",\n      \"bank_name\": \"IndusInd Bank\",\n      \"card_type\": \"RuPay\",\n      \"net_annual_savings\": \"₹5,411\",\n      \"annual_rewards_value\": \"₹6,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹589 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"dining_or_going_out\",\n          \"annual_value\": \"₹500\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"cred-indusind-bank-credit-card\",\n      \"rating\": 4.2,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260625_173501453_Mockup_45.png\"\n    },\n    {\n      \"rank\": 5,\n      \"card_name\": \"SBI CASHBACK \",\n      \"bank_name\": \"SBI\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹4,821\",\n      \"annual_rewards_value\": \"₹6,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹1,179 (incl. GST)\",\n      \"annual_fee\": \"₹1,179 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"dining_or_going_out\",\n          \"annual_value\": \"₹500\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"sbi-cashback-credit-card\",\n      \"rating\": 4,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122010_AGB_Mockup-24.webp1736921642945\"\n    }\n  ],\n  \"_format_hint\": \"net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from.\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "total_cards_analyzed": 204,
+      "recommendations": [
+        {
+          "rank": 1,
+          "card_name": "HSBC Live+ Credit Card",
+          "bank_name": "HSBC Bank",
+          "card_type": "VISA",
+          "net_annual_savings": "₹10,821",
+          "annual_rewards_value": "₹12,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹1,179 (incl. GST)",
+          "annual_fee": "₹1,179 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 35,
+              "brands": [],
+              "card_id": 50,
+              "rp_bonus": "",
+              "maximum_days": "30",
+              "minimum_spend": "20000",
+              "voucher_bonus": "1000",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": null,
+              "cash_value": 0
+            },
+            {
+              "id": 36,
+              "brands": [
+                {
+                  "id": 14,
+                  "name": "Amazon"
+                }
+              ],
+              "card_id": 50,
+              "rp_bonus": "",
+              "maximum_days": "30",
+              "minimum_spend": "0",
+              "voucher_bonus": "250",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": null,
+              "cash_value": 250
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "dining_or_going_out",
+              "annual_value": "₹1,000"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "hsbc-live-plus-credit-card",
+          "rating": 4,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122030_AGB_Mockup-22.webp1735897902637"
+        },
+        {
+          "rank": 2,
+          "card_name": "Yes Bank Paisabazaar PaisaSave Credit Card",
+          "bank_name": "Yes Bank",
+          "card_type": "Mastercard",
+          "net_annual_savings": "₹7,200",
+          "annual_rewards_value": "₹7,200",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free (waived at ₹1,20,000/yr spend; ₹589 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "dining_or_going_out",
+              "annual_value": "₹600"
+            },
+            {
+              "category": "flights_annual",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "hotels_annual",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "yes-bank-paisabazaar-paisasave-credit-card",
+          "rating": 4.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260914_153331932_Mockup_95.png"
+        },
+        {
+          "rank": 3,
+          "card_name": "BOB Cashback Credit Card",
+          "bank_name": "Bank of Baroda",
+          "card_type": "Mastercard",
+          "net_annual_savings": "₹5,411",
+          "annual_rewards_value": "₹6,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹589 (incl. GST)",
+          "annual_fee": "₹589 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "dining_or_going_out",
+              "annual_value": "₹500"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "bob-cashback-credit-card",
+          "rating": 4.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130247_BankKaro_20260507_124725695_Mockup_1.png"
+        },
+        {
+          "rank": 4,
+          "card_name": "CRED IndusInd Bank Credit Card",
+          "bank_name": "IndusInd Bank",
+          "card_type": "RuPay",
+          "net_annual_savings": "₹5,411",
+          "annual_rewards_value": "₹6,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "₹589 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "dining_or_going_out",
+              "annual_value": "₹500"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "cred-indusind-bank-credit-card",
+          "rating": 4.2,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260625_173501453_Mockup_45.png"
+        },
+        {
+          "rank": 5,
+          "card_name": "SBI CASHBACK ",
+          "bank_name": "SBI",
+          "card_type": "VISA",
+          "net_annual_savings": "₹4,821",
+          "annual_rewards_value": "₹6,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹1,179 (incl. GST)",
+          "annual_fee": "₹1,179 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "dining_or_going_out",
+              "annual_value": "₹500"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "sbi-cashback-credit-card",
+          "rating": 4,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122010_AGB_Mockup-24.webp1736921642945"
+        }
+      ],
+      "_format_hint": "net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from."
+    }
+  ]
+}

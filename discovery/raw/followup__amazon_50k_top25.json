@@ -1,0 +1,1312 @@
+{
+  "id": "amazon_50k_top25",
+  "group": "followup",
+  "purpose": "caps: SBI Cashback ₹2k/cycle, Swiggy ₹1.5k/cycle, Millenia",
+  "timestamp": "2026-10-10T18:37:11.393307+00:00",
+  "request": {
+    "tool": "recommend_cards",
+    "arguments": {
+      "amazon_spends": 50000,
+      "top_n": 25
+    }
+  },
+  "latency_ms": 3993,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total_cards_analyzed\": 204,\n  \"recommendations\": [\n    {\n      \"rank\": 1,\n      \"card_name\": \"ixigo AU credot Card\",\n      \"bank_name\": \"AU Small Finance Bank\",\n      \"card_type\": \"VISA,RuPay\",\n      \"net_annual_savings\": \"₹35,000\",\n      \"annual_rewards_value\": \"₹15,000\",\n      \"milestone_benefits\": \"₹20,000\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 225,\n          \"brands\": [\n            {\n              \"id\": 471,\n              \"name\": \"Ixigo\"\n            }\n          ],\n          \"card_id\": 239,\n          \"rp_bonus\": \"1000\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"100\",\n          \"voucher_bonus\": \"1000\",\n          \"cash_conversion\": \"1\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 2000\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹1,250\"\n        },\n        {\n          \"category\": \"all_pharmacy\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"dining_or_going_out\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"ixigo-au-credit-card\",\n      \"rating\": 4.2,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260729_143058744_AU_ALTURA__2.png\"\n    },\n    {\n      \"rank\": 2,\n      \"card_name\": \"SBI Landmark Reward SELECT Credit Card\",\n      \"bank_name\": \"SBI\",\n      \"card_type\": \"VISA,RuPay\",\n      \"net_annual_savings\": \"₹31,231\",\n      \"annual_rewards_value\": \"₹3,000\",\n      \"milestone_benefits\": \"₹30,000\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹1,769 (incl. GST)\",\n      \"annual_fee\": \"₹1,769 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 196,\n          \"brands\": [],\n          \"card_id\": 263,\n          \"rp_bonus\": \"6000\",\n          \"maximum_days\": \"\",\n          \"minimum_spend\": \"\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"0.25\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 1500\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹250\"\n        },\n        {\n          \"category\": \"other_online_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"other_offline_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"sbi-landmark-reward-select-credit-card\",\n      \"rating\": 4.2,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260818_105810829_Mockup_64.png\"\n    },\n    {\n      \"rank\": 3,\n      \"card_name\": \"HDFC Shoppers Stop Black Credit Card\",\n      \"bank_name\": \"HDFC\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹30,690\",\n      \"annual_rewards_value\": \"₹12,000\",\n      \"milestone_benefits\": \"₹24,000\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹5,310 (incl. GST)\",\n      \"annual_fee\": \"₹5,310 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 151,\n          \"brands\": [\n            {\n              \"id\": 94,\n              \"name\": \"Shoppers Stop\"\n            }\n          ],\n          \"card_id\": 158,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 0\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹1,000\"\n        },\n        {\n          \"category\": \"all_pharmacy\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"dining_or_going_out\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"shoppers-stop-black-hdfc-credit-card\",\n      \"rating\": 4.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130210_BankKaro_20251121_162054748\"\n    },\n    {\n      \"rank\": 4,\n      \"card_name\": \"ICICI Amazon Pay Credit Card\",\n      \"bank_name\": \"ICICI Bank\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹30,000\",\n      \"annual_rewards_value\": \"₹30,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹2,500\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"online_food_ordering\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"icici-amazon-pay-credit-card\",\n      \"rating\": 5,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125139_BankKaro_Mobile.png\"\n    },\n    {\n      \"rank\": 5,\n      \"card_name\": \"CRED IndusInd Bank Credit Card\",\n      \"bank_name\": \"IndusInd Bank\",\n      \"card_type\": \"RuPay\",\n      \"net_annual_savings\": \"₹29,411\",\n      \"annual_rewards_value\": \"₹30,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹589 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹2,500\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"other_online_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"cred-indusind-bank-credit-card\",\n      \"rating\": 4.2,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260625_173501453_Mockup_45.png\"\n    },\n    {\n      \"rank\": 6,\n      \"card_name\": \"IndusInd Tiger Credit Card\",\n      \"bank_name\": \"IndusInd Bank\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹26,000\",\n      \"annual_rewards_value\": \"₹6,000\",\n      \"milestone_benefits\": \"₹20,000\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹500\"\n        },\n        {\n          \"category\": \"dining_or_going_out\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"all_pharmacy\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"indusind-tiger-credit-card\",\n      \"rating\": 4,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125059_BankKaro_Mockup_Desktop_1.png\"\n    },\n    {\n      \"rank\": 7,\n      \"card_name\": \"Air India SBI Platinum Credit Card \",\n      \"bank_name\": \"SBI\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹25,231\",\n      \"annual_rewards_value\": \"₹12,000\",\n      \"milestone_benefits\": \"₹15,000\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹1,769 (incl. GST)\",\n      \"annual_fee\": \"₹1,769 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 169,\n          \"brands\": [\n            {\n              \"id\": 9,\n              \"name\": \"Air India\"\n            }\n          ],\n          \"card_id\": 191,\n          \"rp_bonus\": \"5000\",\n          \"maximum_days\": \"15\",\n          \"minimum_spend\": \"\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"1\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 5000\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹1,000\"\n        },\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"dining_or_going_out\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"air-india-sbi-platinum-credit-card\",\n      \"rating\": 3.9,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130300_BankKaro_20260526_155918476_Mockup_28.png\"\n    },\n    {\n      \"rank\": 8,\n      \"card_name\": \"SBI CASHBACK \",\n      \"bank_name\": \"SBI\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹24,000\",\n      \"annual_rewards_value\": \"₹24,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹1,179 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹2,00,000/yr spend; ₹1,179 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹2,000\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"grocery_spends_online\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"sbi-cashback-credit-card\",\n      \"rating\": 4,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122010_AGB_Mockup-24.webp1736921642945\"\n    },\n    {\n      \"rank\": 9,\n      \"card_name\": \"AU Xcite Ultra Credit Card\",\n      \"bank_name\": \"AU Small Finance Bank\",\n      \"card_type\": \"VISA,RuPay\",\n      \"net_annual_savings\": \"₹22,250\",\n      \"annual_rewards_value\": \"₹12,000\",\n      \"milestone_benefits\": \"₹10,250\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹884 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹2,00,000/yr spend; ₹884 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹1,000\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"other_online_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"xcite-ultra-credit-card\",\n      \"rating\": 4.2,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260812_180454988_AU_ALTURA__18.png\"\n    },\n    {\n      \"rank\": 10,\n      \"card_name\": \"Yes Bank MARQUÉE Credit Card\",\n      \"bank_name\": \"Yes Bank\",\n      \"card_type\": \"Mastercard\",\n      \"net_annual_savings\": \"₹21,101\",\n      \"annual_rewards_value\": \"₹27,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹11,799 (incl. GST)\",\n      \"annual_fee\": \"₹5,899 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 174,\n          \"brands\": [],\n          \"card_id\": 200,\n          \"rp_bonus\": \"40000\",\n          \"maximum_days\": \"60\",\n          \"minimum_spend\": \"\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"0.25\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 10000\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹2,250\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"other_online_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"yes-bank-marquee-credit-card\",\n      \"rating\": 4.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130311_BankKaro_20260604_122350819_Mockup_37.png\"\n    },\n    {\n      \"rank\": 11,\n      \"card_name\": \"HDFC  Diners Black Credit Card \",\n      \"bank_name\": \"HDFC\",\n      \"card_type\": \"VISA,Mastercard\",\n      \"net_annual_savings\": \"₹20,000\",\n      \"annual_rewards_value\": \"₹20,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹11,800 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹5,00,000/yr spend; ₹11,800 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [\n        {\n          \"id\": 39,\n          \"brands\": [\n            {\n              \"id\": 31,\n              \"name\": \"Club Marriott\"\n            },\n            {\n              \"id\": 17,\n              \"name\": \"Amazon Prime\"\n            },\n            {\n              \"id\": null,\n              \"name\": null\n            },\n            {\n              \"id\": null,\n              \"name\": null\n            },\n            {\n              \"id\": null,\n              \"name\": null\n            }\n          ],\n          \"card_id\": 78,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"90\",\n          \"minimum_spend\": \"150000\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": null,\n          \"cash_value\": 0\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹1,666.667\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"other_online_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"hdfc-diners-club-black\",\n      \"rating\": 4.5,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125144_BankKaro_Mockup_1.webp\"\n    },\n    {\n      \"rank\": 12,\n      \"card_name\": \"HDFC Regalia Gold Credit Card\",\n      \"bank_name\": \"HDFC\",\n      \"card_type\": \"VISA,Mastercard\",\n      \"net_annual_savings\": \"₹18,500\",\n      \"annual_rewards_value\": \"₹7,500\",\n      \"milestone_benefits\": \"₹11,000\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹2,950 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹4,00,000/yr spend; ₹2,950 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [\n        {\n          \"id\": 106,\n          \"brands\": [\n            {\n              \"id\": null,\n              \"name\": null\n            },\n            {\n              \"id\": 69,\n              \"name\": \"MMT BLACK Gold Tier\"\n            }\n          ],\n          \"card_id\": 80,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"90\",\n          \"minimum_spend\": \"100000\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 0\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹625\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"online_food_ordering\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"hdfc-regalia-gold\",\n      \"rating\": 4,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125153_BankKaro_Mockup-12.webp\"\n    },\n    {\n      \"rank\": 13,\n      \"card_name\": \"SBI IndiGo ELITE Credit Card\",\n      \"bank_name\": \"SBI\",\n      \"card_type\": \"Mastercard,RuPay\",\n      \"net_annual_savings\": \"₹18,101\",\n      \"annual_rewards_value\": \"₹12,000\",\n      \"milestone_benefits\": \"₹12,000\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹5,899 (incl. GST)\",\n      \"annual_fee\": \"₹5,899 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹1,000\"\n        },\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"hotels_annual\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"sbi-indigo-elite-credit-card\",\n      \"rating\": 4.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260813_130742998_Roar_Bank_Rupay_Credit_Card_17.png\"\n    },\n    {\n      \"rank\": 14,\n      \"card_name\": \"RBL Bank Cookies Credit Card\",\n      \"bank_name\": \"RBL Bank\",\n      \"card_type\": \"Mastercard,VISA\",\n      \"net_annual_savings\": \"₹18,000\",\n      \"annual_rewards_value\": \"₹6,000\",\n      \"milestone_benefits\": \"₹12,000\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹118 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹5,000/yr spend; ₹1,416 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [\n        {\n          \"id\": 125,\n          \"brands\": [\n            {\n              \"id\": 14,\n              \"name\": \"Amazon\"\n            },\n            {\n              \"id\": 33,\n              \"name\": \"Croma\"\n            },\n            {\n              \"id\": 71,\n              \"name\": \"Myntra\"\n            },\n            {\n              \"id\": 42,\n              \"name\": \"Flipkart\"\n            },\n            {\n              \"id\": 94,\n              \"name\": \"Shoppers Stop\"\n            }\n          ],\n          \"card_id\": 161,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"0\",\n          \"voucher_bonus\": \"1000\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": null,\n          \"cash_value\": 1000\n        },\n        {\n          \"id\": 158,\n          \"brands\": [\n            {\n              \"id\": 33,\n              \"name\": \"Croma\"\n            },\n            {\n              \"id\": 14,\n              \"name\": \"Amazon\"\n            },\n            {\n              \"id\": 71,\n              \"name\": \"Myntra\"\n            },\n            {\n              \"id\": 42,\n              \"name\": \"Flipkart\"\n            },\n            {\n              \"id\": 94,\n              \"name\": \"Shoppers Stop\"\n            }\n          ],\n          \"card_id\": 161,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"100\",\n          \"voucher_bonus\": \"1000\",\n          \"cash_conversion\": \"1\",\n          \"welcome_benefit_tooltip\": \"Make a transaction within 30 days of the card's issuance, to avail this benefit \",\n          \"cash_value\": 1000\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹500\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"grocery_spends_online\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"rbl-cookies-credit-card\",\n      \"rating\": 4,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130214_BankKaro_20251123_213140985\"\n    },\n    {\n      \"rank\": 15,\n      \"card_name\": \"HDFC SWIGGY BLCK Credit Card\",\n      \"bank_name\": \"HDFC\",\n      \"card_type\": \"Mastercard\",\n      \"net_annual_savings\": \"₹18,000\",\n      \"annual_rewards_value\": \"₹18,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹1,180 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹2,00,000/yr spend; ₹1,180 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [\n        {\n          \"id\": 11,\n          \"brands\": [\n            {\n              \"id\": null,\n              \"name\": null\n            }\n          ],\n          \"card_id\": 19,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"37\",\n          \"minimum_spend\": \"0\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 0\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹1,500\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"grocery_spends_online\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"swiggy-blck-hdfc-credit-card\",\n      \"rating\": 4.7,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122002_BankKaro_20260316_12502238_RBL_1.png\"\n    },\n    {\n      \"rank\": 16,\n      \"card_name\": \"AU Altura Plus Credit Card\",\n      \"bank_name\": \"AU Small Finance Bank\",\n      \"card_type\": \"VISA,RuPay\",\n      \"net_annual_savings\": \"₹18,000\",\n      \"annual_rewards_value\": \"₹12,000\",\n      \"milestone_benefits\": \"₹6,000\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹1,000\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"ott_channels\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"au-altura-plus-credit-card\",\n      \"rating\": 4.2,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130058_BankKaro_20260417_162335852_tura.png\"\n    },\n    {\n      \"rank\": 17,\n      \"card_name\": \"Swiggy Ornge HDFC Bank Credit card \",\n      \"bank_name\": \"HDFC\",\n      \"card_type\": \"Mastercard\",\n      \"net_annual_savings\": \"₹18,000\",\n      \"annual_rewards_value\": \"₹18,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹590 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹1,50,000/yr spend; ₹590 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [\n        {\n          \"id\": 140,\n          \"brands\": [\n            {\n              \"id\": null,\n              \"name\": null\n            }\n          ],\n          \"card_id\": 179,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"37\",\n          \"minimum_spend\": \"\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 0\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹1,500\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"new_monthly_cat_1\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"swiggy-ornge-hdfc-credit-card\",\n      \"rating\": 3.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130238_BankKaro_20260316_140731331_RBL_4.png\"\n    },\n    {\n      \"rank\": 18,\n      \"card_name\": \"Equitas PowerMiles Credit Card\",\n      \"bank_name\": \"Equitas Small Finance Bank\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹18,000\",\n      \"annual_rewards_value\": \"₹18,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹5,900 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹4,80,000/yr spend; ₹5,900 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [\n        {\n          \"id\": 171,\n          \"brands\": [\n            {\n              \"id\": 31,\n              \"name\": \"Club Marriott\"\n            },\n            {\n              \"id\": 41,\n              \"name\": \"EazyDiner\"\n            }\n          ],\n          \"card_id\": 194,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"90\",\n          \"minimum_spend\": \"120000\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 0\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹1,500\"\n        },\n        {\n          \"category\": \"all_pharmacy\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"flights_annual\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"equitas-power-miles-credit-card\",\n      \"rating\": 4.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130305_BankKaro_20260601_180000261_Mockup_32.png\"\n    },\n    {\n      \"rank\": 19,\n      \"card_name\": \"Kotak Solitaire Credit Card \",\n      \"bank_name\": \"Kotak\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹18,000\",\n      \"annual_rewards_value\": \"₹18,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹1,500\"\n        },\n        {\n          \"category\": \"dining_or_going_out\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"all_pharmacy\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"kotak-solitaire-credit-card\",\n      \"rating\": 3.9,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260625_152823482_Mockup_44.png\"\n    },\n    {\n      \"rank\": 20,\n      \"card_name\": \"YES BANK RESERV Credit Card\",\n      \"bank_name\": \"Yes Bank\",\n      \"card_type\": \"VISA,Mastercard\",\n      \"net_annual_savings\": \"₹18,000\",\n      \"annual_rewards_value\": \"₹18,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹2,949 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹3,00,000/yr spend; ₹2,949 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [\n        {\n          \"id\": 193,\n          \"brands\": [\n            {\n              \"id\": 14,\n              \"name\": \"Amazon\"\n            }\n          ],\n          \"card_id\": 249,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"1000\",\n          \"voucher_bonus\": \"500\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 500\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹1,500\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"other_online_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"yes-bank-reserv-credit-card\",\n      \"rating\": 4.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260804_171114700_AU_ALTURA__11.png\"\n    },\n    {\n      \"rank\": 21,\n      \"card_name\": \"BOB Cashback Credit Card\",\n      \"bank_name\": \"Bank of Baroda\",\n      \"card_type\": \"Mastercard\",\n      \"net_annual_savings\": \"₹17,411\",\n      \"annual_rewards_value\": \"₹18,000\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹589 (incl. GST)\",\n      \"annual_fee\": \"₹589 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹1,500\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"grocery_spends_online\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"bob-cashback-credit-card\",\n      \"rating\": 4.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130247_BankKaro_20260507_124725695_Mockup_1.png\"\n    },\n    {\n      \"rank\": 22,\n      \"card_name\": \"PhonePe SBI Card SELECT BLACK \",\n      \"bank_name\": \"SBI\",\n      \"card_type\": \"VISA,RuPay\",\n      \"net_annual_savings\": \"₹17,000\",\n      \"annual_rewards_value\": \"₹12,000\",\n      \"milestone_benefits\": \"₹5,000\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹1,769 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹3,00,000/yr spend; ₹1,769 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [\n        {\n          \"id\": 163,\n          \"brands\": [\n            {\n              \"id\": 160,\n              \"name\": \"PhonePe App\"\n            }\n          ],\n          \"card_id\": 183,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"45\",\n          \"minimum_spend\": \"100\",\n          \"voucher_bonus\": \"1500\",\n          \"cash_conversion\": \"1\",\n          \"welcome_benefit_tooltip\": \"First transaction of minimum Rs. 100 within 30 days of card issuance to activate card and become eligible for voucher\",\n          \"cash_value\": 1500\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹1,000\"\n        },\n        {\n          \"category\": \"electricity_bills\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"water_bills\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"phonepe-sbi-card-select-black\",\n      \"rating\": 4.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130245_BankKaro_20260408_171510212_IDFC_FIRST_Indigo_Credit_Card_-mockup_9.png\"\n    },\n    {\n      \"rank\": 23,\n      \"card_name\": \"LIC Axis Bank Signature Credit Card\",\n      \"bank_name\": \"Axis\",\n      \"card_type\": \"VISA,Mastercard\",\n      \"net_annual_savings\": \"₹16,500\",\n      \"annual_rewards_value\": \"₹16,500\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹1,375\"\n        },\n        {\n          \"category\": \"life_insurance\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"lic-axis-bank-signature-credit-card\",\n      \"rating\": 5,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130136_BankKaro_Mockup.png\"\n    },\n    {\n      \"rank\": 24,\n      \"card_name\": \"KrisFlyer SBI Apex credit Card \",\n      \"bank_name\": \"SBI\",\n      \"card_type\": \"AmericanExpress,Mastercard\",\n      \"net_annual_savings\": \"₹16,201\",\n      \"annual_rewards_value\": \"₹18,000\",\n      \"milestone_benefits\": \"₹10,000\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹11,799 (incl. GST)\",\n      \"annual_fee\": \"₹11,799 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 182,\n          \"brands\": [\n            {\n              \"id\": 168,\n              \"name\": \"Singapore Airlines KrisFlyer\"\n            }\n          ],\n          \"card_id\": 208,\n          \"rp_bonus\": \"10000\",\n          \"maximum_days\": \"60\",\n          \"minimum_spend\": \"100\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 0\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹1,500\"\n        },\n        {\n          \"category\": \"dining_or_going_out\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"all_pharmacy\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"krisflyer-sbi-apex-credit-card\",\n      \"rating\": 4.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260624_155711674_Mockup_43.png\"\n    },\n    {\n      \"rank\": 25,\n      \"card_name\": \"HDFC MILLENIA\",\n      \"bank_name\": \"HDFC\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹16,000\",\n      \"annual_rewards_value\": \"₹12,000\",\n      \"milestone_benefits\": \"₹4,000\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹1,180 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹1,00,000/yr spend; ₹1,180 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [\n        {\n          \"id\": 34,\n          \"brands\": [],\n          \"card_id\": 18,\n          \"rp_bonus\": \"1000\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"100\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"1\",\n          \"welcome_benefit_tooltip\": null,\n          \"cash_value\": 1000\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹1,000\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"other_offline_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"hdfc-millenia-credit-card\",\n      \"rating\": 3,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122000_AGB_Mockup-14.webp1737033976680\"\n    }\n  ],\n  \"_format_hint\": \"net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from.\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "total_cards_analyzed": 204,
+      "recommendations": [
+        {
+          "rank": 1,
+          "card_name": "ixigo AU credot Card",
+          "bank_name": "AU Small Finance Bank",
+          "card_type": "VISA,RuPay",
+          "net_annual_savings": "₹35,000",
+          "annual_rewards_value": "₹15,000",
+          "milestone_benefits": "₹20,000",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 225,
+              "brands": [
+                {
+                  "id": 471,
+                  "name": "Ixigo"
+                }
+              ],
+              "card_id": 239,
+              "rp_bonus": "1000",
+              "maximum_days": "30",
+              "minimum_spend": "100",
+              "voucher_bonus": "1000",
+              "cash_conversion": "1",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 2000
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹1,250"
+            },
+            {
+              "category": "all_pharmacy",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "dining_or_going_out",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "ixigo-au-credit-card",
+          "rating": 4.2,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260729_143058744_AU_ALTURA__2.png"
+        },
+        {
+          "rank": 2,
+          "card_name": "SBI Landmark Reward SELECT Credit Card",
+          "bank_name": "SBI",
+          "card_type": "VISA,RuPay",
+          "net_annual_savings": "₹31,231",
+          "annual_rewards_value": "₹3,000",
+          "milestone_benefits": "₹30,000",
+          "lounge_value": "₹0",
+          "joining_fee": "₹1,769 (incl. GST)",
+          "annual_fee": "₹1,769 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 196,
+              "brands": [],
+              "card_id": 263,
+              "rp_bonus": "6000",
+              "maximum_days": "",
+              "minimum_spend": "",
+              "voucher_bonus": "",
+              "cash_conversion": "0.25",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 1500
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹250"
+            },
+            {
+              "category": "other_online_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "other_offline_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "sbi-landmark-reward-select-credit-card",
+          "rating": 4.2,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260818_105810829_Mockup_64.png"
+        },
+        {
+          "rank": 3,
+          "card_name": "HDFC Shoppers Stop Black Credit Card",
+          "bank_name": "HDFC",
+          "card_type": "VISA",
+          "net_annual_savings": "₹30,690",
+          "annual_rewards_value": "₹12,000",
+          "milestone_benefits": "₹24,000",
+          "lounge_value": "₹0",
+          "joining_fee": "₹5,310 (incl. GST)",
+          "annual_fee": "₹5,310 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 151,
+              "brands": [
+                {
+                  "id": 94,
+                  "name": "Shoppers Stop"
+                }
+              ],
+              "card_id": 158,
+              "rp_bonus": "",
+              "maximum_days": "30",
+              "minimum_spend": "",
+              "voucher_bonus": "",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 0
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹1,000"
+            },
+            {
+              "category": "all_pharmacy",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "dining_or_going_out",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "shoppers-stop-black-hdfc-credit-card",
+          "rating": 4.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130210_BankKaro_20251121_162054748"
+        },
+        {
+          "rank": 4,
+          "card_name": "ICICI Amazon Pay Credit Card",
+          "bank_name": "ICICI Bank",
+          "card_type": "VISA",
+          "net_annual_savings": "₹30,000",
+          "annual_rewards_value": "₹30,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹2,500"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "online_food_ordering",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "icici-amazon-pay-credit-card",
+          "rating": 5,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125139_BankKaro_Mobile.png"
+        },
+        {
+          "rank": 5,
+          "card_name": "CRED IndusInd Bank Credit Card",
+          "bank_name": "IndusInd Bank",
+          "card_type": "RuPay",
+          "net_annual_savings": "₹29,411",
+          "annual_rewards_value": "₹30,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "₹589 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹2,500"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "other_online_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "cred-indusind-bank-credit-card",
+          "rating": 4.2,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260625_173501453_Mockup_45.png"
+        },
+        {
+          "rank": 6,
+          "card_name": "IndusInd Tiger Credit Card",
+          "bank_name": "IndusInd Bank",
+          "card_type": "VISA",
+          "net_annual_savings": "₹26,000",
+          "annual_rewards_value": "₹6,000",
+          "milestone_benefits": "₹20,000",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹500"
+            },
+            {
+              "category": "dining_or_going_out",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "all_pharmacy",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "indusind-tiger-credit-card",
+          "rating": 4,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125059_BankKaro_Mockup_Desktop_1.png"
+        },
+        {
+          "rank": 7,
+          "card_name": "Air India SBI Platinum Credit Card ",
+          "bank_name": "SBI",
+          "card_type": "VISA",
+          "net_annual_savings": "₹25,231",
+          "annual_rewards_value": "₹12,000",
+          "milestone_benefits": "₹15,000",
+          "lounge_value": "₹0",
+          "joining_fee": "₹1,769 (incl. GST)",
+          "annual_fee": "₹1,769 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 169,
+              "brands": [
+                {
+                  "id": 9,
+                  "name": "Air India"
+                }
+              ],
+              "card_id": 191,
+              "rp_bonus": "5000",
+              "maximum_days": "15",
+              "minimum_spend": "",
+              "voucher_bonus": "",
+              "cash_conversion": "1",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 5000
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹1,000"
+            },
+            {
+              "category": "flights_annual",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "dining_or_going_out",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "air-india-sbi-platinum-credit-card",
+          "rating": 3.9,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130300_BankKaro_20260526_155918476_Mockup_28.png"
+        },
+        {
+          "rank": 8,
+          "card_name": "SBI CASHBACK ",
+          "bank_name": "SBI",
+          "card_type": "VISA",
+          "net_annual_savings": "₹24,000",
+          "annual_rewards_value": "₹24,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹1,179 (incl. GST)",
+          "annual_fee": "Free (waived at ₹2,00,000/yr spend; ₹1,179 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹2,000"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "grocery_spends_online",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "sbi-cashback-credit-card",
+          "rating": 4,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122010_AGB_Mockup-24.webp1736921642945"
+        },
+        {
+          "rank": 9,
+          "card_name": "AU Xcite Ultra Credit Card",
+          "bank_name": "AU Small Finance Bank",
+          "card_type": "VISA,RuPay",
+          "net_annual_savings": "₹22,250",
+          "annual_rewards_value": "₹12,000",
+          "milestone_benefits": "₹10,250",
+          "lounge_value": "₹0",
+          "joining_fee": "₹884 (incl. GST)",
+          "annual_fee": "Free (waived at ₹2,00,000/yr spend; ₹884 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹1,000"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "other_online_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "xcite-ultra-credit-card",
+          "rating": 4.2,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260812_180454988_AU_ALTURA__18.png"
+        },
+        {
+          "rank": 10,
+          "card_name": "Yes Bank MARQUÉE Credit Card",
+          "bank_name": "Yes Bank",
+          "card_type": "Mastercard",
+          "net_annual_savings": "₹21,101",
+          "annual_rewards_value": "₹27,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹11,799 (incl. GST)",
+          "annual_fee": "₹5,899 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 174,
+              "brands": [],
+              "card_id": 200,
+              "rp_bonus": "40000",
+              "maximum_days": "60",
+              "minimum_spend": "",
+              "voucher_bonus": "",
+              "cash_conversion": "0.25",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 10000
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹2,250"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "other_online_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "yes-bank-marquee-credit-card",
+          "rating": 4.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130311_BankKaro_20260604_122350819_Mockup_37.png"
+        },
+        {
+          "rank": 11,
+          "card_name": "HDFC  Diners Black Credit Card ",
+          "bank_name": "HDFC",
+          "card_type": "VISA,Mastercard",
+          "net_annual_savings": "₹20,000",
+          "annual_rewards_value": "₹20,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹11,800 (incl. GST)",
+          "annual_fee": "Free (waived at ₹5,00,000/yr spend; ₹11,800 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [
+            {
+              "id": 39,
+              "brands": [
+                {
+                  "id": 31,
+                  "name": "Club Marriott"
+                },
+                {
+                  "id": 17,
+                  "name": "Amazon Prime"
+                },
+                {
+                  "id": null,
+                  "name": null
+                },
+                {
+                  "id": null,
+                  "name": null
+                },
+                {
+                  "id": null,
+                  "name": null
+                }
+              ],
+              "card_id": 78,
+              "rp_bonus": "",
+              "maximum_days": "90",
+              "minimum_spend": "150000",
+              "voucher_bonus": "",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": null,
+              "cash_value": 0
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹1,666.667"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "other_online_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "hdfc-diners-club-black",
+          "rating": 4.5,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125144_BankKaro_Mockup_1.webp"
+        },
+        {
+          "rank": 12,
+          "card_name": "HDFC Regalia Gold Credit Card",
+          "bank_name": "HDFC",
+          "card_type": "VISA,Mastercard",
+          "net_annual_savings": "₹18,500",
+          "annual_rewards_value": "₹7,500",
+          "milestone_benefits": "₹11,000",
+          "lounge_value": "₹0",
+          "joining_fee": "₹2,950 (incl. GST)",
+          "annual_fee": "Free (waived at ₹4,00,000/yr spend; ₹2,950 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [
+            {
+              "id": 106,
+              "brands": [
+                {
+                  "id": null,
+                  "name": null
+                },
+                {
+                  "id": 69,
+                  "name": "MMT BLACK Gold Tier"
+                }
+              ],
+              "card_id": 80,
+              "rp_bonus": "",
+              "maximum_days": "90",
+              "minimum_spend": "100000",
+              "voucher_bonus": "",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 0
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹625"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "online_food_ordering",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "hdfc-regalia-gold",
+          "rating": 4,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125153_BankKaro_Mockup-12.webp"
+        },
+        {
+          "rank": 13,
+          "card_name": "SBI IndiGo ELITE Credit Card",
+          "bank_name": "SBI",
+          "card_type": "Mastercard,RuPay",
+          "net_annual_savings": "₹18,101",
+          "annual_rewards_value": "₹12,000",
+          "milestone_benefits": "₹12,000",
+          "lounge_value": "₹0",
+          "joining_fee": "₹5,899 (incl. GST)",
+          "annual_fee": "₹5,899 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹1,000"
+            },
+            {
+              "category": "flights_annual",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "hotels_annual",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "sbi-indigo-elite-credit-card",
+          "rating": 4.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260813_130742998_Roar_Bank_Rupay_Credit_Card_17.png"
+        },
+        {
+          "rank": 14,
+          "card_name": "RBL Bank Cookies Credit Card",
+          "bank_name": "RBL Bank",
+          "card_type": "Mastercard,VISA",
+          "net_annual_savings": "₹18,000",
+          "annual_rewards_value": "₹6,000",
+          "milestone_benefits": "₹12,000",
+          "lounge_value": "₹0",
+          "joining_fee": "₹118 (incl. GST)",
+          "annual_fee": "Free (waived at ₹5,000/yr spend; ₹1,416 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [
+            {
+              "id": 125,
+              "brands": [
+                {
+                  "id": 14,
+                  "name": "Amazon"
+                },
+                {
+                  "id": 33,
+                  "name": "Croma"
+                },
+                {
+                  "id": 71,
+                  "name": "Myntra"
+                },
+                {
+                  "id": 42,
+                  "name": "Flipkart"
+                },
+                {
+                  "id": 94,
+                  "name": "Shoppers Stop"
+                }
+              ],
+              "card_id": 161,
+              "rp_bonus": "",
+              "maximum_days": "30",
+              "minimum_spend": "0",
+              "voucher_bonus": "1000",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": null,
+              "cash_value": 1000
+            },
+            {
+              "id": 158,
+              "brands": [
+                {
+                  "id": 33,
+                  "name": "Croma"
+                },
+                {
+                  "id": 14,
+                  "name": "Amazon"
+                },
+                {
+                  "id": 71,
+                  "name": "Myntra"
+                },
+                {
+                  "id": 42,
+                  "name": "Flipkart"
+                },
+                {
+                  "id": 94,
+                  "name": "Shoppers Stop"
+                }
+              ],
+              "card_id": 161,
+              "rp_bonus": "",
+              "maximum_days": "30",
+              "minimum_spend": "100",
+              "voucher_bonus": "1000",
+              "cash_conversion": "1",
+              "welcome_benefit_tooltip": "Make a transaction within 30 days of the card's issuance, to avail this benefit ",
+              "cash_value": 1000
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹500"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "grocery_spends_online",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "rbl-cookies-credit-card",
+          "rating": 4,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130214_BankKaro_20251123_213140985"
+        },
+        {
+          "rank": 15,
+          "card_name": "HDFC SWIGGY BLCK Credit Card",
+          "bank_name": "HDFC",
+          "card_type": "Mastercard",
+          "net_annual_savings": "₹18,000",
+          "annual_rewards_value": "₹18,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹1,180 (incl. GST)",
+          "annual_fee": "Free (waived at ₹2,00,000/yr spend; ₹1,180 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [
+            {
+              "id": 11,
+              "brands": [
+                {
+                  "id": null,
+                  "name": null
+                }
+              ],
+              "card_id": 19,
+              "rp_bonus": "",
+              "maximum_days": "37",
+              "minimum_spend": "0",
+              "voucher_bonus": "",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 0
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹1,500"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "grocery_spends_online",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "swiggy-blck-hdfc-credit-card",
+          "rating": 4.7,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122002_BankKaro_20260316_12502238_RBL_1.png"
+        },
+        {
+          "rank": 16,
+          "card_name": "AU Altura Plus Credit Card",
+          "bank_name": "AU Small Finance Bank",
+          "card_type": "VISA,RuPay",
+          "net_annual_savings": "₹18,000",
+          "annual_rewards_value": "₹12,000",
+          "milestone_benefits": "₹6,000",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹1,000"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "ott_channels",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "au-altura-plus-credit-card",
+          "rating": 4.2,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130058_BankKaro_20260417_162335852_tura.png"
+        },
+        {
+          "rank": 17,
+          "card_name": "Swiggy Ornge HDFC Bank Credit card ",
+          "bank_name": "HDFC",
+          "card_type": "Mastercard",
+          "net_annual_savings": "₹18,000",
+          "annual_rewards_value": "₹18,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹590 (incl. GST)",
+          "annual_fee": "Free (waived at ₹1,50,000/yr spend; ₹590 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [
+            {
+              "id": 140,
+              "brands": [
+                {
+                  "id": null,
+                  "name": null
+                }
+              ],
+              "card_id": 179,
+              "rp_bonus": "",
+              "maximum_days": "37",
+              "minimum_spend": "",
+              "voucher_bonus": "",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 0
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹1,500"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "new_monthly_cat_1",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "swiggy-ornge-hdfc-credit-card",
+          "rating": 3.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130238_BankKaro_20260316_140731331_RBL_4.png"
+        },
+        {
+          "rank": 18,
+          "card_name": "Equitas PowerMiles Credit Card",
+          "bank_name": "Equitas Small Finance Bank",
+          "card_type": "VISA",
+          "net_annual_savings": "₹18,000",
+          "annual_rewards_value": "₹18,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹5,900 (incl. GST)",
+          "annual_fee": "Free (waived at ₹4,80,000/yr spend; ₹5,900 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [
+            {
+              "id": 171,
+              "brands": [
+                {
+                  "id": 31,
+                  "name": "Club Marriott"
+                },
+                {
+                  "id": 41,
+                  "name": "EazyDiner"
+                }
+              ],
+              "card_id": 194,
+              "rp_bonus": "",
+              "maximum_days": "90",
+              "minimum_spend": "120000",
+              "voucher_bonus": "",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 0
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹1,500"
+            },
+            {
+              "category": "all_pharmacy",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "flights_annual",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "equitas-power-miles-credit-card",
+          "rating": 4.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130305_BankKaro_20260601_180000261_Mockup_32.png"
+        },
+        {
+          "rank": 19,
+          "card_name": "Kotak Solitaire Credit Card ",
+          "bank_name": "Kotak",
+          "card_type": "VISA",
+          "net_annual_savings": "₹18,000",
+          "annual_rewards_value": "₹18,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹1,500"
+            },
+            {
+              "category": "dining_or_going_out",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "all_pharmacy",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "kotak-solitaire-credit-card",
+          "rating": 3.9,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260625_152823482_Mockup_44.png"
+        },
+        {
+          "rank": 20,
+          "card_name": "YES BANK RESERV Credit Card",
+          "bank_name": "Yes Bank",
+          "card_type": "VISA,Mastercard",
+          "net_annual_savings": "₹18,000",
+          "annual_rewards_value": "₹18,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹2,949 (incl. GST)",
+          "annual_fee": "Free (waived at ₹3,00,000/yr spend; ₹2,949 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [
+            {
+              "id": 193,
+              "brands": [
+                {
+                  "id": 14,
+                  "name": "Amazon"
+                }
+              ],
+              "card_id": 249,
+              "rp_bonus": "",
+              "maximum_days": "30",
+              "minimum_spend": "1000",
+              "voucher_bonus": "500",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 500
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹1,500"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "other_online_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "yes-bank-reserv-credit-card",
+          "rating": 4.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260804_171114700_AU_ALTURA__11.png"
+        },
+        {
+          "rank": 21,
+          "card_name": "BOB Cashback Credit Card",
+          "bank_name": "Bank of Baroda",
+          "card_type": "Mastercard",
+          "net_annual_savings": "₹17,411",
+          "annual_rewards_value": "₹18,000",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹589 (incl. GST)",
+          "annual_fee": "₹589 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹1,500"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "grocery_spends_online",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "bob-cashback-credit-card",
+          "rating": 4.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130247_BankKaro_20260507_124725695_Mockup_1.png"
+        },
+        {
+          "rank": 22,
+          "card_name": "PhonePe SBI Card SELECT BLACK ",
+          "bank_name": "SBI",
+          "card_type": "VISA,RuPay",
+          "net_annual_savings": "₹17,000",
+          "annual_rewards_value": "₹12,000",
+          "milestone_benefits": "₹5,000",
+          "lounge_value": "₹0",
+          "joining_fee": "₹1,769 (incl. GST)",
+          "annual_fee": "Free (waived at ₹3,00,000/yr spend; ₹1,769 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [
+            {
+              "id": 163,
+              "brands": [
+                {
+                  "id": 160,
+                  "name": "PhonePe App"
+                }
+              ],
+              "card_id": 183,
+              "rp_bonus": "",
+              "maximum_days": "45",
+              "minimum_spend": "100",
+              "voucher_bonus": "1500",
+              "cash_conversion": "1",
+              "welcome_benefit_tooltip": "First transaction of minimum Rs. 100 within 30 days of card issuance to activate card and become eligible for voucher",
+              "cash_value": 1500
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹1,000"
+            },
+            {
+              "category": "electricity_bills",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "water_bills",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "phonepe-sbi-card-select-black",
+          "rating": 4.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130245_BankKaro_20260408_171510212_IDFC_FIRST_Indigo_Credit_Card_-mockup_9.png"
+        },
+        {
+          "rank": 23,
+          "card_name": "LIC Axis Bank Signature Credit Card",
+          "bank_name": "Axis",
+          "card_type": "VISA,Mastercard",
+          "net_annual_savings": "₹16,500",
+          "annual_rewards_value": "₹16,500",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹1,375"
+            },
+            {
+              "category": "life_insurance",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "lic-axis-bank-signature-credit-card",
+          "rating": 5,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130136_BankKaro_Mockup.png"
+        },
+        {
+          "rank": 24,
+          "card_name": "KrisFlyer SBI Apex credit Card ",
+          "bank_name": "SBI",
+          "card_type": "AmericanExpress,Mastercard",
+          "net_annual_savings": "₹16,201",
+          "annual_rewards_value": "₹18,000",
+          "milestone_benefits": "₹10,000",
+          "lounge_value": "₹0",
+          "joining_fee": "₹11,799 (incl. GST)",
+          "annual_fee": "₹11,799 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 182,
+              "brands": [
+                {
+                  "id": 168,
+                  "name": "Singapore Airlines KrisFlyer"
+                }
+              ],
+              "card_id": 208,
+              "rp_bonus": "10000",
+              "maximum_days": "60",
+              "minimum_spend": "100",
+              "voucher_bonus": "",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 0
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹1,500"
+            },
+            {
+              "category": "dining_or_going_out",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "all_pharmacy",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "krisflyer-sbi-apex-credit-card",
+          "rating": 4.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260624_155711674_Mockup_43.png"
+        },
+        {
+          "rank": 25,
+          "card_name": "HDFC MILLENIA",
+          "bank_name": "HDFC",
+          "card_type": "VISA",
+          "net_annual_savings": "₹16,000",
+          "annual_rewards_value": "₹12,000",
+          "milestone_benefits": "₹4,000",
+          "lounge_value": "₹0",
+          "joining_fee": "₹1,180 (incl. GST)",
+          "annual_fee": "Free (waived at ₹1,00,000/yr spend; ₹1,180 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [
+            {
+              "id": 34,
+              "brands": [],
+              "card_id": 18,
+              "rp_bonus": "1000",
+              "maximum_days": "30",
+              "minimum_spend": "100",
+              "voucher_bonus": "",
+              "cash_conversion": "1",
+              "welcome_benefit_tooltip": null,
+              "cash_value": 1000
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹1,000"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "other_offline_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "hdfc-millenia-credit-card",
+          "rating": 3,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122000_AGB_Mockup-14.webp1737033976680"
+        }
+      ],
+      "_format_hint": "net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from."
+    }
+  ]
+}

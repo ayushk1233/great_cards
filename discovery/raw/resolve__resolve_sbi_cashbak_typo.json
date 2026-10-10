@@ -1,0 +1,35 @@
+{
+  "id": "resolve_sbi_cashbak_typo",
+  "group": "resolve",
+  "purpose": "",
+  "timestamp": "2026-10-10T18:34:22.591783+00:00",
+  "request": {
+    "tool": "whatsapp_resolve_card_or_category",
+    "arguments": {
+      "phrase": "sbi cashbak"
+    }
+  },
+  "latency_ms": 480,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"reply_type\": \"resolution\",\n  \"summary\": \"I could not confidently resolve that phrase.\",\n  \"matches\": [],\n  \"best_match\": null,\n  \"next_action\": \"ask_clarifying_question\",\n  \"next_question\": \"Can you share the card name, brand, or category in different words?\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "reply_type": "resolution",
+      "summary": "I could not confidently resolve that phrase.",
+      "matches": [],
+      "best_match": null,
+      "next_action": "ask_clarifying_question",
+      "next_question": "Can you share the card name, brand, or category in different words?"
+    }
+  ]
+}

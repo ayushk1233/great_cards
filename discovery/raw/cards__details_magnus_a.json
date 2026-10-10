@@ -1,0 +1,221 @@
+{
+  "id": "details_magnus_a",
+  "group": "cards",
+  "purpose": "",
+  "timestamp": "2026-10-10T18:34:16.891545+00:00",
+  "request": {
+    "tool": "get_card_details",
+    "arguments": {
+      "card_alias": "axis-bank-magnus-credit-card"
+    }
+  },
+  "latency_ms": 121,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"name\": \"Axis Magnus Credit Card\",\n  \"nick_name\": \"Axis Magnus Credit Card\",\n  \"bank\": \"Axis\",\n  \"bank_id\": 1,\n  \"card_type\": \"VISA\",\n  \"card_network\": null,\n  \"rating\": 4,\n  \"user_ratings\": 222,\n  \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_121948_BankKaro_20260129_121658926_Axis_Magnus.png\",\n  \"priority_tag\": null,\n  \"invite_only\": false,\n  \"employment_type\": \"both\",\n  \"new_to_credit\": true,\n  \"existing_customer_only\": true,\n  \"fees\": {\n    \"joining\": \"₹14,750 (₹12,500 + GST)\",\n    \"joining_note\": \"A one-time joining fee of ₹12500 is charged at the time of card issuance as per the bank's policy.\",\n    \"annual\": \"₹14,750 (₹12,500 + GST)\",\n    \"annual_note\": \"The annual fee is charged every year and may be waived if you meet the bank's spending conditions.\",\n    \"annual_fee_waiver\": \"The annual fee is waived if you spend ₹25 Lakh or more in a year on your card, as per bank policy.\",\n    \"gst_note\": \"All fees include 18% GST.\"\n  },\n  \"fee_schedule\": {\n    \"apr_monthly\": \"3%\",\n    \"apr_annual\": \"36.00%\",\n    \"forex_markup\": \"2%\",\n    \"forex_markup_note\": \"2% forex markup is charged on transactions made in currencies other than INR. Applies to international POS payments and online purchases charged in foreign currency.Examples (2%):₹100 → ₹2₹1,000 → ₹20₹10,000 → ₹200₹1,00,000 → ₹2,000\",\n    \"atm_withdrawal_fee\": \"Not Applicable\",\n    \"atm_withdrawal_note\": \"Not Applicable\",\n    \"railway_surcharge\": \"As prescribed by IRCTC / Indian Railways\",\n    \"railway_surcharge_note\": \"Surcharge on booking or cancelling railway tickets will be levied as prescribed by IRCTC or Indian Railways and may vary based on their applicable charges.\",\n    \"rent_payment_fee\": \"1%\",\n    \"cash_payment_fee\": \"₹175\",\n    \"cheque_payment_fee\": \"Not Applicable\",\n    \"reward_redemption_fee\": \"₹99\",\n    \"late_payment_slabs\": [\n      {\n        \"outstanding\": \"₹0 - ₹500\",\n        \"fee\": \"₹0\"\n      },\n      {\n        \"outstanding\": \"₹501 - ₹5000\",\n        \"fee\": \"₹500\"\n      },\n      {\n        \"outstanding\": \"₹5001 - ₹10000\",\n        \"fee\": \"₹750\"\n      },\n      {\n        \"outstanding\": \"Above ₹10,000\",\n        \"fee\": \"₹1200\"\n      }\n    ],\n    \"late_payment_note\": \"Late payment charges apply if the Minimum Amount Due (MAD) is not paid by the due date. Charges are based on the total outstanding amount as per the slab structure above.&nbsp;\",\n    \"tnc_url\": \"https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf\"\n  },\n  \"rewards\": {\n    \"point_value\": \"1 Reward Point = ₹0.20\",\n    \"redemption_options\": \"• Airmiles &amp; Hotel Loyalty Points\\n• Travel EDGE Portal\\n• EDGE Rewards Catalog\\n• Instant Vouchers &amp; Gift Cards\",\n    \"redemption_catalogue\": \"https://edgerewards.axisbank.co.in/lms/\",\n    \"exclusions\": \"Fuel Spends, Wallet Loads, Utility Bill Payments, Government-related Transactions, Insurance Payments, Jewellery Purchases, Rewards Redemption, Cash Advances, Outstanding Payments\",\n    \"exclusion_spends\": \"Fuel Spends, Wallet Loads, Utility Bill Payments, Government-related Transactions, Insurance Payments, Jewellery Purchases, Rewards Redemption, Cash Advances, Outstanding Payments\"\n  },\n  \"welcome_benefits\": null,\n  \"lounge_summary\": null,\n  \"annual_saving_claimed\": 100000,\n  \"milestone_benefits\": null,\n  \"key_benefits\": [\n    {\n      \"title\": \"Get a Welcome Voucher Worth ₹12,500\",\n      \"description\": \"choose from Luxe Gift Card, The Postcard Hotels Gift Voucher, or Yatra Gift Voucher on making first transaction within 30 days\"\n    },\n    {\n      \"title\": \"Earn 12 EDGE Reward Points per ₹200\",\n      \"description\": \"on spends up to ₹1.50 Lakhs in a calendar month\"\n    },\n    {\n      \"title\": \"Enjoy Unlimited Complimentary International Lounge\",\n      \"description\": \"Access via Priority Pass Card, with 4 additional guest visits per year\"\n    },\n    {\n      \"title\": \"Enjoy Unlimited Domestic Airport Lounge\",\n      \"description\": \"Access on spending ₹50,000 in the previous 3 months, at select lounges in India\"\n    },\n    {\n      \"title\": \"Earn 12 EDGE Reward Points for Every ₹200 spent\",\n      \"description\": \"on cumulative monthly spends up to ₹1.5 lakh, and 35 EDGE Reward Points per ₹200 on spends above ₹1.5 lakh\"\n    },\n    {\n      \"title\": \"Earn 60 EDGE Reward Points for every ₹200 spent\",\n      \"description\": \"on Travel Edge portal, up to cumulative transactions of ₹2 lakh per month\"\n    },\n    {\n      \"title\": \"Earn 2 Partner Miles for Every 5 EDGE Reward Points\",\n      \"description\": \"transferable to 20 travel partners, up to 5 lakh EDGE points per calendar year\"\n    },\n    {\n      \"title\": \"Enjoy 8 complimentary Airport Meet & Greet services\",\n      \"description\": \"per calendar year at 16 airports across India via Extraordinary Weekends\"\n    },\n    {\n      \"title\": \"Save 15% on Bed and Breakfast Rates\",\n      \"description\": \"at The Leela Palace Hotels & Resorts, valid till 30th September 2026\"\n    }\n  ],\n  \"tags\": [\n    \"Shopping\",\n    \"Airport Lounge\",\n    \"Travel\"\n  ],\n  \"detailed_benefits\": [\n    {\n      \"type\": \"all\",\n      \"sub_type\": \"All Benefits\",\n      \"details\": \"• Welcome Voucher worth ₹12,500 — choose from Luxe Gift Card, Postcard Hotels, or Yatra Gift Voucher upon first transaction within 30 days\\n• Unlimited International Lounge Access via Priority Pass with 4 guest visits per year\\n• Earn up to 35 EDGE Reward Points per ₹200 on monthly spends above ₹1.5 lakh\"\n    },\n    {\n      \"type\": \"welcome\",\n      \"sub_type\": \"Welcome Benefits\",\n      \"details\": \"• Welcome Voucher worth ₹12,500 upon making your first transaction within 30 days of card issuance\\n• Choose from Luxe Gift Card, The Postcard Hotels Gift Voucher, or Yatra Gift Voucher\\n• Benefit is available to primary cardholder only and can be availed within 6 months from card creation date\"\n    },\n    {\n      \"type\": \"travel\",\n      \"sub_type\": \"Travel Benefits\",\n      \"details\": \"• Earn 12 EDGE Reward Points for every ₹200 spent on cumulative monthly spends up to ₹1.5 lakh\\n• Earn 35 EDGE Reward Points for every ₹200 spent on incremental spends above ₹1.5 lakh in a calendar month\\n• Earn 60 EDGE Reward Points for every ₹200 spent on Travel Edge Portal, up to cumulative transactions of ₹2,00,000 per month\\n• Transfer 2 partner miles for every 5 EDGE Reward Points across 20 travel partners, up to 5 lakh EDGE points per calendar year\\n• Save 15% on bed and breakfast rates at The Leela Palace Hotels &amp; Resorts (valid till 30th September 2026)\\n• 8 complimentary Airport Meet &amp; Greet services per calendar year at 16 airports across India via Extraordinary Weekends, valid for both domestic and international departures and arrivals\"\n    },\n    {\n      \"type\": \"lounge\",\n      \"sub_type\": \"Airport Lounge Benefits\",\n      \"details\": \"• Unlimited complimentary International Lounge Access via Priority Pass Card, 4 additional guest visits per year on Priority Pass\\n• Unlimited Domestic Airport Lounge Access at select lounges across India\\n• Minimum spend of ₹50,000 in the previous 3 months required to unlock Domestic Lounge Access\\n• For newly issued cards, minimum spend criteria is waived for the month of issuance and the following 3 months\"\n    },\n    {\n      \"type\": \"lounge\",\n      \"sub_type\": \"Railway Lounge Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"movie_ticket\",\n      \"sub_type\": \"Movie Benefits\",\n      \"details\": \"• BookMyShow benefits have been discontinued for all Magnus customers (w.e.f. 20th April 2024)\"\n    },\n    {\n      \"type\": \"dining\",\n      \"sub_type\": \"Dining Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"fuel\",\n      \"sub_type\": \"Fuel Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"fuel\",\n      \"sub_type\": \"Surcharge Waiver Benefits\",\n      \"details\": \"• Enjoy a 1% fuel surcharge waiver on fuel transactions between ₹400 and ₹4,000, capped at ₹400 per month\"\n    },\n    {\n      \"type\": \"insurance\",\n      \"sub_type\": \"Insurance Benefits\",\n      \"details\": \"• Purchase Protection Cover up to ₹2 lakh\\n• Credit Shield cover up to ₹5 lakh\\n• Loss or delay in baggage and personal documents cover up to $500\\n• Price Protection Insurance is not applicable to Magnus cardholders\"\n    },\n    {\n      \"type\": \"bank_offers\",\n      \"sub_type\": \"Bank Offers\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"travel\",\n      \"sub_type\": \"Railway Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"travel\",\n      \"sub_type\": \"Bus Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"travel\",\n      \"sub_type\": \"Cab Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    }\n  ],\n  \"eligibility\": {\n    \"min_age\": 21,\n    \"max_age\": 60,\n    \"income_salaried_lpa\": 24,\n    \"income_self_emp_lpa\": 24,\n    \"min_income_monthly\": 150000,\n    \"crif_salaried\": 750,\n    \"crif_self_emp\": 750\n  },\n  \"card_alias\": \"axis-bank-magnus-credit-card\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "name": "Axis Magnus Credit Card",
+      "nick_name": "Axis Magnus Credit Card",
+      "bank": "Axis",
+      "bank_id": 1,
+      "card_type": "VISA",
+      "card_network": null,
+      "rating": 4,
+      "user_ratings": 222,
+      "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_121948_BankKaro_20260129_121658926_Axis_Magnus.png",
+      "priority_tag": null,
+      "invite_only": false,
+      "employment_type": "both",
+      "new_to_credit": true,
+      "existing_customer_only": true,
+      "fees": {
+        "joining": "₹14,750 (₹12,500 + GST)",
+        "joining_note": "A one-time joining fee of ₹12500 is charged at the time of card issuance as per the bank's policy.",
+        "annual": "₹14,750 (₹12,500 + GST)",
+        "annual_note": "The annual fee is charged every year and may be waived if you meet the bank's spending conditions.",
+        "annual_fee_waiver": "The annual fee is waived if you spend ₹25 Lakh or more in a year on your card, as per bank policy.",
+        "gst_note": "All fees include 18% GST."
+      },
+      "fee_schedule": {
+        "apr_monthly": "3%",
+        "apr_annual": "36.00%",
+        "forex_markup": "2%",
+        "forex_markup_note": "2% forex markup is charged on transactions made in currencies other than INR. Applies to international POS payments and online purchases charged in foreign currency.Examples (2%):₹100 → ₹2₹1,000 → ₹20₹10,000 → ₹200₹1,00,000 → ₹2,000",
+        "atm_withdrawal_fee": "Not Applicable",
+        "atm_withdrawal_note": "Not Applicable",
+        "railway_surcharge": "As prescribed by IRCTC / Indian Railways",
+        "railway_surcharge_note": "Surcharge on booking or cancelling railway tickets will be levied as prescribed by IRCTC or Indian Railways and may vary based on their applicable charges.",
+        "rent_payment_fee": "1%",
+        "cash_payment_fee": "₹175",
+        "cheque_payment_fee": "Not Applicable",
+        "reward_redemption_fee": "₹99",
+        "late_payment_slabs": [
+          {
+            "outstanding": "₹0 - ₹500",
+            "fee": "₹0"
+          },
+          {
+            "outstanding": "₹501 - ₹5000",
+            "fee": "₹500"
+          },
+          {
+            "outstanding": "₹5001 - ₹10000",
+            "fee": "₹750"
+          },
+          {
+            "outstanding": "Above ₹10,000",
+            "fee": "₹1200"
+          }
+        ],
+        "late_payment_note": "Late payment charges apply if the Minimum Amount Due (MAD) is not paid by the due date. Charges are based on the total outstanding amount as per the slab structure above.&nbsp;",
+        "tnc_url": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf"
+      },
+      "rewards": {
+        "point_value": "1 Reward Point = ₹0.20",
+        "redemption_options": "• Airmiles &amp; Hotel Loyalty Points\n• Travel EDGE Portal\n• EDGE Rewards Catalog\n• Instant Vouchers &amp; Gift Cards",
+        "redemption_catalogue": "https://edgerewards.axisbank.co.in/lms/",
+        "exclusions": "Fuel Spends, Wallet Loads, Utility Bill Payments, Government-related Transactions, Insurance Payments, Jewellery Purchases, Rewards Redemption, Cash Advances, Outstanding Payments",
+        "exclusion_spends": "Fuel Spends, Wallet Loads, Utility Bill Payments, Government-related Transactions, Insurance Payments, Jewellery Purchases, Rewards Redemption, Cash Advances, Outstanding Payments"
+      },
+      "welcome_benefits": null,
+      "lounge_summary": null,
+      "annual_saving_claimed": 100000,
+      "milestone_benefits": null,
+      "key_benefits": [
+        {
+          "title": "Get a Welcome Voucher Worth ₹12,500",
+          "description": "choose from Luxe Gift Card, The Postcard Hotels Gift Voucher, or Yatra Gift Voucher on making first transaction within 30 days"
+        },
+        {
+          "title": "Earn 12 EDGE Reward Points per ₹200",
+          "description": "on spends up to ₹1.50 Lakhs in a calendar month"
+        },
+        {
+          "title": "Enjoy Unlimited Complimentary International Lounge",
+          "description": "Access via Priority Pass Card, with 4 additional guest visits per year"
+        },
+        {
+          "title": "Enjoy Unlimited Domestic Airport Lounge",
+          "description": "Access on spending ₹50,000 in the previous 3 months, at select lounges in India"
+        },
+        {
+          "title": "Earn 12 EDGE Reward Points for Every ₹200 spent",
+          "description": "on cumulative monthly spends up to ₹1.5 lakh, and 35 EDGE Reward Points per ₹200 on spends above ₹1.5 lakh"
+        },
+        {
+          "title": "Earn 60 EDGE Reward Points for every ₹200 spent",
+          "description": "on Travel Edge portal, up to cumulative transactions of ₹2 lakh per month"
+        },
+        {
+          "title": "Earn 2 Partner Miles for Every 5 EDGE Reward Points",
+          "description": "transferable to 20 travel partners, up to 5 lakh EDGE points per calendar year"
+        },
+        {
+          "title": "Enjoy 8 complimentary Airport Meet & Greet services",
+          "description": "per calendar year at 16 airports across India via Extraordinary Weekends"
+        },
+        {
+          "title": "Save 15% on Bed and Breakfast Rates",
+          "description": "at The Leela Palace Hotels & Resorts, valid till 30th September 2026"
+        }
+      ],
+      "tags": [
+        "Shopping",
+        "Airport Lounge",
+        "Travel"
+      ],
+      "detailed_benefits": [
+        {
+          "type": "all",
+          "sub_type": "All Benefits",
+          "details": "• Welcome Voucher worth ₹12,500 — choose from Luxe Gift Card, Postcard Hotels, or Yatra Gift Voucher upon first transaction within 30 days\n• Unlimited International Lounge Access via Priority Pass with 4 guest visits per year\n• Earn up to 35 EDGE Reward Points per ₹200 on monthly spends above ₹1.5 lakh"
+        },
+        {
+          "type": "welcome",
+          "sub_type": "Welcome Benefits",
+          "details": "• Welcome Voucher worth ₹12,500 upon making your first transaction within 30 days of card issuance\n• Choose from Luxe Gift Card, The Postcard Hotels Gift Voucher, or Yatra Gift Voucher\n• Benefit is available to primary cardholder only and can be availed within 6 months from card creation date"
+        },
+        {
+          "type": "travel",
+          "sub_type": "Travel Benefits",
+          "details": "• Earn 12 EDGE Reward Points for every ₹200 spent on cumulative monthly spends up to ₹1.5 lakh\n• Earn 35 EDGE Reward Points for every ₹200 spent on incremental spends above ₹1.5 lakh in a calendar month\n• Earn 60 EDGE Reward Points for every ₹200 spent on Travel Edge Portal, up to cumulative transactions of ₹2,00,000 per month\n• Transfer 2 partner miles for every 5 EDGE Reward Points across 20 travel partners, up to 5 lakh EDGE points per calendar year\n• Save 15% on bed and breakfast rates at The Leela Palace Hotels &amp; Resorts (valid till 30th September 2026)\n• 8 complimentary Airport Meet &amp; Greet services per calendar year at 16 airports across India via Extraordinary Weekends, valid for both domestic and international departures and arrivals"
+        },
+        {
+          "type": "lounge",
+          "sub_type": "Airport Lounge Benefits",
+          "details": "• Unlimited complimentary International Lounge Access via Priority Pass Card, 4 additional guest visits per year on Priority Pass\n• Unlimited Domestic Airport Lounge Access at select lounges across India\n• Minimum spend of ₹50,000 in the previous 3 months required to unlock Domestic Lounge Access\n• For newly issued cards, minimum spend criteria is waived for the month of issuance and the following 3 months"
+        },
+        {
+          "type": "lounge",
+          "sub_type": "Railway Lounge Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "movie_ticket",
+          "sub_type": "Movie Benefits",
+          "details": "• BookMyShow benefits have been discontinued for all Magnus customers (w.e.f. 20th April 2024)"
+        },
+        {
+          "type": "dining",
+          "sub_type": "Dining Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "fuel",
+          "sub_type": "Fuel Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "fuel",
+          "sub_type": "Surcharge Waiver Benefits",
+          "details": "• Enjoy a 1% fuel surcharge waiver on fuel transactions between ₹400 and ₹4,000, capped at ₹400 per month"
+        },
+        {
+          "type": "insurance",
+          "sub_type": "Insurance Benefits",
+          "details": "• Purchase Protection Cover up to ₹2 lakh\n• Credit Shield cover up to ₹5 lakh\n• Loss or delay in baggage and personal documents cover up to $500\n• Price Protection Insurance is not applicable to Magnus cardholders"
+        },
+        {
+          "type": "bank_offers",
+          "sub_type": "Bank Offers",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "travel",
+          "sub_type": "Railway Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "travel",
+          "sub_type": "Bus Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "travel",
+          "sub_type": "Cab Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        }
+      ],
+      "eligibility": {
+        "min_age": 21,
+        "max_age": 60,
+        "income_salaried_lpa": 24,
+        "income_self_emp_lpa": 24,
+        "min_income_monthly": 150000,
+        "crif_salaried": 750,
+        "crif_self_emp": 750
+      },
+      "card_alias": "axis-bank-magnus-credit-card"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "details_regalia_gold_b",
+  "group": "cards",
+  "purpose": "alias from description example",
+  "timestamp": "2026-10-10T18:34:16.768745+00:00",
+  "request": {
+    "tool": "get_card_details",
+    "arguments": {
+      "card_alias": "hdfc-regalia-gold-credit-card"
+    }
+  },
+  "latency_ms": 133,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"error\": \"Card not found: hdfc-regalia-gold-credit-card\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "error": "Card not found: hdfc-regalia-gold-credit-card"
+    }
+  ]
+}

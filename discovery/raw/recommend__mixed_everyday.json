@@ -1,0 +1,309 @@
+{
+  "id": "mixed_everyday",
+  "group": "recommend",
+  "purpose": "realistic mix",
+  "timestamp": "2026-10-10T18:33:33.268263+00:00",
+  "request": {
+    "tool": "recommend_cards",
+    "arguments": {
+      "amazon_spends": 8000,
+      "flipkart_spends": 4000,
+      "online_food_ordering": 4000,
+      "grocery_spends_online": 6000,
+      "fuel": 3000,
+      "mobile_phone_bills": 800,
+      "electricity_bills": 2500,
+      "top_n": 5
+    }
+  },
+  "latency_ms": 3206,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total_cards_analyzed\": 204,\n  \"recommendations\": [\n    {\n      \"rank\": 1,\n      \"card_name\": \"SBI Landmark Reward SELECT Credit Card\",\n      \"bank_name\": \"SBI\",\n      \"card_type\": \"VISA,RuPay\",\n      \"net_annual_savings\": \"₹29,749\",\n      \"annual_rewards_value\": \"₹1,518\",\n      \"milestone_benefits\": \"₹30,000\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹1,769 (incl. GST)\",\n      \"annual_fee\": \"₹1,769 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 196,\n          \"brands\": [],\n          \"card_id\": 263,\n          \"rp_bonus\": \"6000\",\n          \"maximum_days\": \"\",\n          \"minimum_spend\": \"\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"0.25\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 1500\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹40\"\n        },\n        {\n          \"category\": \"grocery_spends_online\",\n          \"annual_value\": \"₹30\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹20\"\n        }\n      ],\n      \"card_alias\": \"sbi-landmark-reward-select-credit-card\",\n      \"rating\": 4.2,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260818_105810829_Mockup_64.png\"\n    },\n    {\n      \"rank\": 2,\n      \"card_name\": \"ixigo AU credot Card\",\n      \"bank_name\": \"AU Small Finance Bank\",\n      \"card_type\": \"VISA,RuPay\",\n      \"net_annual_savings\": \"₹26,798\",\n      \"annual_rewards_value\": \"₹6,798\",\n      \"milestone_benefits\": \"₹20,000\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 225,\n          \"brands\": [\n            {\n              \"id\": 471,\n              \"name\": \"Ixigo\"\n            }\n          ],\n          \"card_id\": 239,\n          \"rp_bonus\": \"1000\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"100\",\n          \"voucher_bonus\": \"1000\",\n          \"cash_conversion\": \"1\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 2000\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹200\"\n        },\n        {\n          \"category\": \"grocery_spends_online\",\n          \"annual_value\": \"₹150\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹100\"\n        }\n      ],\n      \"card_alias\": \"ixigo-au-credit-card\",\n      \"rating\": 4.2,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260729_143058744_AU_ALTURA__2.png\"\n    },\n    {\n      \"rank\": 3,\n      \"card_name\": \"HSBC Live+ Credit Card\",\n      \"bank_name\": \"HSBC Bank\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹14,160\",\n      \"annual_rewards_value\": \"₹14,160\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹1,179 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹2,00,000/yr spend; ₹1,179 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [\n        {\n          \"id\": 35,\n          \"brands\": [],\n          \"card_id\": 50,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"20000\",\n          \"voucher_bonus\": \"1000\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": null,\n          \"cash_value\": 1000\n        },\n        {\n          \"id\": 36,\n          \"brands\": [\n            {\n              \"id\": 14,\n              \"name\": \"Amazon\"\n            }\n          ],\n          \"card_id\": 50,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"0\",\n          \"voucher_bonus\": \"250\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": null,\n          \"cash_value\": 250\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"grocery_spends_online\",\n          \"annual_value\": \"₹600\"\n        },\n        {\n          \"category\": \"online_food_ordering\",\n          \"annual_value\": \"₹400\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹120\"\n        }\n      ],\n      \"card_alias\": \"hsbc-live-plus-credit-card\",\n      \"rating\": 4,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122030_AGB_Mockup-22.webp1735897902637\"\n    },\n    {\n      \"rank\": 4,\n      \"card_name\": \"SBI CASHBACK \",\n      \"bank_name\": \"SBI\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹13,200\",\n      \"annual_rewards_value\": \"₹13,200\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹1,179 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹2,00,000/yr spend; ₹1,179 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹400\"\n        },\n        {\n          \"category\": \"grocery_spends_online\",\n          \"annual_value\": \"₹300\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹200\"\n        }\n      ],\n      \"card_alias\": \"sbi-cashback-credit-card\",\n      \"rating\": 4,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122010_AGB_Mockup-24.webp1736921642945\"\n    },\n    {\n      \"rank\": 5,\n      \"card_name\": \"PhonePe SBI Card SELECT BLACK \",\n      \"bank_name\": \"SBI\",\n      \"card_type\": \"VISA,RuPay\",\n      \"net_annual_savings\": \"₹13,200\",\n      \"annual_rewards_value\": \"₹13,200\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹1,769 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹3,00,000/yr spend; ₹1,769 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [\n        {\n          \"id\": 163,\n          \"brands\": [\n            {\n              \"id\": 160,\n              \"name\": \"PhonePe App\"\n            }\n          ],\n          \"card_id\": 183,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"45\",\n          \"minimum_spend\": \"100\",\n          \"voucher_bonus\": \"1500\",\n          \"cash_conversion\": \"1\",\n          \"welcome_benefit_tooltip\": \"First transaction of minimum Rs. 100 within 30 days of card issuance to activate card and become eligible for voucher\",\n          \"cash_value\": 1500\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹400\"\n        },\n        {\n          \"category\": \"grocery_spends_online\",\n          \"annual_value\": \"₹300\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹200\"\n        }\n      ],\n      \"card_alias\": \"phonepe-sbi-card-select-black\",\n      \"rating\": 4.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130245_BankKaro_20260408_171510212_IDFC_FIRST_Indigo_Credit_Card_-mockup_9.png\"\n    }\n  ],\n  \"_format_hint\": \"net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from.\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "total_cards_analyzed": 204,
+      "recommendations": [
+        {
+          "rank": 1,
+          "card_name": "SBI Landmark Reward SELECT Credit Card",
+          "bank_name": "SBI",
+          "card_type": "VISA,RuPay",
+          "net_annual_savings": "₹29,749",
+          "annual_rewards_value": "₹1,518",
+          "milestone_benefits": "₹30,000",
+          "lounge_value": "₹0",
+          "joining_fee": "₹1,769 (incl. GST)",
+          "annual_fee": "₹1,769 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 196,
+              "brands": [],
+              "card_id": 263,
+              "rp_bonus": "6000",
+              "maximum_days": "",
+              "minimum_spend": "",
+              "voucher_bonus": "",
+              "cash_conversion": "0.25",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 1500
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹40"
+            },
+            {
+              "category": "grocery_spends_online",
+              "annual_value": "₹30"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹20"
+            }
+          ],
+          "card_alias": "sbi-landmark-reward-select-credit-card",
+          "rating": 4.2,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260818_105810829_Mockup_64.png"
+        },
+        {
+          "rank": 2,
+          "card_name": "ixigo AU credot Card",
+          "bank_name": "AU Small Finance Bank",
+          "card_type": "VISA,RuPay",
+          "net_annual_savings": "₹26,798",
+          "annual_rewards_value": "₹6,798",
+          "milestone_benefits": "₹20,000",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 225,
+              "brands": [
+                {
+                  "id": 471,
+                  "name": "Ixigo"
+                }
+              ],
+              "card_id": 239,
+              "rp_bonus": "1000",
+              "maximum_days": "30",
+              "minimum_spend": "100",
+              "voucher_bonus": "1000",
+              "cash_conversion": "1",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 2000
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹200"
+            },
+            {
+              "category": "grocery_spends_online",
+              "annual_value": "₹150"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹100"
+            }
+          ],
+          "card_alias": "ixigo-au-credit-card",
+          "rating": 4.2,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260729_143058744_AU_ALTURA__2.png"
+        },
+        {
+          "rank": 3,
+          "card_name": "HSBC Live+ Credit Card",
+          "bank_name": "HSBC Bank",
+          "card_type": "VISA",
+          "net_annual_savings": "₹14,160",
+          "annual_rewards_value": "₹14,160",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹1,179 (incl. GST)",
+          "annual_fee": "Free (waived at ₹2,00,000/yr spend; ₹1,179 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [
+            {
+              "id": 35,
+              "brands": [],
+              "card_id": 50,
+              "rp_bonus": "",
+              "maximum_days": "30",
+              "minimum_spend": "20000",
+              "voucher_bonus": "1000",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": null,
+              "cash_value": 1000
+            },
+            {
+              "id": 36,
+              "brands": [
+                {
+                  "id": 14,
+                  "name": "Amazon"
+                }
+              ],
+              "card_id": 50,
+              "rp_bonus": "",
+              "maximum_days": "30",
+              "minimum_spend": "0",
+              "voucher_bonus": "250",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": null,
+              "cash_value": 250
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "grocery_spends_online",
+              "annual_value": "₹600"
+            },
+            {
+              "category": "online_food_ordering",
+              "annual_value": "₹400"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹120"
+            }
+          ],
+          "card_alias": "hsbc-live-plus-credit-card",
+          "rating": 4,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122030_AGB_Mockup-22.webp1735897902637"
+        },
+        {
+          "rank": 4,
+          "card_name": "SBI CASHBACK ",
+          "bank_name": "SBI",
+          "card_type": "VISA",
+          "net_annual_savings": "₹13,200",
+          "annual_rewards_value": "₹13,200",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹1,179 (incl. GST)",
+          "annual_fee": "Free (waived at ₹2,00,000/yr spend; ₹1,179 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹400"
+            },
+            {
+              "category": "grocery_spends_online",
+              "annual_value": "₹300"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹200"
+            }
+          ],
+          "card_alias": "sbi-cashback-credit-card",
+          "rating": 4,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122010_AGB_Mockup-24.webp1736921642945"
+        },
+        {
+          "rank": 5,
+          "card_name": "PhonePe SBI Card SELECT BLACK ",
+          "bank_name": "SBI",
+          "card_type": "VISA,RuPay",
+          "net_annual_savings": "₹13,200",
+          "annual_rewards_value": "₹13,200",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹1,769 (incl. GST)",
+          "annual_fee": "Free (waived at ₹3,00,000/yr spend; ₹1,769 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [
+            {
+              "id": 163,
+              "brands": [
+                {
+                  "id": 160,
+                  "name": "PhonePe App"
+                }
+              ],
+              "card_id": 183,
+              "rp_bonus": "",
+              "maximum_days": "45",
+              "minimum_spend": "100",
+              "voucher_bonus": "1500",
+              "cash_conversion": "1",
+              "welcome_benefit_tooltip": "First transaction of minimum Rs. 100 within 30 days of card issuance to activate card and become eligible for voucher",
+              "cash_value": 1500
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹400"
+            },
+            {
+              "category": "grocery_spends_online",
+              "annual_value": "₹300"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹200"
+            }
+          ],
+          "card_alias": "phonepe-sbi-card-select-black",
+          "rating": 4.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130245_BankKaro_20260408_171510212_IDFC_FIRST_Indigo_Credit_Card_-mockup_9.png"
+        }
+      ],
+      "_format_hint": "net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from."
+    }
+  ]
+}

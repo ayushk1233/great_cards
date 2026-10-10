@@ -1,0 +1,98 @@
+{
+  "id": "wa_profile_mixed",
+  "group": "consistency",
+  "purpose": "",
+  "timestamp": "2026-10-10T18:34:28.342776+00:00",
+  "request": {
+    "tool": "whatsapp_recommend_cards_for_spend_profile",
+    "arguments": {
+      "spend_profile": {
+        "amazon_spends": 8000,
+        "flipkart_spends": 4000,
+        "online_food_ordering": 4000,
+        "grocery_spends_online": 6000,
+        "fuel": 3000,
+        "mobile_phone_bills": 800,
+        "electricity_bills": 2500
+      },
+      "top_n": 5
+    }
+  },
+  "latency_ms": 1651,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"reply_type\": \"recommendation\",\n  \"summary\": \"Based on your spends, SBI Landmark Reward SELECT Credit Card looks strongest with estimated annual value of Rs. 29,749.\",\n  \"cards\": [\n    {\n      \"rank\": 1,\n      \"name\": \"SBI Landmark Reward SELECT Credit Card\",\n      \"alias\": \"sbi-landmark-reward-select-credit-card\",\n      \"annual_value\": \"Rs. 29,749\",\n      \"annual_rewards\": \"Rs. 1,518\",\n      \"fee\": \"Rs. 1,769\",\n      \"annual_fee_waived\": false,\n      \"link\": \"https://www.great.cards/cards/sbi-landmark-reward-select-credit-card\",\n      \"reason\": \"Best value comes from amazon spends and grocery spends online spends.\"\n    },\n    {\n      \"rank\": 2,\n      \"name\": \"ixigo AU credot Card\",\n      \"alias\": \"ixigo-au-credit-card\",\n      \"annual_value\": \"Rs. 26,798\",\n      \"annual_rewards\": \"Rs. 6,798\",\n      \"fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"link\": \"https://www.great.cards/cards/ixigo-au-credit-card\",\n      \"reason\": \"Best value comes from amazon spends and grocery spends online spends.\"\n    },\n    {\n      \"rank\": 3,\n      \"name\": \"HSBC Live+ Credit Card\",\n      \"alias\": \"hsbc-live-plus-credit-card\",\n      \"annual_value\": \"Rs. 14,160\",\n      \"annual_rewards\": \"Rs. 14,160\",\n      \"fee\": \"Free (waived at Rs. 2,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"link\": \"https://www.great.cards/cards/hsbc-live-plus-credit-card\",\n      \"reason\": \"Best value comes from grocery spends online and online food ordering spends.\"\n    },\n    {\n      \"rank\": 4,\n      \"name\": \"SBI CASHBACK \",\n      \"alias\": \"sbi-cashback-credit-card\",\n      \"annual_value\": \"Rs. 13,200\",\n      \"annual_rewards\": \"Rs. 13,200\",\n      \"fee\": \"Free (waived at Rs. 2,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"link\": \"https://www.great.cards/cards/sbi-cashback-credit-card\",\n      \"reason\": \"Best value comes from amazon spends and grocery spends online spends.\"\n    },\n    {\n      \"rank\": 5,\n      \"name\": \"PhonePe SBI Card SELECT BLACK \",\n      \"alias\": \"phonepe-sbi-card-select-black\",\n      \"annual_value\": \"Rs. 13,200\",\n      \"annual_rewards\": \"Rs. 13,200\",\n      \"fee\": \"Free (waived at Rs. 3,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"link\": \"https://www.great.cards/cards/phonepe-sbi-card-select-black\",\n      \"reason\": \"Best value comes from amazon spends and grocery spends online spends.\"\n    }\n  ],\n  \"next_question\": \"Want me to compare the top 2 cards or check eligibility?\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "reply_type": "recommendation",
+      "summary": "Based on your spends, SBI Landmark Reward SELECT Credit Card looks strongest with estimated annual value of Rs. 29,749.",
+      "cards": [
+        {
+          "rank": 1,
+          "name": "SBI Landmark Reward SELECT Credit Card",
+          "alias": "sbi-landmark-reward-select-credit-card",
+          "annual_value": "Rs. 29,749",
+          "annual_rewards": "Rs. 1,518",
+          "fee": "Rs. 1,769",
+          "annual_fee_waived": false,
+          "link": "https://www.great.cards/cards/sbi-landmark-reward-select-credit-card",
+          "reason": "Best value comes from amazon spends and grocery spends online spends."
+        },
+        {
+          "rank": 2,
+          "name": "ixigo AU credot Card",
+          "alias": "ixigo-au-credit-card",
+          "annual_value": "Rs. 26,798",
+          "annual_rewards": "Rs. 6,798",
+          "fee": "Free",
+          "annual_fee_waived": false,
+          "link": "https://www.great.cards/cards/ixigo-au-credit-card",
+          "reason": "Best value comes from amazon spends and grocery spends online spends."
+        },
+        {
+          "rank": 3,
+          "name": "HSBC Live+ Credit Card",
+          "alias": "hsbc-live-plus-credit-card",
+          "annual_value": "Rs. 14,160",
+          "annual_rewards": "Rs. 14,160",
+          "fee": "Free (waived at Rs. 2,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "link": "https://www.great.cards/cards/hsbc-live-plus-credit-card",
+          "reason": "Best value comes from grocery spends online and online food ordering spends."
+        },
+        {
+          "rank": 4,
+          "name": "SBI CASHBACK ",
+          "alias": "sbi-cashback-credit-card",
+          "annual_value": "Rs. 13,200",
+          "annual_rewards": "Rs. 13,200",
+          "fee": "Free (waived at Rs. 2,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "link": "https://www.great.cards/cards/sbi-cashback-credit-card",
+          "reason": "Best value comes from amazon spends and grocery spends online spends."
+        },
+        {
+          "rank": 5,
+          "name": "PhonePe SBI Card SELECT BLACK ",
+          "alias": "phonepe-sbi-card-select-black",
+          "annual_value": "Rs. 13,200",
+          "annual_rewards": "Rs. 13,200",
+          "fee": "Free (waived at Rs. 3,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "link": "https://www.great.cards/cards/phonepe-sbi-card-select-black",
+          "reason": "Best value comes from amazon spends and grocery spends online spends."
+        }
+      ],
+      "next_question": "Want me to compare the top 2 cards or check eligibility?"
+    }
+  ]
+}

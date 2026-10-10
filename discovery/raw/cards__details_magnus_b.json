@@ -1,0 +1,30 @@
+{
+  "id": "details_magnus_b",
+  "group": "cards",
+  "purpose": "",
+  "timestamp": "2026-10-10T18:34:17.026126+00:00",
+  "request": {
+    "tool": "get_card_details",
+    "arguments": {
+      "card_alias": "axis-magnus-credit-card"
+    }
+  },
+  "latency_ms": 133,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"error\": \"Card not found: axis-magnus-credit-card\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "error": "Card not found: axis-magnus-credit-card"
+    }
+  ]
+}

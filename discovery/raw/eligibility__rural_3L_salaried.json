@@ -1,0 +1,19 @@
+{
+  "id": "rural_3L_salaried",
+  "group": "eligibility",
+  "purpose": "",
+  "timestamp": "2026-10-10T18:34:35.403404+00:00",
+  "request": {
+    "tool": "check_eligibility",
+    "arguments": {
+      "pincode": "848101",
+      "annual_income": "300000",
+      "employment_status": "salaried"
+    }
+  },
+  "latency_ms": 107,
+  "client_error": "MCPError(-32603, 'Server returned an error response', None)",
+  "is_error": null,
+  "raw_result": null,
+  "parsed_content": null
+}

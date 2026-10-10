@@ -1,0 +1,38 @@
+{
+  "id": "elig_income_50k_string",
+  "group": "followup",
+  "purpose": "retry after 429",
+  "timestamp": "2026-10-10T18:37:06.767551+00:00",
+  "request": {
+    "tool": "check_eligibility",
+    "arguments": {
+      "pincode": "400001",
+      "annual_income": "50k",
+      "employment_status": "salaried"
+    }
+  },
+  "latency_ms": 285,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"eligible_cards_count\": 0,\n  \"profile\": {\n    \"pincode\": \"400001\",\n    \"annual_income\": \"₹NaN\",\n    \"employment\": \"salaried\"\n  },\n  \"eligible_cards\": []\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "eligible_cards_count": 0,
+      "profile": {
+        "pincode": "400001",
+        "annual_income": "₹NaN",
+        "employment": "salaried"
+      },
+      "eligible_cards": []
+    }
+  ]
+}

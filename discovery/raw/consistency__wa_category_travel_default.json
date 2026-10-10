@@ -1,0 +1,73 @@
+{
+  "id": "wa_category_travel_default",
+  "group": "consistency",
+  "purpose": "travel defaults annual?",
+  "timestamp": "2026-10-10T18:34:31.455601+00:00",
+  "request": {
+    "tool": "whatsapp_recommend_cards_for_category_spend",
+    "arguments": {
+      "category": "travel",
+      "amount": 120000
+    }
+  },
+  "latency_ms": 1562,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"reply_type\": \"recommendation\",\n  \"summary\": \"For Rs. 1,20,000/year travel spend, AMEX GOLD CREDIT CARD looks strongest with estimated annual value of Rs. 8,610.\",\n  \"category\": \"travel\",\n  \"spend_profile_used\": {\n    \"flights_annual\": 72000,\n    \"hotels_annual\": 48000\n  },\n  \"cards\": [\n    {\n      \"rank\": 1,\n      \"name\": \"AMEX GOLD CREDIT CARD\",\n      \"alias\": \"american-express-gold-card\",\n      \"annual_value\": \"Rs. 8,610\",\n      \"annual_rewards\": \"Rs. 6,960\",\n      \"fee\": \"Rs. 5,310\",\n      \"annual_fee_waived\": false,\n      \"link\": \"https://www.great.cards/cards/american-express-gold-card\",\n      \"reason\": \"Best value comes from flights annual and hotels annual spends.\"\n    },\n    {\n      \"rank\": 2,\n      \"name\": \"HDFC Diners Club Black Metal Edition\",\n      \"alias\": \"hdfc-diners-club-black-metal-credit-card\",\n      \"annual_value\": \"Rs. 8,200\",\n      \"annual_rewards\": \"Rs. 20,000\",\n      \"fee\": \"Rs. 11,800\",\n      \"annual_fee_waived\": false,\n      \"link\": \"https://www.great.cards/cards/hdfc-diners-club-black-metal-credit-card\",\n      \"reason\": \"Best value comes from flights annual and hotels annual spends.\"\n    },\n    {\n      \"rank\": 3,\n      \"name\": \"Yes Bank Paisabazaar PaisaSave Credit Card\",\n      \"alias\": \"yes-bank-paisabazaar-paisasave-credit-card\",\n      \"annual_value\": \"Rs. 7,200\",\n      \"annual_rewards\": \"Rs. 7,200\",\n      \"fee\": \"Free (waived at Rs. 1,20,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"link\": \"https://www.great.cards/cards/yes-bank-paisabazaar-paisasave-credit-card\",\n      \"reason\": \"Best value comes from flights annual and hotels annual spends.\"\n    }\n  ],\n  \"next_question\": \"Want details for any one of these cards?\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "reply_type": "recommendation",
+      "summary": "For Rs. 1,20,000/year travel spend, AMEX GOLD CREDIT CARD looks strongest with estimated annual value of Rs. 8,610.",
+      "category": "travel",
+      "spend_profile_used": {
+        "flights_annual": 72000,
+        "hotels_annual": 48000
+      },
+      "cards": [
+        {
+          "rank": 1,
+          "name": "AMEX GOLD CREDIT CARD",
+          "alias": "american-express-gold-card",
+          "annual_value": "Rs. 8,610",
+          "annual_rewards": "Rs. 6,960",
+          "fee": "Rs. 5,310",
+          "annual_fee_waived": false,
+          "link": "https://www.great.cards/cards/american-express-gold-card",
+          "reason": "Best value comes from flights annual and hotels annual spends."
+        },
+        {
+          "rank": 2,
+          "name": "HDFC Diners Club Black Metal Edition",
+          "alias": "hdfc-diners-club-black-metal-credit-card",
+          "annual_value": "Rs. 8,200",
+          "annual_rewards": "Rs. 20,000",
+          "fee": "Rs. 11,800",
+          "annual_fee_waived": false,
+          "link": "https://www.great.cards/cards/hdfc-diners-club-black-metal-credit-card",
+          "reason": "Best value comes from flights annual and hotels annual spends."
+        },
+        {
+          "rank": 3,
+          "name": "Yes Bank Paisabazaar PaisaSave Credit Card",
+          "alias": "yes-bank-paisabazaar-paisasave-credit-card",
+          "annual_value": "Rs. 7,200",
+          "annual_rewards": "Rs. 7,200",
+          "fee": "Free (waived at Rs. 1,20,000/yr spend)",
+          "annual_fee_waived": true,
+          "link": "https://www.great.cards/cards/yes-bank-paisabazaar-paisasave-credit-card",
+          "reason": "Best value comes from flights annual and hotels annual spends."
+        }
+      ],
+      "next_question": "Want details for any one of these cards?"
+    }
+  ]
+}

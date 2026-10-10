@@ -1,0 +1,77 @@
+{
+  "id": "resolve_magnus",
+  "group": "resolve",
+  "purpose": "",
+  "timestamp": "2026-10-10T18:34:22.111170+00:00",
+  "request": {
+    "tool": "whatsapp_resolve_card_or_category",
+    "arguments": {
+      "phrase": "magnus"
+    }
+  },
+  "latency_ms": 521,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"reply_type\": \"resolution\",\n  \"summary\": \"I found possible matches.\",\n  \"matches\": [\n    {\n      \"type\": \"card\",\n      \"name\": \"Axis Burgundy Magnus Credit Card\",\n      \"bank\": \"\",\n      \"alias\": \"magnus-burgundy-credit-card\",\n      \"link\": \"https://www.great.cards/cards/magnus-burgundy-credit-card\",\n      \"confidence\": \"high\",\n      \"matched_on\": [\n        \"alias_contains_phrase\",\n        \"name_contains_phrase\",\n        \"all_query_tokens\"\n      ],\n      \"score\": 198\n    },\n    {\n      \"type\": \"card\",\n      \"name\": \"Axis Magnus Credit Card\",\n      \"bank\": \"\",\n      \"alias\": \"axis-bank-magnus-credit-card\",\n      \"link\": \"https://www.great.cards/cards/axis-bank-magnus-credit-card\",\n      \"confidence\": \"high\",\n      \"matched_on\": [\n        \"alias_contains_phrase\",\n        \"name_contains_phrase\",\n        \"all_query_tokens\"\n      ],\n      \"score\": 198\n    }\n  ],\n  \"best_match\": {\n    \"type\": \"card\",\n    \"name\": \"Axis Burgundy Magnus Credit Card\",\n    \"bank\": \"\",\n    \"alias\": \"magnus-burgundy-credit-card\",\n    \"link\": \"https://www.great.cards/cards/magnus-burgundy-credit-card\",\n    \"confidence\": \"high\",\n    \"matched_on\": [\n      \"alias_contains_phrase\",\n      \"name_contains_phrase\",\n      \"all_query_tokens\"\n    ],\n    \"score\": 198\n  },\n  \"next_action\": \"use_card_alias_for_details_or_compare\",\n  \"next_question\": null\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "reply_type": "resolution",
+      "summary": "I found possible matches.",
+      "matches": [
+        {
+          "type": "card",
+          "name": "Axis Burgundy Magnus Credit Card",
+          "bank": "",
+          "alias": "magnus-burgundy-credit-card",
+          "link": "https://www.great.cards/cards/magnus-burgundy-credit-card",
+          "confidence": "high",
+          "matched_on": [
+            "alias_contains_phrase",
+            "name_contains_phrase",
+            "all_query_tokens"
+          ],
+          "score": 198
+        },
+        {
+          "type": "card",
+          "name": "Axis Magnus Credit Card",
+          "bank": "",
+          "alias": "axis-bank-magnus-credit-card",
+          "link": "https://www.great.cards/cards/axis-bank-magnus-credit-card",
+          "confidence": "high",
+          "matched_on": [
+            "alias_contains_phrase",
+            "name_contains_phrase",
+            "all_query_tokens"
+          ],
+          "score": 198
+        }
+      ],
+      "best_match": {
+        "type": "card",
+        "name": "Axis Burgundy Magnus Credit Card",
+        "bank": "",
+        "alias": "magnus-burgundy-credit-card",
+        "link": "https://www.great.cards/cards/magnus-burgundy-credit-card",
+        "confidence": "high",
+        "matched_on": [
+          "alias_contains_phrase",
+          "name_contains_phrase",
+          "all_query_tokens"
+        ],
+        "score": 198
+      },
+      "next_action": "use_card_alias_for_details_or_compare",
+      "next_question": null
+    }
+  ]
+}

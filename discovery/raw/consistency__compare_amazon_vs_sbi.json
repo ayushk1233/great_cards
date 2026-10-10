@@ -1,0 +1,239 @@
+{
+  "id": "compare_amazon_vs_sbi",
+  "group": "consistency",
+  "purpose": "",
+  "timestamp": "2026-10-10T18:34:31.589813+00:00",
+  "request": {
+    "tool": "compare_cards",
+    "arguments": {
+      "card_aliases": [
+        "icici-amazon-pay-credit-card",
+        "sbi-cashback-credit-card"
+      ]
+    }
+  },
+  "latency_ms": 132,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"comparison\": [\n    {\n      \"name\": \"Amazon Pay ICICI Bank Credit Card\",\n      \"bank\": \"ICICI Bank\",\n      \"card_type\": \"VISA\",\n      \"card_network\": null,\n      \"rating\": 5,\n      \"invite_only\": false,\n      \"employment_type\": \"both\",\n      \"fees\": {\n        \"joining\": \"Free\",\n        \"joining_note\": null,\n        \"annual\": \"Free\",\n        \"annual_note\": null,\n        \"annual_fee_waiver\": \"Not Applicable\",\n        \"gst_note\": \"All fees include 18% GST.\"\n      },\n      \"fee_schedule\": {\n        \"apr_monthly\": \"3.75%\",\n        \"apr_annual\": \"45.00%\",\n        \"forex_markup\": \"1.99%\",\n        \"atm_withdrawal_fee\": \"2.50%\",\n        \"late_payment_slabs\": [\n          {\n            \"outstanding\": \"≤ ₹100\",\n            \"fee\": \"₹0\"\n          },\n          {\n            \"outstanding\": \"₹101–₹500\",\n            \"fee\": \"₹100\"\n          },\n          {\n            \"outstanding\": \"₹501–₹1,000\",\n            \"fee\": \"₹500\"\n          },\n          {\n            \"outstanding\": \"₹1,001–₹5,000\",\n            \"fee\": \"₹600\"\n          },\n          {\n            \"outstanding\": \"₹5,001–₹10,000\",\n            \"fee\": \"₹750\"\n          },\n          {\n            \"outstanding\": \"₹10,001–₹25,000\",\n            \"fee\": \"₹900\"\n          },\n          {\n            \"outstanding\": \"₹25,001–₹50,000\",\n            \"fee\": \"₹1,100\"\n          },\n          {\n            \"outstanding\": \"> ₹50,000\",\n            \"fee\": \"₹1,300\"\n          }\n        ],\n        \"tnc_url\": \"https://www.icici.bank.in/content/dam/icicibank/india/managed-assets/revamp-page-images/docs/pdf/mitc-cc-gk-t.pdf?ITM=nli_amazon_pay_cc_rte_fee&charges_t&c_NLI\"\n      },\n      \"rewards\": {\n        \"point_value\": null,\n        \"redemption_options\": \"This is a cashback card, and the earned cashback is adjusted directly in your monthly statement.\",\n        \"exclusions\": \"Physical and Digital Gold, EMI Transactions, EMI , Rent Payments, Tax Payments, Amazon.com, Fuel Spends, International Spends, International Transactions\",\n        \"exclusion_spends\": \"Physical and Digital Gold, EMI Transactions, EMI , Rent Payments, Tax Payments, Amazon.com, Fuel Spends, International Spends, International Transactions\"\n      },\n      \"key_benefits\": [\n        {\n          \"title\": \"Get Up To 5% Rewards on Amazon purchases\",\n          \"description\": \"with unlimited reward points and no capping across spends\"\n        },\n        {\n          \"title\": \"Get Up To 5% Rewards on Amazon purchases\",\n          \"description\": \"with unlimited reward points and no capping across spends\"\n        },\n        {\n          \"title\": \"Get 1% Rewards on all Other Spends with Unlimited\",\n          \"description\": \"reward points and no capping across spends\"\n        }\n      ],\n      \"eligibility\": {\n        \"min_age\": 21,\n        \"max_age\": 65,\n        \"income_salaried_lpa\": 2.4,\n        \"income_self_emp_lpa\": 3.6,\n        \"crif_salaried\": 725,\n        \"crif_self_emp\": 725\n      },\n      \"tags\": [\n        \"Shopping\"\n      ],\n      \"card_alias\": \"icici-amazon-pay-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125139_BankKaro_Mobile.png\"\n    },\n    {\n      \"name\": \"SBI Cashback Credit Card\",\n      \"bank\": \"SBI\",\n      \"card_type\": \"VISA\",\n      \"card_network\": null,\n      \"rating\": 4,\n      \"invite_only\": false,\n      \"employment_type\": \"both\",\n      \"fees\": {\n        \"joining\": \"₹1,179 (₹999 + GST)\",\n        \"joining_note\": \"A one-time joining fee is charged at the time of card issuance as per the bank’s policy.\",\n        \"annual\": \"₹1,179 (₹999 + GST)\",\n        \"annual_note\": \"The annual fee is charged every year and may be waived if you meet the bank’s spending conditions.\",\n        \"annual_fee_waiver\": \"The annual fee is waived if you spend ₹2 lakh or more in a year on your card, as per bank policy.\",\n        \"gst_note\": \"All fees include 18% GST.\"\n      },\n      \"fee_schedule\": {\n        \"apr_monthly\": \"3.75%\",\n        \"apr_annual\": \"45.00%\",\n        \"forex_markup\": \"3.50%\",\n        \"atm_withdrawal_fee\": \"2.50%\",\n        \"late_payment_slabs\": [\n          {\n            \"outstanding\": \"₹0 - ₹500\",\n            \"fee\": \"₹0\"\n          },\n          {\n            \"outstanding\": \"₹501 - ₹1000\",\n            \"fee\": \"₹400\"\n          },\n          {\n            \"outstanding\": \"₹1001 - ₹10000\",\n            \"fee\": \"₹ 750\"\n          },\n          {\n            \"outstanding\": \"₹10000 - ₹25000\",\n            \"fee\": \"₹ 950\"\n          },\n          {\n            \"outstanding\": \"₹25001- ₹ 50000\",\n            \"fee\": \"₹ 1100\"\n          },\n          {\n            \"outstanding\": \"₹50000 and above\",\n            \"fee\": \"₹1300\"\n          }\n        ],\n        \"tnc_url\": \"https://www.sbicard.com/sbi-card-en/assets/docs/pdf/ekit-tncs/cashback-tnc-ekit.pdf\"\n      },\n      \"rewards\": {\n        \"point_value\": null,\n        \"redemption_options\": \"This is a cashback card, and the earned cashback is adjusted directly in your monthly statement.\",\n        \"exclusions\": \"Fuel Transactions, Rent Payments, Wallet Loads, Cash Withdrawals, EMI Transactions, Fees & Charges, Government Payments, Education Payments, Insurance Premium Payments, Utility Bills Payments, Gift Card or Voucher Purchases, Reversed or Refunded Transactions, Gaming Platforms, Tolls\",\n        \"exclusion_spends\": \"Fuel Transactions, Rent Payments, Wallet Loads, Cash Withdrawals, EMI Transactions, Fees & Charges, Government Payments, Education Payments, Insurance Premium Payments, Utility Bills Payments, Gift Card or Voucher Purchases, Reversed or Refunded Transactions, Gaming Platforms, Tolls\"\n      },\n      \"key_benefits\": [\n        {\n          \"title\": \"Get 5% Cashback on Dining\",\n          \"description\": \"Restaurant Payments processed through online platforms using the SBI Cashback Credit Card\"\n        },\n        {\n          \"title\": \"Earn 5% Cashback on Online Spends\",\n          \"description\": \"capped at ₹2,000 and 1% on offline spends capped at ₹2,000 every statement cycle, with a total cashback of up to ₹4,000 per billing cycle\"\n        },\n        {\n          \"title\": \"Get 5% Cashback on\",\n          \"description\": \"Blinkit, Zepto, BigBasket, Instamart with a capping of ₹2,000 per statement cycle\"\n        },\n        {\n          \"title\": \"Get 5% Cashback on Food Orders\",\n          \"description\": \"on all online food orders, making every meal more rewarding with a capping of ₹2,000 per statement cycle\"\n        },\n        {\n          \"title\": \" Get 5% Cashback\",\n          \"description\": \"on all online shopping spends including Amazon, Flipkart, Myntra, Ajio, and many more with a capping of ₹2,000 per statement cycle\"\n        },\n        {\n          \"title\": \"Get 5% Cashback on\\t\",\n          \"description\": \" Blinkit, Zepto, BigBasket, Instamart with a capping of ₹2,000 per statement cycle\"\n        },\n        {\n          \"title\": \"Get 5% Cashback\\t\",\n          \"description\": \" on all online shopping spends including Amazon, Flipkart, Myntra, Ajio, and many more with a capping of ₹2,000 per statement cycle\"\n        },\n        {\n          \"title\": \"Get 1% Cashback\",\n          \"description\": \"on grocery shopping at departmental stores (offline merchants) using the SBI Cashback Credit Card with a capping of ₹2,000 per statement cycle\"\n        },\n        {\n          \"title\": \"Get Flat 1% Cashback\",\n          \"description\": \"on all offline spends with a capping of ₹2,000 per statement cycle (including the online spends)\"\n        },\n        {\n          \"title\": \"Get Flat 1% Cashback\",\n          \"description\": \"on all offline shopping spends with a capping of ₹2,000 per statement cycle\"\n        }\n      ],\n      \"eligibility\": {\n        \"min_age\": 21,\n        \"max_age\": 65,\n        \"income_salaried_lpa\": 3,\n        \"income_self_emp_lpa\": 3,\n        \"crif_salaried\": 750,\n        \"crif_self_emp\": 750\n      },\n      \"tags\": [\n        \"Shopping\",\n        \"Online Food Ordering\",\n        \"Dining\",\n        \"Grocery Shopping\"\n      ],\n      \"card_alias\": \"sbi-cashback-credit-card\",\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122010_AGB_Mockup-24.webp1736921642945\"\n    }\n  ]\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "comparison": [
+        {
+          "name": "Amazon Pay ICICI Bank Credit Card",
+          "bank": "ICICI Bank",
+          "card_type": "VISA",
+          "card_network": null,
+          "rating": 5,
+          "invite_only": false,
+          "employment_type": "both",
+          "fees": {
+            "joining": "Free",
+            "joining_note": null,
+            "annual": "Free",
+            "annual_note": null,
+            "annual_fee_waiver": "Not Applicable",
+            "gst_note": "All fees include 18% GST."
+          },
+          "fee_schedule": {
+            "apr_monthly": "3.75%",
+            "apr_annual": "45.00%",
+            "forex_markup": "1.99%",
+            "atm_withdrawal_fee": "2.50%",
+            "late_payment_slabs": [
+              {
+                "outstanding": "≤ ₹100",
+                "fee": "₹0"
+              },
+              {
+                "outstanding": "₹101–₹500",
+                "fee": "₹100"
+              },
+              {
+                "outstanding": "₹501–₹1,000",
+                "fee": "₹500"
+              },
+              {
+                "outstanding": "₹1,001–₹5,000",
+                "fee": "₹600"
+              },
+              {
+                "outstanding": "₹5,001–₹10,000",
+                "fee": "₹750"
+              },
+              {
+                "outstanding": "₹10,001–₹25,000",
+                "fee": "₹900"
+              },
+              {
+                "outstanding": "₹25,001–₹50,000",
+                "fee": "₹1,100"
+              },
+              {
+                "outstanding": "> ₹50,000",
+                "fee": "₹1,300"
+              }
+            ],
+            "tnc_url": "https://www.icici.bank.in/content/dam/icicibank/india/managed-assets/revamp-page-images/docs/pdf/mitc-cc-gk-t.pdf?ITM=nli_amazon_pay_cc_rte_fee&charges_t&c_NLI"
+          },
+          "rewards": {
+            "point_value": null,
+            "redemption_options": "This is a cashback card, and the earned cashback is adjusted directly in your monthly statement.",
+            "exclusions": "Physical and Digital Gold, EMI Transactions, EMI , Rent Payments, Tax Payments, Amazon.com, Fuel Spends, International Spends, International Transactions",
+            "exclusion_spends": "Physical and Digital Gold, EMI Transactions, EMI , Rent Payments, Tax Payments, Amazon.com, Fuel Spends, International Spends, International Transactions"
+          },
+          "key_benefits": [
+            {
+              "title": "Get Up To 5% Rewards on Amazon purchases",
+              "description": "with unlimited reward points and no capping across spends"
+            },
+            {
+              "title": "Get Up To 5% Rewards on Amazon purchases",
+              "description": "with unlimited reward points and no capping across spends"
+            },
+            {
+              "title": "Get 1% Rewards on all Other Spends with Unlimited",
+              "description": "reward points and no capping across spends"
+            }
+          ],
+          "eligibility": {
+            "min_age": 21,
+            "max_age": 65,
+            "income_salaried_lpa": 2.4,
+            "income_self_emp_lpa": 3.6,
+            "crif_salaried": 725,
+            "crif_self_emp": 725
+          },
+          "tags": [
+            "Shopping"
+          ],
+          "card_alias": "icici-amazon-pay-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_125139_BankKaro_Mobile.png"
+        },
+        {
+          "name": "SBI Cashback Credit Card",
+          "bank": "SBI",
+          "card_type": "VISA",
+          "card_network": null,
+          "rating": 4,
+          "invite_only": false,
+          "employment_type": "both",
+          "fees": {
+            "joining": "₹1,179 (₹999 + GST)",
+            "joining_note": "A one-time joining fee is charged at the time of card issuance as per the bank’s policy.",
+            "annual": "₹1,179 (₹999 + GST)",
+            "annual_note": "The annual fee is charged every year and may be waived if you meet the bank’s spending conditions.",
+            "annual_fee_waiver": "The annual fee is waived if you spend ₹2 lakh or more in a year on your card, as per bank policy.",
+            "gst_note": "All fees include 18% GST."
+          },
+          "fee_schedule": {
+            "apr_monthly": "3.75%",
+            "apr_annual": "45.00%",
+            "forex_markup": "3.50%",
+            "atm_withdrawal_fee": "2.50%",
+            "late_payment_slabs": [
+              {
+                "outstanding": "₹0 - ₹500",
+                "fee": "₹0"
+              },
+              {
+                "outstanding": "₹501 - ₹1000",
+                "fee": "₹400"
+              },
+              {
+                "outstanding": "₹1001 - ₹10000",
+                "fee": "₹ 750"
+              },
+              {
+                "outstanding": "₹10000 - ₹25000",
+                "fee": "₹ 950"
+              },
+              {
+                "outstanding": "₹25001- ₹ 50000",
+                "fee": "₹ 1100"
+              },
+              {
+                "outstanding": "₹50000 and above",
+                "fee": "₹1300"
+              }
+            ],
+            "tnc_url": "https://www.sbicard.com/sbi-card-en/assets/docs/pdf/ekit-tncs/cashback-tnc-ekit.pdf"
+          },
+          "rewards": {
+            "point_value": null,
+            "redemption_options": "This is a cashback card, and the earned cashback is adjusted directly in your monthly statement.",
+            "exclusions": "Fuel Transactions, Rent Payments, Wallet Loads, Cash Withdrawals, EMI Transactions, Fees & Charges, Government Payments, Education Payments, Insurance Premium Payments, Utility Bills Payments, Gift Card or Voucher Purchases, Reversed or Refunded Transactions, Gaming Platforms, Tolls",
+            "exclusion_spends": "Fuel Transactions, Rent Payments, Wallet Loads, Cash Withdrawals, EMI Transactions, Fees & Charges, Government Payments, Education Payments, Insurance Premium Payments, Utility Bills Payments, Gift Card or Voucher Purchases, Reversed or Refunded Transactions, Gaming Platforms, Tolls"
+          },
+          "key_benefits": [
+            {
+              "title": "Get 5% Cashback on Dining",
+              "description": "Restaurant Payments processed through online platforms using the SBI Cashback Credit Card"
+            },
+            {
+              "title": "Earn 5% Cashback on Online Spends",
+              "description": "capped at ₹2,000 and 1% on offline spends capped at ₹2,000 every statement cycle, with a total cashback of up to ₹4,000 per billing cycle"
+            },
+            {
+              "title": "Get 5% Cashback on",
+              "description": "Blinkit, Zepto, BigBasket, Instamart with a capping of ₹2,000 per statement cycle"
+            },
+            {
+              "title": "Get 5% Cashback on Food Orders",
+              "description": "on all online food orders, making every meal more rewarding with a capping of ₹2,000 per statement cycle"
+            },
+            {
+              "title": " Get 5% Cashback",
+              "description": "on all online shopping spends including Amazon, Flipkart, Myntra, Ajio, and many more with a capping of ₹2,000 per statement cycle"
+            },
+            {
+              "title": "Get 5% Cashback on\t",
+              "description": " Blinkit, Zepto, BigBasket, Instamart with a capping of ₹2,000 per statement cycle"
+            },
+            {
+              "title": "Get 5% Cashback\t",
+              "description": " on all online shopping spends including Amazon, Flipkart, Myntra, Ajio, and many more with a capping of ₹2,000 per statement cycle"
+            },
+            {
+              "title": "Get 1% Cashback",
+              "description": "on grocery shopping at departmental stores (offline merchants) using the SBI Cashback Credit Card with a capping of ₹2,000 per statement cycle"
+            },
+            {
+              "title": "Get Flat 1% Cashback",
+              "description": "on all offline spends with a capping of ₹2,000 per statement cycle (including the online spends)"
+            },
+            {
+              "title": "Get Flat 1% Cashback",
+              "description": "on all offline shopping spends with a capping of ₹2,000 per statement cycle"
+            }
+          ],
+          "eligibility": {
+            "min_age": 21,
+            "max_age": 65,
+            "income_salaried_lpa": 3,
+            "income_self_emp_lpa": 3,
+            "crif_salaried": 750,
+            "crif_self_emp": 750
+          },
+          "tags": [
+            "Shopping",
+            "Online Food Ordering",
+            "Dining",
+            "Grocery Shopping"
+          ],
+          "card_alias": "sbi-cashback-credit-card",
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122010_AGB_Mockup-24.webp1736921642945"
+        }
+      ]
+    }
+  ]
+}

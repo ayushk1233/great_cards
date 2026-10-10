@@ -1,0 +1,302 @@
+{
+  "id": "fuel_5k",
+  "group": "recommend",
+  "purpose": "single category",
+  "timestamp": "2026-10-10T18:33:26.739842+00:00",
+  "request": {
+    "tool": "recommend_cards",
+    "arguments": {
+      "fuel": 5000,
+      "top_n": 5
+    }
+  },
+  "latency_ms": 3202,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total_cards_analyzed\": 204,\n  \"recommendations\": [\n    {\n      \"rank\": 1,\n      \"card_name\": \"IDFC FIRST Power Credit Card\",\n      \"bank_name\": \"IDFC\",\n      \"card_type\": \"RuPay\",\n      \"net_annual_savings\": \"₹2,100\",\n      \"annual_rewards_value\": \"₹2,100\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹235 (incl. GST)\",\n      \"annual_fee\": \"Free (waived at ₹50,000/yr spend; ₹235 otherwise)\",\n      \"annual_fee_waived\": true,\n      \"welcome_benefits\": [\n        {\n          \"id\": 114,\n          \"brands\": [],\n          \"card_id\": 167,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"60\",\n          \"minimum_spend\": \"250\",\n          \"voucher_bonus\": \"250\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": null,\n          \"cash_value\": 250\n        },\n        {\n          \"id\": 157,\n          \"brands\": [],\n          \"card_id\": 167,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"60\",\n          \"minimum_spend\": \"250\",\n          \"voucher_bonus\": \"250\",\n          \"cash_conversion\": \"1\",\n          \"welcome_benefit_tooltip\": \"₹250 worth gift voucher on 1st fuel transaction of ₹250 or above at HPCL fuel station\",\n          \"cash_value\": 250\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"fuel\",\n          \"annual_value\": \"₹175\"\n        },\n        {\n          \"category\": \"mobile_phone_bills\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"water_bills\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"idfc-first-power-credit-card\",\n      \"rating\": 4,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130219_BankKaro_20251124_122711241\"\n    },\n    {\n      \"rank\": 2,\n      \"card_name\": \"AXIS INDIAN OIL RUPAY\",\n      \"bank_name\": \"Axis\",\n      \"card_type\": \"VISA,RuPay\",\n      \"net_annual_savings\": \"₹1,810\",\n      \"annual_rewards_value\": \"₹2,400\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹590 (incl. GST)\",\n      \"annual_fee\": \"₹590 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 7,\n          \"brands\": [],\n          \"card_id\": 16,\n          \"rp_bonus\": \"1250\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"100\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"0.25\",\n          \"welcome_benefit_tooltip\": \"The first fuel transaction performed on the card within the first 30 days of card issuance\",\n          \"cash_value\": 312.5\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"fuel\",\n          \"annual_value\": \"₹200\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"axis-indian-oil-rupay-credit-card\",\n      \"rating\": 2,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_121956_BankKaro_20260414_105632796_IDFC_FIRST_Indigo_Credit_Card_-mockup_10.png\"\n    },\n    {\n      \"rank\": 3,\n      \"card_name\": \"ICICI HPCL SUPER SAVER\",\n      \"bank_name\": \"ICICI Bank\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹1,810\",\n      \"annual_rewards_value\": \"₹2,400\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"₹590 (incl. GST)\",\n      \"annual_fee\": \"₹590 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 15,\n          \"brands\": [\n            {\n              \"id\": 48,\n              \"name\": \"HPCL\"\n            },\n            {\n              \"id\": 118,\n              \"name\": \"iShop\"\n            }\n          ],\n          \"card_id\": 51,\n          \"rp_bonus\": \"2000\",\n          \"maximum_days\": \"45\",\n          \"minimum_spend\": \"5000\",\n          \"voucher_bonus\": \"\",\n          \"cash_conversion\": \"0.25\",\n          \"welcome_benefit_tooltip\": null,\n          \"cash_value\": 500\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"fuel\",\n          \"annual_value\": \"₹200\"\n        },\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"icici-hpcl-super-saver-credit-card\",\n      \"rating\": 3.5,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122031_AGB_Mockup.webp1737352128887\"\n    },\n    {\n      \"rank\": 4,\n      \"card_name\": \"SBI OLA Money Credit Card\",\n      \"bank_name\": \"SBI\",\n      \"card_type\": \"VISA\",\n      \"net_annual_savings\": \"₹11\",\n      \"annual_rewards_value\": \"₹600\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"₹589 (incl. GST)\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"fuel\",\n          \"annual_value\": \"₹50\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"all_pharmacy\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"sbi-ola-money-credit-card\",\n      \"rating\": 4.1,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260904_162452990_Mockup_82.png\"\n    },\n    {\n      \"rank\": 5,\n      \"card_name\": \"IDFC FIRST SELECT\",\n      \"bank_name\": \"IDFC\",\n      \"card_type\": \"RuPay\",\n      \"net_annual_savings\": \"₹0\",\n      \"annual_rewards_value\": \"₹0\",\n      \"milestone_benefits\": \"₹0\",\n      \"lounge_value\": \"₹0\",\n      \"joining_fee\": \"Free\",\n      \"annual_fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"welcome_benefits\": [\n        {\n          \"id\": 201,\n          \"brands\": [\n            {\n              \"id\": 111,\n              \"name\": \"Travel and Shop - IDFC Mobile App\"\n            }\n          ],\n          \"card_id\": 8,\n          \"rp_bonus\": \"\",\n          \"maximum_days\": \"30\",\n          \"minimum_spend\": \"5000\",\n          \"voucher_bonus\": \"500\",\n          \"cash_conversion\": \"\",\n          \"welcome_benefit_tooltip\": \"\",\n          \"cash_value\": 500\n        }\n      ],\n      \"voucher\": null,\n      \"lounge_access\": {\n        \"domestic_per_quarter\": 0,\n        \"international_per_quarter\": 0,\n        \"domestic_value_used\": \"₹0\",\n        \"international_value_used\": \"₹0\"\n      },\n      \"top_spend_categories\": [\n        {\n          \"category\": \"flipkart_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"amazon_spends\",\n          \"annual_value\": \"₹0\"\n        },\n        {\n          \"category\": \"grocery_spends_online\",\n          \"annual_value\": \"₹0\"\n        }\n      ],\n      \"card_alias\": \"idfc-first-select-credit-card\",\n      \"rating\": 3,\n      \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_121949_AGB_Mockup-19.webp1736855248245\"\n    }\n  ],\n  \"_format_hint\": \"net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from.\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "total_cards_analyzed": 204,
+      "recommendations": [
+        {
+          "rank": 1,
+          "card_name": "IDFC FIRST Power Credit Card",
+          "bank_name": "IDFC",
+          "card_type": "RuPay",
+          "net_annual_savings": "₹2,100",
+          "annual_rewards_value": "₹2,100",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹235 (incl. GST)",
+          "annual_fee": "Free (waived at ₹50,000/yr spend; ₹235 otherwise)",
+          "annual_fee_waived": true,
+          "welcome_benefits": [
+            {
+              "id": 114,
+              "brands": [],
+              "card_id": 167,
+              "rp_bonus": "",
+              "maximum_days": "60",
+              "minimum_spend": "250",
+              "voucher_bonus": "250",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": null,
+              "cash_value": 250
+            },
+            {
+              "id": 157,
+              "brands": [],
+              "card_id": 167,
+              "rp_bonus": "",
+              "maximum_days": "60",
+              "minimum_spend": "250",
+              "voucher_bonus": "250",
+              "cash_conversion": "1",
+              "welcome_benefit_tooltip": "₹250 worth gift voucher on 1st fuel transaction of ₹250 or above at HPCL fuel station",
+              "cash_value": 250
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "fuel",
+              "annual_value": "₹175"
+            },
+            {
+              "category": "mobile_phone_bills",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "water_bills",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "idfc-first-power-credit-card",
+          "rating": 4,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_130219_BankKaro_20251124_122711241"
+        },
+        {
+          "rank": 2,
+          "card_name": "AXIS INDIAN OIL RUPAY",
+          "bank_name": "Axis",
+          "card_type": "VISA,RuPay",
+          "net_annual_savings": "₹1,810",
+          "annual_rewards_value": "₹2,400",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹590 (incl. GST)",
+          "annual_fee": "₹590 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 7,
+              "brands": [],
+              "card_id": 16,
+              "rp_bonus": "1250",
+              "maximum_days": "30",
+              "minimum_spend": "100",
+              "voucher_bonus": "",
+              "cash_conversion": "0.25",
+              "welcome_benefit_tooltip": "The first fuel transaction performed on the card within the first 30 days of card issuance",
+              "cash_value": 312.5
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "fuel",
+              "annual_value": "₹200"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "axis-indian-oil-rupay-credit-card",
+          "rating": 2,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_121956_BankKaro_20260414_105632796_IDFC_FIRST_Indigo_Credit_Card_-mockup_10.png"
+        },
+        {
+          "rank": 3,
+          "card_name": "ICICI HPCL SUPER SAVER",
+          "bank_name": "ICICI Bank",
+          "card_type": "VISA",
+          "net_annual_savings": "₹1,810",
+          "annual_rewards_value": "₹2,400",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "₹590 (incl. GST)",
+          "annual_fee": "₹590 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 15,
+              "brands": [
+                {
+                  "id": 48,
+                  "name": "HPCL"
+                },
+                {
+                  "id": 118,
+                  "name": "iShop"
+                }
+              ],
+              "card_id": 51,
+              "rp_bonus": "2000",
+              "maximum_days": "45",
+              "minimum_spend": "5000",
+              "voucher_bonus": "",
+              "cash_conversion": "0.25",
+              "welcome_benefit_tooltip": null,
+              "cash_value": 500
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "fuel",
+              "annual_value": "₹200"
+            },
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "icici-hpcl-super-saver-credit-card",
+          "rating": 3.5,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122031_AGB_Mockup.webp1737352128887"
+        },
+        {
+          "rank": 4,
+          "card_name": "SBI OLA Money Credit Card",
+          "bank_name": "SBI",
+          "card_type": "VISA",
+          "net_annual_savings": "₹11",
+          "annual_rewards_value": "₹600",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "₹589 (incl. GST)",
+          "annual_fee_waived": false,
+          "welcome_benefits": [],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "fuel",
+              "annual_value": "₹50"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "all_pharmacy",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "sbi-ola-money-credit-card",
+          "rating": 4.1,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260904_162452990_Mockup_82.png"
+        },
+        {
+          "rank": 5,
+          "card_name": "IDFC FIRST SELECT",
+          "bank_name": "IDFC",
+          "card_type": "RuPay",
+          "net_annual_savings": "₹0",
+          "annual_rewards_value": "₹0",
+          "milestone_benefits": "₹0",
+          "lounge_value": "₹0",
+          "joining_fee": "Free",
+          "annual_fee": "Free",
+          "annual_fee_waived": false,
+          "welcome_benefits": [
+            {
+              "id": 201,
+              "brands": [
+                {
+                  "id": 111,
+                  "name": "Travel and Shop - IDFC Mobile App"
+                }
+              ],
+              "card_id": 8,
+              "rp_bonus": "",
+              "maximum_days": "30",
+              "minimum_spend": "5000",
+              "voucher_bonus": "500",
+              "cash_conversion": "",
+              "welcome_benefit_tooltip": "",
+              "cash_value": 500
+            }
+          ],
+          "voucher": null,
+          "lounge_access": {
+            "domestic_per_quarter": 0,
+            "international_per_quarter": 0,
+            "domestic_value_used": "₹0",
+            "international_value_used": "₹0"
+          },
+          "top_spend_categories": [
+            {
+              "category": "flipkart_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "amazon_spends",
+              "annual_value": "₹0"
+            },
+            {
+              "category": "grocery_spends_online",
+              "annual_value": "₹0"
+            }
+          ],
+          "card_alias": "idfc-first-select-credit-card",
+          "rating": 3,
+          "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_121949_AGB_Mockup-19.webp1736855248245"
+        }
+      ],
+      "_format_hint": "net_annual_savings = annual_rewards + milestone_benefits + lounge_value - annual_fee. Lead with this. top_spend_categories shows where savings come from."
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "wa_profile_amazon_15k",
+  "group": "consistency",
+  "purpose": "",
+  "timestamp": "2026-10-10T18:34:24.923274+00:00",
+  "request": {
+    "tool": "whatsapp_recommend_cards_for_spend_profile",
+    "arguments": {
+      "spend_profile": {
+        "amazon_spends": 15000
+      },
+      "top_n": 5
+    }
+  },
+  "latency_ms": 1824,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"reply_type\": \"recommendation\",\n  \"summary\": \"Based on your spends, HDFC MILLENIA looks strongest with estimated annual value of Rs. 9,000.\",\n  \"cards\": [\n    {\n      \"rank\": 1,\n      \"name\": \"HDFC MILLENIA\",\n      \"alias\": \"hdfc-millenia-credit-card\",\n      \"annual_value\": \"Rs. 9,000\",\n      \"annual_rewards\": \"Rs. 9,000\",\n      \"fee\": \"Free (waived at Rs. 1,00,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"link\": \"https://www.great.cards/cards/hdfc-millenia-credit-card\",\n      \"reason\": \"Best value comes from amazon spends spends.\"\n    },\n    {\n      \"rank\": 2,\n      \"name\": \"ICICI Amazon Pay Credit Card\",\n      \"alias\": \"icici-amazon-pay-credit-card\",\n      \"annual_value\": \"Rs. 9,000\",\n      \"annual_rewards\": \"Rs. 9,000\",\n      \"fee\": \"Free\",\n      \"annual_fee_waived\": false,\n      \"link\": \"https://www.great.cards/cards/icici-amazon-pay-credit-card\",\n      \"reason\": \"Best value comes from amazon spends spends.\"\n    },\n    {\n      \"rank\": 3,\n      \"name\": \"Swiggy Ornge HDFC Bank Credit card \",\n      \"alias\": \"swiggy-ornge-hdfc-credit-card\",\n      \"annual_value\": \"Rs. 9,000\",\n      \"annual_rewards\": \"Rs. 9,000\",\n      \"fee\": \"Free (waived at Rs. 1,50,000/yr spend)\",\n      \"annual_fee_waived\": true,\n      \"link\": \"https://www.great.cards/cards/swiggy-ornge-hdfc-credit-card\",\n      \"reason\": \"Best value comes from amazon spends spends.\"\n    },\n    {\n      \"rank\": 4,\n      \"name\": \"BOB Cashback Credit Card\",\n      \"alias\": \"bob-cashback-credit-card\",\n      \"annual_value\": \"Rs. 8,411\",\n      \"annual_rewards\": \"Rs. 9,000\",\n      \"fee\": \"Rs. 589\",\n      \"annual_fee_waived\": false,\n      \"link\": \"https://www.great.cards/cards/bob-cashback-credit-card\",\n      \"reason\": \"Best value comes from amazon spends spends.\"\n    },\n    {\n      \"rank\": 5,\n      \"name\": \"CRED IndusInd Bank Credit Card\",\n      \"alias\": \"cred-indusind-bank-credit-card\",\n      \"annual_value\": \"Rs. 8,411\",\n      \"annual_rewards\": \"Rs. 9,000\",\n      \"fee\": \"Rs. 589\",\n      \"annual_fee_waived\": false,\n      \"link\": \"https://www.great.cards/cards/cred-indusind-bank-credit-card\",\n      \"reason\": \"Best value comes from amazon spends spends.\"\n    }\n  ],\n  \"next_question\": \"Want me to compare the top 2 cards or check eligibility?\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "reply_type": "recommendation",
+      "summary": "Based on your spends, HDFC MILLENIA looks strongest with estimated annual value of Rs. 9,000.",
+      "cards": [
+        {
+          "rank": 1,
+          "name": "HDFC MILLENIA",
+          "alias": "hdfc-millenia-credit-card",
+          "annual_value": "Rs. 9,000",
+          "annual_rewards": "Rs. 9,000",
+          "fee": "Free (waived at Rs. 1,00,000/yr spend)",
+          "annual_fee_waived": true,
+          "link": "https://www.great.cards/cards/hdfc-millenia-credit-card",
+          "reason": "Best value comes from amazon spends spends."
+        },
+        {
+          "rank": 2,
+          "name": "ICICI Amazon Pay Credit Card",
+          "alias": "icici-amazon-pay-credit-card",
+          "annual_value": "Rs. 9,000",
+          "annual_rewards": "Rs. 9,000",
+          "fee": "Free",
+          "annual_fee_waived": false,
+          "link": "https://www.great.cards/cards/icici-amazon-pay-credit-card",
+          "reason": "Best value comes from amazon spends spends."
+        },
+        {
+          "rank": 3,
+          "name": "Swiggy Ornge HDFC Bank Credit card ",
+          "alias": "swiggy-ornge-hdfc-credit-card",
+          "annual_value": "Rs. 9,000",
+          "annual_rewards": "Rs. 9,000",
+          "fee": "Free (waived at Rs. 1,50,000/yr spend)",
+          "annual_fee_waived": true,
+          "link": "https://www.great.cards/cards/swiggy-ornge-hdfc-credit-card",
+          "reason": "Best value comes from amazon spends spends."
+        },
+        {
+          "rank": 4,
+          "name": "BOB Cashback Credit Card",
+          "alias": "bob-cashback-credit-card",
+          "annual_value": "Rs. 8,411",
+          "annual_rewards": "Rs. 9,000",
+          "fee": "Rs. 589",
+          "annual_fee_waived": false,
+          "link": "https://www.great.cards/cards/bob-cashback-credit-card",
+          "reason": "Best value comes from amazon spends spends."
+        },
+        {
+          "rank": 5,
+          "name": "CRED IndusInd Bank Credit Card",
+          "alias": "cred-indusind-bank-credit-card",
+          "annual_value": "Rs. 8,411",
+          "annual_rewards": "Rs. 9,000",
+          "fee": "Rs. 589",
+          "annual_fee_waived": false,
+          "link": "https://www.great.cards/cards/cred-indusind-bank-credit-card",
+          "reason": "Best value comes from amazon spends spends."
+        }
+      ],
+      "next_question": "Want me to compare the top 2 cards or check eligibility?"
+    }
+  ]
+}

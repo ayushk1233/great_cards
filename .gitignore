@@ -1,0 +1,19 @@
+# Private working docs
+Great_cards_AI_Product_Intern_Assignment.md
+PROGRESS.md
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# OS
+.DS_Store

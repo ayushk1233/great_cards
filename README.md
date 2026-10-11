@@ -46,6 +46,22 @@ Open http://localhost:8501 and try one of the example questions. Answers stream 
 - the **guardrail check result**;
 - a **Tool calls** panel listing each tool the server ran, with its status, time taken and exact arguments. The full raw responses for the evaluation runs are in each run's `results.jsonl`.
 
+The sun/moon button at the top right switches between the light and dark themes, and the choice is remembered.
+
+**Screenshots**
+
+| Start page | Calling the card tools |
+|---|---|
+| ![Start page with example questions](docs/screenshots/home-light.png) | ![Working indicator: one chip per tool call](docs/screenshots/working.png) |
+
+| Answer, light theme | Answer, dark theme |
+|---|---|
+| ![Answer with guardrail badge and tool-call panel](docs/screenshots/answer-light.png) | ![Same answer in the dark theme](docs/screenshots/answer-dark.png) |
+
+![Answer streaming in, with the cursor](docs/screenshots/streaming.png)
+
+*These screenshots replay a real `prompt`-mode answer against the recorded server responses in `discovery/raw/`, so taking them made no live calls. The timings shown are the recorded ones.*
+
 The sidebar switches between guardrail modes:
 
 | Mode | What it does |
@@ -60,7 +76,7 @@ The sidebar switches between guardrail modes:
 pytest -q
 ```
 
-Expected result: 116 passed, 12 xfailed. The xfailed tests are known weaknesses, pinned on purpose.
+Expected result: 125 passed, 12 xfailed. The xfailed tests are known weaknesses, pinned on purpose.
 
 ---
 
@@ -91,6 +107,7 @@ Expected result: 116 passed, 12 xfailed. The xfailed tests are known weaknesses,
 ```
 app/
   ui.py                 Streamlit chat (presentation only)
+  assets/               avatars, stylesheet and the light/dark toggle script
   config.py             settings from .env
   health.py             backend connectivity check
   agent/
@@ -109,6 +126,8 @@ evals/                  the 20 cases (source of truth)
 reports/                every run (unedited) and every write-up
 discovery/              server exploration: findings, raw responses, tool catalogue
 tests/                  offline tests: fake LLM, fake MCP, recorded server data
+docs/screenshots/       UI screenshots used in this README
+.streamlit/config.toml  chat UI theme (light and dark) and toolbar settings
 ```
 
 **Reproducing the evaluation.** Each full run makes about 205 MCP requests, takes about 12 minutes because requests are paced, and costs $0.25–0.50 in OpenRouter usage.

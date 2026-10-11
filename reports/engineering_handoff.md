@@ -173,7 +173,7 @@ Run against staging or a fixture of the card database, **not production**. Case 
 | A12 | `400001, "50k", salaried` | `isError: true` with a message (if 4.3 ships); never `₹NaN` with 0 cards |
 | A13 | **Regression guard:** pincodes `123456`, `000000` | Unchanged from today's behaviour (0 cards). That's a separate finding (E15) and is out of scope here |
 
-**Chatbot regression check after the server ships:** rerun Q15 and Q16 (`python -m app.evaluation.runner --mode prompt --only Q15,Q16`, about 15 MCP requests).
+**Chatbot regression check after the server ships:** rerun Q15 and Q16 (`python -m app.evaluation.runner --mode prompt --only Q15 Q16`, about 15 MCP requests).
 - **Q15:** Regalia Gold should no longer appear in the eligibility rows. The bot should then answer "not on these numbers" from the eligibility tool itself, rather than from its cross-check against the card details.
 - **Q16 T3:** shouldn't list Regalia Gold, and the count should drop.
 

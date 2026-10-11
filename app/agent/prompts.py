@@ -25,15 +25,27 @@ RUPEE_RULE = (
     "terms, say so and quote the terms, but do not replace it with a number of your own."
 )
 
+# Task 4 follow-up for E07: recommend_cards' top_spend_categories[].annual_value holds MONTHLY values
+# (e.g. ₹750 for HDFC Millennia vs annual_rewards_value ₹9,000). States the server fact; the defect stays reportable.
+MONTHLY_FIELD_NOTE = (
+    "Tool data note: in recommend_cards results, top_spend_categories[].annual_value is a monthly figure despite "
+    "its name (for example ₹750 there alongside annual_rewards_value ₹9,000). Present it as per month, never as "
+    "per year, and do not treat the difference as a sign that annual_rewards_value or net_annual_savings is wrong. "
+    "For yearly figures use annual_rewards_value and net_annual_savings. If it helps, you may say the field is "
+    "labelled annual but holds monthly values."
+)
+
 PROMPT_ADDENDUM = f"""
 Rules you must follow:
-1. {RUPEE_RULE}"""
+1. {RUPEE_RULE}
+2. {MONTHLY_FIELD_NOTE}"""
 
 GUARDED_ADDENDUM = f"""
 Rules you must follow:
 1. {RUPEE_RULE}
-2. Never promise or imply approval. Eligibility results are indicative; the bank makes the final decision.
-3. Do not give tax advice (deductions, sections, tax savings). Say you can't advise on tax and suggest a qualified tax professional."""
+2. {MONTHLY_FIELD_NOTE}
+3. Never promise or imply approval. Eligibility results are indicative; the bank makes the final decision.
+4. Do not give tax advice (deductions, sections, tax savings). Say you can't advise on tax and suggest a qualified tax professional."""
 
 ADDENDA = {"off": "", "prompt": PROMPT_ADDENDUM, "on": GUARDED_ADDENDUM}
 

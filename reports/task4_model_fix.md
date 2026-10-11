@@ -124,6 +124,38 @@ Tool output (identical in both runs):
 
 ## 7. What is still open
 
-- **Q07:** one calculated figure remained in T1. A second sample would show whether this is consistent or occasional.
-- **Q09:** whether the rule causes the follow-up questions.
+- **Q07:** one calculated figure remained in T1. ~~A second sample would show whether this is consistent~~ → consistent in 3 of 3 samples (§8).
+- **Q09:** ~~whether the rule causes the follow-up questions~~ → no; 2 of 3 samples answered fully (§8).
 - **Enforcement:** `GUARDRAILS=on` (validator-driven rewrite) is untested. It would have caught nothing extra here, because the only remaining violation (Q07's ₹3,000) is exactly the coincidental-match case the validator misses.
+
+## 8. Follow-up (approved 2026-10-11): second sample + E07 monthly-field note
+
+**Runs:**
+
+| Run | Prompt | Cases | Cost / MCP requests / 429s |
+|---|---|---|---|
+| [`20261011T001642Z_prompt`](20261011T001642Z_prompt/transcripts.md) | RUPEE_RULE only (same as §3 "after") | Q07, Q09 (second sample) | $0.044 / 28 / 0 |
+| [`20261011T001901Z_prompt`](20261011T001901Z_prompt/transcripts.md) | RUPEE_RULE + `MONTHLY_FIELD_NOTE` | Q20, Q07, Q09 (target), Q03 (control) | $0.057 / 47 / 0 |
+
+**The note** ([`app/agent/prompts.py`](../app/agent/prompts.py), `MONTHLY_FIELD_NOTE`): `top_spend_categories[].annual_value` is a monthly figure despite its name. The bot should present it per month, not treat the gap from `annual_rewards_value` as an error, and use `annual_rewards_value` and `net_annual_savings` for yearly figures. It may still say the field is mislabelled, so the server defect stays visible. Added to both `prompt` and `on` modes. Offline test extended; suite: 108 passed, 12 xfailed.
+
+**Manual review (every ₹ figure checked against the raw tool output):**
+
+| Case | Sample 1 (§4, rule only) | Sample 2 (rule only) | With note | Read |
+|---|---|---|---|---|
+| **Q20** | Correct, but "Amazon's annual value as ₹750 … doesn't match ₹9,000 … verify with HDFC" | not run | "Estimated rewards: **₹9,000/year (₹750/month)**". No doubt cast on the ₹9,000. Joining fee still reported as excluded (E06) | **Side effect fixed** |
+| **Q07** T1 | "about ₹3,000, not ₹30,000" (calculated) | "At the stated ₹0.25 per point, that is ₹3,000, not ₹30,000" (calculated) | "12,000 bonus RP (about ₹3,000 at ₹0.25/RP)" (calculated) | **₹3,000 calculation in 3 of 3 samples: consistent, not a one-off** |
+| **Q07** T2 (E07) | n/a | "Amazon ₹40, grocery ₹30, Flipkart ₹20 **a year**" (monthly read as yearly) | "Top categories from the tool (**shown as monthly values, though labelled annual**): Amazon ₹40, groceries ₹30, Flipkart ₹20"; T1 also "groceries ₹600/month" | **E07 misread fixed** |
+| **Q07** E03 | surfaced | surfaced | surfaced (₹30,000 "contradicts the card's terms"; ixigo milestone "overstated", no number given) | still visible |
+| **Q09** | asked 3 questions, no recommendation | full answer, all facts grounded (0% forex, ₹60 LPA, ₹25,000/month) | full answer; also surfaces the lounge defect (E10): "the recommendation tool counted only 4 international visits a quarter, while the card details say unlimited" | **Earlier over-caution was nondeterminism, not the rule** (2 of 3 samples answered) |
+| **Q03** (control) | correct | not run | correct; ₹17,000 flagged by the checker = ₹15,000 + ₹2,000 (user's own amounts; known false positive). The tool returned a different #1 this time (SBI Cashback ₹10,200), and the bot cites it correctly | no regression |
+
+**Other observations:**
+- Q09 used up its 6-call tool budget in both new samples (`hit_max_tool_rounds`), yet still answered. That's a separate efficiency issue, unrelated to the note.
+- Q09's `recommend_cards` call passed only `international_lounge_usage_quarterly`, not the user's overseas spend. The tool's schema has no forex-spend field, so the ranking can't value 0% markup. That's an MCP limitation the bot reports honestly ("the tools don't return one").
+
+**Conclusion:**
+- The E07 note **fixed both of its target behaviours** (Q20 doubting a correct figure; Q07 reading monthly as yearly), with no regression on the control and no server defect hidden.
+- Q07's ₹3,000 is a **stable residual** of the ₹ rule. The model treats "point count × point value from the terms" as quoting rather than calculating.
+
+**Possible next step (needs approval):** a one-line clarification to RUPEE_RULE: "this includes multiplying a point count by a point value". The checker can't catch this case, because "₹3,000" coincidentally appears in the card's fuel text. The regression check therefore stays manual, or uses a Q07 `forbidden_phrases: ["about ₹3,000", "that is ₹3,000"]` expectation (pending approval for questions.json).

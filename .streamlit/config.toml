@@ -1,0 +1,41 @@
+# Chat UI theme. The light palette is the "Financial/Professional" theme from
+# https://github.com/jmedia65/awesome-streamlit-themes (MIT); the dark palette is a matching navy
+# variant. Fonts load from Google Fonts instead of bundled .ttf files. Streamlit follows the
+# viewer's system setting, and the app menu (⋮ > Settings) switches between the two.
+
+[client]
+toolbarMode = "viewer"    # hide developer options (Deploy, rerun, cache); keep the viewer menu
+
+[theme]
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap, sans-serif"
+headingFont = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap, sans-serif"
+codeFont = "'Source Code Pro':https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap, monospace"
+baseRadius = "0.375rem"
+showWidgetBorder = true
+showSidebarBorder = true
+
+[theme.light]
+primaryColor = "#1e3a8a"             # deep navy
+backgroundColor = "#fefefe"
+secondaryBackgroundColor = "#f8fafc"
+textColor = "#1f2937"
+linkColor = "#1e40af"
+borderColor = "#d1d5db"
+codeBackgroundColor = "#f3f4f6"
+
+[theme.light.sidebar]
+backgroundColor = "#f1f5f9"
+secondaryBackgroundColor = "#e5e7eb"
+
+[theme.dark]
+primaryColor = "#60a5fa"             # lighter blue, so buttons and links keep contrast on navy
+backgroundColor = "#0b1220"
+secondaryBackgroundColor = "#131c31"
+textColor = "#e5e7eb"
+linkColor = "#93c5fd"
+borderColor = "#24324f"
+codeBackgroundColor = "#111a2e"
+
+[theme.dark.sidebar]
+backgroundColor = "#0f172a"
+secondaryBackgroundColor = "#1e293b"

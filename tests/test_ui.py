@@ -46,7 +46,10 @@ def test_empty_state_renders(fake_agent):
     fake_agent[0]()
     at = AppTest.from_file(UI, default_timeout=10).run()
     assert not at.exception
-    assert at.title[0].value == "💳 Card Advisor"
+    page_html = " ".join(h.proto.body for h in at.get("html"))
+    assert 'class="ga-hero"' in page_html and "<h1>Card Advisor</h1>" in page_html
+    assert ".ga-hero" in page_html                          # the stylesheet was injected
+    assert 'id="ga-theme-toggle"' in page_html and "stMainMenuItem-theme-" in page_html
     assert at.sidebar.radio[0].value == "prompt"  # starts in the measured fixed configuration
     assert len(at.button) >= 4  # 3 examples + new conversation
 
@@ -62,7 +65,7 @@ def test_turn_shows_answer_trace_and_checks(fake_agent):
     assert built["mode"] == "prompt"
     text = all_text(at)
     assert "HDFC Millenia: ₹9,000 a year" in text
-    assert "✅ Guardrail checks" in text
+    assert "Checks passed" in text and "Guardrail checks: no ungrounded" in text
     assert '{"amazon_spends": 15000}' in text           # arguments shown verbatim
     assert len(at.code) == 1                             # one block per call (its arguments), no raw JSON
     assert "▌" not in text                               # the streaming cursor is gone once done
@@ -78,7 +81,7 @@ def test_flagged_figure_is_reported_not_hidden(fake_agent):
     at.chat_input[0].set_value("I spend 15k a month on Amazon").run()
     text = all_text(at)
     assert "You'd save ₹12,345 a year." in text           # prompt mode: report only, answer kept
-    assert "⚠️ Flagged (report only): unreturned_rupee" in text
+    assert "Flagged (report only)" in text and "unreturned_rupee: ₹12,345" in text
 
 
 def test_example_button_starts_a_turn(fake_agent):
@@ -165,3 +168,18 @@ def test_page_is_locked_while_an_answer_is_generated(monkeypatch):
     at.run()                                                     # the failed turn doesn't leave it locked
     assert not at.chat_input[0].proto.disabled and not at.sidebar.radio[0].proto.disabled
     st.cache_resource.clear()
+
+
+def test_working_indicator_escapes_tool_names():
+    from app.ui import working  # noqa: E402  (importing runs the page in bare mode; harmless)
+    assert "Checking the card tools" in working([])
+    out = working(["recommend_cards", "<img src=x onerror=alert(1)>"])
+    assert '<span class="ga-chip done">recommend_cards</span>' in out
+    assert "<img" not in out and "&lt;img" in out             # a tool name is never raw HTML
+
+
+def test_stylesheet_has_no_less_than_sign():
+    """st.html's sanitiser drops a whole <style> block whose text looks like it holds a tag, so a
+    stray '<' anywhere in the CSS (even in a comment) silently removes all styling."""
+    for name in ("style.css", "theme_toggle.js"):
+        assert "<" not in (Path(UI).parent / "assets" / name).read_text(), name

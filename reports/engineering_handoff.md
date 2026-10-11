@@ -87,10 +87,10 @@ Regalia Gold is row 6 of 15.
 
 | Request (pincode, income, employment) | `eligible_cards_count` | Rows that contradict the card's own floor | Source |
 |---|---|---|---|
-| 400001, ₹6,00,000, salaried | 232 | `hdfc-regalia-gold` (floor 18 LPA) | Q15 baseline and final; `eligibility__mumbai_6L_salaried` |
-| 110001, ₹6,00,000, self_employed | 231 | `hdfc-regalia-gold` (self-employed floor 18 LPA) | Q16 T3 baseline and final; `p2__elig_delhi_self_6L` |
-| 848101, ₹3,00,000, salaried | 200 | `hdfc-regalia-gold` (18 LPA) | `followup__elig_rural_3L_salaried` |
-| 400001, ₹1,00,000, salaried | 201 | `sbi-cashback-credit-card` (3 LPA), `axis-flipkart-credit-card` (3 LPA), `hdfc-millenia-credit-card` (4 LPA) | `followup__elig_mumbai_1L_salaried` |
+| 400001, ₹6,00,000, salaried | 232 | `hdfc-regalia-gold` (floor 18 LPA), `swiggy-blck-hdfc-credit-card` (12 LPA) | Q15 baseline and final; `eligibility__mumbai_6L_salaried` |
+| 110001, ₹6,00,000, self_employed | 231 | `hdfc-regalia-gold` (self-employed floor 18 LPA), `swiggy-blck-hdfc-credit-card` (12 LPA) | Q16 T3 baseline and final; `p2__elig_delhi_self_6L` |
+| 848101, ₹3,00,000, salaried | 200 | `hdfc-regalia-gold` (18 LPA), `swiggy-blck-hdfc-credit-card` (12 LPA) | `followup__elig_rural_3L_salaried` |
+| 400001, ₹1,00,000, salaried | 201 | `sbi-cashback-credit-card` (3 LPA), `axis-flipkart-credit-card` (3 LPA), `hdfc-millenia-credit-card` (4 LPA), `swiggy-blck-hdfc-credit-card` (12 LPA) | `followup__elig_mumbai_1L_salaried` |
 | 400001, ₹25,00,000, salaried | 232 | none visible; same 232 as at ₹6 L | `eligibility__mumbai_25L_salaried` |
 | 110001, ₹0, salaried | 3 | SBM Kredit.Pe, SBM ZET, IDFC FIRST WOW (floors not fetched) | `p2__elig_delhi_income_0` |
 
@@ -100,6 +100,7 @@ The floors used above all come from `get_card_details` responses recorded in `di
 |---|---|---|---|
 | hdfc-regalia-gold | 18 | 18 | 150000 |
 | hdfc-millenia-credit-card | 4 | 6 | 35000 |
+| swiggy-blck-hdfc-credit-card | 12 | 12 | 100000 |
 | sbi-cashback-credit-card | 3 | 3 | 30000 |
 | axis-flipkart-credit-card | 3 | 3.5 | 25000 |
 
@@ -197,7 +198,7 @@ Run against staging or a fixture of the card database, **not production**. Case 
   - (b) LPA is converted with the wrong multiplier (18 × 10,000 = ₹1,80,000).
 
   **I haven't tested which one it is.** A code read settles it immediately. From outside, it would take two boundary calls for Regalia Gold, at ₹1,60,000 (passes under (a), fails under (b)) and ₹1,40,000. I haven't sent these, because production calls need your approval.
-- **Extent.** Only 15 of the 200+ rows are visible per call, and floors were fetched for 12 cards. The full number of wrongly included cards at each income is unknown. Engineering can count them with one query against the card table (test A8).
+- **Extent.** Only 15 of the 200+ rows are visible per call, and floors were fetched for 13 cards. The full number of wrongly included cards at each income is unknown. Engineering can count them with one query against the card table (test A8).
 - **Real-world floors.** The defect is the internal contradiction between `check_eligibility` and `get_card_details`. I haven't checked whether 18 LPA matches HDFC's current published criteria; that's a data-accuracy question for the data owner.
 - **Credit score and age** aren't inputs, so they can't be checked. That's why the response should state "indicative" (4.2), rather than the tool claiming to cover them.
 - **Bot-side mitigation is partial.** In the final run, Q15 passed: the bot fetched the card details and stated the contradiction. Q16 failed: it called 231 cards "eligible" and named Regalia Gold. A prompt rule ("eligibility is indicative; never say 'you're eligible for N cards'") is part of the Task 5 guardrails, still awaiting approval, but it can only soften the wording. It can't remove wrong cards from the list.
@@ -206,7 +207,7 @@ Run against staging or a fixture of the card database, **not production**. Case 
 
 - Tool contract: `discovery/tools.json` (`check_eligibility`).
 - Eligibility responses: `discovery/raw/eligibility__mumbai_6L_salaried.json`, `eligibility__mumbai_25L_salaried.json`, `followup__elig_mumbai_1L_salaried.json`, `followup__elig_rural_3L_salaried.json`, `p2__elig_delhi_self_6L.json`, `p2__elig_delhi_income_0.json`, `followup__elig_income_50k_string.json`.
-- Card floors: `discovery/raw/cards__details_regalia_gold_a.json`, `cards__details_hdfc_millenia.json`, `cards__details_sbi_cashback.json`, `cards__details_axis_flipkart.json`.
+- Card floors: `discovery/raw/cards__details_regalia_gold_a.json`, `cards__details_hdfc_millenia.json`, `cards__details_sbi_cashback.json`, `cards__details_axis_flipkart.json`, `p3__details_swiggy_blck.json` (fetched 2026-10-11, same server version 1.6.1).
 - Bot transcripts: Q15 and Q16 in [`20261010T230941Z_off`](20261010T230941Z_off/transcripts.md) (before) and [`20261011T005033Z_prompt`](20261011T005033Z_prompt/transcripts.md) (after); reviews in each run's `review.md`.
 - Finding write-up: [failures.md § E01](failures.md).
 
@@ -214,7 +215,7 @@ Run against staging or a fixture of the card database, **not production**. Case 
 
 # Part B. Other MCP server and data problems
 
-They're ordered by priority (harm, then how often they come up). Each one lists the problem, what was observed (from the recorded runs, with case IDs), a possible solution, and a test. Calculations marked "reviewer arithmetic" are ours, done to state an expected value; no tool returned them. Full write-ups are in [failures.md](failures.md).
+B1–B12 are ordered by priority (harm, then how often they come up). B13 was found later, in the live UI check; by severity (S2) it belongs with B1–B4. Each one lists the problem, what was observed (from the recorded runs, with case IDs), a possible solution, and a test. Calculations marked "reviewer arithmetic" are ours, done to state an expected value; no tool returned them. Full write-ups are in [failures.md](failures.md).
 
 ## Summary
 
@@ -232,6 +233,7 @@ They're ordered by priority (harm, then how often they come up). Each one lists 
 | B10 | `check_eligibility` input handling: bad pincode or income returns a silent 0; count without the rows (E15) | `check_eligibility` | MCP tool | S3 | Q16 | High |
 | B11 | Resolver gives "high" confidence for a card from another bank | `whatsapp_resolve_card_or_category` | MCP tool | S3 | Q12 | High |
 | B12 | Data quality: empty `bank`, null structured milestones, unrounded amounts, missing `card_type`, usage-based lounge field names | several | Data / contract | S3–S4 | many | High |
+| B13 | Brand-specific food-delivery rates not applied: Swiggy BLCK (10% on Swiggy) and Millenia (5% on Swiggy/Zomato) credited 1% | `recommend_cards` | MCP tool or Data | S2 | Live UI check (after the 20 cases) | High on the symptom |
 
 ## B1. Milestone bonus overvalued (E03)
 
@@ -443,6 +445,48 @@ They're ordered by priority (harm, then how often they come up). Each one lists 
 | `lounge_access` in `recommend_cards` reflects the user's usage, not the card's benefit | Q06: ixigo AU shows `domestic_per_quarter: 0` with no usage entered, though its terms give 8 visits/yr; the bot said "Lounge access: None" | Rename to `lounge_usage_valued`, and add `lounge_allowance` from the card terms |
 | Income floors disagree within one card record | SBI Cashback 3 LPA vs `min_income_monthly` 30,000 (₹3.6 L/yr); Millenia 4 LPA vs 35,000 (₹4.2 L/yr) | Choose one authoritative field (see Part A §4.4) |
 
+
+## B13. Brand-specific food-delivery rates not applied (found in the live UI check)
+
+**Problem.** For `online_food_ordering` (the playbook maps Swiggy and Zomato food orders here), `recommend_cards` credits Swiggy BLCK and HDFC Millenia at 1%. Their own terms in `get_card_details` give 10% and 5% on those orders. Generic online-cashback cards are credited 5% on the same spend, so the brand cards fall in the ranking.
+
+**Observed.** This is a live UI turn after the 20-case runs (prompt mode, server 1.6.1), saved as `discovery/raw/p3__ui_recommend_amz15_swiggy3.json`.
+- **User:** "I spend ₹15,000 a month on Amazon and ₹3,000 on Swiggy. Which card?"
+- **Request:** `recommend_cards{"amazon_spends": 15000, "online_food_ordering": 3000, "response_format": "full", "top_n": 5}`.
+
+| Rank | Card | `online_food_ordering` value (monthly, see B4) | `annual_rewards_value` |
+|---|---|---|---|
+| 1 | SBI Cashback | ₹150 (5% of ₹3,000) | ₹10,800 |
+| 2–3 | BOB Cashback, CRED IndusInd | ₹150 | ₹10,800 |
+| 4 | HDFC Millenia | **₹30** (1%) | ₹9,360 |
+| 5 | HDFC Swiggy BLCK | **₹30** (1%) | ₹9,360 |
+
+- **Swiggy BLCK terms** (`get_card_details`, saved as `discovery/raw/p3__details_swiggy_blck.json`): "Earn 10% cashback on Swiggy services, including food ordering, Instamart, Dineout, and Genie. Cashback is capped at ₹1,500 per billing cycle". Key benefit: "10% Cashback on Swiggy Orders … up to ₹1,500 cashback per month".
+- **The same 10% claim** appears in this card's `key_benefits` in every `check_eligibility` and `list_cards` row recorded.
+- **Millenia terms** (`discovery/raw/cards__details_hdfc_millenia.json`): "5% cashback on leading brands Amazon, Flipkart, Myntra, Tata CLiQ, Swiggy, Zomato, Uber, BookMyShow, Sony LIV, and Cult.fit"; "1% cashback on all other spends".
+- **Effect on the user:** the bot repeated the tool's figure as a conclusion: "The tool shows only about ₹30/month from your Swiggy spend on this card, so it doesn't fit your Swiggy use well despite the name".
+
+**Expected (reviewer arithmetic, using the card terms and the same monthly field):**
+- **Swiggy BLCK:** 10% of ₹3,000 = ₹300/month, under the ₹1,500 cap. Yearly rewards would be (₹750 + ₹300) × 12 = ₹12,600, which ranks it **#1**, above SBI Cashback's ₹10,800.
+- **Millenia:** 5% of ₹3,000 = ₹150/month, so yearly rewards of ₹10,800 (level with SBI Cashback).
+
+**Possible solution:**
+- Map each card's brand-specific merchant rates (Swiggy, Zomato) to the spend keys that cover those brands, not only its generic online rate.
+- Because `online_food_ordering` doesn't say *which* platform, either:
+  - add platform split inputs (`swiggy_spends`, `zomato_spends`); or
+  - apply a brand rate only when the client passes the brand, and return the assumption in the row (for example `assumed_platform`).
+- Audit cards whose `key_benefits` name a brand rate, against how the engine credits them.
+
+**Test:**
+- `{online_food_ordering: 3000}` with Swiggy as the stated platform → Swiggy BLCK's food-delivery value = ₹300/month.
+- Millenia = ₹150/month.
+- No card whose terms give a brand rate on Swiggy or Zomato is credited at its base 1% for that brand's spend.
+
+**Open:**
+- Whether the engine ignores brand rates on this key, or the card's reward rules lack the mapping (output identical either way).
+- Whether HDFC's current terms still give these rates. The defect is the server contradicting itself.
+- One live turn, one new card lookup (Swiggy BLCK) and the recorded Millenia terms: not a full sweep.
+
 ---
 
 # Part C. Needs more investigation before a fix can be specified
@@ -455,5 +499,6 @@ They're ordered by priority (harm, then how often they come up). Each one lists 
 | B2 location (engine vs data) | Identical output either way | The reward rule each card applies to `dining_or_going_out` |
 | E01 mechanism (Part A §7) | Two explanations fit the observed calls | A code read, or two boundary calls (approval needed) |
 | ICICI Emeralde in the ₹6 L self-employed list | Its income floor wasn't fetched | `get_card_details{"card_alias": "icici-emeralde-credit-card"}` (one call, approval needed) |
+| B13 location (engine vs data) and extent | One live turn, two cards checked | The engine's merchant-rate mapping for `online_food_ordering`; a sweep of cards whose `key_benefits` name Swiggy or Zomato |
 | B7 reward side | No rent earn rate in the returned terms | IDFC WOW Black MITC |
 

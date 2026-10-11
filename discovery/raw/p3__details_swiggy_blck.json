@@ -1,0 +1,218 @@
+{
+  "id": "details_swiggy_blck",
+  "group": "p3",
+  "purpose": "B13: Swiggy BLCK 10% benefit vs ₹30/month credited by recommend_cards",
+  "timestamp": "2026-10-11T01:40:37.131713+00:00",
+  "request": {
+    "tool": "get_card_details",
+    "arguments": {
+      "card_alias": "swiggy-blck-hdfc-credit-card"
+    }
+  },
+  "latency_ms": 706,
+  "client_error": null,
+  "is_error": false,
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"name\": \"Swiggy BLCK HDFC Credit Card\",\n  \"nick_name\": \"HDFC Swiggy Blck, credit Card\",\n  \"bank\": \"HDFC\",\n  \"bank_id\": 6,\n  \"card_type\": \"Mastercard\",\n  \"card_network\": null,\n  \"rating\": 4.7,\n  \"user_ratings\": 3843,\n  \"image\": \"https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122002_BankKaro_20260316_12502238_RBL_1.png\",\n  \"priority_tag\": null,\n  \"invite_only\": false,\n  \"employment_type\": \"both\",\n  \"new_to_credit\": true,\n  \"existing_customer_only\": true,\n  \"fees\": {\n    \"joining\": \"₹1,180 (₹1,000 + GST)\",\n    \"joining_note\": null,\n    \"annual\": \"₹1,180 (₹1,000 + GST)\",\n    \"annual_note\": null,\n    \"annual_fee_waiver\": \"The annual fee is waived if you spend ₹2 lakh or more in a year on your card, as per bank policy.\",\n    \"gst_note\": \"All fees include 18% GST.\"\n  },\n  \"fee_schedule\": {\n    \"apr_monthly\": \"3.75%\",\n    \"apr_annual\": \"45.00%\",\n    \"forex_markup\": \"3.50%\",\n    \"forex_markup_note\": \"3.5% forex markup is charged on transactions made in currencies other than INR. Applies to international POS payments and online purchases charged in foreign currency.Examples (3.5%):₹100 → ₹3.5₹1,000 → ₹35₹10,000 → ₹350₹1,00,000 → ₹3,500\",\n    \"atm_withdrawal_fee\": \"2.50%\",\n    \"atm_withdrawal_note\": \"2.5% of the withdrawn amount is charged on cash advances using the credit card (minimum ₹500, if applicable)\",\n    \"railway_surcharge\": \"1%\",\n    \"railway_surcharge_note\": \"1% of the transaction amount + GST will be charged on Railway Ticket Purchases\",\n    \"rent_payment_fee\": \"1%\",\n    \"cash_payment_fee\": \"₹250\",\n    \"cheque_payment_fee\": \"₹100\",\n    \"reward_redemption_fee\": \"₹50\",\n    \"late_payment_slabs\": [\n      {\n        \"outstanding\": \"₹0 - ₹100\",\n        \"fee\": \"₹0\"\n      },\n      {\n        \"outstanding\": \"₹101 - ₹500\",\n        \"fee\": \"₹100\"\n      },\n      {\n        \"outstanding\": \"₹501 - ₹5000\",\n        \"fee\": \"₹500\"\n      },\n      {\n        \"outstanding\": \"₹5001 - ₹10000\",\n        \"fee\": \"₹600\"\n      },\n      {\n        \"outstanding\": \"₹10001 - ₹25000\",\n        \"fee\": \"₹800\"\n      },\n      {\n        \"outstanding\": \"₹25001 - ₹50000\",\n        \"fee\": \"₹1100\"\n      },\n      {\n        \"outstanding\": \"₹50001 - and above\",\n        \"fee\": \"₹1300\"\n      }\n    ],\n    \"late_payment_note\": \"Late Payment charges will be applicable if Minimum Amount Due is not paid by the payment due date\",\n    \"tnc_url\": \"https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/swiggy-blck-hdfc-bank-credit-card/pdf/t-and-cs-swiggy-blck-hdfc-bank-credit-card-04-03-2026.pdf\"\n  },\n  \"rewards\": {\n    \"point_value\": null,\n    \"redemption_options\": \"This is a cashback card, and the earned cashback is adjusted directly in your monthly statement.\",\n    \"redemption_catalogue\": null,\n    \"exclusions\": \"Gift Cards and Vouchers, Wallet Loads, Rent Payment, Government-related Transactions, Fuel Spends, Jewellery Purchases, EMI Spends, Cash Advances, Forex Transactions, Smartpay, Smartbuy Portal\",\n    \"exclusion_spends\": \"Gift Cards and Vouchers, Wallet Loads, Rent Payment, Government-related Transactions, Fuel Spends, Jewellery Purchases, EMI Spends, Cash Advances, Forex Transactions, Smartpay, Smartbuy Portal\"\n  },\n  \"welcome_benefits\": null,\n  \"lounge_summary\": null,\n  \"annual_saving_claimed\": 11676,\n  \"milestone_benefits\": null,\n  \"key_benefits\": [\n    {\n      \"title\": \"10% Cashback on Swiggy Instamart\",\n      \"description\": \"up to ₹1,500 per billing cycle\"\n    },\n    {\n      \"title\": \"10% Cashback on Swiggy Orders\",\n      \"description\": \"on food orders through Swiggy redeemable as statement credit, up to ₹1,500 cashback per month\"\n    },\n    {\n      \"title\": \"5% Cashback on Online Spends\",\n      \"description\": \"across apps like Amazon, Flipkart, Myntra, AJIO, and many more up to ₹1,500 cashback per cycle\"\n    },\n    {\n      \"title\": \"10% Cashback\",\n      \"description\": \"on payments through Swiggy Dineout, capped at ₹1,500 per month\"\n    },\n    {\n      \"title\": \"Complimentary Swiggy One Membership\",\n      \"description\": \"activate your card to enjoy 3 months of free Swiggy One Membership, unlocking exclusive restaurant discounts\"\n    }\n  ],\n  \"tags\": [\n    \"Shopping\",\n    \"Online Food Ordering\",\n    \"Dining\",\n    \"Grocery Shopping\"\n  ],\n  \"detailed_benefits\": [\n    {\n      \"type\": \"all\",\n      \"sub_type\": \"All Card Benefits\",\n      \"details\": \"• Earn 10% cashback on Swiggy services, including food ordering, Instamart, Dineout, and Genie. Cashback is capped at ₹1,500 per billing cycle\\n• Receive 5% cashback on online purchases across eligible Merchant Category Codes, with a maximum of ₹1,500 cashback per billing cycle\\n• Enjoy a free 3-month Swiggy BLCK membership upon card activation, offering benefits like free deliveries and exclusive discounts\\n• Report your lost card immediately to HDFC Bank’s 24-hour call center to avoid liability on any fraudulent transactions\"\n    },\n    {\n      \"type\": \"welcome\",\n      \"sub_type\": \"Welcome Benefits\",\n      \"details\": \"• Activate your card to receive a 3-month free Swiggy BLCK Membership, providing unlimited benefits across restaurants, Instamart, and Genie orders on Swiggy, including free delivery and exclusive discounts\"\n    },\n    {\n      \"type\": \"travel\",\n      \"sub_type\": \"Flight Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"travel\",\n      \"sub_type\": \"Railway Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"travel\",\n      \"sub_type\": \"Cab Benefits\",\n      \"details\": \"• 5% cashback on online cab transactions with Ola, Uber, Zoom\"\n    },\n    {\n      \"type\": \"travel\",\n      \"sub_type\": \"Bus Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"lounge\",\n      \"sub_type\": \"Airport Lounge Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"lounge\",\n      \"sub_type\": \"Railway Lounge Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"movie_ticket\",\n      \"sub_type\": \"Movie Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"dining\",\n      \"sub_type\": \"Dining Benefits\",\n      \"details\": \"• Get complimentary Swiggy BLCK Membership on card activation, unlocking exclusive dining benefits on Swiggy\\n• Enjoy 10% cashback on Swiggy Dineout transactions, capped at ₹1,500 per billing cycle\"\n    },\n    {\n      \"type\": \"fuel\",\n      \"sub_type\": \"Fuel Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"fuel\",\n      \"sub_type\": \"Surcharge Waiver Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"insurance\",\n      \"sub_type\": \"Insurance Benefits\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    },\n    {\n      \"type\": \"bank_offers\",\n      \"sub_type\": \"Bank Offers\",\n      \"details\": \"• This card does not offer any benefits in this category\"\n    }\n  ],\n  \"eligibility\": {\n    \"min_age\": 21,\n    \"max_age\": 60,\n    \"income_salaried_lpa\": 12,\n    \"income_self_emp_lpa\": 12,\n    \"min_income_monthly\": 100000,\n    \"crif_salaried\": 720,\n    \"crif_self_emp\": 720\n  },\n  \"card_alias\": \"swiggy-blck-hdfc-credit-card\"\n}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  },
+  "parsed_content": [
+    {
+      "name": "Swiggy BLCK HDFC Credit Card",
+      "nick_name": "HDFC Swiggy Blck, credit Card",
+      "bank": "HDFC",
+      "bank_id": 6,
+      "card_type": "Mastercard",
+      "card_network": null,
+      "rating": 4.7,
+      "user_ratings": 3843,
+      "image": "https://d2sriifpjiqv0p.cloudfront.net/admin/BankKaro_20260622_122002_BankKaro_20260316_12502238_RBL_1.png",
+      "priority_tag": null,
+      "invite_only": false,
+      "employment_type": "both",
+      "new_to_credit": true,
+      "existing_customer_only": true,
+      "fees": {
+        "joining": "₹1,180 (₹1,000 + GST)",
+        "joining_note": null,
+        "annual": "₹1,180 (₹1,000 + GST)",
+        "annual_note": null,
+        "annual_fee_waiver": "The annual fee is waived if you spend ₹2 lakh or more in a year on your card, as per bank policy.",
+        "gst_note": "All fees include 18% GST."
+      },
+      "fee_schedule": {
+        "apr_monthly": "3.75%",
+        "apr_annual": "45.00%",
+        "forex_markup": "3.50%",
+        "forex_markup_note": "3.5% forex markup is charged on transactions made in currencies other than INR. Applies to international POS payments and online purchases charged in foreign currency.Examples (3.5%):₹100 → ₹3.5₹1,000 → ₹35₹10,000 → ₹350₹1,00,000 → ₹3,500",
+        "atm_withdrawal_fee": "2.50%",
+        "atm_withdrawal_note": "2.5% of the withdrawn amount is charged on cash advances using the credit card (minimum ₹500, if applicable)",
+        "railway_surcharge": "1%",
+        "railway_surcharge_note": "1% of the transaction amount + GST will be charged on Railway Ticket Purchases",
+        "rent_payment_fee": "1%",
+        "cash_payment_fee": "₹250",
+        "cheque_payment_fee": "₹100",
+        "reward_redemption_fee": "₹50",
+        "late_payment_slabs": [
+          {
+            "outstanding": "₹0 - ₹100",
+            "fee": "₹0"
+          },
+          {
+            "outstanding": "₹101 - ₹500",
+            "fee": "₹100"
+          },
+          {
+            "outstanding": "₹501 - ₹5000",
+            "fee": "₹500"
+          },
+          {
+            "outstanding": "₹5001 - ₹10000",
+            "fee": "₹600"
+          },
+          {
+            "outstanding": "₹10001 - ₹25000",
+            "fee": "₹800"
+          },
+          {
+            "outstanding": "₹25001 - ₹50000",
+            "fee": "₹1100"
+          },
+          {
+            "outstanding": "₹50001 - and above",
+            "fee": "₹1300"
+          }
+        ],
+        "late_payment_note": "Late Payment charges will be applicable if Minimum Amount Due is not paid by the payment due date",
+        "tnc_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/swiggy-blck-hdfc-bank-credit-card/pdf/t-and-cs-swiggy-blck-hdfc-bank-credit-card-04-03-2026.pdf"
+      },
+      "rewards": {
+        "point_value": null,
+        "redemption_options": "This is a cashback card, and the earned cashback is adjusted directly in your monthly statement.",
+        "redemption_catalogue": null,
+        "exclusions": "Gift Cards and Vouchers, Wallet Loads, Rent Payment, Government-related Transactions, Fuel Spends, Jewellery Purchases, EMI Spends, Cash Advances, Forex Transactions, Smartpay, Smartbuy Portal",
+        "exclusion_spends": "Gift Cards and Vouchers, Wallet Loads, Rent Payment, Government-related Transactions, Fuel Spends, Jewellery Purchases, EMI Spends, Cash Advances, Forex Transactions, Smartpay, Smartbuy Portal"
+      },
+      "welcome_benefits": null,
+      "lounge_summary": null,
+      "annual_saving_claimed": 11676,
+      "milestone_benefits": null,
+      "key_benefits": [
+        {
+          "title": "10% Cashback on Swiggy Instamart",
+          "description": "up to ₹1,500 per billing cycle"
+        },
+        {
+          "title": "10% Cashback on Swiggy Orders",
+          "description": "on food orders through Swiggy redeemable as statement credit, up to ₹1,500 cashback per month"
+        },
+        {
+          "title": "5% Cashback on Online Spends",
+          "description": "across apps like Amazon, Flipkart, Myntra, AJIO, and many more up to ₹1,500 cashback per cycle"
+        },
+        {
+          "title": "10% Cashback",
+          "description": "on payments through Swiggy Dineout, capped at ₹1,500 per month"
+        },
+        {
+          "title": "Complimentary Swiggy One Membership",
+          "description": "activate your card to enjoy 3 months of free Swiggy One Membership, unlocking exclusive restaurant discounts"
+        }
+      ],
+      "tags": [
+        "Shopping",
+        "Online Food Ordering",
+        "Dining",
+        "Grocery Shopping"
+      ],
+      "detailed_benefits": [
+        {
+          "type": "all",
+          "sub_type": "All Card Benefits",
+          "details": "• Earn 10% cashback on Swiggy services, including food ordering, Instamart, Dineout, and Genie. Cashback is capped at ₹1,500 per billing cycle\n• Receive 5% cashback on online purchases across eligible Merchant Category Codes, with a maximum of ₹1,500 cashback per billing cycle\n• Enjoy a free 3-month Swiggy BLCK membership upon card activation, offering benefits like free deliveries and exclusive discounts\n• Report your lost card immediately to HDFC Bank’s 24-hour call center to avoid liability on any fraudulent transactions"
+        },
+        {
+          "type": "welcome",
+          "sub_type": "Welcome Benefits",
+          "details": "• Activate your card to receive a 3-month free Swiggy BLCK Membership, providing unlimited benefits across restaurants, Instamart, and Genie orders on Swiggy, including free delivery and exclusive discounts"
+        },
+        {
+          "type": "travel",
+          "sub_type": "Flight Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "travel",
+          "sub_type": "Railway Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "travel",
+          "sub_type": "Cab Benefits",
+          "details": "• 5% cashback on online cab transactions with Ola, Uber, Zoom"
+        },
+        {
+          "type": "travel",
+          "sub_type": "Bus Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "lounge",
+          "sub_type": "Airport Lounge Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "lounge",
+          "sub_type": "Railway Lounge Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "movie_ticket",
+          "sub_type": "Movie Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "dining",
+          "sub_type": "Dining Benefits",
+          "details": "• Get complimentary Swiggy BLCK Membership on card activation, unlocking exclusive dining benefits on Swiggy\n• Enjoy 10% cashback on Swiggy Dineout transactions, capped at ₹1,500 per billing cycle"
+        },
+        {
+          "type": "fuel",
+          "sub_type": "Fuel Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "fuel",
+          "sub_type": "Surcharge Waiver Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "insurance",
+          "sub_type": "Insurance Benefits",
+          "details": "• This card does not offer any benefits in this category"
+        },
+        {
+          "type": "bank_offers",
+          "sub_type": "Bank Offers",
+          "details": "• This card does not offer any benefits in this category"
+        }
+      ],
+      "eligibility": {
+        "min_age": 21,
+        "max_age": 60,
+        "income_salaried_lpa": 12,
+        "income_self_emp_lpa": 12,
+        "min_income_monthly": 100000,
+        "crif_salaried": 720,
+        "crif_self_emp": 720
+      },
+      "card_alias": "swiggy-blck-hdfc-credit-card"
+    }
+  ]
+}

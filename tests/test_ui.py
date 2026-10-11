@@ -63,7 +63,9 @@ def test_turn_shows_answer_trace_and_checks(fake_agent):
     text = all_text(at)
     assert "HDFC Millenia: ₹9,000 a year" in text
     assert "✅ Guardrail checks" in text
-    assert '"amazon_spends": 15000' in text            # arguments shown verbatim
+    assert '{"amazon_spends": 15000}' in text           # arguments shown verbatim
+    assert len(at.code) == 1                             # one block per call (its arguments), no raw JSON
+    assert "▌" not in text                               # the streaming cursor is gone once done
     assert at.expander[0].label == "Tool calls (1 sent to the server)"
     assert "1 answers · 1 tool calls" in text            # sidebar counters updated
 
@@ -125,3 +127,41 @@ def test_script_imports_real_mcp_sdk_when_run_from_app_dir():
                        cwd=Path(UI).parent)
     assert r.returncode == 0, r.stderr[-2000:]
     assert "ImportError" not in r.stderr
+
+
+def test_calls_not_sent_are_left_out_of_the_panel(fake_agent):
+    install, _ = fake_agent
+    mcp = install(LlmReply("", [call("recommend_cards", {"amazon_spends": 15000}), call("not_a_tool", {}, "c2")]),
+                  LlmReply("HDFC Millenia: ₹9,000 a year."))
+    at = AppTest.from_file(UI, default_timeout=10).run()
+    at.chat_input[0].set_value("I spend 15k a month on Amazon").run()
+    assert not at.exception
+    assert mcp.calls == [("recommend_cards", {"amazon_spends": 15000})]
+    assert at.expander[0].label == "Tool calls (1 sent to the server)"
+    text = all_text(at)
+    assert "not_a_tool" not in text and "1 more call(s) were not sent" in text
+
+
+def test_page_is_locked_while_an_answer_is_generated(monkeypatch):
+    """A turn that raises freezes the run mid-answer, so the page can be inspected in its busy state."""
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test-key")
+    st.cache_resource.clear()
+
+    class Exploding:
+        def run_turn(self, history, prompt, on_event=None):
+            raise RuntimeError("stop mid-answer")
+
+    monkeypatch.setattr(orchestrator, "build_agent", lambda s, guardrails=None, limiter=None: Exploding())
+    at = AppTest.from_file(UI, default_timeout=10).run()
+    at.chat_input[0].set_value("hi").run()
+
+    assert at.exception and "stop mid-answer" in at.exception[0].message
+    assert at.chat_input[0].proto.disabled
+    assert at.sidebar.radio[0].proto.disabled
+    assert at.sidebar.button[0].proto.disabled                 # New conversation
+    assert not [b for b in at.button if b.key and b.key.startswith("example_")]
+    assert [m.value for m in at.markdown if m.value == "hi"]     # the question stays on the page
+
+    at.run()                                                     # the failed turn doesn't leave it locked
+    assert not at.chat_input[0].proto.disabled and not at.sidebar.radio[0].proto.disabled
+    st.cache_resource.clear()

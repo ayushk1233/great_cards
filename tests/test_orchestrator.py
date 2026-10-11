@@ -24,11 +24,14 @@ class FakeLlm:
     def __init__(self, replies):
         self.replies, self.seen = list(replies), []
 
-    def chat(self, messages, tools=None):
-        self.seen.append({"messages": messages, "tools": tools})
+    def chat(self, messages, tools=None, on_text=None):
+        self.seen.append({"messages": messages, "tools": tools, "streamed": on_text is not None})
         r = self.replies.pop(0)
         if isinstance(r, Exception):
             raise r
+        if on_text and r.text:  # stream word by word, like the real client's text chunks
+            for i, piece in enumerate(r.text.split(" ")):
+                on_text(piece if i == 0 else " " + piece)
         return r
 
 
@@ -286,3 +289,101 @@ def test_config_accepts_guardrail_modes(monkeypatch):
     monkeypatch.setenv("GUARDRAILS", "enforce")
     with pytest.raises(ConfigError):
         load_settings(require_key=False)
+
+
+def run_with_events(guardrails, live_catalog, amazon_result, *replies):
+    mcp = FakeMcp(live_catalog, {"recommend_cards": amazon_result})
+    llm = FakeLlm(list(replies))
+    events = []
+    r = make(llm, mcp, guardrails=guardrails).run_turn([], "I spend 15k a month on Amazon", on_event=events.append)
+    return r, events, llm
+
+
+def test_streaming_events_build_the_answer(live_catalog, amazon_result):
+    answer = "HDFC Millenia: ₹9,000 a year, joining fee ₹1,180."
+    r, events, llm = run_with_events(
+        "prompt", live_catalog, amazon_result,
+        LlmReply("Let me check.", [call("recommend_cards", {"amazon_spends": 15000})]),
+        LlmReply(answer))
+    kinds = [e[0] for e in events]
+    assert kinds[:2] == ["text", "text"] and "discard" in kinds  # preamble streamed, then dropped
+    after = events[kinds.index("discard") + 1:]
+    assert after[0] == ("tool_call", "recommend_cards")
+    assert "".join(e[1] for e in after if e[0] == "text") == answer == r.answer
+    assert all(seen["streamed"] for seen in llm.seen)
+
+
+def test_enforced_mode_never_streams_text(live_catalog, amazon_result):
+    r, events, llm = run_with_events(
+        "on", live_catalog, amazon_result,
+        LlmReply("", [call("recommend_cards", {"amazon_spends": 15000})]),
+        LlmReply("You'd save ₹12,345 a year."),         # fails the ₹ check -> rewritten
+        LlmReply("HDFC Millenia: ₹9,000 a year."))
+    assert r.regenerated and r.answer == "HDFC Millenia: ₹9,000 a year."
+    assert events == [("tool_call", "recommend_cards")]  # progress only; no unchecked text shown
+    assert not any(seen["streamed"] for seen in llm.seen)
+
+
+def test_no_callback_means_no_streaming(live_catalog, amazon_result):
+    mcp = FakeMcp(live_catalog, {"recommend_cards": amazon_result})
+    llm = FakeLlm([LlmReply("Tell me your spends.")])
+    make(llm, mcp, guardrails="prompt").run_turn([], "hi")  # the eval runner's path
+    assert llm.seen[0]["streamed"] is False
+
+
+class _Stream:
+    def __init__(self, chunks):
+        self.chunks = chunks
+
+    def __enter__(self):
+        return iter(self.chunks)
+
+    def __exit__(self, *a):
+        return None
+
+
+def _chunk(content=None, tool_calls=None, finish=None, usage=None, error=None):
+    from types import SimpleNamespace as NS
+    choices = [] if usage else [NS(delta=NS(content=content, tool_calls=tool_calls), finish_reason=finish)]
+    return NS(error=error, model="fake/model", usage=usage, choices=choices)
+
+
+def _openrouter_llm(chunks, sent):
+    from types import SimpleNamespace as NS
+    from app.agent.llm import OpenRouterLlm
+    llm = OpenRouterLlm.__new__(OpenRouterLlm)
+    llm.settings = settings()
+
+    def send(**kw):
+        sent.update(kw)
+        return _Stream(chunks)
+
+    llm._client = NS(chat=NS(send=send))
+    return llm
+
+
+def test_stream_assembles_text_tool_calls_and_usage():
+    from types import SimpleNamespace as NS
+    usage = NS(model_dump=lambda exclude_none: {"prompt_tokens": 10, "cost": 0.001})
+    tc = lambda i, **kw: NS(index=i, id=kw.get("id"), function=NS(name=kw.get("name"), arguments=kw.get("args")))
+    chunks = [_chunk("Let me "), _chunk("check."),
+              _chunk(tool_calls=[tc(0, id="c1", name="recommend_cards", args='{"amazon_')]),
+              _chunk(tool_calls=[tc(0, args='spends": 15000}')]),
+              _chunk(tool_calls=[tc(1, id="c2", name="list_cards")], finish="tool_calls"),
+              _chunk(usage=usage)]
+    sent, deltas = {}, []
+    reply = _openrouter_llm(chunks, sent).chat([{"role": "user", "content": "hi"}], [{"type": "function"}],
+                                               on_text=deltas.append)
+    assert sent["stream"] is True and sent["stream_options"] == {"include_usage": True}
+    assert deltas == ["Let me ", "check."] and reply.text == "Let me check."
+    assert reply.tool_calls == [
+        {"id": "c1", "type": "function", "function": {"name": "recommend_cards", "arguments": '{"amazon_spends": 15000}'}},
+        {"id": "c2", "type": "function", "function": {"name": "list_cards", "arguments": "{}"}}]
+    assert reply.finish_reason == "tool_calls" and reply.usage == {"prompt_tokens": 10, "cost": 0.001}
+
+
+def test_stream_error_chunk_raises_llm_error():
+    from types import SimpleNamespace as NS
+    llm = _openrouter_llm([_chunk("Hi"), _chunk(error=NS(code=502, message="upstream died"))], {})
+    with pytest.raises(LlmError, match="upstream died"):
+        llm.chat([{"role": "user", "content": "hi"}], on_text=lambda d: None)

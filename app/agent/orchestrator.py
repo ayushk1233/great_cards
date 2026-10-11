@@ -1,7 +1,13 @@
 """One chat turn: LLM <-> MCP tool loop, then validation.
 
-run_turn(history, user_msg) -> TurnResult. history holds prior role dicts (including tool
-messages), so follow-ups can reuse earlier tool results without re-calling the server.
+run_turn(history, user_msg, on_event=None) -> TurnResult. history holds prior role dicts (including
+tool messages), so follow-ups can reuse earlier tool results without re-calling the server.
+
+on_event (optional, called from a worker thread) gets progress for a live UI:
+  ("tool_call", name)  a tool call is about to be sent to the server
+  ("text", delta)      answer text as it streams (guardrails off/prompt only: under "on" an answer
+                       may still be rewritten, so nothing is shown before it passes the checks)
+  ("discard",)         the text streamed so far was a preamble to tool calls, not the answer
 """
 
 import asyncio
@@ -81,24 +87,27 @@ class Agent:
         self.prime_catalog(tools)
         return tools
 
-    def run_turn(self, history: list[dict], user_msg: str) -> TurnResult:
-        return asyncio.run(self.arun_turn(history, user_msg))
+    def run_turn(self, history: list[dict], user_msg: str, on_event: Callable | None = None) -> TurnResult:
+        return asyncio.run(self.arun_turn(history, user_msg, on_event))
 
-    async def _chat(self, messages, tools=None) -> LlmReply:
+    async def _chat(self, messages, tools=None, on_text=None) -> LlmReply:
         # the SDK call is blocking; keep the MCP session's event loop free while we wait
-        reply = await asyncio.to_thread(self.llm.chat, messages, tools)
+        if on_text is None:
+            reply = await asyncio.to_thread(self.llm.chat, messages, tools)
+        else:
+            reply = await asyncio.to_thread(self.llm.chat, messages, tools, on_text)
         u = reply.usage or {}
         self._usage["llm_calls"] += 1
         for k in ("prompt_tokens", "completion_tokens", "cost"):
             self._usage[k] += u.get(k) or 0
         return reply
 
-    async def arun_turn(self, history: list[dict], user_msg: str) -> TurnResult:
+    async def arun_turn(self, history: list[dict], user_msg: str, on_event: Callable | None = None) -> TurnResult:
         started = time.perf_counter()
         self._usage = {"llm_calls": 0, "prompt_tokens": 0, "completion_tokens": 0, "cost": 0.0}
         trace: list[TraceEntry] = []  # outside _turn so a timed-out turn still reports what ran
         try:
-            res = await asyncio.wait_for(self._turn(history, user_msg, trace), self.settings.turn_deadline_s)
+            res = await asyncio.wait_for(self._turn(history, user_msg, trace, on_event), self.settings.turn_deadline_s)
         except asyncio.TimeoutError:
             res = TurnResult(prompts.TURN_TIMEOUT, trace=list(trace), error="turn_timeout",
                              error_detail=f"turn exceeded {self.settings.turn_deadline_s:.0f} s", history=list(history))
@@ -106,7 +115,8 @@ class Agent:
         res.usage = dict(self._usage)
         return res
 
-    async def _turn(self, history: list[dict], user_msg: str, trace: list[TraceEntry]) -> TurnResult:
+    async def _turn(self, history: list[dict], user_msg: str, trace: list[TraceEntry],
+                    on_event: Callable | None = None) -> TurnResult:
         s = self.settings
         convo = list(history) + [{"role": "user", "content": user_msg}]
         system = {"role": "system", "content": prompts.system_prompt(s.guardrails)}
@@ -133,7 +143,7 @@ class Agent:
             # 2. the tool loop: call_tool never raises (it returns ToolResult), so anything that
             # escapes here is the LLM or a bug in our code, never "the server is down"
             try:
-                result = await self._loop(mcp, system, convo, specs, trace)
+                result = await self._loop(mcp, system, convo, specs, trace, on_event)
             except LlmError as e:
                 return TurnResult(prompts.LLM_UNAVAILABLE, trace=list(trace), error="llm_error",
                                   error_detail=str(e), history=list(history))
@@ -149,23 +159,29 @@ class Agent:
             except Exception:
                 pass
 
-    async def _loop(self, mcp, system, convo, specs, trace) -> TurnResult:
+    async def _loop(self, mcp, system, convo, specs, trace, on_event=None) -> TurnResult:
         s = self.settings
+        emit = (lambda *ev: on_event(ev)) if on_event else (lambda *ev: None)  # one tuple per event
+        on_text = (lambda delta: emit("text", delta)) if on_event and s.guardrails != "on" else None
         rounds, hit_max = 0, False
         while True:
             if rounds >= s.max_tool_rounds:
                 hit_max = True
-                reply = await self._chat([system] + convo + [{"role": "user", "content": prompts.MAX_ROUNDS_NOTE}])
+                reply = await self._chat([system] + convo + [{"role": "user", "content": prompts.MAX_ROUNDS_NOTE}],
+                                         on_text=on_text)
                 break
-            reply = await self._chat([system] + convo, specs)
+            reply = await self._chat([system] + convo, specs, on_text=on_text)
             if not reply.tool_calls:
                 break
+            if on_text and reply.text:
+                emit("discard")
             rounds += 1
             convo.append(reply.as_message())
             for call in reply.tool_calls:  # sequential on purpose: production server, no parallel load
                 if sum(1 for t in trace if t.result.error_kind not in _NOT_SENT) >= s.max_tool_calls_per_turn:
                     convo.append(self._refuse_call(call, rounds, trace))
                 else:
+                    emit("tool_call", call["function"]["name"])
                     convo.append(await self._run_call(mcp, call, rounds, trace))
 
         answer = reply.text.strip()

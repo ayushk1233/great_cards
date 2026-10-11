@@ -2,12 +2,15 @@
 
     streamlit run app/ui.py
 
-Each answer shows the exact tool calls (arguments + raw server JSON) and the guardrail
-report, so any figure can be traced back to the tool output that produced it.
+Answers stream in as they are written (guardrail modes off and prompt; under "on" an answer is
+shown only once it has passed the checks). Each answer lists the tools the server ran, with
+their arguments, and the guardrail report.
 """
 
 import json
+import queue
 import sys
+import threading
 from pathlib import Path
 
 # `streamlit run app/ui.py` puts app/ on sys.path, where app/mcp would shadow the MCP SDK's `mcp`
@@ -31,7 +34,6 @@ EXAMPLES = [
     "I'm salaried, ₹12 lakh a year, pincode 560001. Which cards can I get?",
     "Compare HDFC Millenia and SBI Cashback for ₹20,000 a month of online shopping.",
 ]
-RAW_PREVIEW_CHARS = 20_000  # tool payloads can be 40k+ chars (the advisor playbook)
 
 
 @st.cache_resource(show_spinner=False)
@@ -49,6 +51,7 @@ def init_state() -> None:
     st.session_state.setdefault("history", [])   # what the model sees next turn (includes tool messages)
     st.session_state.setdefault("usage", {"turns": 0, "cost": 0.0, "tool_calls": 0})
     st.session_state.setdefault("server_info", {})
+    st.session_state.setdefault("pending", None)  # {"prompt", "mode"} while an answer is being generated
 
 
 def reset() -> None:
@@ -57,22 +60,21 @@ def reset() -> None:
 
 
 def render_trace(turn: dict) -> None:
-    trace = turn["trace"]
-    sent = [t for t in trace if t["sent"]]
-    label = f"Tool calls ({len(sent)} sent to the server)" if trace else "Tool calls (none)"
+    """Only the calls the server actually ran: name, status, time and arguments (no raw JSON)."""
+    sent = [t for t in turn["trace"] if t["sent"]]
+    not_sent = len(turn["trace"]) - len(sent)
+    label = f"Tool calls ({len(sent)} sent to the server)" if sent else "Tool calls (none)"
     with st.expander(label):
-        if not trace:
+        if not sent:
             st.caption("No tool was called for this answer.")
-        for i, t in enumerate(trace, 1):
+        for i, t in enumerate(sent, 1):
             status = "ok" if t["ok"] else f"{t['error_kind']}"
             st.markdown(f"**{i}. `{t['tool']}`** · {status} · {t['latency_ms']} ms")
-            st.caption("Arguments")
-            st.code(json.dumps(t["arguments"], ensure_ascii=False, indent=2), language="json")
-            st.caption("Raw result" if t["ok"] else "Error")
-            body = t["raw"] or t["error_msg"] or ""
-            if len(body) > RAW_PREVIEW_CHARS:
-                body = body[:RAW_PREVIEW_CHARS] + f"\n… truncated for display ({len(t['raw']):,} chars in total)"
-            st.code(body, language="json" if t["ok"] else None)
+            st.code(json.dumps(t["arguments"], ensure_ascii=False), language="json")
+            if not t["ok"] and t["error_msg"]:
+                st.caption(t["error_msg"][:300])
+        if not_sent:
+            st.caption(f"{not_sent} more call(s) were not sent: over the per-answer limit or invalid.")
 
 
 def render_checks(turn: dict, mode: str) -> None:
@@ -106,7 +108,7 @@ def to_view(result) -> dict:
         "trace": [{
             "tool": t.tool, "arguments": t.arguments, "ok": t.result.ok,
             "error_kind": t.result.error_kind, "error_msg": t.result.error_msg,
-            "raw": t.result.raw_text, "latency_ms": t.result.latency_ms,
+            "latency_ms": t.result.latency_ms,
             "sent": t.result.error_kind not in orchestrator._NOT_SENT,
         } for t in result.trace],
         "violations": [{"rule": v.rule, "snippet": v.snippet} for v in result.validation.violations],
@@ -117,12 +119,47 @@ def to_view(result) -> dict:
     }
 
 
-def sidebar(settings) -> str:
+def stream_turn(agent, history: list[dict], prompt: str):
+    """Run the turn in a worker thread and draw its events as they arrive. Only this (script)
+    thread touches Streamlit; the worker just puts events on a queue."""
+    events: queue.Queue = queue.Queue()
+    out: dict = {}
+
+    def work():
+        try:
+            out["result"] = agent.run_turn(history, prompt, on_event=events.put)
+        except BaseException as e:  # re-raised below, on the script thread
+            out["error"] = e
+        finally:
+            events.put(None)
+
+    threading.Thread(target=work, daemon=True).start()
+    status, body = st.empty(), st.empty()
+    status.caption("⏳ Checking the card tools…")
+    text = ""
+    while (ev := events.get()) is not None:
+        if ev[0] == "tool_call":
+            status.caption(f"⏳ Calling `{ev[1]}`…")
+        elif ev[0] == "text":
+            text += ev[1]
+            status.empty()
+            body.markdown(md(text) + " ▌")
+        elif ev[0] == "discard":
+            text = ""
+            body.empty()
+    if "error" in out:
+        raise out["error"]
+    status.empty()
+    body.markdown(md(out["result"].answer))  # the final answer replaces the streamed draft
+    return out["result"]
+
+
+def sidebar(settings, busy: bool) -> str:
     with st.sidebar:
         st.header("Settings")
         # starts in "prompt", the measured fixed configuration; GUARDRAILS in .env is for the eval runner
-        mode = st.radio("Guardrail mode", list(MODES), index=0, captions=list(MODES.values()))
-        if st.button("New conversation", width="stretch"):
+        mode = st.radio("Guardrail mode", list(MODES), index=0, captions=list(MODES.values()), disabled=busy)
+        if st.button("New conversation", width="stretch", disabled=busy):
             reset()
             st.rerun()
         st.divider()
@@ -147,11 +184,19 @@ def main() -> None:
         st.stop()
 
     init_state()
-    mode = sidebar(settings)
+    # A question is answered in two runs: the run that receives it stores it and reruns at once, and the
+    # next run draws every widget disabled and then answers. Clicking a widget mid-answer would stop the
+    # run and lose the answer, so nothing on the page is clickable until it's done.
+    pending = st.session_state.pending
+    busy = pending is not None
+    mode = sidebar(settings, busy)
 
     st.title("💳 Card Advisor")
     st.caption("Answers come from Great.cards card tools. Figures are estimates, eligibility is indicative and "
                "the bank makes the final decision. This assistant doesn't give tax advice.")
+    # One fixed slot for the examples, so they are replaced at once instead of lingering faded (and
+    # clickable) while the next run is still going
+    examples = st.empty()
 
     for msg in st.session_state.messages:
         with st.chat_message(msg["role"]):
@@ -160,25 +205,30 @@ def main() -> None:
                 render_checks(msg["turn"], msg["mode"])
                 render_trace(msg["turn"])
 
-    prompt = st.chat_input("Ask about credit cards, e.g. your monthly spends")
-    if not st.session_state.messages and not prompt:
-        st.markdown("**Try asking:**")
-        for i, example in enumerate(EXAMPLES):
-            if st.button(example, key=f"example_{i}"):
-                prompt = example
-    if not prompt:
+    prompt = st.chat_input("Ask about credit cards, e.g. your monthly spends", disabled=busy)
+    if not busy and not st.session_state.messages and not prompt:
+        with examples.container():
+            st.markdown("**Try asking:**")
+            for i, example in enumerate(EXAMPLES):
+                if st.button(example, key=f"example_{i}"):
+                    prompt = example
+    if prompt and not busy:
+        examples.empty()
+        st.session_state.messages.append({"role": "user", "content": prompt})
+        st.session_state.pending = {"prompt": prompt, "mode": mode}
+        st.rerun()
+    if not busy:
         return
 
-    st.session_state.messages.append({"role": "user", "content": prompt})
-    with st.chat_message("user"):
-        st.markdown(md(prompt))
-    with st.chat_message("assistant"):
-        with st.spinner("Checking the card tools…"):
-            result = get_agent(mode).run_turn(st.session_state.history, prompt)
-        turn = to_view(result)
-        st.markdown(md(result.answer))
-        render_checks(turn, mode)
-        render_trace(turn)
+    prompt, mode = pending["prompt"], pending["mode"]
+    try:
+        with st.chat_message("assistant"):
+            result = stream_turn(get_agent(mode), st.session_state.history, prompt)
+            turn = to_view(result)
+            render_checks(turn, mode)
+            render_trace(turn)
+    finally:
+        st.session_state.pending = None  # never leave the page locked, even if the turn raised
 
     st.session_state.history = result.history
     st.session_state.messages.append({"role": "assistant", "content": result.answer, "turn": turn, "mode": mode})

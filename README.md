@@ -42,9 +42,9 @@ python -m app.health
 streamlit run app/ui.py
 ```
 
-Open http://localhost:8501 and try one of the example questions. Under each answer you'll see:
+Open http://localhost:8501 and try one of the example questions. Answers stream in as they're written (in `off` and `prompt` mode; under `on` an answer appears only after it passes the checks). Under each answer you'll see:
 - the **guardrail check result**;
-- a **Tool calls** panel showing the exact arguments and the raw server response, so every figure can be traced back to its source.
+- a **Tool calls** panel listing each tool the server ran, with its status, time taken and exact arguments. The full raw responses for the evaluation runs are in each run's `results.jsonl`.
 
 The sidebar switches between guardrail modes:
 

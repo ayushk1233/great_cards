@@ -77,7 +77,7 @@ Expected result: 116 passed, 12 xfailed. The xfailed tests are known weaknesses,
 | 3. One-page note to the product owner | [reports/note_to_product_owner.md](reports/note_to_product_owner.md) |
 | Unedited chatbot transcripts, before | [reports/20261010T230941Z_off/transcripts.md](reports/20261010T230941Z_off/transcripts.md) · [review](reports/20261010T230941Z_off/review.md) |
 | Unedited chatbot transcripts, after | [reports/20261011T005033Z_prompt/transcripts.md](reports/20261011T005033Z_prompt/transcripts.md) · [review](reports/20261011T005033Z_prompt/review.md) |
-| 4. AI chat transcripts (how I worked with AI) | *Links to be added* |
+| 4. AI chat transcripts (how I worked with AI) | [ai_transcript/README.md](ai_transcript/README.md): the full conversation with Claude (Claude Code), my messages and Claude's replies verbatim |
 
 **Supporting evidence:**
 - [discovery/FINDINGS.md](discovery/FINDINGS.md): what the MCP server actually does, verified by hand before the chatbot was built.

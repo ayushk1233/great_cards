@@ -15,7 +15,7 @@ Keep answers short and clear."""
 # asks for "your savings cover this in [Z] months", so the rule has to override tool/context text.
 RUPEE_RULE = (
     "₹ figures: only show a ₹ amount that appears in a tool result in this conversation, or the user's own "
-    "amount (you may restate the user's amount per month or per year, e.g. ₹15,000/month = ₹1.8 lakh/year). "
+    "amount (you may restate the user's amount per month or per year, e.g. ₹12,000/month = ₹1.44 lakh/year). "
     "Do not calculate any other ₹ figure yourself: no totals, differences, net-after-fee amounts, caps applied "
     "to the user's spend, break-even or payback periods, or 'corrected' values. This includes converting a point "
     "count into rupees with a point value (for example 5,000 points at ₹0.50 each): quote the points and the point "
@@ -28,26 +28,44 @@ RUPEE_RULE = (
 )
 
 # Task 4 follow-up for E07: recommend_cards' top_spend_categories[].annual_value holds MONTHLY values
-# (e.g. ₹750 for HDFC Millennia vs annual_rewards_value ₹9,000). States the server fact; the defect stays reportable.
+# (seen in every recorded output, e.g. category ₹750 vs annual_rewards_value ₹9,000). Example in the prompt uses
+# neutral numbers so no eval case's figures are taught. States the server fact; the defect stays reportable.
 MONTHLY_FIELD_NOTE = (
     "Tool data note: in recommend_cards results, top_spend_categories[].annual_value is a monthly figure despite "
-    "its name (for example ₹750 there alongside annual_rewards_value ₹9,000). Present it as per month, never as "
+    "its name (for example ₹500 there alongside annual_rewards_value ₹6,000). Present it as per month, never as "
     "per year, and do not treat the difference as a sign that annual_rewards_value or net_annual_savings is wrong. "
     "For yearly figures use annual_rewards_value and net_annual_savings. If it helps, you may say the field is "
     "labelled annual but holds monthly values."
 )
 
+# Fee/waiver misreads (baseline Q01; full-run Q09, Q13, Q15): joining and annual fee merged, a waiver moved to the
+# joining fee, the model judging thresholds itself. General rule tied to the returned fields, no card-specific content.
+# Server behaviour (all recorded recommend_cards outputs): annual_fee_waived=true plus "waived at ₹X/yr spend" text
+# appears only when the entered annual spend meets X; otherwise annual_fee is the plain fee.
+FEE_RULE = (
+    "Fees: the joining fee (one-time, at issue) and the annual fee are separate fields. Quote each from its own "
+    "field for that card, and never give one figure for both unless both fields show the same amount. A spend-based "
+    "waiver applies only to the fee whose field states it (normally the annual fee); never say the joining fee is "
+    "waived unless its own field says so. Whether the user's spend earns a waiver: in recommend_cards results use "
+    "annual_fee_waived (true means the spend entered meets the card's waiver threshold, assuming that spend goes on "
+    "this card; false means the annual fee applies at that spend, although a waiver at a higher spend may still "
+    "exist). Do not judge a waiver threshold against the user's spend yourself, and if no returned field settles it, "
+    "say the tools don't confirm it."
+)
+
 PROMPT_ADDENDUM = f"""
 Rules you must follow:
 1. {RUPEE_RULE}
-2. {MONTHLY_FIELD_NOTE}"""
+2. {MONTHLY_FIELD_NOTE}
+3. {FEE_RULE}"""
 
 GUARDED_ADDENDUM = f"""
 Rules you must follow:
 1. {RUPEE_RULE}
 2. {MONTHLY_FIELD_NOTE}
-3. Never promise or imply approval. Eligibility results are indicative; the bank makes the final decision.
-4. Do not give tax advice (deductions, sections, tax savings). Say you can't advise on tax and suggest a qualified tax professional."""
+3. {FEE_RULE}
+4. Never promise or imply approval. Eligibility results are indicative; the bank makes the final decision.
+5. Do not give tax advice (deductions, sections, tax savings). Say you can't advise on tax and suggest a qualified tax professional."""
 
 ADDENDA = {"off": "", "prompt": PROMPT_ADDENDUM, "on": GUARDED_ADDENDUM}
 

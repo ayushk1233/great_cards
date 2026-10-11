@@ -267,6 +267,13 @@ def test_system_prompt_modes():
     for mode in ("prompt", "on"):                       # E07: monthly-field fact in both rule modes
         assert prompts.MONTHLY_FIELD_NOTE in prompts.system_prompt(mode)
     assert "annual_value" not in prompts.system_prompt("off")
+    for mode in ("prompt", "on"):                       # fee/waiver rule tied to returned fields
+        assert prompts.FEE_RULE in prompts.system_prompt(mode)
+    assert "annual_fee_waived" not in prompts.system_prompt("off")
+    # no eval-case content in the rules (anti-overfitting): card names or figures from evals/questions.json outputs
+    for token in ("Millenia", "Millennia", "Cashback", "Magnus", "Times Black", "Ornge", "Landmark",
+                  "₹750", "₹9,000", "₹15,000", "₹30,000", "12,000 points", "₹0.25"):
+        assert token not in prompts.PROMPT_ADDENDUM, token
 
 
 def test_config_accepts_guardrail_modes(monkeypatch):

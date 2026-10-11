@@ -129,7 +129,8 @@ def _plan(cases: list[dict], todo: list[dict], settings, run_dir: Path | None) -
 
 def _parse(argv):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--mode", choices=["off", "on"], default="off", help="guardrails report-only (off) or enforced (on)")
+    ap.add_argument("--mode", choices=["off", "prompt", "on"], default="off",
+                    help="guardrails: report-only (off), rule prompt only (prompt), prompt + enforced rewrite (on)")
     ap.add_argument("--file", default="evals/questions.json")
     ap.add_argument("--only", nargs="*", help="case ids to run")
     ap.add_argument("--resume", metavar="DIR|latest", help="continue an existing run directory")

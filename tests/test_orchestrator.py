@@ -243,3 +243,35 @@ def test_session_is_closed_even_when_the_loop_fails(live_catalog):
     mcp = Tracking(live_catalog)
     make(FakeLlm([LlmError("down")]), mcp).run_turn([], "hi")
     assert Tracking.closed
+
+
+def test_guardrails_prompt_adds_rupee_rule_without_rewrite(live_catalog, amazon_result):
+    """GUARDRAILS=prompt (Task 4, E04): the ₹ rule is in the system prompt, the validator still
+    only reports, and nothing is regenerated, so before/after isolates the prompt change."""
+    mcp = FakeMcp(live_catalog, {"recommend_cards": amazon_result})
+    llm = FakeLlm([LlmReply("", [call("recommend_cards", {"amazon_spends": 15000})]), LlmReply(BAD)])
+    r = make(llm, mcp, guardrails="prompt").run_turn([], "15k on Amazon")
+    system = llm.seen[0]["messages"][0]["content"]
+    assert prompts.RUPEE_RULE in system
+    assert "tax advice" not in system and "promise or imply approval" not in system   # other rules not bundled
+    assert r.answer == BAD and not r.regenerated and len(llm.seen) == 2
+    assert "unreturned_rupee" in r.validation.rules()
+
+
+def test_system_prompt_modes():
+    assert prompts.system_prompt("off") == prompts.BASELINE
+    assert prompts.system_prompt("prompt") == prompts.BASELINE + prompts.PROMPT_ADDENDUM
+    assert prompts.RUPEE_RULE in prompts.system_prompt("on") and "tax advice" in prompts.system_prompt("on")
+    assert "[Z] months" in prompts.RUPEE_RULE          # explicitly overrides the server playbook line
+
+
+def test_config_accepts_guardrail_modes(monkeypatch):
+    import pytest
+    from app.config import ConfigError, load_settings
+
+    for mode in ("off", "prompt", "on"):
+        monkeypatch.setenv("GUARDRAILS", mode)
+        assert load_settings(require_key=False).guardrails == mode
+    monkeypatch.setenv("GUARDRAILS", "enforce")
+    with pytest.raises(ConfigError):
+        load_settings(require_key=False)

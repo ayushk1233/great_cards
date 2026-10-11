@@ -15,7 +15,7 @@ class Settings:
     openrouter_api_key: str
     llm_model: str
     mcp_url: str
-    guardrails: str  # "off" = report only, "on" = enforce
+    guardrails: str  # "off" = report only, "prompt" = rule prompt only, "on" = prompt + enforce
     max_tool_rounds: int = 6
     max_tool_calls_per_turn: int = 6  # MCP calls per turn; extra calls are refused, not sent
     tool_timeout_s: float = 20.0
@@ -38,8 +38,8 @@ def load_settings(require_key: bool = True) -> Settings:
     if require_key and not key:
         raise ConfigError("OPENROUTER_API_KEY is missing. Copy .env.example to .env and set it.")
     guardrails = os.getenv("GUARDRAILS", "off").strip().lower()
-    if guardrails not in ("off", "on"):
-        raise ConfigError(f"GUARDRAILS must be 'off' or 'on', got {guardrails!r}")
+    if guardrails not in ("off", "prompt", "on"):
+        raise ConfigError(f"GUARDRAILS must be 'off', 'prompt' or 'on', got {guardrails!r}")
     return Settings(
         openrouter_api_key=key,
         llm_model=os.getenv("LLM_MODEL", "anthropic/claude-haiku-5.5").strip(),

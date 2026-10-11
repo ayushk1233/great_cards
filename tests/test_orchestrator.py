@@ -263,6 +263,7 @@ def test_system_prompt_modes():
     assert prompts.system_prompt("prompt") == prompts.BASELINE + prompts.PROMPT_ADDENDUM
     assert prompts.RUPEE_RULE in prompts.system_prompt("on") and "tax advice" in prompts.system_prompt("on")
     assert "[Z] months" in prompts.RUPEE_RULE          # explicitly overrides the server playbook line
+    assert "point value" in prompts.RUPEE_RULE         # Q07 residual: points x value is a calculation too
     for mode in ("prompt", "on"):                       # E07: monthly-field fact in both rule modes
         assert prompts.MONTHLY_FIELD_NOTE in prompts.system_prompt(mode)
     assert "annual_value" not in prompts.system_prompt("off")

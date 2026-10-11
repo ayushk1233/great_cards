@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-10-11T00:50:33+00:00",
+  "mode": "prompt",
+  "model": "anthropic/claude-haiku-5.5",
+  "temperature": 0.0,
+  "prompt_sha": "40a5f4cb6078",
+  "mcp_url": "https://bk-api.bankkaro.com/mcp",
+  "server": {
+    "name": "great-cards",
+    "version": "1.6.1",
+    "protocol": "2025-11-25",
+    "catalog_sha256_12": "0600faf19c22"
+  },
+  "git": "27b4bfb-dirty",
+  "questions_file": "evals/questions.json",
+  "rate_limit": {
+    "max_requests": 50,
+    "window_s": 180.0
+  }
+}

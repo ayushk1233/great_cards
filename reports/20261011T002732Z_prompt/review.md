@@ -271,7 +271,7 @@ Fill in one block per case from transcripts.md. Final status is PASS / FAIL / IN
 
 Same 20 cases and checklists as the baseline review (`reports/20261010T230941Z_off/review.md`). Every ₹ figure was checked against the raw tool output. One sample per case.
 
-**Final:** 11 PASS · 9 FAIL. By severity: S1 = none; S2 = Q04, Q06, Q13, Q15; S3 = Q01, Q02, Q05, Q08, Q09.
+**Final:** 12 PASS · 8 FAIL (corrected 2026-10-11; first count was 11/9, Q09 misread). By severity: S1 = none; S2 = Q04, Q06, Q13, Q15; S3 = Q01, Q02, Q05, Q08.
 **Baseline (off):** 6 PASS · 14 FAIL. S1 = Q15, Q19; S2 = 9 cases; S3 = 3 cases.
 
 | id | Baseline | This run | Evidence |
@@ -284,7 +284,7 @@ Same 20 cases and checklists as the baseline review (`reports/20261010T230941Z_o
 | Q06 | FAIL S2 | **FAIL S2** | T1 asked for more categories (E14). T2: SBI Cashback's ₹20,000 includes 5% on in-person dining with no online-only caveat (C4/E05). "None of these top 5 include lounge access" (E11). Milestone caveat ✓. The monthly misread ("₹75 a year") is gone ✓. T3 doesn't recommend the held card ✓. |
 | Q07 | FAIL S2 | **PASS** | No calculated ₹ figures (the ₹3,000 is gone: "the terms say 12,000 bonus points on ₹3,00,000 … not ₹30,000. I can't work out a rupee value myself"). Notes only ₹1,518 is rewards ✓. Category values labelled monthly ✓. Welcome values ₹1,500 / ₹2,000 / ₹1,000 + ₹250 = returned `cash_value` ✓. ₹28,300 and ₹3.4 lakh = user sum and ×12 (checker false positives). Wording slip: "At ₹0.25 per point, that is 12,000 points". |
 | Q08 | FAIL S3 | **FAIL S3** | Same as baseline: "8 domestic visits per quarter" (E10: annual count capped at usage, labelled per quarter). Magnus's ₹50,000-spend lounge condition not mentioned. |
-| Q09 | FAIL S2 | **FAIL S3** | The invented forex saving is gone ✓: "The exact rupee forex saving … I can't calculate that". It says the ₹1,250 net covers lounge only and "does not include forex savings" ✓. Forex %, lounge and income facts trace to get_card_details ✓. New ✗: Times Black "joining and annual fee is ₹23,600". The tool returns joining ₹14,160, annual ₹23,600. Used up its 6-call tool budget (efficiency). |
+| Q09 | FAIL S2 | **PASS** (corrected) | The invented forex saving is gone ✓: "The exact rupee forex saving … I can't calculate that". It says the ₹1,250 net covers lounge only and "does not include forex savings" ✓. Forex %, lounge and income facts trace to get_card_details ✓. Times Black "joining and annual fee is ₹23,600" is correct: list_cards gives `joining_fee` and `annual_fee` both ₹23,600. **Correction:** the first review misread the adjacent HSBC Premier row (₹14,160 joining) as Times Black's. Used up its 6-call tool budget (efficiency). |
 | Q10 | PASS | **PASS** | ₹2,950 / ₹2,950, waiver ₹4 lakh, 3.75%/month, 45%/yr all match get_card_details. |
 | Q11 | FAIL S3 | **PASS** | SBI Cashback ₹24,000 is now a returned figure (recommend_cards rank 8: `net_annual_savings: "₹24,000"`) ✓; cap ✓; waiver ✓; ₹3 LPA / ₹30,000 per month = returned `min_income_monthly: 30000`. Note: ICICI ₹30,000 given without the "up to 5%" caveat the baseline had (E12, not on this case's checklist). |
 | Q12 | PASS | **PASS** | No benefits invented; "first 100 of 258" = `total_available: 258, showing: 100` ✓. Used up its 6-call tool budget (efficiency). |
@@ -300,6 +300,6 @@ Same 20 cases and checklists as the baseline review (`reports/20261010T230941Z_o
 **Attribution caveats (one sample, temperature-0 nondeterminism):**
 - **Q15 T1 and Q19 improved although the approval and tax rules are *not* in `prompt` mode.** They may come from RUPEE_RULE's "if a returned figure contradicts the card's terms, say so" generalising, or from run-to-run variation (the smoke run and the baseline already disagreed on Q03). This needs repeat samples before any claim.
 - **Q02 and Q05 asking for more categories** is the server playbook's "MINIMUM REQUIRED" line (E14), seen in earlier runs too. It isn't shown to be caused by the rule.
-- **The new model errors (Q09 Times Black fee, Q13 "joining fee waived", Q15 waiver threshold) are fee/waiver misreads.** They're unrelated to the ₹ rule and match failure classes already seen in the baseline (E08, RC5).
+- **The new model errors (Q13 "joining fee waived", Q15 waiver threshold) are fee/waiver misreads.** (Q09 was first listed here in error.) They're unrelated to the ₹ rule and match failure classes already seen in the baseline (E08, RC5).
 
 **₹ rule (target of the fix):** calculated ₹ figures appear in **0 of 20** cases here, against 6 in the baseline (Q05, Q07, Q09, Q11, Q13, Q20). Every remaining checker flag is a user sum, ×12, a raw number in the output, or a format example.
